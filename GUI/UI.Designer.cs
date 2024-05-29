@@ -254,11 +254,12 @@
             this.radio_SongTimerManual = new System.Windows.Forms.RadioButton();
             this.radio_SongTimerAlways = new System.Windows.Forms.RadioButton();
             this.tabPage_ModSettings_Automation = new System.Windows.Forms.TabPage();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.groupBox_Rocksync = new System.Windows.Forms.GroupBox();
+            this.check_RocksyncLocalOnly = new System.Windows.Forms.CheckBox();
+            this.label_RocksyncHostPort = new System.Windows.Forms.Label();
+            this.nUpDown_RocksyncHostPort = new System.Windows.Forms.NumericUpDown();
+            this.radio_RocksyncJoinerMode = new System.Windows.Forms.RadioButton();
+            this.radio_RocksyncHostMode = new System.Windows.Forms.RadioButton();
             this.groupBox_NSPTimer = new System.Windows.Forms.GroupBox();
             this.nUpDown_NSPTimer = new System.Windows.Forms.NumericUpDown();
             this.groupBox_SampleRateOutput = new System.Windows.Forms.GroupBox();
@@ -545,7 +546,6 @@
             this.label_SettingsSaved = new System.Windows.Forms.Label();
             this.fileSystemWatcher1 = new System.IO.FileSystemWatcher();
             this.button_UpdateRSMods = new System.Windows.Forms.Button();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.groupBox_HowToEnumerate.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize) (this.nUpDown_ForceEnumerationXMS)).BeginInit();
             this.groupBox_LoftOffWhen.SuspendLayout();
@@ -584,8 +584,8 @@
             this.groupBox_OnScreenFont.SuspendLayout();
             this.groupBox_SongTimer.SuspendLayout();
             this.tabPage_ModSettings_Automation.SuspendLayout();
-            this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize) (this.numericUpDown1)).BeginInit();
+            this.groupBox_Rocksync.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize) (this.nUpDown_RocksyncHostPort)).BeginInit();
             this.groupBox_NSPTimer.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize) (this.nUpDown_NSPTimer)).BeginInit();
             this.groupBox_SampleRateOutput.SuspendLayout();
@@ -3544,7 +3544,7 @@
             // tabPage_ModSettings_Automation
             // 
             this.tabPage_ModSettings_Automation.BackColor = System.Drawing.Color.Azure;
-            this.tabPage_ModSettings_Automation.Controls.Add(this.groupBox1);
+            this.tabPage_ModSettings_Automation.Controls.Add(this.groupBox_Rocksync);
             this.tabPage_ModSettings_Automation.Controls.Add(this.groupBox_NSPTimer);
             this.tabPage_ModSettings_Automation.Controls.Add(this.groupBox_SampleRateOutput);
             this.tabPage_ModSettings_Automation.Controls.Add(this.groupBox_GuitarSpeak);
@@ -3558,74 +3558,85 @@
             this.tabPage_ModSettings_Automation.TabIndex = 1;
             this.tabPage_ModSettings_Automation.Text = "Automation";
             // 
-            // groupBox1
+            // groupBox_Rocksync
             // 
-            this.groupBox1.Controls.Add(this.checkBox1);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.numericUpDown1);
-            this.groupBox1.Controls.Add(this.radioButton1);
-            this.groupBox1.Controls.Add(this.radioButton2);
-            this.groupBox1.Location = new System.Drawing.Point(1085, 303);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(6);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(6);
-            this.groupBox1.Size = new System.Drawing.Size(425, 246);
-            this.groupBox1.TabIndex = 48;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Rocksync";
-            this.groupBox1.Visible = false;
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter_1);
+            this.groupBox_Rocksync.Controls.Add(this.check_RocksyncLocalOnly);
+            this.groupBox_Rocksync.Controls.Add(this.label_RocksyncHostPort);
+            this.groupBox_Rocksync.Controls.Add(this.nUpDown_RocksyncHostPort);
+            this.groupBox_Rocksync.Controls.Add(this.radio_RocksyncJoinerMode);
+            this.groupBox_Rocksync.Controls.Add(this.radio_RocksyncHostMode);
+            this.groupBox_Rocksync.Location = new System.Drawing.Point(1085, 303);
+            this.groupBox_Rocksync.Margin = new System.Windows.Forms.Padding(6);
+            this.groupBox_Rocksync.Name = "groupBox_Rocksync";
+            this.groupBox_Rocksync.Padding = new System.Windows.Forms.Padding(6);
+            this.groupBox_Rocksync.Size = new System.Drawing.Size(425, 246);
+            this.groupBox_Rocksync.TabIndex = 48;
+            this.groupBox_Rocksync.TabStop = false;
+            this.groupBox_Rocksync.Text = "Rocksync";
+            this.groupBox_Rocksync.Visible = false;
+            // 
+            // checkBox1
+            // 
+            this.check_RocksyncLocalOnly.AutoSize = true;
+            this.check_RocksyncLocalOnly.Location = new System.Drawing.Point(28, 195);
+            this.check_RocksyncLocalOnly.Margin = new System.Windows.Forms.Padding(6);
+            this.check_RocksyncLocalOnly.Name = "check_RocksyncLocalOnly";
+            this.check_RocksyncLocalOnly.Size = new System.Drawing.Size(133, 29);
+            this.check_RocksyncLocalOnly.TabIndex = 28;
+            this.check_RocksyncLocalOnly.Text = "Local Only";
+            this.check_RocksyncLocalOnly.UseVisualStyleBackColor = true;
+            this.check_RocksyncLocalOnly.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(25, 152);
-            this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(101, 25);
-            this.label1.TabIndex = 27;
-            this.label1.Text = "Host Port";
-            this.label1.Visible = false;
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.label_RocksyncHostPort.AutoSize = true;
+            this.label_RocksyncHostPort.Location = new System.Drawing.Point(25, 152);
+            this.label_RocksyncHostPort.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label_RocksyncHostPort.Name = "label_RocksyncHostPort";
+            this.label_RocksyncHostPort.Size = new System.Drawing.Size(101, 25);
+            this.label_RocksyncHostPort.TabIndex = 27;
+            this.label_RocksyncHostPort.Text = "Host Port";
+            this.label_RocksyncHostPort.Visible = false;
+            this.label_RocksyncHostPort.Click += new System.EventHandler(this.label1_Click);
             // 
             // numericUpDown1
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(138, 152);
-            this.numericUpDown1.Margin = new System.Windows.Forms.Padding(6);
-            this.numericUpDown1.Maximum = new decimal(new int[] {65535, 0, 0, 0});
-            this.numericUpDown1.Minimum = new decimal(new int[] {1, 0, 0, 0});
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(116, 31);
-            this.numericUpDown1.TabIndex = 26;
-            this.numericUpDown1.Value = new decimal(new int[] {5, 0, 0, 0});
-            this.numericUpDown1.Visible = false;
-            this.numericUpDown1.ValueChanged += new System.EventHandler(this.numericUpDown1_ValueChanged);
+            this.nUpDown_RocksyncHostPort.Location = new System.Drawing.Point(138, 152);
+            this.nUpDown_RocksyncHostPort.Margin = new System.Windows.Forms.Padding(6);
+            this.nUpDown_RocksyncHostPort.Maximum = new decimal(new int[] {65535, 0, 0, 0});
+            this.nUpDown_RocksyncHostPort.Minimum = new decimal(new int[] {1, 0, 0, 0});
+            this.nUpDown_RocksyncHostPort.Name = "nUpDown_RocksyncHostPort";
+            this.nUpDown_RocksyncHostPort.Size = new System.Drawing.Size(116, 31);
+            this.nUpDown_RocksyncHostPort.TabIndex = 26;
+            this.nUpDown_RocksyncHostPort.Value = new decimal(new int[] {5, 0, 0, 0});
+            this.nUpDown_RocksyncHostPort.Visible = false;
+            this.nUpDown_RocksyncHostPort.ValueChanged += new System.EventHandler(this.numericUpDown1_ValueChanged);
             // 
             // radioButton1
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(28, 92);
-            this.radioButton1.Margin = new System.Windows.Forms.Padding(6);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(89, 29);
-            this.radioButton1.TabIndex = 25;
-            this.radioButton1.Text = "Joiner";
-            this.radioButton1.UseVisualStyleBackColor = true;
-            this.radioButton1.Visible = false;
+            this.radio_RocksyncJoinerMode.AutoSize = true;
+            this.radio_RocksyncJoinerMode.Location = new System.Drawing.Point(28, 92);
+            this.radio_RocksyncJoinerMode.Margin = new System.Windows.Forms.Padding(6);
+            this.radio_RocksyncJoinerMode.Name = "radio_RocksyncJoinerMode";
+            this.radio_RocksyncJoinerMode.Size = new System.Drawing.Size(89, 29);
+            this.radio_RocksyncJoinerMode.TabIndex = 25;
+            this.radio_RocksyncJoinerMode.Text = "Joiner";
+            this.radio_RocksyncJoinerMode.UseVisualStyleBackColor = true;
+            this.radio_RocksyncJoinerMode.Visible = false;
             // 
             // radioButton2
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Checked = true;
-            this.radioButton2.Location = new System.Drawing.Point(28, 44);
-            this.radioButton2.Margin = new System.Windows.Forms.Padding(6);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(74, 29);
-            this.radioButton2.TabIndex = 24;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Host";
-            this.radioButton2.UseVisualStyleBackColor = true;
-            this.radioButton2.Visible = false;
+            this.radio_RocksyncHostMode.AutoSize = true;
+            this.radio_RocksyncHostMode.Checked = true;
+            this.radio_RocksyncHostMode.Location = new System.Drawing.Point(28, 44);
+            this.radio_RocksyncHostMode.Margin = new System.Windows.Forms.Padding(6);
+            this.radio_RocksyncHostMode.Name = "radio_RocksyncHostMode";
+            this.radio_RocksyncHostMode.Size = new System.Drawing.Size(74, 29);
+            this.radio_RocksyncHostMode.TabIndex = 24;
+            this.radio_RocksyncHostMode.TabStop = true;
+            this.radio_RocksyncHostMode.Text = "Host";
+            this.radio_RocksyncHostMode.UseVisualStyleBackColor = true;
+            this.radio_RocksyncHostMode.Visible = false;
             // 
             // groupBox_NSPTimer
             // 
@@ -7044,18 +7055,6 @@
             this.button_UpdateRSMods.Click += new System.EventHandler(this.CheckForUpdates_UpdateRSMods);
             this.button_UpdateRSMods.MouseHover += new System.EventHandler(this.ToolTips_Show);
             // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(28, 195);
-            this.checkBox1.Margin = new System.Windows.Forms.Padding(6);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(133, 29);
-            this.checkBox1.TabIndex = 28;
-            this.checkBox1.Text = "Local Only";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
@@ -7128,9 +7127,9 @@
             this.groupBox_SongTimer.ResumeLayout(false);
             this.groupBox_SongTimer.PerformLayout();
             this.tabPage_ModSettings_Automation.ResumeLayout(false);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize) (this.numericUpDown1)).EndInit();
+            this.groupBox_Rocksync.ResumeLayout(false);
+            this.groupBox_Rocksync.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize) (this.nUpDown_RocksyncHostPort)).EndInit();
             this.groupBox_NSPTimer.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize) (this.nUpDown_NSPTimer)).EndInit();
             this.groupBox_SampleRateOutput.ResumeLayout(false);
@@ -7231,14 +7230,14 @@
             this.PerformLayout();
         }
 
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox check_RocksyncLocalOnly;
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.Label label_RocksyncHostPort;
+        private System.Windows.Forms.NumericUpDown nUpDown_RocksyncHostPort;
+        private System.Windows.Forms.RadioButton radio_RocksyncJoinerMode;
+        private System.Windows.Forms.RadioButton radio_RocksyncHostMode;
 
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox groupBox_Rocksync;
 
         private System.Windows.Forms.CheckBox checkBox_Rocksync;
 
