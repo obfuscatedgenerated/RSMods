@@ -40,9 +40,7 @@
 #include "Mods/AudioDevices.hpp"
 #include "Mods/BugPrevention.hpp"
 #include "Mods/TrueTuning.hpp"
-
-// ENet
-#include "Lib/ENet/enet.h"
+#include "Mods/Rocksync.hpp"
 
 std::vector<std::string> effectQueue;
 std::vector<std::string> enabledEffects;
