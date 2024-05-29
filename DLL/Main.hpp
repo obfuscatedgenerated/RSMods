@@ -41,6 +41,9 @@
 #include "Mods/BugPrevention.hpp"
 #include "Mods/TrueTuning.hpp"
 
+// ENet
+#include "Lib/ENet/enet.h"
+
 std::vector<std::string> effectQueue;
 std::vector<std::string> enabledEffects;
 

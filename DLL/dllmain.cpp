@@ -974,6 +974,31 @@ Wwise::SoundEngine::SetRTPCValue("P1_InputVol_Calibration_Return", NewInputVolum
 
 			D3DHooks::regenerateUserDefinedTexture = false;
 		}
+
+		// rocksync mod - if host, create server
+		if (Settings::ReturnSettingValue("RocksyncMode") == "host") {
+			if (enet_initialize() != 0) {
+				_LOG("An error occurred while initializing ENet.");
+				return hRet;
+			}
+
+			atexit(enet_deinitialize);
+
+			ENetAddress address;
+			ENetHost* server;
+
+			if (Settings::ReturnSettingValue("RocksyncLocalOnly") == "on")
+			{
+				enet_address_set_host(&address, "127.0.0.1");
+			} else
+			{
+				address.host = ENET_HOST_ANY;
+			}
+
+			address.port = Settings::GetModSetting("RocksyncHostPort");
+
+			// TODO create server, sync timer on request. maybe use udp
+		}
 	}
 	return hRet;
 }

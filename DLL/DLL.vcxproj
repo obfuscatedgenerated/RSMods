@@ -79,6 +79,15 @@
     <ClInclude Include="CC\Effects\KillGuitarVolumeEffect.hpp" />
     <ClInclude Include="CC\Effects\KillMusicVolumeEffect.hpp" />
     <ClInclude Include="CC\Effects\HighwayScrollSpeedEffect.hpp" />
+    <ClInclude Include="Lib\ENet\callbacks.h" />
+    <ClInclude Include="Lib\ENet\enet.h" />
+    <ClInclude Include="Lib\ENet\list.h" />
+    <ClInclude Include="Lib\ENet\protocol.h" />
+    <ClInclude Include="Lib\ENet\time.h" />
+    <ClInclude Include="Lib\ENet\types.h" />
+    <ClInclude Include="Lib\ENet\unix.h" />
+    <ClInclude Include="Lib\ENet\utility.h" />
+    <ClInclude Include="Lib\ENet\win32.h" />
     <ClInclude Include="Lib\Ini\SimpleIni.h" />
     <ClInclude Include="Lib\Json\json.hpp" />
     <ClInclude Include="Lib\Midi\RtMidi.h" />
@@ -187,6 +196,9 @@
     <Library Include="Lib\Detours\detours.lib" />
     <Library Include="Lib\DirectX\d3d9.lib" />
     <Library Include="Lib\DirectX\d3dx9.lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Lib\ENet\enet.lib" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{E312CF39-2170-4C1A-AC11-3A9C1C2E7399}</ProjectGuid>

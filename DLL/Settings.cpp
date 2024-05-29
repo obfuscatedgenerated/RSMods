@@ -89,7 +89,11 @@ void Settings::Initialize()
 		{"AllowRewind", "off"},
 		{"FixOculusCrash", "off"},
 		{"FixBrokenTones", "off"},
-		{"UseCustomNSPTimer", "off"}
+		{"UseCustomNSPTimer", "off"},
+
+		{"RocksyncMode", "off"},
+		{"RocksyncLocalOnly", "off"},
+		{"RocksyncHostPort", 3000}
 	};
 
 	customSettings = {
