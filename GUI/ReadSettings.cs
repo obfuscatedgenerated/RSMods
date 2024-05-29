@@ -45,7 +45,7 @@ namespace RSMods
                              // Mod Settings
                              ExtendedRangeTuning, CheckForNewSongInterval, RiffRepeaterSpeedInterval, TuningPedal, MidiTuningOffset,
                              VolumeControlInterval, SecondaryMonitorXPosition, SecondaryMonitorYPosition, OverrideInputVolume, AlternativeOutputSampleRate, LoopingLeadUp,
-                             RewindBy, CustomNSPTimeLimit, RocksyncMode, RocksyncHostPort, RocksyncLocalOnly,
+                             RewindBy, CustomNSPTimeLimit, RocksyncIsHost, RocksyncHostPort, RocksyncLocalOnly,
 
                              // Guitar Speak
                              GuitarSpeakDelete, GuitarSpeakSpace, GuitarSpeakEnter, GuitarSpeakTab, GuitarSpeakPGUP, GuitarSpeakPGDN, GuitarSpeakUP, GuitarSpeakDN, GuitarSpeakESC,
@@ -603,10 +603,12 @@ namespace RSMods
                     return FillSettingVariable(RewindByIdentifier, SettingType.STRING, currentLine, out RewindBy);
                 if (IdentifierIsFound(currentLine, CustomNSPTimeLimitIdentifier, identifierToGrab))
                     return FillSettingVariable(CustomNSPTimeLimitIdentifier, SettingType.STRING, currentLine, out CustomNSPTimeLimit);
-                if (IdentifierIsFound(currentLine, RocksyncMode, identifierToGrab))
-                    return FillSettingVariable(RocksyncMode, SettingType.STRING, currentLine, out RocksyncMode);
-                if (IdentifierIsFound(currentLine, RocksyncHostPort, identifierToGrab))
+                if (IdentifierIsFound(currentLine, RocksyncIsHostIdentifier, identifierToGrab))
+                    return FillSettingVariable(RocksyncIsHost, SettingType.ON_OFF, currentLine, out RocksyncIsHost);
+                if (IdentifierIsFound(currentLine, RocksyncHostPortIdentifier, identifierToGrab))
                     return FillSettingVariable(RocksyncHostPort, SettingType.STRING, currentLine, out RocksyncHostPort);
+                if (IdentifierIsFound(currentLine, RocksyncLocalOnlyIdentifier, identifierToGrab))
+                    return FillSettingVariable(RocksyncLocalOnlyIdentifier, SettingType.ON_OFF, currentLine, out RocksyncLocalOnly);
                 
                 #endregion
                 #region Guitar Speak

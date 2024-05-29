@@ -979,7 +979,7 @@ Wwise::SoundEngine::SetRTPCValue("P1_InputVol_Calibration_Return", NewInputVolum
 		if (Settings::ReturnSettingValue("Rocksync") == "on")
 		{
 			// create server if host
-			if (Settings::ReturnSettingValue("RocksyncMode") == "host") {
+			if (Settings::ReturnSettingValue("RocksyncIsHost") == "on") {
 				Rocksync::startHostServer();
 				// don't really need to check success. maybe add a popup if it fails?
 			}
@@ -987,6 +987,7 @@ Wwise::SoundEngine::SetRTPCValue("P1_InputVol_Calibration_Return", NewInputVolum
 	}
 	return hRet;
 }
+
 
 /// <summary>
 /// Convert time stored as a float of seconds, to h:m:s
