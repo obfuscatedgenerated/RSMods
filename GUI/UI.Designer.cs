@@ -62,6 +62,7 @@
             this.checkBox_FixBadBassTuning = new System.Windows.Forms.CheckBox();
             this.checkBox_ExtendedRangeDrop = new System.Windows.Forms.CheckBox();
             this.groupBox_EnabledMods = new System.Windows.Forms.GroupBox();
+            this.checkBox_Rocksync = new System.Windows.Forms.CheckBox();
             this.checkBox_CustomNSPTimer = new System.Windows.Forms.CheckBox();
             this.checkBox_FixBrokenTones = new System.Windows.Forms.CheckBox();
             this.checkBox_FixOculusCrash = new System.Windows.Forms.CheckBox();
@@ -253,6 +254,11 @@
             this.radio_SongTimerManual = new System.Windows.Forms.RadioButton();
             this.radio_SongTimerAlways = new System.Windows.Forms.RadioButton();
             this.tabPage_ModSettings_Automation = new System.Windows.Forms.TabPage();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.groupBox_NSPTimer = new System.Windows.Forms.GroupBox();
             this.nUpDown_NSPTimer = new System.Windows.Forms.NumericUpDown();
             this.groupBox_SampleRateOutput = new System.Windows.Forms.GroupBox();
@@ -539,8 +545,9 @@
             this.label_SettingsSaved = new System.Windows.Forms.Label();
             this.fileSystemWatcher1 = new System.IO.FileSystemWatcher();
             this.button_UpdateRSMods = new System.Windows.Forms.Button();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.groupBox_HowToEnumerate.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nUpDown_ForceEnumerationXMS)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize) (this.nUpDown_ForceEnumerationXMS)).BeginInit();
             this.groupBox_LoftOffWhen.SuspendLayout();
             this.groupBox_ExtendedRangeWhen.SuspendLayout();
             this.groupBox_EnabledMods.SuspendLayout();
@@ -550,13 +557,13 @@
             this.groupBox_SetAndForget.SuspendLayout();
             this.tabControl_SetAndForget.SuspendLayout();
             this.tabPage_SetAndForget_CustomTunings.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nUpDown_UIIndex)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nUpDown_String0)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nUpDown_String2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nUpDown_String3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nUpDown_String4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nUpDown_String5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nUpDown_String1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize) (this.nUpDown_UIIndex)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize) (this.nUpDown_String0)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize) (this.nUpDown_String2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize) (this.nUpDown_String3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize) (this.nUpDown_String4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize) (this.nUpDown_String5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize) (this.nUpDown_String1)).BeginInit();
             this.tabPage_SetAndForget_CustomTones.SuspendLayout();
             this.groupBox_CustomGuitarcadeTones.SuspendLayout();
             this.groupBox_CustomProfileTones.SuspendLayout();
@@ -577,8 +584,10 @@
             this.groupBox_OnScreenFont.SuspendLayout();
             this.groupBox_SongTimer.SuspendLayout();
             this.tabPage_ModSettings_Automation.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize) (this.numericUpDown1)).BeginInit();
             this.groupBox_NSPTimer.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nUpDown_NSPTimer)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize) (this.nUpDown_NSPTimer)).BeginInit();
             this.groupBox_SampleRateOutput.SuspendLayout();
             this.groupBox_AutoLoadProfiles.SuspendLayout();
             this.tabPage_ModSettings_AutoTuning.SuspendLayout();
@@ -588,89 +597,94 @@
             this.groupBox_MidiAutoTuneDevice.SuspendLayout();
             this.tabPage_ModSettings_Misc.SuspendLayout();
             this.groupBox_RewindBy.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nUpDown_RewindBy)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize) (this.nUpDown_RewindBy)).BeginInit();
             this.groupBox_LoopingLeadUp.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nUpDown_LoopingLeadUp)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize) (this.nUpDown_LoopingLeadUp)).BeginInit();
             this.groupBox_Profiles_RevertBackup.SuspendLayout();
             this.groupBox_OverrideInputVolume.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nUpDown_OverrideInputVolume)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize) (this.nUpDown_OverrideInputVolume)).BeginInit();
             this.groupBox_CustomHighway.SuspendLayout();
             this.groupBox_Backups.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nUpDown_NumberOfBackups)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize) (this.nUpDown_NumberOfBackups)).BeginInit();
             this.groupBox_RRSpeed.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nUpDown_RiffRepeaterSpeed)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize) (this.nUpDown_RiffRepeaterSpeed)).BeginInit();
             this.groupBox_ControlVolumeIncrement.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nUpDown_VolumeInterval)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize) (this.nUpDown_VolumeInterval)).BeginInit();
             this.tab_SetAndForget.SuspendLayout();
             this.tab_RSASIO.SuspendLayout();
             this.groupBox_ASIO_InputMic.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nUpDown_ASIO_InputMic_MaxVolume)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nUpDown_ASIO_InputMic_Channel)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize) (this.nUpDown_ASIO_InputMic_MaxVolume)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize) (this.nUpDown_ASIO_InputMic_Channel)).BeginInit();
             this.groupBox_ASIO_Output.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nUpDown_ASIO_Output_AltBaseChannel)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nUpDown_ASIO_Output_MaxVolume)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nUpDown_ASIO_Output_BaseChannel)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize) (this.nUpDown_ASIO_Output_AltBaseChannel)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize) (this.nUpDown_ASIO_Output_MaxVolume)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize) (this.nUpDown_ASIO_Output_BaseChannel)).BeginInit();
             this.groupBox_ASIO_Input1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nUpDown_ASIO_Input1_MaxVolume)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nUpDown_ASIO_Input1_Channel)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize) (this.nUpDown_ASIO_Input1_MaxVolume)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize) (this.nUpDown_ASIO_Input1_Channel)).BeginInit();
             this.groupBox_ASIO_Input0.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nUpDown_ASIO_Input0_MaxVolume)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nUpDown_ASIO_Input0_Channel)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize) (this.nUpDown_ASIO_Input0_MaxVolume)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize) (this.nUpDown_ASIO_Input0_Channel)).BeginInit();
             this.groupBox_ASIO_Config.SuspendLayout();
             this.groupBox_ASIO_BufferSize.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nUpDown_ASIO_CustomBufferSize)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize) (this.nUpDown_ASIO_CustomBufferSize)).BeginInit();
             this.tab_Rocksmith.SuspendLayout();
             this.groupBox_Rocksmith_AudioSettings.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nUpDown_Rocksmith_MaxOutputBuffer)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nUpDown_Rocksmith_LatencyBuffer)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize) (this.nUpDown_Rocksmith_MaxOutputBuffer)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize) (this.nUpDown_Rocksmith_LatencyBuffer)).BeginInit();
             this.groupBox_Rocksmith_VisualSettings.SuspendLayout();
             this.groupBox_Rocksmith_Network.SuspendLayout();
             this.groupBox_Rocksmith_Fullscreen.SuspendLayout();
             this.groupBox_Rocksmith_VisualQuality.SuspendLayout();
             this.groupBox_Rocksmith_Resolutions.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nUpDown_Rocksmith_RenderHeight)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nUpDown_Rocksmith_RenderWidth)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nUpDown_Rocksmith_ScreenHeight)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nUpDown_Rocksmith_ScreenWidth)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize) (this.nUpDown_Rocksmith_RenderHeight)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize) (this.nUpDown_Rocksmith_RenderWidth)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize) (this.nUpDown_Rocksmith_ScreenHeight)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize) (this.nUpDown_Rocksmith_ScreenWidth)).BeginInit();
             this.tab_Twitch.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_EnabledRewards)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_DefaultRewards)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize) (this.dgv_EnabledRewards)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize) (this.dgv_DefaultRewards)).BeginInit();
             this.tab_SoundPacks.SuspendLayout();
             this.groupBox_SoundPacks.SuspendLayout();
             this.tab_Profiles.SuspendLayout();
             this.groupBox_ImportJsonTones.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_Profiles_Songlists)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize) (this.dgv_Profiles_Songlists)).BeginInit();
             this.groupBox_Profile_MoreSongLists.SuspendLayout();
             this.groupBox_Profiles_Rewards.SuspendLayout();
             this.tab_GUISettings.SuspendLayout();
             this.groupBox_ChangeTheme.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize) (this.fileSystemWatcher1)).BeginInit();
             this.SuspendLayout();
             // 
             // listBox_Songlist
             // 
             this.listBox_Songlist.FormattingEnabled = true;
-            this.listBox_Songlist.Location = new System.Drawing.Point(21, 26);
+            this.listBox_Songlist.ItemHeight = 25;
+            this.listBox_Songlist.Location = new System.Drawing.Point(42, 50);
+            this.listBox_Songlist.Margin = new System.Windows.Forms.Padding(6);
             this.listBox_Songlist.Name = "listBox_Songlist";
-            this.listBox_Songlist.Size = new System.Drawing.Size(185, 147);
+            this.listBox_Songlist.Size = new System.Drawing.Size(366, 279);
             this.listBox_Songlist.TabIndex = 2;
             this.listBox_Songlist.SelectedIndexChanged += new System.EventHandler(this.Fill_Songlist_Name);
             // 
             // listBox_Modlist_MODS
             // 
             this.listBox_Modlist_MODS.FormattingEnabled = true;
-            this.listBox_Modlist_MODS.Location = new System.Drawing.Point(6, 19);
+            this.listBox_Modlist_MODS.ItemHeight = 25;
+            this.listBox_Modlist_MODS.Location = new System.Drawing.Point(12, 37);
+            this.listBox_Modlist_MODS.Margin = new System.Windows.Forms.Padding(6);
             this.listBox_Modlist_MODS.Name = "listBox_Modlist_MODS";
-            this.listBox_Modlist_MODS.Size = new System.Drawing.Size(185, 199);
+            this.listBox_Modlist_MODS.Size = new System.Drawing.Size(366, 379);
             this.listBox_Modlist_MODS.TabIndex = 5;
             this.listBox_Modlist_MODS.SelectedIndexChanged += new System.EventHandler(this.Keypress_LoadKeys);
             // 
             // checkBox_ToggleLoft
             // 
             this.checkBox_ToggleLoft.AutoSize = true;
-            this.checkBox_ToggleLoft.Location = new System.Drawing.Point(11, 15);
+            this.checkBox_ToggleLoft.Location = new System.Drawing.Point(22, 29);
+            this.checkBox_ToggleLoft.Margin = new System.Windows.Forms.Padding(6);
             this.checkBox_ToggleLoft.Name = "checkBox_ToggleLoft";
-            this.checkBox_ToggleLoft.Size = new System.Drawing.Size(80, 17);
+            this.checkBox_ToggleLoft.Size = new System.Drawing.Size(139, 29);
             this.checkBox_ToggleLoft.TabIndex = 6;
             this.checkBox_ToggleLoft.Text = "Toggle Loft";
             this.checkBox_ToggleLoft.UseVisualStyleBackColor = true;
@@ -681,9 +695,10 @@
             // checkBox_SongTimer
             // 
             this.checkBox_SongTimer.AutoSize = true;
-            this.checkBox_SongTimer.Location = new System.Drawing.Point(144, 38);
+            this.checkBox_SongTimer.Location = new System.Drawing.Point(288, 73);
+            this.checkBox_SongTimer.Margin = new System.Windows.Forms.Padding(6);
             this.checkBox_SongTimer.Name = "checkBox_SongTimer";
-            this.checkBox_SongTimer.Size = new System.Drawing.Size(110, 17);
+            this.checkBox_SongTimer.Size = new System.Drawing.Size(200, 29);
             this.checkBox_SongTimer.TabIndex = 10;
             this.checkBox_SongTimer.Text = "Show Song Timer";
             this.checkBox_SongTimer.UseVisualStyleBackColor = true;
@@ -694,36 +709,40 @@
             // label_ToggleLoftKey
             // 
             this.label_ToggleLoftKey.AutoSize = true;
-            this.label_ToggleLoftKey.Location = new System.Drawing.Point(464, 10);
+            this.label_ToggleLoftKey.Location = new System.Drawing.Point(928, 19);
+            this.label_ToggleLoftKey.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label_ToggleLoftKey.Name = "label_ToggleLoftKey";
-            this.label_ToggleLoftKey.Size = new System.Drawing.Size(67, 13);
+            this.label_ToggleLoftKey.Size = new System.Drawing.Size(132, 25);
             this.label_ToggleLoftKey.TabIndex = 14;
             this.label_ToggleLoftKey.Text = "Toggle Loft: ";
             // 
             // label_SongTimerKey
             // 
             this.label_SongTimerKey.AutoSize = true;
-            this.label_SongTimerKey.Location = new System.Drawing.Point(464, 27);
+            this.label_SongTimerKey.Location = new System.Drawing.Point(928, 52);
+            this.label_SongTimerKey.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label_SongTimerKey.Name = "label_SongTimerKey";
-            this.label_SongTimerKey.Size = new System.Drawing.Size(67, 13);
+            this.label_SongTimerKey.Size = new System.Drawing.Size(134, 25);
             this.label_SongTimerKey.TabIndex = 17;
             this.label_SongTimerKey.Text = "Song Timer: ";
             // 
             // label_ReEnumerationKey
             // 
             this.label_ReEnumerationKey.AutoSize = true;
-            this.label_ReEnumerationKey.Location = new System.Drawing.Point(464, 44);
+            this.label_ReEnumerationKey.Location = new System.Drawing.Point(928, 85);
+            this.label_ReEnumerationKey.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label_ReEnumerationKey.Name = "label_ReEnumerationKey";
-            this.label_ReEnumerationKey.Size = new System.Drawing.Size(72, 13);
+            this.label_ReEnumerationKey.Size = new System.Drawing.Size(145, 25);
             this.label_ReEnumerationKey.TabIndex = 18;
             this.label_ReEnumerationKey.Text = "Enumeration: ";
             // 
             // textBox_NewKeyAssignment_MODS
             // 
-            this.textBox_NewKeyAssignment_MODS.Location = new System.Drawing.Point(222, 93);
+            this.textBox_NewKeyAssignment_MODS.Location = new System.Drawing.Point(444, 179);
+            this.textBox_NewKeyAssignment_MODS.Margin = new System.Windows.Forms.Padding(6);
             this.textBox_NewKeyAssignment_MODS.MaxLength = 1;
             this.textBox_NewKeyAssignment_MODS.Name = "textBox_NewKeyAssignment_MODS";
-            this.textBox_NewKeyAssignment_MODS.Size = new System.Drawing.Size(188, 20);
+            this.textBox_NewKeyAssignment_MODS.Size = new System.Drawing.Size(372, 31);
             this.textBox_NewKeyAssignment_MODS.TabIndex = 20;
             this.textBox_NewKeyAssignment_MODS.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.textBox_NewKeyAssignment_MODS.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Keypress_CheckDown);
@@ -733,26 +752,29 @@
             // label_NewKeyAssignment_MODS
             // 
             this.label_NewKeyAssignment_MODS.AutoSize = true;
-            this.label_NewKeyAssignment_MODS.Location = new System.Drawing.Point(219, 59);
+            this.label_NewKeyAssignment_MODS.Location = new System.Drawing.Point(438, 113);
+            this.label_NewKeyAssignment_MODS.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label_NewKeyAssignment_MODS.Name = "label_NewKeyAssignment_MODS";
-            this.label_NewKeyAssignment_MODS.Size = new System.Drawing.Size(196, 13);
+            this.label_NewKeyAssignment_MODS.Size = new System.Drawing.Size(396, 25);
             this.label_NewKeyAssignment_MODS.TabIndex = 21;
             this.label_NewKeyAssignment_MODS.Text = "New Assignment (Press Enter To Save):";
             // 
             // label_ChangeSonglistName
             // 
             this.label_ChangeSonglistName.AutoSize = true;
-            this.label_ChangeSonglistName.Location = new System.Drawing.Point(218, 44);
+            this.label_ChangeSonglistName.Location = new System.Drawing.Point(436, 85);
+            this.label_ChangeSonglistName.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label_ChangeSonglistName.Name = "label_ChangeSonglistName";
-            this.label_ChangeSonglistName.Size = new System.Drawing.Size(225, 13);
+            this.label_ChangeSonglistName.Size = new System.Drawing.Size(456, 25);
             this.label_ChangeSonglistName.TabIndex = 22;
             this.label_ChangeSonglistName.Text = "Change Songlist Name (Press Enter To Save):";
             // 
             // textBox_NewSonglistName
             // 
-            this.textBox_NewSonglistName.Location = new System.Drawing.Point(221, 83);
+            this.textBox_NewSonglistName.Location = new System.Drawing.Point(442, 160);
+            this.textBox_NewSonglistName.Margin = new System.Windows.Forms.Padding(6);
             this.textBox_NewSonglistName.Name = "textBox_NewSonglistName";
-            this.textBox_NewSonglistName.Size = new System.Drawing.Size(222, 20);
+            this.textBox_NewSonglistName.Size = new System.Drawing.Size(440, 31);
             this.textBox_NewSonglistName.TabIndex = 23;
             this.textBox_NewSonglistName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.textBox_NewSonglistName.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Keypress_CheckDown);
@@ -760,9 +782,10 @@
             // checkBox_ExtendedRange
             // 
             this.checkBox_ExtendedRange.AutoSize = true;
-            this.checkBox_ExtendedRange.Location = new System.Drawing.Point(144, 107);
+            this.checkBox_ExtendedRange.Location = new System.Drawing.Point(288, 206);
+            this.checkBox_ExtendedRange.Margin = new System.Windows.Forms.Padding(6);
             this.checkBox_ExtendedRange.Name = "checkBox_ExtendedRange";
-            this.checkBox_ExtendedRange.Size = new System.Drawing.Size(146, 17);
+            this.checkBox_ExtendedRange.Size = new System.Drawing.Size(272, 29);
             this.checkBox_ExtendedRange.TabIndex = 27;
             this.checkBox_ExtendedRange.Text = "Extended Range Support";
             this.checkBox_ExtendedRange.UseVisualStyleBackColor = true;
@@ -773,30 +796,22 @@
             // label_RainbowStringsKey
             // 
             this.label_RainbowStringsKey.AutoSize = true;
-            this.label_RainbowStringsKey.Location = new System.Drawing.Point(464, 61);
+            this.label_RainbowStringsKey.Location = new System.Drawing.Point(928, 117);
+            this.label_RainbowStringsKey.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label_RainbowStringsKey.Name = "label_RainbowStringsKey";
-            this.label_RainbowStringsKey.Size = new System.Drawing.Size(90, 13);
+            this.label_RainbowStringsKey.Size = new System.Drawing.Size(180, 25);
             this.label_RainbowStringsKey.TabIndex = 28;
             this.label_RainbowStringsKey.Text = "Rainbow Strings: ";
             // 
             // listBox_ExtendedRangeTunings
             // 
             this.listBox_ExtendedRangeTunings.FormattingEnabled = true;
-            this.listBox_ExtendedRangeTunings.Items.AddRange(new object[] {
-            "D",
-            "C#",
-            "C",
-            "B",
-            "A#",
-            "A",
-            "G#",
-            "G",
-            "F#",
-            "F",
-            "Octave Down"});
-            this.listBox_ExtendedRangeTunings.Location = new System.Drawing.Point(33, 45);
+            this.listBox_ExtendedRangeTunings.ItemHeight = 25;
+            this.listBox_ExtendedRangeTunings.Items.AddRange(new object[] {"D", "C#", "C", "B", "A#", "A", "G#", "G", "F#", "F", "Octave Down"});
+            this.listBox_ExtendedRangeTunings.Location = new System.Drawing.Point(66, 87);
+            this.listBox_ExtendedRangeTunings.Margin = new System.Windows.Forms.Padding(6);
             this.listBox_ExtendedRangeTunings.Name = "listBox_ExtendedRangeTunings";
-            this.listBox_ExtendedRangeTunings.Size = new System.Drawing.Size(79, 147);
+            this.listBox_ExtendedRangeTunings.Size = new System.Drawing.Size(154, 279);
             this.listBox_ExtendedRangeTunings.TabIndex = 29;
             this.listBox_ExtendedRangeTunings.Visible = false;
             this.listBox_ExtendedRangeTunings.SelectedIndexChanged += new System.EventHandler(this.Save_ExtendedRangeTuningAt);
@@ -804,9 +819,10 @@
             // checkBox_ForceEnumeration
             // 
             this.checkBox_ForceEnumeration.AutoSize = true;
-            this.checkBox_ForceEnumeration.Location = new System.Drawing.Point(11, 130);
+            this.checkBox_ForceEnumeration.Location = new System.Drawing.Point(22, 250);
+            this.checkBox_ForceEnumeration.Margin = new System.Windows.Forms.Padding(6);
             this.checkBox_ForceEnumeration.Name = "checkBox_ForceEnumeration";
-            this.checkBox_ForceEnumeration.Size = new System.Drawing.Size(115, 17);
+            this.checkBox_ForceEnumeration.Size = new System.Drawing.Size(213, 29);
             this.checkBox_ForceEnumeration.TabIndex = 31;
             this.checkBox_ForceEnumeration.Text = "Force Enumeration";
             this.checkBox_ForceEnumeration.UseVisualStyleBackColor = true;
@@ -817,9 +833,10 @@
             // checkBox_RemoveHeadstock
             // 
             this.checkBox_RemoveHeadstock.AutoSize = true;
-            this.checkBox_RemoveHeadstock.Location = new System.Drawing.Point(11, 84);
+            this.checkBox_RemoveHeadstock.Location = new System.Drawing.Point(22, 162);
+            this.checkBox_RemoveHeadstock.Margin = new System.Windows.Forms.Padding(6);
             this.checkBox_RemoveHeadstock.Name = "checkBox_RemoveHeadstock";
-            this.checkBox_RemoveHeadstock.Size = new System.Drawing.Size(121, 17);
+            this.checkBox_RemoveHeadstock.Size = new System.Drawing.Size(218, 29);
             this.checkBox_RemoveHeadstock.TabIndex = 34;
             this.checkBox_RemoveHeadstock.Text = "Remove Headstock";
             this.checkBox_RemoveHeadstock.UseVisualStyleBackColor = true;
@@ -830,9 +847,10 @@
             // checkBox_RemoveSkyline
             // 
             this.checkBox_RemoveSkyline.AutoSize = true;
-            this.checkBox_RemoveSkyline.Location = new System.Drawing.Point(144, 153);
+            this.checkBox_RemoveSkyline.Location = new System.Drawing.Point(288, 294);
+            this.checkBox_RemoveSkyline.Margin = new System.Windows.Forms.Padding(6);
             this.checkBox_RemoveSkyline.Name = "checkBox_RemoveSkyline";
-            this.checkBox_RemoveSkyline.Size = new System.Drawing.Size(103, 17);
+            this.checkBox_RemoveSkyline.Size = new System.Drawing.Size(186, 29);
             this.checkBox_RemoveSkyline.TabIndex = 36;
             this.checkBox_RemoveSkyline.Text = "Remove Skyline";
             this.checkBox_RemoveSkyline.UseVisualStyleBackColor = true;
@@ -843,9 +861,10 @@
             // checkBox_GreenScreen
             // 
             this.checkBox_GreenScreen.AutoSize = true;
-            this.checkBox_GreenScreen.Location = new System.Drawing.Point(11, 107);
+            this.checkBox_GreenScreen.Location = new System.Drawing.Point(22, 206);
+            this.checkBox_GreenScreen.Margin = new System.Windows.Forms.Padding(6);
             this.checkBox_GreenScreen.Name = "checkBox_GreenScreen";
-            this.checkBox_GreenScreen.Size = new System.Drawing.Size(111, 17);
+            this.checkBox_GreenScreen.Size = new System.Drawing.Size(203, 29);
             this.checkBox_GreenScreen.TabIndex = 37;
             this.checkBox_GreenScreen.Text = "Greenscreen Wall";
             this.checkBox_GreenScreen.UseVisualStyleBackColor = true;
@@ -856,9 +875,10 @@
             // checkBox_AutoLoadProfile
             // 
             this.checkBox_AutoLoadProfile.AutoSize = true;
-            this.checkBox_AutoLoadProfile.Location = new System.Drawing.Point(144, 176);
+            this.checkBox_AutoLoadProfile.Location = new System.Drawing.Point(288, 338);
+            this.checkBox_AutoLoadProfile.Margin = new System.Windows.Forms.Padding(6);
             this.checkBox_AutoLoadProfile.Name = "checkBox_AutoLoadProfile";
-            this.checkBox_AutoLoadProfile.Size = new System.Drawing.Size(151, 17);
+            this.checkBox_AutoLoadProfile.Size = new System.Drawing.Size(286, 29);
             this.checkBox_AutoLoadProfile.TabIndex = 38;
             this.checkBox_AutoLoadProfile.Text = "Autoload Last Used Profile";
             this.checkBox_AutoLoadProfile.UseVisualStyleBackColor = true;
@@ -869,9 +889,10 @@
             // checkBox_Fretless
             // 
             this.checkBox_Fretless.AutoSize = true;
-            this.checkBox_Fretless.Location = new System.Drawing.Point(11, 153);
+            this.checkBox_Fretless.Location = new System.Drawing.Point(22, 294);
+            this.checkBox_Fretless.Margin = new System.Windows.Forms.Padding(6);
             this.checkBox_Fretless.Name = "checkBox_Fretless";
-            this.checkBox_Fretless.Size = new System.Drawing.Size(92, 17);
+            this.checkBox_Fretless.Size = new System.Drawing.Size(168, 29);
             this.checkBox_Fretless.TabIndex = 41;
             this.checkBox_Fretless.Text = "Fretless Mode";
             this.checkBox_Fretless.UseVisualStyleBackColor = true;
@@ -882,9 +903,10 @@
             // checkBox_RemoveInlays
             // 
             this.checkBox_RemoveInlays.AutoSize = true;
-            this.checkBox_RemoveInlays.Location = new System.Drawing.Point(11, 38);
+            this.checkBox_RemoveInlays.Location = new System.Drawing.Point(22, 73);
+            this.checkBox_RemoveInlays.Margin = new System.Windows.Forms.Padding(6);
             this.checkBox_RemoveInlays.Name = "checkBox_RemoveInlays";
-            this.checkBox_RemoveInlays.Size = new System.Drawing.Size(96, 17);
+            this.checkBox_RemoveInlays.Size = new System.Drawing.Size(172, 29);
             this.checkBox_RemoveInlays.TabIndex = 42;
             this.checkBox_RemoveInlays.Text = "Remove Inlays";
             this.checkBox_RemoveInlays.UseVisualStyleBackColor = true;
@@ -895,9 +917,10 @@
             // radio_LoftAlwaysOff
             // 
             this.radio_LoftAlwaysOff.AutoSize = true;
-            this.radio_LoftAlwaysOff.Location = new System.Drawing.Point(11, 19);
+            this.radio_LoftAlwaysOff.Location = new System.Drawing.Point(22, 37);
+            this.radio_LoftAlwaysOff.Margin = new System.Windows.Forms.Padding(6);
             this.radio_LoftAlwaysOff.Name = "radio_LoftAlwaysOff";
-            this.radio_LoftAlwaysOff.Size = new System.Drawing.Size(58, 17);
+            this.radio_LoftAlwaysOff.Size = new System.Drawing.Size(98, 29);
             this.radio_LoftAlwaysOff.TabIndex = 44;
             this.radio_LoftAlwaysOff.TabStop = true;
             this.radio_LoftAlwaysOff.Text = "Always";
@@ -908,9 +931,10 @@
             // radio_LoftOffHotkey
             // 
             this.radio_LoftOffHotkey.AutoSize = true;
-            this.radio_LoftOffHotkey.Location = new System.Drawing.Point(11, 42);
+            this.radio_LoftOffHotkey.Location = new System.Drawing.Point(22, 81);
+            this.radio_LoftOffHotkey.Margin = new System.Windows.Forms.Padding(6);
             this.radio_LoftOffHotkey.Name = "radio_LoftOffHotkey";
-            this.radio_LoftOffHotkey.Size = new System.Drawing.Size(59, 17);
+            this.radio_LoftOffHotkey.Size = new System.Drawing.Size(97, 29);
             this.radio_LoftOffHotkey.TabIndex = 45;
             this.radio_LoftOffHotkey.TabStop = true;
             this.radio_LoftOffHotkey.Text = "Hotkey";
@@ -921,9 +945,10 @@
             // radio_LoftOffInSong
             // 
             this.radio_LoftOffInSong.AutoSize = true;
-            this.radio_LoftOffInSong.Location = new System.Drawing.Point(11, 65);
+            this.radio_LoftOffInSong.Location = new System.Drawing.Point(22, 125);
+            this.radio_LoftOffInSong.Margin = new System.Windows.Forms.Padding(6);
             this.radio_LoftOffInSong.Name = "radio_LoftOffInSong";
-            this.radio_LoftOffInSong.Size = new System.Drawing.Size(69, 17);
+            this.radio_LoftOffInSong.Size = new System.Drawing.Size(118, 29);
             this.radio_LoftOffInSong.TabIndex = 46;
             this.radio_LoftOffInSong.TabStop = true;
             this.radio_LoftOffInSong.Text = "In a song";
@@ -935,9 +960,10 @@
             // 
             this.radio_ForceEnumerationManual.AutoSize = true;
             this.radio_ForceEnumerationManual.Checked = true;
-            this.radio_ForceEnumerationManual.Location = new System.Drawing.Point(14, 23);
+            this.radio_ForceEnumerationManual.Location = new System.Drawing.Point(28, 44);
+            this.radio_ForceEnumerationManual.Margin = new System.Windows.Forms.Padding(6);
             this.radio_ForceEnumerationManual.Name = "radio_ForceEnumerationManual";
-            this.radio_ForceEnumerationManual.Size = new System.Drawing.Size(112, 17);
+            this.radio_ForceEnumerationManual.Size = new System.Drawing.Size(211, 29);
             this.radio_ForceEnumerationManual.TabIndex = 24;
             this.radio_ForceEnumerationManual.TabStop = true;
             this.radio_ForceEnumerationManual.Text = "Manual (Keypress)";
@@ -948,9 +974,10 @@
             // radio_ForceEnumerationAutomatic
             // 
             this.radio_ForceEnumerationAutomatic.AutoSize = true;
-            this.radio_ForceEnumerationAutomatic.Location = new System.Drawing.Point(14, 48);
+            this.radio_ForceEnumerationAutomatic.Location = new System.Drawing.Point(28, 92);
+            this.radio_ForceEnumerationAutomatic.Margin = new System.Windows.Forms.Padding(6);
             this.radio_ForceEnumerationAutomatic.Name = "radio_ForceEnumerationAutomatic";
-            this.radio_ForceEnumerationAutomatic.Size = new System.Drawing.Size(182, 17);
+            this.radio_ForceEnumerationAutomatic.Size = new System.Drawing.Size(347, 29);
             this.radio_ForceEnumerationAutomatic.TabIndex = 25;
             this.radio_ForceEnumerationAutomatic.Text = "Automatic (Scan For New Songs)";
             this.radio_ForceEnumerationAutomatic.UseVisualStyleBackColor = true;
@@ -963,9 +990,11 @@
             this.groupBox_HowToEnumerate.Controls.Add(this.nUpDown_ForceEnumerationXMS);
             this.groupBox_HowToEnumerate.Controls.Add(this.radio_ForceEnumerationAutomatic);
             this.groupBox_HowToEnumerate.Controls.Add(this.radio_ForceEnumerationManual);
-            this.groupBox_HowToEnumerate.Location = new System.Drawing.Point(233, 230);
+            this.groupBox_HowToEnumerate.Location = new System.Drawing.Point(466, 442);
+            this.groupBox_HowToEnumerate.Margin = new System.Windows.Forms.Padding(6);
             this.groupBox_HowToEnumerate.Name = "groupBox_HowToEnumerate";
-            this.groupBox_HowToEnumerate.Size = new System.Drawing.Size(293, 77);
+            this.groupBox_HowToEnumerate.Padding = new System.Windows.Forms.Padding(6);
+            this.groupBox_HowToEnumerate.Size = new System.Drawing.Size(586, 148);
             this.groupBox_HowToEnumerate.TabIndex = 47;
             this.groupBox_HowToEnumerate.TabStop = false;
             this.groupBox_HowToEnumerate.Text = "How Do You Want To Enumerate?";
@@ -976,9 +1005,10 @@
             // label_ForceEnumerationXMS
             // 
             this.label_ForceEnumerationXMS.AutoSize = true;
-            this.label_ForceEnumerationXMS.Location = new System.Drawing.Point(164, 24);
+            this.label_ForceEnumerationXMS.Location = new System.Drawing.Point(328, 46);
+            this.label_ForceEnumerationXMS.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label_ForceEnumerationXMS.Name = "label_ForceEnumerationXMS";
-            this.label_ForceEnumerationXMS.Size = new System.Drawing.Size(123, 13);
+            this.label_ForceEnumerationXMS.Size = new System.Drawing.Size(244, 25);
             this.label_ForceEnumerationXMS.TabIndex = 27;
             this.label_ForceEnumerationXMS.Text = "Check Every X Seconds";
             this.label_ForceEnumerationXMS.Visible = false;
@@ -986,25 +1016,14 @@
             // nUpDown_ForceEnumerationXMS
             // 
             this.nUpDown_ForceEnumerationXMS.DecimalPlaces = 1;
-            this.nUpDown_ForceEnumerationXMS.Increment = new decimal(new int[] {
-            5,
-            0,
-            0,
-            65536});
-            this.nUpDown_ForceEnumerationXMS.Location = new System.Drawing.Point(220, 48);
-            this.nUpDown_ForceEnumerationXMS.Maximum = new decimal(new int[] {
-            100000,
-            0,
-            0,
-            0});
+            this.nUpDown_ForceEnumerationXMS.Increment = new decimal(new int[] {5, 0, 0, 65536});
+            this.nUpDown_ForceEnumerationXMS.Location = new System.Drawing.Point(440, 92);
+            this.nUpDown_ForceEnumerationXMS.Margin = new System.Windows.Forms.Padding(6);
+            this.nUpDown_ForceEnumerationXMS.Maximum = new decimal(new int[] {100000, 0, 0, 0});
             this.nUpDown_ForceEnumerationXMS.Name = "nUpDown_ForceEnumerationXMS";
-            this.nUpDown_ForceEnumerationXMS.Size = new System.Drawing.Size(58, 20);
+            this.nUpDown_ForceEnumerationXMS.Size = new System.Drawing.Size(116, 31);
             this.nUpDown_ForceEnumerationXMS.TabIndex = 26;
-            this.nUpDown_ForceEnumerationXMS.Value = new decimal(new int[] {
-            5,
-            0,
-            0,
-            0});
+            this.nUpDown_ForceEnumerationXMS.Value = new decimal(new int[] {5, 0, 0, 0});
             this.nUpDown_ForceEnumerationXMS.Visible = false;
             this.nUpDown_ForceEnumerationXMS.ValueChanged += new System.EventHandler(this.Save_EnumerateEveryXMS);
             // 
@@ -1013,9 +1032,11 @@
             this.groupBox_LoftOffWhen.Controls.Add(this.radio_LoftOffInSong);
             this.groupBox_LoftOffWhen.Controls.Add(this.radio_LoftOffHotkey);
             this.groupBox_LoftOffWhen.Controls.Add(this.radio_LoftAlwaysOff);
-            this.groupBox_LoftOffWhen.Location = new System.Drawing.Point(186, 90);
+            this.groupBox_LoftOffWhen.Location = new System.Drawing.Point(372, 173);
+            this.groupBox_LoftOffWhen.Margin = new System.Windows.Forms.Padding(6);
             this.groupBox_LoftOffWhen.Name = "groupBox_LoftOffWhen";
-            this.groupBox_LoftOffWhen.Size = new System.Drawing.Size(145, 86);
+            this.groupBox_LoftOffWhen.Padding = new System.Windows.Forms.Padding(6);
+            this.groupBox_LoftOffWhen.Size = new System.Drawing.Size(290, 165);
             this.groupBox_LoftOffWhen.TabIndex = 48;
             this.groupBox_LoftOffWhen.TabStop = false;
             this.groupBox_LoftOffWhen.Text = "Toggle Loft Off When";
@@ -1028,9 +1049,11 @@
             this.groupBox_ExtendedRangeWhen.Controls.Add(this.checkBox_FixBadBassTuning);
             this.groupBox_ExtendedRangeWhen.Controls.Add(this.checkBox_ExtendedRangeDrop);
             this.groupBox_ExtendedRangeWhen.Controls.Add(this.listBox_ExtendedRangeTunings);
-            this.groupBox_ExtendedRangeWhen.Location = new System.Drawing.Point(610, 16);
+            this.groupBox_ExtendedRangeWhen.Location = new System.Drawing.Point(1220, 31);
+            this.groupBox_ExtendedRangeWhen.Margin = new System.Windows.Forms.Padding(6);
             this.groupBox_ExtendedRangeWhen.Name = "groupBox_ExtendedRangeWhen";
-            this.groupBox_ExtendedRangeWhen.Size = new System.Drawing.Size(153, 268);
+            this.groupBox_ExtendedRangeWhen.Padding = new System.Windows.Forms.Padding(6);
+            this.groupBox_ExtendedRangeWhen.Size = new System.Drawing.Size(306, 515);
             this.groupBox_ExtendedRangeWhen.TabIndex = 49;
             this.groupBox_ExtendedRangeWhen.TabStop = false;
             this.groupBox_ExtendedRangeWhen.Text = "Enable Extended Range When Low E Is";
@@ -1041,9 +1064,10 @@
             // checkBox_FixBadBassTuning
             // 
             this.checkBox_FixBadBassTuning.AutoSize = true;
-            this.checkBox_FixBadBassTuning.Location = new System.Drawing.Point(6, 228);
+            this.checkBox_FixBadBassTuning.Location = new System.Drawing.Point(12, 438);
+            this.checkBox_FixBadBassTuning.Margin = new System.Windows.Forms.Padding(6);
             this.checkBox_FixBadBassTuning.Name = "checkBox_FixBadBassTuning";
-            this.checkBox_FixBadBassTuning.Size = new System.Drawing.Size(101, 17);
+            this.checkBox_FixBadBassTuning.Size = new System.Drawing.Size(186, 29);
             this.checkBox_FixBadBassTuning.TabIndex = 31;
             this.checkBox_FixBadBassTuning.Text = "Fix Bass Tuning";
             this.checkBox_FixBadBassTuning.UseVisualStyleBackColor = true;
@@ -1052,9 +1076,10 @@
             // checkBox_ExtendedRangeDrop
             // 
             this.checkBox_ExtendedRangeDrop.AutoSize = true;
-            this.checkBox_ExtendedRangeDrop.Location = new System.Drawing.Point(6, 205);
+            this.checkBox_ExtendedRangeDrop.Location = new System.Drawing.Point(12, 394);
+            this.checkBox_ExtendedRangeDrop.Margin = new System.Windows.Forms.Padding(6);
             this.checkBox_ExtendedRangeDrop.Name = "checkBox_ExtendedRangeDrop";
-            this.checkBox_ExtendedRangeDrop.Size = new System.Drawing.Size(97, 17);
+            this.checkBox_ExtendedRangeDrop.Size = new System.Drawing.Size(172, 29);
             this.checkBox_ExtendedRangeDrop.TabIndex = 30;
             this.checkBox_ExtendedRangeDrop.Text = "In Drop Tuning";
             this.checkBox_ExtendedRangeDrop.UseVisualStyleBackColor = true;
@@ -1063,6 +1088,7 @@
             // 
             // groupBox_EnabledMods
             // 
+            this.groupBox_EnabledMods.Controls.Add(this.checkBox_Rocksync);
             this.groupBox_EnabledMods.Controls.Add(this.checkBox_CustomNSPTimer);
             this.groupBox_EnabledMods.Controls.Add(this.checkBox_FixBrokenTones);
             this.groupBox_EnabledMods.Controls.Add(this.checkBox_FixOculusCrash);
@@ -1100,19 +1126,35 @@
             this.groupBox_EnabledMods.Controls.Add(this.checkBox_ForceEnumeration);
             this.groupBox_EnabledMods.Controls.Add(this.checkBox_RemoveSkyline);
             this.groupBox_EnabledMods.Controls.Add(this.checkBox_RemoveHeadstock);
-            this.groupBox_EnabledMods.Location = new System.Drawing.Point(18, 23);
+            this.groupBox_EnabledMods.Location = new System.Drawing.Point(36, 44);
+            this.groupBox_EnabledMods.Margin = new System.Windows.Forms.Padding(6);
             this.groupBox_EnabledMods.Name = "groupBox_EnabledMods";
-            this.groupBox_EnabledMods.Size = new System.Drawing.Size(319, 448);
+            this.groupBox_EnabledMods.Padding = new System.Windows.Forms.Padding(6);
+            this.groupBox_EnabledMods.Size = new System.Drawing.Size(638, 862);
             this.groupBox_EnabledMods.TabIndex = 50;
             this.groupBox_EnabledMods.TabStop = false;
             this.groupBox_EnabledMods.Text = "Enabled Mods";
             // 
+            // checkBox_Rocksync
+            // 
+            this.checkBox_Rocksync.AutoSize = true;
+            this.checkBox_Rocksync.Location = new System.Drawing.Point(288, 815);
+            this.checkBox_Rocksync.Margin = new System.Windows.Forms.Padding(6);
+            this.checkBox_Rocksync.Name = "checkBox_Rocksync";
+            this.checkBox_Rocksync.Size = new System.Drawing.Size(125, 29);
+            this.checkBox_Rocksync.TabIndex = 80;
+            this.checkBox_Rocksync.Text = "Rocksync";
+            this.checkBox_Rocksync.UseVisualStyleBackColor = true;
+            this.checkBox_Rocksync.CheckedChanged += new System.EventHandler(this.Save_Rocksync);
+            this.checkBox_Rocksync.MouseHover += new System.EventHandler(this.ToolTips_Show);
+            // 
             // checkBox_CustomNSPTimer
             // 
             this.checkBox_CustomNSPTimer.AutoSize = true;
-            this.checkBox_CustomNSPTimer.Location = new System.Drawing.Point(11, 424);
+            this.checkBox_CustomNSPTimer.Location = new System.Drawing.Point(22, 815);
+            this.checkBox_CustomNSPTimer.Margin = new System.Windows.Forms.Padding(6);
             this.checkBox_CustomNSPTimer.Name = "checkBox_CustomNSPTimer";
-            this.checkBox_CustomNSPTimer.Size = new System.Drawing.Size(115, 17);
+            this.checkBox_CustomNSPTimer.Size = new System.Drawing.Size(213, 29);
             this.checkBox_CustomNSPTimer.TabIndex = 79;
             this.checkBox_CustomNSPTimer.Text = "Custom NSP Timer";
             this.checkBox_CustomNSPTimer.UseVisualStyleBackColor = true;
@@ -1122,9 +1164,10 @@
             // checkBox_FixBrokenTones
             // 
             this.checkBox_FixBrokenTones.AutoSize = true;
-            this.checkBox_FixBrokenTones.Location = new System.Drawing.Point(144, 400);
+            this.checkBox_FixBrokenTones.Location = new System.Drawing.Point(288, 769);
+            this.checkBox_FixBrokenTones.Margin = new System.Windows.Forms.Padding(6);
             this.checkBox_FixBrokenTones.Name = "checkBox_FixBrokenTones";
-            this.checkBox_FixBrokenTones.Size = new System.Drawing.Size(129, 17);
+            this.checkBox_FixBrokenTones.Size = new System.Drawing.Size(238, 29);
             this.checkBox_FixBrokenTones.TabIndex = 78;
             this.checkBox_FixBrokenTones.Text = "Prevent Buggy Tones";
             this.checkBox_FixBrokenTones.UseVisualStyleBackColor = true;
@@ -1134,9 +1177,10 @@
             // checkBox_FixOculusCrash
             // 
             this.checkBox_FixOculusCrash.AutoSize = true;
-            this.checkBox_FixOculusCrash.Location = new System.Drawing.Point(11, 400);
+            this.checkBox_FixOculusCrash.Location = new System.Drawing.Point(22, 769);
+            this.checkBox_FixOculusCrash.Margin = new System.Windows.Forms.Padding(6);
             this.checkBox_FixOculusCrash.Name = "checkBox_FixOculusCrash";
-            this.checkBox_FixOculusCrash.Size = new System.Drawing.Size(105, 17);
+            this.checkBox_FixOculusCrash.Size = new System.Drawing.Size(196, 29);
             this.checkBox_FixOculusCrash.TabIndex = 77;
             this.checkBox_FixOculusCrash.Text = "Fix Oculus Crash";
             this.checkBox_FixOculusCrash.UseVisualStyleBackColor = true;
@@ -1146,9 +1190,10 @@
             // checkBox_AllowRewind
             // 
             this.checkBox_AllowRewind.AutoSize = true;
-            this.checkBox_AllowRewind.Location = new System.Drawing.Point(144, 378);
+            this.checkBox_AllowRewind.Location = new System.Drawing.Point(288, 727);
+            this.checkBox_AllowRewind.Margin = new System.Windows.Forms.Padding(6);
             this.checkBox_AllowRewind.Name = "checkBox_AllowRewind";
-            this.checkBox_AllowRewind.Size = new System.Drawing.Size(104, 17);
+            this.checkBox_AllowRewind.Size = new System.Drawing.Size(188, 29);
             this.checkBox_AllowRewind.TabIndex = 76;
             this.checkBox_AllowRewind.Text = "Allow Rewinding";
             this.checkBox_AllowRewind.UseVisualStyleBackColor = true;
@@ -1158,9 +1203,10 @@
             // checkBox_EnableLooping
             // 
             this.checkBox_EnableLooping.AutoSize = true;
-            this.checkBox_EnableLooping.Location = new System.Drawing.Point(11, 378);
+            this.checkBox_EnableLooping.Location = new System.Drawing.Point(22, 727);
+            this.checkBox_EnableLooping.Margin = new System.Windows.Forms.Padding(6);
             this.checkBox_EnableLooping.Name = "checkBox_EnableLooping";
-            this.checkBox_EnableLooping.Size = new System.Drawing.Size(100, 17);
+            this.checkBox_EnableLooping.Size = new System.Drawing.Size(181, 29);
             this.checkBox_EnableLooping.TabIndex = 75;
             this.checkBox_EnableLooping.Text = "Enable Looping";
             this.checkBox_EnableLooping.UseVisualStyleBackColor = true;
@@ -1170,9 +1216,10 @@
             // checkBox_UseAltSampleRate_Output
             // 
             this.checkBox_UseAltSampleRate_Output.AutoSize = true;
-            this.checkBox_UseAltSampleRate_Output.Location = new System.Drawing.Point(144, 356);
+            this.checkBox_UseAltSampleRate_Output.Location = new System.Drawing.Point(288, 685);
+            this.checkBox_UseAltSampleRate_Output.Margin = new System.Windows.Forms.Padding(6);
             this.checkBox_UseAltSampleRate_Output.Name = "checkBox_UseAltSampleRate_Output";
-            this.checkBox_UseAltSampleRate_Output.Size = new System.Drawing.Size(152, 17);
+            this.checkBox_UseAltSampleRate_Output.Size = new System.Drawing.Size(286, 29);
             this.checkBox_UseAltSampleRate_Output.TabIndex = 74;
             this.checkBox_UseAltSampleRate_Output.Text = "Alt Sample Rate for Output";
             this.checkBox_UseAltSampleRate_Output.UseVisualStyleBackColor = true;
@@ -1182,9 +1229,10 @@
             // checkBox_LinearRiffRepeater
             // 
             this.checkBox_LinearRiffRepeater.AutoSize = true;
-            this.checkBox_LinearRiffRepeater.Location = new System.Drawing.Point(11, 356);
+            this.checkBox_LinearRiffRepeater.Location = new System.Drawing.Point(22, 685);
+            this.checkBox_LinearRiffRepeater.Margin = new System.Windows.Forms.Padding(6);
             this.checkBox_LinearRiffRepeater.Name = "checkBox_LinearRiffRepeater";
-            this.checkBox_LinearRiffRepeater.Size = new System.Drawing.Size(121, 17);
+            this.checkBox_LinearRiffRepeater.Size = new System.Drawing.Size(223, 29);
             this.checkBox_LinearRiffRepeater.TabIndex = 73;
             this.checkBox_LinearRiffRepeater.Text = "Linear Riff Repeater";
             this.checkBox_LinearRiffRepeater.UseVisualStyleBackColor = true;
@@ -1194,9 +1242,10 @@
             // checkBox_BypassTwoRTCMessageBox
             // 
             this.checkBox_BypassTwoRTCMessageBox.AutoSize = true;
-            this.checkBox_BypassTwoRTCMessageBox.Location = new System.Drawing.Point(144, 334);
+            this.checkBox_BypassTwoRTCMessageBox.Location = new System.Drawing.Point(288, 642);
+            this.checkBox_BypassTwoRTCMessageBox.Margin = new System.Windows.Forms.Padding(6);
             this.checkBox_BypassTwoRTCMessageBox.Name = "checkBox_BypassTwoRTCMessageBox";
-            this.checkBox_BypassTwoRTCMessageBox.Size = new System.Drawing.Size(164, 17);
+            this.checkBox_BypassTwoRTCMessageBox.Size = new System.Drawing.Size(312, 29);
             this.checkBox_BypassTwoRTCMessageBox.TabIndex = 72;
             this.checkBox_BypassTwoRTCMessageBox.Text = "Bypass 2+ RTC MessageBox";
             this.checkBox_BypassTwoRTCMessageBox.UseVisualStyleBackColor = true;
@@ -1206,9 +1255,10 @@
             // checkBox_AllowAudioInBackground
             // 
             this.checkBox_AllowAudioInBackground.AutoSize = true;
-            this.checkBox_AllowAudioInBackground.Location = new System.Drawing.Point(11, 334);
+            this.checkBox_AllowAudioInBackground.Location = new System.Drawing.Point(22, 642);
+            this.checkBox_AllowAudioInBackground.Margin = new System.Windows.Forms.Padding(6);
             this.checkBox_AllowAudioInBackground.Name = "checkBox_AllowAudioInBackground";
-            this.checkBox_AllowAudioInBackground.Size = new System.Drawing.Size(126, 17);
+            this.checkBox_AllowAudioInBackground.Size = new System.Drawing.Size(230, 29);
             this.checkBox_AllowAudioInBackground.TabIndex = 71;
             this.checkBox_AllowAudioInBackground.Text = "Audio In Background";
             this.checkBox_AllowAudioInBackground.UseVisualStyleBackColor = true;
@@ -1218,9 +1268,10 @@
             // checkBox_OverrideInputVolume
             // 
             this.checkBox_OverrideInputVolume.AutoSize = true;
-            this.checkBox_OverrideInputVolume.Location = new System.Drawing.Point(144, 311);
+            this.checkBox_OverrideInputVolume.Location = new System.Drawing.Point(288, 598);
+            this.checkBox_OverrideInputVolume.Margin = new System.Windows.Forms.Padding(6);
             this.checkBox_OverrideInputVolume.Name = "checkBox_OverrideInputVolume";
-            this.checkBox_OverrideInputVolume.Size = new System.Drawing.Size(131, 17);
+            this.checkBox_OverrideInputVolume.Size = new System.Drawing.Size(244, 29);
             this.checkBox_OverrideInputVolume.TabIndex = 70;
             this.checkBox_OverrideInputVolume.Text = "Override Input Volume";
             this.checkBox_OverrideInputVolume.UseVisualStyleBackColor = true;
@@ -1230,9 +1281,10 @@
             // checkBox_RemoveSongPreviews
             // 
             this.checkBox_RemoveSongPreviews.AutoSize = true;
-            this.checkBox_RemoveSongPreviews.Location = new System.Drawing.Point(11, 312);
+            this.checkBox_RemoveSongPreviews.Location = new System.Drawing.Point(22, 600);
+            this.checkBox_RemoveSongPreviews.Margin = new System.Windows.Forms.Padding(6);
             this.checkBox_RemoveSongPreviews.Name = "checkBox_RemoveSongPreviews";
-            this.checkBox_RemoveSongPreviews.Size = new System.Drawing.Size(112, 17);
+            this.checkBox_RemoveSongPreviews.Size = new System.Drawing.Size(203, 29);
             this.checkBox_RemoveSongPreviews.TabIndex = 69;
             this.checkBox_RemoveSongPreviews.Text = "Remove Previews";
             this.checkBox_RemoveSongPreviews.UseVisualStyleBackColor = true;
@@ -1242,9 +1294,10 @@
             // checkBox_ModsLog
             // 
             this.checkBox_ModsLog.AutoSize = true;
-            this.checkBox_ModsLog.Location = new System.Drawing.Point(144, 288);
+            this.checkBox_ModsLog.Location = new System.Drawing.Point(288, 554);
+            this.checkBox_ModsLog.Margin = new System.Windows.Forms.Padding(6);
             this.checkBox_ModsLog.Name = "checkBox_ModsLog";
-            this.checkBox_ModsLog.Size = new System.Drawing.Size(119, 17);
+            this.checkBox_ModsLog.Size = new System.Drawing.Size(217, 29);
             this.checkBox_ModsLog.TabIndex = 68;
             this.checkBox_ModsLog.Text = "Dump RSMods Log";
             this.checkBox_ModsLog.UseVisualStyleBackColor = true;
@@ -1254,9 +1307,10 @@
             // checkBox_ER_SeparateNoteColors
             // 
             this.checkBox_ER_SeparateNoteColors.AutoSize = true;
-            this.checkBox_ER_SeparateNoteColors.Location = new System.Drawing.Point(144, 243);
+            this.checkBox_ER_SeparateNoteColors.Location = new System.Drawing.Point(288, 467);
+            this.checkBox_ER_SeparateNoteColors.Margin = new System.Windows.Forms.Padding(6);
             this.checkBox_ER_SeparateNoteColors.Name = "checkBox_ER_SeparateNoteColors";
-            this.checkBox_ER_SeparateNoteColors.Size = new System.Drawing.Size(127, 17);
+            this.checkBox_ER_SeparateNoteColors.Size = new System.Drawing.Size(237, 29);
             this.checkBox_ER_SeparateNoteColors.TabIndex = 67;
             this.checkBox_ER_SeparateNoteColors.Text = "Separate Note Colors";
             this.checkBox_ER_SeparateNoteColors.UseVisualStyleBackColor = true;
@@ -1265,9 +1319,10 @@
             // checkBox_SecondaryMonitor
             // 
             this.checkBox_SecondaryMonitor.AutoSize = true;
-            this.checkBox_SecondaryMonitor.Location = new System.Drawing.Point(144, 266);
+            this.checkBox_SecondaryMonitor.Location = new System.Drawing.Point(288, 512);
+            this.checkBox_SecondaryMonitor.Margin = new System.Windows.Forms.Padding(6);
             this.checkBox_SecondaryMonitor.Name = "checkBox_SecondaryMonitor";
-            this.checkBox_SecondaryMonitor.Size = new System.Drawing.Size(157, 17);
+            this.checkBox_SecondaryMonitor.Size = new System.Drawing.Size(297, 29);
             this.checkBox_SecondaryMonitor.TabIndex = 55;
             this.checkBox_SecondaryMonitor.Text = "Start On Secondary Monitor";
             this.checkBox_SecondaryMonitor.UseVisualStyleBackColor = true;
@@ -1277,9 +1332,10 @@
             // checkBox_CustomHighway
             // 
             this.checkBox_CustomHighway.AutoSize = true;
-            this.checkBox_CustomHighway.Location = new System.Drawing.Point(11, 266);
+            this.checkBox_CustomHighway.Location = new System.Drawing.Point(22, 512);
+            this.checkBox_CustomHighway.Margin = new System.Windows.Forms.Padding(6);
             this.checkBox_CustomHighway.Name = "checkBox_CustomHighway";
-            this.checkBox_CustomHighway.Size = new System.Drawing.Size(105, 17);
+            this.checkBox_CustomHighway.Size = new System.Drawing.Size(192, 29);
             this.checkBox_CustomHighway.TabIndex = 54;
             this.checkBox_CustomHighway.Text = "Custom Highway";
             this.checkBox_CustomHighway.UseVisualStyleBackColor = true;
@@ -1289,9 +1345,10 @@
             // checkBox_RainbowNotes
             // 
             this.checkBox_RainbowNotes.AutoSize = true;
-            this.checkBox_RainbowNotes.Location = new System.Drawing.Point(144, 61);
+            this.checkBox_RainbowNotes.Location = new System.Drawing.Point(288, 117);
+            this.checkBox_RainbowNotes.Margin = new System.Windows.Forms.Padding(6);
             this.checkBox_RainbowNotes.Name = "checkBox_RainbowNotes";
-            this.checkBox_RainbowNotes.Size = new System.Drawing.Size(99, 17);
+            this.checkBox_RainbowNotes.Size = new System.Drawing.Size(176, 29);
             this.checkBox_RainbowNotes.TabIndex = 53;
             this.checkBox_RainbowNotes.Text = "Rainbow Notes";
             this.checkBox_RainbowNotes.UseVisualStyleBackColor = true;
@@ -1301,9 +1358,10 @@
             // checkBox_BackupProfile
             // 
             this.checkBox_BackupProfile.AutoSize = true;
-            this.checkBox_BackupProfile.Location = new System.Drawing.Point(11, 243);
+            this.checkBox_BackupProfile.Location = new System.Drawing.Point(22, 467);
+            this.checkBox_BackupProfile.Margin = new System.Windows.Forms.Padding(6);
             this.checkBox_BackupProfile.Name = "checkBox_BackupProfile";
-            this.checkBox_BackupProfile.Size = new System.Drawing.Size(95, 17);
+            this.checkBox_BackupProfile.Size = new System.Drawing.Size(170, 29);
             this.checkBox_BackupProfile.TabIndex = 52;
             this.checkBox_BackupProfile.Text = "Backup Profile";
             this.checkBox_BackupProfile.UseVisualStyleBackColor = true;
@@ -1313,9 +1371,10 @@
             // checkBox_ShowCurrentNote
             // 
             this.checkBox_ShowCurrentNote.AutoSize = true;
-            this.checkBox_ShowCurrentNote.Location = new System.Drawing.Point(11, 289);
+            this.checkBox_ShowCurrentNote.Location = new System.Drawing.Point(22, 556);
+            this.checkBox_ShowCurrentNote.Margin = new System.Windows.Forms.Padding(6);
             this.checkBox_ShowCurrentNote.Name = "checkBox_ShowCurrentNote";
-            this.checkBox_ShowCurrentNote.Size = new System.Drawing.Size(116, 17);
+            this.checkBox_ShowCurrentNote.Size = new System.Drawing.Size(212, 29);
             this.checkBox_ShowCurrentNote.TabIndex = 51;
             this.checkBox_ShowCurrentNote.Text = "Show Current Note";
             this.checkBox_ShowCurrentNote.UseVisualStyleBackColor = true;
@@ -1325,9 +1384,10 @@
             // checkBox_useMidiAutoTuning
             // 
             this.checkBox_useMidiAutoTuning.AutoSize = true;
-            this.checkBox_useMidiAutoTuning.Location = new System.Drawing.Point(11, 220);
+            this.checkBox_useMidiAutoTuning.Location = new System.Drawing.Point(22, 423);
+            this.checkBox_useMidiAutoTuning.Margin = new System.Windows.Forms.Padding(6);
             this.checkBox_useMidiAutoTuning.Name = "checkBox_useMidiAutoTuning";
-            this.checkBox_useMidiAutoTuning.Size = new System.Drawing.Size(104, 17);
+            this.checkBox_useMidiAutoTuning.Size = new System.Drawing.Size(186, 29);
             this.checkBox_useMidiAutoTuning.TabIndex = 50;
             this.checkBox_useMidiAutoTuning.Text = "Auto Tune Song";
             this.checkBox_useMidiAutoTuning.UseVisualStyleBackColor = true;
@@ -1337,9 +1397,10 @@
             // checkBox_RiffRepeaterSpeedAboveOneHundred
             // 
             this.checkBox_RiffRepeaterSpeedAboveOneHundred.AutoSize = true;
-            this.checkBox_RiffRepeaterSpeedAboveOneHundred.Location = new System.Drawing.Point(144, 220);
+            this.checkBox_RiffRepeaterSpeedAboveOneHundred.Location = new System.Drawing.Point(288, 423);
+            this.checkBox_RiffRepeaterSpeedAboveOneHundred.Margin = new System.Windows.Forms.Padding(6);
             this.checkBox_RiffRepeaterSpeedAboveOneHundred.Name = "checkBox_RiffRepeaterSpeedAboveOneHundred";
-            this.checkBox_RiffRepeaterSpeedAboveOneHundred.Size = new System.Drawing.Size(159, 17);
+            this.checkBox_RiffRepeaterSpeedAboveOneHundred.Size = new System.Drawing.Size(295, 29);
             this.checkBox_RiffRepeaterSpeedAboveOneHundred.TabIndex = 49;
             this.checkBox_RiffRepeaterSpeedAboveOneHundred.Text = "Allow RR Speed Above 100";
             this.checkBox_RiffRepeaterSpeedAboveOneHundred.UseVisualStyleBackColor = true;
@@ -1349,9 +1410,10 @@
             // checkBox_ScreenShotScores
             // 
             this.checkBox_ScreenShotScores.AutoSize = true;
-            this.checkBox_ScreenShotScores.Location = new System.Drawing.Point(11, 197);
+            this.checkBox_ScreenShotScores.Location = new System.Drawing.Point(22, 379);
+            this.checkBox_ScreenShotScores.Margin = new System.Windows.Forms.Padding(6);
             this.checkBox_ScreenShotScores.Name = "checkBox_ScreenShotScores";
-            this.checkBox_ScreenShotScores.Size = new System.Drawing.Size(116, 17);
+            this.checkBox_ScreenShotScores.Size = new System.Drawing.Size(213, 29);
             this.checkBox_ScreenShotScores.TabIndex = 48;
             this.checkBox_ScreenShotScores.Text = "Screenshot Scores";
             this.checkBox_ScreenShotScores.UseVisualStyleBackColor = true;
@@ -1361,9 +1423,10 @@
             // checkBox_ControlVolume
             // 
             this.checkBox_ControlVolume.AutoSize = true;
-            this.checkBox_ControlVolume.Location = new System.Drawing.Point(144, 197);
+            this.checkBox_ControlVolume.Location = new System.Drawing.Point(288, 379);
+            this.checkBox_ControlVolume.Margin = new System.Windows.Forms.Padding(6);
             this.checkBox_ControlVolume.Name = "checkBox_ControlVolume";
-            this.checkBox_ControlVolume.Size = new System.Drawing.Size(128, 17);
+            this.checkBox_ControlVolume.Size = new System.Drawing.Size(241, 29);
             this.checkBox_ControlVolume.TabIndex = 47;
             this.checkBox_ControlVolume.Text = "Control Game Volume";
             this.checkBox_ControlVolume.UseVisualStyleBackColor = true;
@@ -1374,9 +1437,10 @@
             // checkBox_GuitarSpeak
             // 
             this.checkBox_GuitarSpeak.AutoSize = true;
-            this.checkBox_GuitarSpeak.Location = new System.Drawing.Point(11, 175);
+            this.checkBox_GuitarSpeak.Location = new System.Drawing.Point(22, 337);
+            this.checkBox_GuitarSpeak.Margin = new System.Windows.Forms.Padding(6);
             this.checkBox_GuitarSpeak.Name = "checkBox_GuitarSpeak";
-            this.checkBox_GuitarSpeak.Size = new System.Drawing.Size(88, 17);
+            this.checkBox_GuitarSpeak.Size = new System.Drawing.Size(156, 29);
             this.checkBox_GuitarSpeak.TabIndex = 46;
             this.checkBox_GuitarSpeak.Text = "Guitar Speak";
             this.checkBox_GuitarSpeak.UseVisualStyleBackColor = true;
@@ -1387,9 +1451,10 @@
             // checkBox_RemoveLyrics
             // 
             this.checkBox_RemoveLyrics.AutoSize = true;
-            this.checkBox_RemoveLyrics.Location = new System.Drawing.Point(144, 15);
+            this.checkBox_RemoveLyrics.Location = new System.Drawing.Point(288, 29);
+            this.checkBox_RemoveLyrics.Margin = new System.Windows.Forms.Padding(6);
             this.checkBox_RemoveLyrics.Name = "checkBox_RemoveLyrics";
-            this.checkBox_RemoveLyrics.Size = new System.Drawing.Size(96, 17);
+            this.checkBox_RemoveLyrics.Size = new System.Drawing.Size(173, 29);
             this.checkBox_RemoveLyrics.TabIndex = 45;
             this.checkBox_RemoveLyrics.Text = "Remove Lyrics";
             this.checkBox_RemoveLyrics.UseVisualStyleBackColor = true;
@@ -1400,9 +1465,10 @@
             // checkBox_CustomColors
             // 
             this.checkBox_CustomColors.AutoSize = true;
-            this.checkBox_CustomColors.Location = new System.Drawing.Point(144, 130);
+            this.checkBox_CustomColors.Location = new System.Drawing.Point(288, 250);
+            this.checkBox_CustomColors.Margin = new System.Windows.Forms.Padding(6);
             this.checkBox_CustomColors.Name = "checkBox_CustomColors";
-            this.checkBox_CustomColors.Size = new System.Drawing.Size(123, 17);
+            this.checkBox_CustomColors.Size = new System.Drawing.Size(234, 29);
             this.checkBox_CustomColors.TabIndex = 44;
             this.checkBox_CustomColors.Text = "Custom String Colors";
             this.checkBox_CustomColors.UseVisualStyleBackColor = true;
@@ -1413,9 +1479,10 @@
             // checkBox_RemoveLaneMarkers
             // 
             this.checkBox_RemoveLaneMarkers.AutoSize = true;
-            this.checkBox_RemoveLaneMarkers.Location = new System.Drawing.Point(144, 84);
+            this.checkBox_RemoveLaneMarkers.Location = new System.Drawing.Point(288, 162);
+            this.checkBox_RemoveLaneMarkers.Margin = new System.Windows.Forms.Padding(6);
             this.checkBox_RemoveLaneMarkers.Name = "checkBox_RemoveLaneMarkers";
-            this.checkBox_RemoveLaneMarkers.Size = new System.Drawing.Size(134, 17);
+            this.checkBox_RemoveLaneMarkers.Size = new System.Drawing.Size(248, 29);
             this.checkBox_RemoveLaneMarkers.TabIndex = 43;
             this.checkBox_RemoveLaneMarkers.Text = "Remove Lane Markers";
             this.checkBox_RemoveLaneMarkers.UseVisualStyleBackColor = true;
@@ -1426,9 +1493,10 @@
             // checkBox_RainbowStrings
             // 
             this.checkBox_RainbowStrings.AutoSize = true;
-            this.checkBox_RainbowStrings.Location = new System.Drawing.Point(11, 61);
+            this.checkBox_RainbowStrings.Location = new System.Drawing.Point(22, 117);
+            this.checkBox_RainbowStrings.Margin = new System.Windows.Forms.Padding(6);
             this.checkBox_RainbowStrings.Name = "checkBox_RainbowStrings";
-            this.checkBox_RainbowStrings.Size = new System.Drawing.Size(103, 17);
+            this.checkBox_RainbowStrings.Size = new System.Drawing.Size(187, 29);
             this.checkBox_RainbowStrings.TabIndex = 26;
             this.checkBox_RainbowStrings.Text = "Rainbow Strings";
             this.checkBox_RainbowStrings.UseVisualStyleBackColor = true;
@@ -1442,9 +1510,11 @@
             this.groupBox_Songlist.Controls.Add(this.textBox_NewSonglistName);
             this.groupBox_Songlist.Controls.Add(this.label_ChangeSonglistName);
             this.groupBox_Songlist.Controls.Add(this.listBox_Songlist);
-            this.groupBox_Songlist.Location = new System.Drawing.Point(8, 8);
+            this.groupBox_Songlist.Location = new System.Drawing.Point(16, 15);
+            this.groupBox_Songlist.Margin = new System.Windows.Forms.Padding(6);
             this.groupBox_Songlist.Name = "groupBox_Songlist";
-            this.groupBox_Songlist.Size = new System.Drawing.Size(459, 200);
+            this.groupBox_Songlist.Padding = new System.Windows.Forms.Padding(6);
+            this.groupBox_Songlist.Size = new System.Drawing.Size(918, 385);
             this.groupBox_Songlist.TabIndex = 51;
             this.groupBox_Songlist.TabStop = false;
             this.groupBox_Songlist.Text = "Song Lists";
@@ -1454,13 +1524,12 @@
             // label_SonglistWarning
             // 
             this.label_SonglistWarning.AutoSize = true;
-            this.label_SonglistWarning.Location = new System.Drawing.Point(245, 114);
+            this.label_SonglistWarning.Location = new System.Drawing.Point(490, 219);
+            this.label_SonglistWarning.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label_SonglistWarning.Name = "label_SonglistWarning";
-            this.label_SonglistWarning.Size = new System.Drawing.Size(183, 78);
+            this.label_SonglistWarning.Size = new System.Drawing.Size(372, 150);
             this.label_SonglistWarning.TabIndex = 24;
-            this.label_SonglistWarning.Text = "Unlimited (untested) length available\r\nas the text streches\r\n\r\nWarning: This work" +
-    "s best if your\r\nsonglist name is below 25 characters,\r\nas otherwise the text str" +
-    "eches oddly.\r\n";
+            this.label_SonglistWarning.Text = "Unlimited (untested) length available\r\nas the text streches\r\n\r\nWarning: This work" + "s best if your\r\nsonglist name is below 25 characters,\r\nas otherwise the text str" + "eches oddly.\r\n";
             this.label_SonglistWarning.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // groupBox_Keybindings_MODS
@@ -1481,9 +1550,11 @@
             this.groupBox_Keybindings_MODS.Controls.Add(this.label_ToggleLoftKey);
             this.groupBox_Keybindings_MODS.Controls.Add(this.label_RainbowStringsKey);
             this.groupBox_Keybindings_MODS.Controls.Add(this.listBox_Modlist_MODS);
-            this.groupBox_Keybindings_MODS.Location = new System.Drawing.Point(15, 17);
+            this.groupBox_Keybindings_MODS.Location = new System.Drawing.Point(30, 33);
+            this.groupBox_Keybindings_MODS.Margin = new System.Windows.Forms.Padding(6);
             this.groupBox_Keybindings_MODS.Name = "groupBox_Keybindings_MODS";
-            this.groupBox_Keybindings_MODS.Size = new System.Drawing.Size(701, 230);
+            this.groupBox_Keybindings_MODS.Padding = new System.Windows.Forms.Padding(6);
+            this.groupBox_Keybindings_MODS.Size = new System.Drawing.Size(1402, 442);
             this.groupBox_Keybindings_MODS.TabIndex = 52;
             this.groupBox_Keybindings_MODS.TabStop = false;
             this.groupBox_Keybindings_MODS.Text = "Mod Key Bindings";
@@ -1493,80 +1564,89 @@
             // label_RewindKey
             // 
             this.label_RewindKey.AutoSize = true;
-            this.label_RewindKey.Location = new System.Drawing.Point(464, 197);
+            this.label_RewindKey.Location = new System.Drawing.Point(928, 379);
+            this.label_RewindKey.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label_RewindKey.Name = "label_RewindKey";
-            this.label_RewindKey.Size = new System.Drawing.Size(77, 13);
+            this.label_RewindKey.Size = new System.Drawing.Size(151, 25);
             this.label_RewindKey.TabIndex = 59;
             this.label_RewindKey.Text = "Rewind Song: ";
             // 
             // label_LoopEndKey
             // 
             this.label_LoopEndKey.AutoSize = true;
-            this.label_LoopEndKey.Location = new System.Drawing.Point(464, 180);
+            this.label_LoopEndKey.Location = new System.Drawing.Point(928, 346);
+            this.label_LoopEndKey.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label_LoopEndKey.Name = "label_LoopEndKey";
-            this.label_LoopEndKey.Size = new System.Drawing.Size(56, 13);
+            this.label_LoopEndKey.Size = new System.Drawing.Size(110, 25);
             this.label_LoopEndKey.TabIndex = 58;
             this.label_LoopEndKey.Text = "End Loop:";
             // 
             // label_LoopStartKey
             // 
             this.label_LoopStartKey.AutoSize = true;
-            this.label_LoopStartKey.Location = new System.Drawing.Point(464, 163);
+            this.label_LoopStartKey.Location = new System.Drawing.Point(928, 313);
+            this.label_LoopStartKey.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label_LoopStartKey.Name = "label_LoopStartKey";
-            this.label_LoopStartKey.Size = new System.Drawing.Size(59, 13);
+            this.label_LoopStartKey.Size = new System.Drawing.Size(117, 25);
             this.label_LoopStartKey.TabIndex = 57;
             this.label_LoopStartKey.Text = "Start Loop:";
             // 
             // label_ToggleExtendedRangeKey
             // 
             this.label_ToggleExtendedRangeKey.AutoSize = true;
-            this.label_ToggleExtendedRangeKey.Location = new System.Drawing.Point(464, 146);
+            this.label_ToggleExtendedRangeKey.Location = new System.Drawing.Point(928, 281);
+            this.label_ToggleExtendedRangeKey.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label_ToggleExtendedRangeKey.Name = "label_ToggleExtendedRangeKey";
-            this.label_ToggleExtendedRangeKey.Size = new System.Drawing.Size(129, 13);
+            this.label_ToggleExtendedRangeKey.Size = new System.Drawing.Size(256, 25);
             this.label_ToggleExtendedRangeKey.TabIndex = 56;
             this.label_ToggleExtendedRangeKey.Text = "Toggle Extended Range: ";
             // 
             // label_TuningOffsetKey
             // 
             this.label_TuningOffsetKey.AutoSize = true;
-            this.label_TuningOffsetKey.Location = new System.Drawing.Point(464, 129);
+            this.label_TuningOffsetKey.Location = new System.Drawing.Point(928, 248);
+            this.label_TuningOffsetKey.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label_TuningOffsetKey.Name = "label_TuningOffsetKey";
-            this.label_TuningOffsetKey.Size = new System.Drawing.Size(77, 13);
+            this.label_TuningOffsetKey.Size = new System.Drawing.Size(153, 25);
             this.label_TuningOffsetKey.TabIndex = 55;
             this.label_TuningOffsetKey.Text = "Tuning Offset: ";
             // 
             // label_RainbowNotesKey
             // 
             this.label_RainbowNotesKey.AutoSize = true;
-            this.label_RainbowNotesKey.Location = new System.Drawing.Point(464, 78);
+            this.label_RainbowNotesKey.Location = new System.Drawing.Point(928, 150);
+            this.label_RainbowNotesKey.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label_RainbowNotesKey.Name = "label_RainbowNotesKey";
-            this.label_RainbowNotesKey.Size = new System.Drawing.Size(86, 13);
+            this.label_RainbowNotesKey.Size = new System.Drawing.Size(169, 25);
             this.label_RainbowNotesKey.TabIndex = 54;
             this.label_RainbowNotesKey.Text = "Rainbow Notes: ";
             // 
             // label_RRSpeedKey
             // 
             this.label_RRSpeedKey.AutoSize = true;
-            this.label_RRSpeedKey.Location = new System.Drawing.Point(464, 112);
+            this.label_RRSpeedKey.Location = new System.Drawing.Point(928, 215);
+            this.label_RRSpeedKey.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label_RRSpeedKey.Name = "label_RRSpeedKey";
-            this.label_RRSpeedKey.Size = new System.Drawing.Size(110, 13);
+            this.label_RRSpeedKey.Size = new System.Drawing.Size(218, 25);
             this.label_RRSpeedKey.TabIndex = 53;
             this.label_RRSpeedKey.Text = "Riff Repeater Speed: ";
             // 
             // label_RemoveLyricsKey
             // 
             this.label_RemoveLyricsKey.AutoSize = true;
-            this.label_RemoveLyricsKey.Location = new System.Drawing.Point(464, 95);
+            this.label_RemoveLyricsKey.Location = new System.Drawing.Point(928, 183);
+            this.label_RemoveLyricsKey.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label_RemoveLyricsKey.Name = "label_RemoveLyricsKey";
-            this.label_RemoveLyricsKey.Size = new System.Drawing.Size(83, 13);
+            this.label_RemoveLyricsKey.Size = new System.Drawing.Size(166, 25);
             this.label_RemoveLyricsKey.TabIndex = 30;
             this.label_RemoveLyricsKey.Text = "Remove Lyrics: ";
             // 
             // button_ClearSelectedKeybind_MODS
             // 
-            this.button_ClearSelectedKeybind_MODS.Location = new System.Drawing.Point(222, 130);
+            this.button_ClearSelectedKeybind_MODS.Location = new System.Drawing.Point(444, 250);
+            this.button_ClearSelectedKeybind_MODS.Margin = new System.Windows.Forms.Padding(6);
             this.button_ClearSelectedKeybind_MODS.Name = "button_ClearSelectedKeybind_MODS";
-            this.button_ClearSelectedKeybind_MODS.Size = new System.Drawing.Size(188, 23);
+            this.button_ClearSelectedKeybind_MODS.Size = new System.Drawing.Size(376, 44);
             this.button_ClearSelectedKeybind_MODS.TabIndex = 29;
             this.button_ClearSelectedKeybind_MODS.Text = "Clear Selected Keybind";
             this.button_ClearSelectedKeybind_MODS.UseVisualStyleBackColor = true;
@@ -1574,9 +1654,10 @@
             // 
             // button_ResetModsToDefault
             // 
-            this.button_ResetModsToDefault.Location = new System.Drawing.Point(632, 383);
+            this.button_ResetModsToDefault.Location = new System.Drawing.Point(1264, 737);
+            this.button_ResetModsToDefault.Margin = new System.Windows.Forms.Padding(6);
             this.button_ResetModsToDefault.Name = "button_ResetModsToDefault";
-            this.button_ResetModsToDefault.Size = new System.Drawing.Size(127, 22);
+            this.button_ResetModsToDefault.Size = new System.Drawing.Size(254, 42);
             this.button_ResetModsToDefault.TabIndex = 100000;
             this.button_ResetModsToDefault.Text = "Reset Mods To Default";
             this.button_ResetModsToDefault.UseVisualStyleBackColor = true;
@@ -1586,9 +1667,10 @@
             // 
             // button_String0ColorButton
             // 
-            this.button_String0ColorButton.Location = new System.Drawing.Point(26, 63);
+            this.button_String0ColorButton.Location = new System.Drawing.Point(52, 121);
+            this.button_String0ColorButton.Margin = new System.Windows.Forms.Padding(6);
             this.button_String0ColorButton.Name = "button_String0ColorButton";
-            this.button_String0ColorButton.Size = new System.Drawing.Size(120, 21);
+            this.button_String0ColorButton.Size = new System.Drawing.Size(240, 40);
             this.button_String0ColorButton.TabIndex = 53;
             this.button_String0ColorButton.Text = "E String";
             this.button_String0ColorButton.UseVisualStyleBackColor = true;
@@ -1597,26 +1679,29 @@
             // textBox_String0Color
             // 
             this.textBox_String0Color.Enabled = false;
-            this.textBox_String0Color.Location = new System.Drawing.Point(152, 63);
+            this.textBox_String0Color.Location = new System.Drawing.Point(304, 121);
+            this.textBox_String0Color.Margin = new System.Windows.Forms.Padding(6);
             this.textBox_String0Color.Name = "textBox_String0Color";
             this.textBox_String0Color.ReadOnly = true;
-            this.textBox_String0Color.Size = new System.Drawing.Size(108, 20);
+            this.textBox_String0Color.Size = new System.Drawing.Size(212, 31);
             this.textBox_String0Color.TabIndex = 54;
             // 
             // textBox_String1Color
             // 
             this.textBox_String1Color.Enabled = false;
-            this.textBox_String1Color.Location = new System.Drawing.Point(152, 93);
+            this.textBox_String1Color.Location = new System.Drawing.Point(304, 179);
+            this.textBox_String1Color.Margin = new System.Windows.Forms.Padding(6);
             this.textBox_String1Color.Name = "textBox_String1Color";
             this.textBox_String1Color.ReadOnly = true;
-            this.textBox_String1Color.Size = new System.Drawing.Size(108, 20);
+            this.textBox_String1Color.Size = new System.Drawing.Size(212, 31);
             this.textBox_String1Color.TabIndex = 56;
             // 
             // button_String1ColorButton
             // 
-            this.button_String1ColorButton.Location = new System.Drawing.Point(26, 93);
+            this.button_String1ColorButton.Location = new System.Drawing.Point(52, 179);
+            this.button_String1ColorButton.Margin = new System.Windows.Forms.Padding(6);
             this.button_String1ColorButton.Name = "button_String1ColorButton";
-            this.button_String1ColorButton.Size = new System.Drawing.Size(120, 21);
+            this.button_String1ColorButton.Size = new System.Drawing.Size(240, 40);
             this.button_String1ColorButton.TabIndex = 55;
             this.button_String1ColorButton.Text = "A String";
             this.button_String1ColorButton.UseVisualStyleBackColor = true;
@@ -1625,17 +1710,19 @@
             // textBox_String2Color
             // 
             this.textBox_String2Color.Enabled = false;
-            this.textBox_String2Color.Location = new System.Drawing.Point(152, 122);
+            this.textBox_String2Color.Location = new System.Drawing.Point(304, 235);
+            this.textBox_String2Color.Margin = new System.Windows.Forms.Padding(6);
             this.textBox_String2Color.Name = "textBox_String2Color";
             this.textBox_String2Color.ReadOnly = true;
-            this.textBox_String2Color.Size = new System.Drawing.Size(108, 20);
+            this.textBox_String2Color.Size = new System.Drawing.Size(212, 31);
             this.textBox_String2Color.TabIndex = 58;
             // 
             // button_String2ColorButton
             // 
-            this.button_String2ColorButton.Location = new System.Drawing.Point(26, 122);
+            this.button_String2ColorButton.Location = new System.Drawing.Point(52, 235);
+            this.button_String2ColorButton.Margin = new System.Windows.Forms.Padding(6);
             this.button_String2ColorButton.Name = "button_String2ColorButton";
-            this.button_String2ColorButton.Size = new System.Drawing.Size(120, 21);
+            this.button_String2ColorButton.Size = new System.Drawing.Size(240, 40);
             this.button_String2ColorButton.TabIndex = 57;
             this.button_String2ColorButton.Text = "D String";
             this.button_String2ColorButton.UseVisualStyleBackColor = true;
@@ -1644,17 +1731,19 @@
             // textBox_String3Color
             // 
             this.textBox_String3Color.Enabled = false;
-            this.textBox_String3Color.Location = new System.Drawing.Point(152, 153);
+            this.textBox_String3Color.Location = new System.Drawing.Point(304, 294);
+            this.textBox_String3Color.Margin = new System.Windows.Forms.Padding(6);
             this.textBox_String3Color.Name = "textBox_String3Color";
             this.textBox_String3Color.ReadOnly = true;
-            this.textBox_String3Color.Size = new System.Drawing.Size(108, 20);
+            this.textBox_String3Color.Size = new System.Drawing.Size(212, 31);
             this.textBox_String3Color.TabIndex = 60;
             // 
             // button_String3ColorButton
             // 
-            this.button_String3ColorButton.Location = new System.Drawing.Point(26, 153);
+            this.button_String3ColorButton.Location = new System.Drawing.Point(52, 294);
+            this.button_String3ColorButton.Margin = new System.Windows.Forms.Padding(6);
             this.button_String3ColorButton.Name = "button_String3ColorButton";
-            this.button_String3ColorButton.Size = new System.Drawing.Size(120, 21);
+            this.button_String3ColorButton.Size = new System.Drawing.Size(240, 40);
             this.button_String3ColorButton.TabIndex = 59;
             this.button_String3ColorButton.Text = "G String";
             this.button_String3ColorButton.UseVisualStyleBackColor = true;
@@ -1663,17 +1752,19 @@
             // textBox_String4Color
             // 
             this.textBox_String4Color.Enabled = false;
-            this.textBox_String4Color.Location = new System.Drawing.Point(152, 185);
+            this.textBox_String4Color.Location = new System.Drawing.Point(304, 356);
+            this.textBox_String4Color.Margin = new System.Windows.Forms.Padding(6);
             this.textBox_String4Color.Name = "textBox_String4Color";
             this.textBox_String4Color.ReadOnly = true;
-            this.textBox_String4Color.Size = new System.Drawing.Size(108, 20);
+            this.textBox_String4Color.Size = new System.Drawing.Size(212, 31);
             this.textBox_String4Color.TabIndex = 62;
             // 
             // button_String4ColorButton
             // 
-            this.button_String4ColorButton.Location = new System.Drawing.Point(26, 185);
+            this.button_String4ColorButton.Location = new System.Drawing.Point(52, 356);
+            this.button_String4ColorButton.Margin = new System.Windows.Forms.Padding(6);
             this.button_String4ColorButton.Name = "button_String4ColorButton";
-            this.button_String4ColorButton.Size = new System.Drawing.Size(120, 21);
+            this.button_String4ColorButton.Size = new System.Drawing.Size(240, 40);
             this.button_String4ColorButton.TabIndex = 61;
             this.button_String4ColorButton.Text = "B String";
             this.button_String4ColorButton.UseVisualStyleBackColor = true;
@@ -1682,17 +1773,19 @@
             // textBox_String5Color
             // 
             this.textBox_String5Color.Enabled = false;
-            this.textBox_String5Color.Location = new System.Drawing.Point(152, 215);
+            this.textBox_String5Color.Location = new System.Drawing.Point(304, 413);
+            this.textBox_String5Color.Margin = new System.Windows.Forms.Padding(6);
             this.textBox_String5Color.Name = "textBox_String5Color";
             this.textBox_String5Color.ReadOnly = true;
-            this.textBox_String5Color.Size = new System.Drawing.Size(108, 20);
+            this.textBox_String5Color.Size = new System.Drawing.Size(212, 31);
             this.textBox_String5Color.TabIndex = 64;
             // 
             // button_String5ColorButton
             // 
-            this.button_String5ColorButton.Location = new System.Drawing.Point(26, 215);
+            this.button_String5ColorButton.Location = new System.Drawing.Point(52, 413);
+            this.button_String5ColorButton.Margin = new System.Windows.Forms.Padding(6);
             this.button_String5ColorButton.Name = "button_String5ColorButton";
-            this.button_String5ColorButton.Size = new System.Drawing.Size(120, 21);
+            this.button_String5ColorButton.Size = new System.Drawing.Size(240, 40);
             this.button_String5ColorButton.TabIndex = 63;
             this.button_String5ColorButton.Text = "e String";
             this.button_String5ColorButton.UseVisualStyleBackColor = true;
@@ -1714,9 +1807,11 @@
             this.groupBox_StringColors.Controls.Add(this.button_String1ColorButton);
             this.groupBox_StringColors.Controls.Add(this.textBox_String0Color);
             this.groupBox_StringColors.Controls.Add(this.button_String0ColorButton);
-            this.groupBox_StringColors.Location = new System.Drawing.Point(20, 16);
+            this.groupBox_StringColors.Location = new System.Drawing.Point(40, 31);
+            this.groupBox_StringColors.Margin = new System.Windows.Forms.Padding(6);
             this.groupBox_StringColors.Name = "groupBox_StringColors";
-            this.groupBox_StringColors.Size = new System.Drawing.Size(289, 268);
+            this.groupBox_StringColors.Padding = new System.Windows.Forms.Padding(6);
+            this.groupBox_StringColors.Size = new System.Drawing.Size(578, 515);
             this.groupBox_StringColors.TabIndex = 65;
             this.groupBox_StringColors.TabStop = false;
             this.groupBox_StringColors.Text = "Change String Colors";
@@ -1725,9 +1820,10 @@
             // radio_colorBlindERStringColors
             // 
             this.radio_colorBlindERStringColors.AutoSize = true;
-            this.radio_colorBlindERStringColors.Location = new System.Drawing.Point(138, 14);
+            this.radio_colorBlindERStringColors.Location = new System.Drawing.Point(276, 27);
+            this.radio_colorBlindERStringColors.Margin = new System.Windows.Forms.Padding(6);
             this.radio_colorBlindERStringColors.Name = "radio_colorBlindERStringColors";
-            this.radio_colorBlindERStringColors.Size = new System.Drawing.Size(138, 43);
+            this.radio_colorBlindERStringColors.Size = new System.Drawing.Size(256, 79);
             this.radio_colorBlindERStringColors.TabIndex = 66;
             this.radio_colorBlindERStringColors.TabStop = true;
             this.radio_colorBlindERStringColors.Text = "Colorblind and \r\nExtended Range Mode \r\nColors";
@@ -1740,9 +1836,10 @@
             // 
             this.radio_DefaultStringColors.AutoSize = true;
             this.radio_DefaultStringColors.Checked = true;
-            this.radio_DefaultStringColors.Location = new System.Drawing.Point(26, 27);
+            this.radio_DefaultStringColors.Location = new System.Drawing.Point(52, 52);
+            this.radio_DefaultStringColors.Margin = new System.Windows.Forms.Padding(6);
             this.radio_DefaultStringColors.Name = "radio_DefaultStringColors";
-            this.radio_DefaultStringColors.Size = new System.Drawing.Size(91, 17);
+            this.radio_DefaultStringColors.Size = new System.Drawing.Size(166, 29);
             this.radio_DefaultStringColors.TabIndex = 65;
             this.radio_DefaultStringColors.TabStop = true;
             this.radio_DefaultStringColors.Text = "Default Colors";
@@ -1754,9 +1851,11 @@
             this.groupBox_SetAndForget.BackColor = System.Drawing.Color.Azure;
             this.groupBox_SetAndForget.Controls.Add(this.tabControl_SetAndForget);
             this.groupBox_SetAndForget.Controls.Add(this.button_ResetToDefaultCachePsarc);
-            this.groupBox_SetAndForget.Location = new System.Drawing.Point(6, 11);
+            this.groupBox_SetAndForget.Location = new System.Drawing.Point(12, 21);
+            this.groupBox_SetAndForget.Margin = new System.Windows.Forms.Padding(6);
             this.groupBox_SetAndForget.Name = "groupBox_SetAndForget";
-            this.groupBox_SetAndForget.Size = new System.Drawing.Size(1131, 499);
+            this.groupBox_SetAndForget.Padding = new System.Windows.Forms.Padding(6);
+            this.groupBox_SetAndForget.Size = new System.Drawing.Size(2262, 960);
             this.groupBox_SetAndForget.TabIndex = 68;
             this.groupBox_SetAndForget.TabStop = false;
             this.groupBox_SetAndForget.Text = "Set-and-forget mods";
@@ -1766,10 +1865,11 @@
             this.tabControl_SetAndForget.Controls.Add(this.tabPage_SetAndForget_CustomTunings);
             this.tabControl_SetAndForget.Controls.Add(this.tabPage_SetAndForget_CustomTones);
             this.tabControl_SetAndForget.Controls.Add(this.tabPage_SetAndForget_Misc);
-            this.tabControl_SetAndForget.Location = new System.Drawing.Point(15, 19);
+            this.tabControl_SetAndForget.Location = new System.Drawing.Point(30, 37);
+            this.tabControl_SetAndForget.Margin = new System.Windows.Forms.Padding(6);
             this.tabControl_SetAndForget.Name = "tabControl_SetAndForget";
             this.tabControl_SetAndForget.SelectedIndex = 0;
-            this.tabControl_SetAndForget.Size = new System.Drawing.Size(1088, 448);
+            this.tabControl_SetAndForget.Size = new System.Drawing.Size(2176, 862);
             this.tabControl_SetAndForget.TabIndex = 127;
             // 
             // tabPage_SetAndForget_CustomTunings
@@ -1808,19 +1908,21 @@
             this.tabPage_SetAndForget_CustomTunings.Controls.Add(this.nUpDown_String5);
             this.tabPage_SetAndForget_CustomTunings.Controls.Add(this.nUpDown_String1);
             this.tabPage_SetAndForget_CustomTunings.Controls.Add(this.label_CustomStringTunings);
-            this.tabPage_SetAndForget_CustomTunings.Location = new System.Drawing.Point(4, 22);
+            this.tabPage_SetAndForget_CustomTunings.Location = new System.Drawing.Point(4, 34);
+            this.tabPage_SetAndForget_CustomTunings.Margin = new System.Windows.Forms.Padding(6);
             this.tabPage_SetAndForget_CustomTunings.Name = "tabPage_SetAndForget_CustomTunings";
-            this.tabPage_SetAndForget_CustomTunings.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage_SetAndForget_CustomTunings.Size = new System.Drawing.Size(1080, 422);
+            this.tabPage_SetAndForget_CustomTunings.Padding = new System.Windows.Forms.Padding(6);
+            this.tabPage_SetAndForget_CustomTunings.Size = new System.Drawing.Size(2168, 824);
             this.tabPage_SetAndForget_CustomTunings.TabIndex = 0;
             this.tabPage_SetAndForget_CustomTunings.Text = "Custom Tunings";
             // 
             // label_SongsWithSelectedTuning
             // 
             this.label_SongsWithSelectedTuning.AutoSize = true;
-            this.label_SongsWithSelectedTuning.Location = new System.Drawing.Point(65, 197);
+            this.label_SongsWithSelectedTuning.Location = new System.Drawing.Point(130, 379);
+            this.label_SongsWithSelectedTuning.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label_SongsWithSelectedTuning.Name = "label_SongsWithSelectedTuning";
-            this.label_SongsWithSelectedTuning.Size = new System.Drawing.Size(165, 13);
+            this.label_SongsWithSelectedTuning.Size = new System.Drawing.Size(327, 25);
             this.label_SongsWithSelectedTuning.TabIndex = 116;
             this.label_SongsWithSelectedTuning.Text = "Songs With The Selected Tuning";
             this.label_SongsWithSelectedTuning.Visible = false;
@@ -1828,18 +1930,21 @@
             // listBox_SetAndForget_SongsWithSelectedTuning
             // 
             this.listBox_SetAndForget_SongsWithSelectedTuning.FormattingEnabled = true;
-            this.listBox_SetAndForget_SongsWithSelectedTuning.Location = new System.Drawing.Point(6, 213);
+            this.listBox_SetAndForget_SongsWithSelectedTuning.ItemHeight = 25;
+            this.listBox_SetAndForget_SongsWithSelectedTuning.Location = new System.Drawing.Point(12, 410);
+            this.listBox_SetAndForget_SongsWithSelectedTuning.Margin = new System.Windows.Forms.Padding(6);
             this.listBox_SetAndForget_SongsWithSelectedTuning.Name = "listBox_SetAndForget_SongsWithSelectedTuning";
-            this.listBox_SetAndForget_SongsWithSelectedTuning.Size = new System.Drawing.Size(298, 134);
+            this.listBox_SetAndForget_SongsWithSelectedTuning.Size = new System.Drawing.Size(592, 254);
             this.listBox_SetAndForget_SongsWithSelectedTuning.TabIndex = 115;
             this.listBox_SetAndForget_SongsWithSelectedTuning.Visible = false;
             // 
             // label_SongsWithBadBassTunings
             // 
             this.label_SongsWithBadBassTunings.AutoSize = true;
-            this.label_SongsWithBadBassTunings.Location = new System.Drawing.Point(834, 197);
+            this.label_SongsWithBadBassTunings.Location = new System.Drawing.Point(1668, 379);
+            this.label_SongsWithBadBassTunings.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label_SongsWithBadBassTunings.Name = "label_SongsWithBadBassTunings";
-            this.label_SongsWithBadBassTunings.Size = new System.Drawing.Size(151, 13);
+            this.label_SongsWithBadBassTunings.Size = new System.Drawing.Size(303, 25);
             this.label_SongsWithBadBassTunings.TabIndex = 114;
             this.label_SongsWithBadBassTunings.Text = "Songs With Bad Bass Tunings";
             this.label_SongsWithBadBassTunings.Visible = false;
@@ -1847,35 +1952,40 @@
             // listBox_SetAndForget_SongsWithBadBassTuning
             // 
             this.listBox_SetAndForget_SongsWithBadBassTuning.FormattingEnabled = true;
-            this.listBox_SetAndForget_SongsWithBadBassTuning.Location = new System.Drawing.Point(766, 213);
+            this.listBox_SetAndForget_SongsWithBadBassTuning.ItemHeight = 25;
+            this.listBox_SetAndForget_SongsWithBadBassTuning.Location = new System.Drawing.Point(1532, 410);
+            this.listBox_SetAndForget_SongsWithBadBassTuning.Margin = new System.Windows.Forms.Padding(6);
             this.listBox_SetAndForget_SongsWithBadBassTuning.Name = "listBox_SetAndForget_SongsWithBadBassTuning";
-            this.listBox_SetAndForget_SongsWithBadBassTuning.Size = new System.Drawing.Size(298, 134);
+            this.listBox_SetAndForget_SongsWithBadBassTuning.Size = new System.Drawing.Size(592, 254);
             this.listBox_SetAndForget_SongsWithBadBassTuning.TabIndex = 113;
             this.listBox_SetAndForget_SongsWithBadBassTuning.Visible = false;
             // 
             // label_SetAndForget_MayShowUpAsCustomTuning
             // 
             this.label_SetAndForget_MayShowUpAsCustomTuning.AutoSize = true;
-            this.label_SetAndForget_MayShowUpAsCustomTuning.Location = new System.Drawing.Point(395, 197);
+            this.label_SetAndForget_MayShowUpAsCustomTuning.Location = new System.Drawing.Point(790, 379);
+            this.label_SetAndForget_MayShowUpAsCustomTuning.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label_SetAndForget_MayShowUpAsCustomTuning.Name = "label_SetAndForget_MayShowUpAsCustomTuning";
-            this.label_SetAndForget_MayShowUpAsCustomTuning.Size = new System.Drawing.Size(231, 13);
+            this.label_SetAndForget_MayShowUpAsCustomTuning.Size = new System.Drawing.Size(457, 25);
             this.label_SetAndForget_MayShowUpAsCustomTuning.TabIndex = 112;
             this.label_SetAndForget_MayShowUpAsCustomTuning.Text = "Songs That May Show Up As \"Custom Tuning\"";
             this.label_SetAndForget_MayShowUpAsCustomTuning.Visible = false;
             // 
             // progressBar_FillSongsWithCustomTunings
             // 
-            this.progressBar_FillSongsWithCustomTunings.Location = new System.Drawing.Point(200, 379);
+            this.progressBar_FillSongsWithCustomTunings.Location = new System.Drawing.Point(400, 729);
+            this.progressBar_FillSongsWithCustomTunings.Margin = new System.Windows.Forms.Padding(6);
             this.progressBar_FillSongsWithCustomTunings.Name = "progressBar_FillSongsWithCustomTunings";
-            this.progressBar_FillSongsWithCustomTunings.Size = new System.Drawing.Size(188, 23);
+            this.progressBar_FillSongsWithCustomTunings.Size = new System.Drawing.Size(376, 44);
             this.progressBar_FillSongsWithCustomTunings.TabIndex = 111;
             this.progressBar_FillSongsWithCustomTunings.Visible = false;
             // 
             // button_LoadSongsToWorkOn
             // 
-            this.button_LoadSongsToWorkOn.Location = new System.Drawing.Point(6, 379);
+            this.button_LoadSongsToWorkOn.Location = new System.Drawing.Point(12, 729);
+            this.button_LoadSongsToWorkOn.Margin = new System.Windows.Forms.Padding(6);
             this.button_LoadSongsToWorkOn.Name = "button_LoadSongsToWorkOn";
-            this.button_LoadSongsToWorkOn.Size = new System.Drawing.Size(188, 23);
+            this.button_LoadSongsToWorkOn.Size = new System.Drawing.Size(376, 44);
             this.button_LoadSongsToWorkOn.TabIndex = 110;
             this.button_LoadSongsToWorkOn.Text = "Load Songs To Work On";
             this.button_LoadSongsToWorkOn.UseVisualStyleBackColor = true;
@@ -1885,9 +1995,11 @@
             // listBox_SetAndForget_SongsWithCustomTuning
             // 
             this.listBox_SetAndForget_SongsWithCustomTuning.FormattingEnabled = true;
-            this.listBox_SetAndForget_SongsWithCustomTuning.Location = new System.Drawing.Point(373, 213);
+            this.listBox_SetAndForget_SongsWithCustomTuning.ItemHeight = 25;
+            this.listBox_SetAndForget_SongsWithCustomTuning.Location = new System.Drawing.Point(746, 410);
+            this.listBox_SetAndForget_SongsWithCustomTuning.Margin = new System.Windows.Forms.Padding(6);
             this.listBox_SetAndForget_SongsWithCustomTuning.Name = "listBox_SetAndForget_SongsWithCustomTuning";
-            this.listBox_SetAndForget_SongsWithCustomTuning.Size = new System.Drawing.Size(298, 134);
+            this.listBox_SetAndForget_SongsWithCustomTuning.Size = new System.Drawing.Size(592, 254);
             this.listBox_SetAndForget_SongsWithCustomTuning.TabIndex = 109;
             this.listBox_SetAndForget_SongsWithCustomTuning.Visible = false;
             this.listBox_SetAndForget_SongsWithCustomTuning.SelectedIndexChanged += new System.EventHandler(this.SetForget_LoadCustomTuningFromSong);
@@ -1895,9 +2007,11 @@
             // listBox_Tunings
             // 
             this.listBox_Tunings.FormattingEnabled = true;
-            this.listBox_Tunings.Location = new System.Drawing.Point(6, 6);
+            this.listBox_Tunings.ItemHeight = 25;
+            this.listBox_Tunings.Location = new System.Drawing.Point(12, 12);
+            this.listBox_Tunings.Margin = new System.Windows.Forms.Padding(6);
             this.listBox_Tunings.Name = "listBox_Tunings";
-            this.listBox_Tunings.Size = new System.Drawing.Size(185, 134);
+            this.listBox_Tunings.Size = new System.Drawing.Size(366, 254);
             this.listBox_Tunings.TabIndex = 72;
             this.listBox_Tunings.SelectedIndexChanged += new System.EventHandler(this.SetForget_ListTunings);
             this.listBox_Tunings.MouseLeave += new System.EventHandler(this.ToolTips_Hide);
@@ -1906,31 +2020,35 @@
             // label_UITuningName
             // 
             this.label_UITuningName.AutoSize = true;
-            this.label_UITuningName.Location = new System.Drawing.Point(214, 35);
+            this.label_UITuningName.Location = new System.Drawing.Point(428, 67);
+            this.label_UITuningName.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label_UITuningName.Name = "label_UITuningName";
-            this.label_UITuningName.Size = new System.Drawing.Size(52, 13);
+            this.label_UITuningName.Size = new System.Drawing.Size(100, 25);
             this.label_UITuningName.TabIndex = 83;
             this.label_UITuningName.Text = "UI Name:";
             // 
             // textBox_InternalTuningName
             // 
-            this.textBox_InternalTuningName.Location = new System.Drawing.Point(296, 6);
+            this.textBox_InternalTuningName.Location = new System.Drawing.Point(592, 12);
+            this.textBox_InternalTuningName.Margin = new System.Windows.Forms.Padding(6);
             this.textBox_InternalTuningName.Name = "textBox_InternalTuningName";
-            this.textBox_InternalTuningName.Size = new System.Drawing.Size(100, 20);
+            this.textBox_InternalTuningName.Size = new System.Drawing.Size(196, 31);
             this.textBox_InternalTuningName.TabIndex = 75;
             // 
             // textBox_UIName
             // 
-            this.textBox_UIName.Location = new System.Drawing.Point(296, 32);
+            this.textBox_UIName.Location = new System.Drawing.Point(592, 62);
+            this.textBox_UIName.Margin = new System.Windows.Forms.Padding(6);
             this.textBox_UIName.Name = "textBox_UIName";
-            this.textBox_UIName.Size = new System.Drawing.Size(100, 20);
+            this.textBox_UIName.Size = new System.Drawing.Size(196, 31);
             this.textBox_UIName.TabIndex = 76;
             // 
             // label_CustomTuningHighEStringLetter
             // 
             this.label_CustomTuningHighEStringLetter.AutoSize = true;
-            this.label_CustomTuningHighEStringLetter.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_CustomTuningHighEStringLetter.Location = new System.Drawing.Point(740, 30);
+            this.label_CustomTuningHighEStringLetter.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
+            this.label_CustomTuningHighEStringLetter.Location = new System.Drawing.Point(1480, 58);
+            this.label_CustomTuningHighEStringLetter.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label_CustomTuningHighEStringLetter.Name = "label_CustomTuningHighEStringLetter";
             this.label_CustomTuningHighEStringLetter.Size = new System.Drawing.Size(21, 13);
             this.label_CustomTuningHighEStringLetter.TabIndex = 108;
@@ -1939,17 +2057,19 @@
             // label_InternalTuningName
             // 
             this.label_InternalTuningName.AutoSize = true;
-            this.label_InternalTuningName.Location = new System.Drawing.Point(214, 9);
+            this.label_InternalTuningName.Location = new System.Drawing.Point(428, 17);
+            this.label_InternalTuningName.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label_InternalTuningName.Name = "label_InternalTuningName";
-            this.label_InternalTuningName.Size = new System.Drawing.Size(76, 13);
+            this.label_InternalTuningName.Size = new System.Drawing.Size(151, 25);
             this.label_InternalTuningName.TabIndex = 82;
             this.label_InternalTuningName.Text = "Internal Name:";
             // 
             // label_CustomTuningBStringLetter
             // 
             this.label_CustomTuningBStringLetter.AutoSize = true;
-            this.label_CustomTuningBStringLetter.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_CustomTuningBStringLetter.Location = new System.Drawing.Point(693, 30);
+            this.label_CustomTuningBStringLetter.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
+            this.label_CustomTuningBStringLetter.Location = new System.Drawing.Point(1386, 58);
+            this.label_CustomTuningBStringLetter.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label_CustomTuningBStringLetter.Name = "label_CustomTuningBStringLetter";
             this.label_CustomTuningBStringLetter.Size = new System.Drawing.Size(22, 13);
             this.label_CustomTuningBStringLetter.TabIndex = 107;
@@ -1957,32 +2077,22 @@
             // 
             // nUpDown_UIIndex
             // 
-            this.nUpDown_UIIndex.Location = new System.Drawing.Point(296, 59);
-            this.nUpDown_UIIndex.Maximum = new decimal(new int[] {
-            100000,
-            0,
-            0,
-            0});
-            this.nUpDown_UIIndex.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            -2147483648});
+            this.nUpDown_UIIndex.Location = new System.Drawing.Point(592, 113);
+            this.nUpDown_UIIndex.Margin = new System.Windows.Forms.Padding(6);
+            this.nUpDown_UIIndex.Maximum = new decimal(new int[] {100000, 0, 0, 0});
+            this.nUpDown_UIIndex.Minimum = new decimal(new int[] {1, 0, 0, -2147483648});
             this.nUpDown_UIIndex.Name = "nUpDown_UIIndex";
-            this.nUpDown_UIIndex.Size = new System.Drawing.Size(100, 20);
+            this.nUpDown_UIIndex.Size = new System.Drawing.Size(200, 31);
             this.nUpDown_UIIndex.TabIndex = 84;
-            this.nUpDown_UIIndex.Value = new decimal(new int[] {
-            37500,
-            0,
-            0,
-            0});
+            this.nUpDown_UIIndex.Value = new decimal(new int[] {37500, 0, 0, 0});
             this.nUpDown_UIIndex.Visible = false;
             // 
             // label_CustomTuningGStringLetter
             // 
             this.label_CustomTuningGStringLetter.AutoSize = true;
-            this.label_CustomTuningGStringLetter.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_CustomTuningGStringLetter.Location = new System.Drawing.Point(648, 30);
+            this.label_CustomTuningGStringLetter.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
+            this.label_CustomTuningGStringLetter.Location = new System.Drawing.Point(1296, 58);
+            this.label_CustomTuningGStringLetter.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label_CustomTuningGStringLetter.Name = "label_CustomTuningGStringLetter";
             this.label_CustomTuningGStringLetter.Size = new System.Drawing.Size(23, 13);
             this.label_CustomTuningGStringLetter.TabIndex = 106;
@@ -1990,9 +2100,10 @@
             // 
             // button_AddCustomTunings
             // 
-            this.button_AddCustomTunings.Location = new System.Drawing.Point(887, 379);
+            this.button_AddCustomTunings.Location = new System.Drawing.Point(1774, 729);
+            this.button_AddCustomTunings.Margin = new System.Windows.Forms.Padding(6);
             this.button_AddCustomTunings.Name = "button_AddCustomTunings";
-            this.button_AddCustomTunings.Size = new System.Drawing.Size(187, 40);
+            this.button_AddCustomTunings.Size = new System.Drawing.Size(374, 77);
             this.button_AddCustomTunings.TabIndex = 89;
             this.button_AddCustomTunings.Text = "Add Custom Tunings To Game";
             this.button_AddCustomTunings.UseVisualStyleBackColor = true;
@@ -2003,18 +2114,20 @@
             // label_UIIndex
             // 
             this.label_UIIndex.AutoSize = true;
-            this.label_UIIndex.Location = new System.Drawing.Point(214, 61);
+            this.label_UIIndex.Location = new System.Drawing.Point(428, 117);
+            this.label_UIIndex.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label_UIIndex.Name = "label_UIIndex";
-            this.label_UIIndex.Size = new System.Drawing.Size(50, 13);
+            this.label_UIIndex.Size = new System.Drawing.Size(96, 25);
             this.label_UIIndex.TabIndex = 85;
             this.label_UIIndex.Text = "UI Index:";
             this.label_UIIndex.Visible = false;
             // 
             // button_RemoveTuning
             // 
-            this.button_RemoveTuning.Location = new System.Drawing.Point(588, 61);
+            this.button_RemoveTuning.Location = new System.Drawing.Point(1176, 117);
+            this.button_RemoveTuning.Margin = new System.Windows.Forms.Padding(6);
             this.button_RemoveTuning.Name = "button_RemoveTuning";
-            this.button_RemoveTuning.Size = new System.Drawing.Size(93, 23);
+            this.button_RemoveTuning.Size = new System.Drawing.Size(186, 44);
             this.button_RemoveTuning.TabIndex = 73;
             this.button_RemoveTuning.Text = "Remove Tuning";
             this.button_RemoveTuning.UseVisualStyleBackColor = true;
@@ -2024,9 +2137,10 @@
             // 
             // button_SaveTuningChanges
             // 
-            this.button_SaveTuningChanges.Location = new System.Drawing.Point(687, 62);
+            this.button_SaveTuningChanges.Location = new System.Drawing.Point(1374, 119);
+            this.button_SaveTuningChanges.Margin = new System.Windows.Forms.Padding(6);
             this.button_SaveTuningChanges.Name = "button_SaveTuningChanges";
-            this.button_SaveTuningChanges.Size = new System.Drawing.Size(85, 22);
+            this.button_SaveTuningChanges.Size = new System.Drawing.Size(170, 42);
             this.button_SaveTuningChanges.TabIndex = 88;
             this.button_SaveTuningChanges.Text = "Save Changes";
             this.button_SaveTuningChanges.UseVisualStyleBackColor = true;
@@ -2037,8 +2151,9 @@
             // label_CustomTuningDStringLetter
             // 
             this.label_CustomTuningDStringLetter.AutoSize = true;
-            this.label_CustomTuningDStringLetter.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_CustomTuningDStringLetter.Location = new System.Drawing.Point(603, 30);
+            this.label_CustomTuningDStringLetter.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
+            this.label_CustomTuningDStringLetter.Location = new System.Drawing.Point(1206, 58);
+            this.label_CustomTuningDStringLetter.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label_CustomTuningDStringLetter.Name = "label_CustomTuningDStringLetter";
             this.label_CustomTuningDStringLetter.Size = new System.Drawing.Size(23, 13);
             this.label_CustomTuningDStringLetter.TabIndex = 105;
@@ -2046,9 +2161,10 @@
             // 
             // button_AddTuning
             // 
-            this.button_AddTuning.Location = new System.Drawing.Point(489, 61);
+            this.button_AddTuning.Location = new System.Drawing.Point(978, 117);
+            this.button_AddTuning.Margin = new System.Windows.Forms.Padding(6);
             this.button_AddTuning.Name = "button_AddTuning";
-            this.button_AddTuning.Size = new System.Drawing.Size(93, 23);
+            this.button_AddTuning.Size = new System.Drawing.Size(186, 44);
             this.button_AddTuning.TabIndex = 74;
             this.button_AddTuning.Text = "Add Tuning";
             this.button_AddTuning.UseVisualStyleBackColor = true;
@@ -2060,19 +2176,12 @@
             // 
             this.nUpDown_String0.BackColor = System.Drawing.Color.Tomato;
             this.nUpDown_String0.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.nUpDown_String0.Location = new System.Drawing.Point(514, 9);
-            this.nUpDown_String0.Maximum = new decimal(new int[] {
-            24,
-            0,
-            0,
-            0});
-            this.nUpDown_String0.Minimum = new decimal(new int[] {
-            24,
-            0,
-            0,
-            -2147483648});
+            this.nUpDown_String0.Location = new System.Drawing.Point(1028, 17);
+            this.nUpDown_String0.Margin = new System.Windows.Forms.Padding(6);
+            this.nUpDown_String0.Maximum = new decimal(new int[] {24, 0, 0, 0});
+            this.nUpDown_String0.Minimum = new decimal(new int[] {24, 0, 0, -2147483648});
             this.nUpDown_String0.Name = "nUpDown_String0";
-            this.nUpDown_String0.Size = new System.Drawing.Size(39, 20);
+            this.nUpDown_String0.Size = new System.Drawing.Size(78, 31);
             this.nUpDown_String0.TabIndex = 86;
             this.nUpDown_String0.ValueChanged += new System.EventHandler(this.SetForget_TuningOffsets);
             this.nUpDown_String0.MouseLeave += new System.EventHandler(this.ToolTips_Hide);
@@ -2081,8 +2190,9 @@
             // label_CustomTuningAStringLetter
             // 
             this.label_CustomTuningAStringLetter.AutoSize = true;
-            this.label_CustomTuningAStringLetter.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_CustomTuningAStringLetter.Location = new System.Drawing.Point(560, 30);
+            this.label_CustomTuningAStringLetter.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
+            this.label_CustomTuningAStringLetter.Location = new System.Drawing.Point(1120, 58);
+            this.label_CustomTuningAStringLetter.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label_CustomTuningAStringLetter.Name = "label_CustomTuningAStringLetter";
             this.label_CustomTuningAStringLetter.Size = new System.Drawing.Size(22, 13);
             this.label_CustomTuningAStringLetter.TabIndex = 104;
@@ -2091,19 +2201,12 @@
             // nUpDown_String2
             // 
             this.nUpDown_String2.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.nUpDown_String2.Location = new System.Drawing.Point(604, 9);
-            this.nUpDown_String2.Maximum = new decimal(new int[] {
-            24,
-            0,
-            0,
-            0});
-            this.nUpDown_String2.Minimum = new decimal(new int[] {
-            24,
-            0,
-            0,
-            -2147483648});
+            this.nUpDown_String2.Location = new System.Drawing.Point(1208, 17);
+            this.nUpDown_String2.Margin = new System.Windows.Forms.Padding(6);
+            this.nUpDown_String2.Maximum = new decimal(new int[] {24, 0, 0, 0});
+            this.nUpDown_String2.Minimum = new decimal(new int[] {24, 0, 0, -2147483648});
             this.nUpDown_String2.Name = "nUpDown_String2";
-            this.nUpDown_String2.Size = new System.Drawing.Size(39, 20);
+            this.nUpDown_String2.Size = new System.Drawing.Size(78, 31);
             this.nUpDown_String2.TabIndex = 77;
             this.nUpDown_String2.ValueChanged += new System.EventHandler(this.SetForget_TuningOffsets);
             this.nUpDown_String2.MouseLeave += new System.EventHandler(this.ToolTips_Hide);
@@ -2112,8 +2215,9 @@
             // label_CustomTuningLowEStringLetter
             // 
             this.label_CustomTuningLowEStringLetter.AutoSize = true;
-            this.label_CustomTuningLowEStringLetter.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_CustomTuningLowEStringLetter.Location = new System.Drawing.Point(514, 30);
+            this.label_CustomTuningLowEStringLetter.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
+            this.label_CustomTuningLowEStringLetter.Location = new System.Drawing.Point(1028, 58);
+            this.label_CustomTuningLowEStringLetter.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label_CustomTuningLowEStringLetter.Name = "label_CustomTuningLowEStringLetter";
             this.label_CustomTuningLowEStringLetter.Size = new System.Drawing.Size(22, 13);
             this.label_CustomTuningLowEStringLetter.TabIndex = 103;
@@ -2122,19 +2226,12 @@
             // nUpDown_String3
             // 
             this.nUpDown_String3.BackColor = System.Drawing.Color.DarkOrange;
-            this.nUpDown_String3.Location = new System.Drawing.Point(649, 9);
-            this.nUpDown_String3.Maximum = new decimal(new int[] {
-            24,
-            0,
-            0,
-            0});
-            this.nUpDown_String3.Minimum = new decimal(new int[] {
-            24,
-            0,
-            0,
-            -2147483648});
+            this.nUpDown_String3.Location = new System.Drawing.Point(1298, 17);
+            this.nUpDown_String3.Margin = new System.Windows.Forms.Padding(6);
+            this.nUpDown_String3.Maximum = new decimal(new int[] {24, 0, 0, 0});
+            this.nUpDown_String3.Minimum = new decimal(new int[] {24, 0, 0, -2147483648});
             this.nUpDown_String3.Name = "nUpDown_String3";
-            this.nUpDown_String3.Size = new System.Drawing.Size(39, 20);
+            this.nUpDown_String3.Size = new System.Drawing.Size(78, 31);
             this.nUpDown_String3.TabIndex = 78;
             this.nUpDown_String3.ValueChanged += new System.EventHandler(this.SetForget_TuningOffsets);
             this.nUpDown_String3.MouseLeave += new System.EventHandler(this.ToolTips_Hide);
@@ -2143,19 +2240,12 @@
             // nUpDown_String4
             // 
             this.nUpDown_String4.BackColor = System.Drawing.Color.GreenYellow;
-            this.nUpDown_String4.Location = new System.Drawing.Point(694, 9);
-            this.nUpDown_String4.Maximum = new decimal(new int[] {
-            24,
-            0,
-            0,
-            0});
-            this.nUpDown_String4.Minimum = new decimal(new int[] {
-            24,
-            0,
-            0,
-            -2147483648});
+            this.nUpDown_String4.Location = new System.Drawing.Point(1388, 17);
+            this.nUpDown_String4.Margin = new System.Windows.Forms.Padding(6);
+            this.nUpDown_String4.Maximum = new decimal(new int[] {24, 0, 0, 0});
+            this.nUpDown_String4.Minimum = new decimal(new int[] {24, 0, 0, -2147483648});
             this.nUpDown_String4.Name = "nUpDown_String4";
-            this.nUpDown_String4.Size = new System.Drawing.Size(39, 20);
+            this.nUpDown_String4.Size = new System.Drawing.Size(78, 31);
             this.nUpDown_String4.TabIndex = 79;
             this.nUpDown_String4.ValueChanged += new System.EventHandler(this.SetForget_TuningOffsets);
             this.nUpDown_String4.MouseLeave += new System.EventHandler(this.ToolTips_Hide);
@@ -2164,19 +2254,12 @@
             // nUpDown_String5
             // 
             this.nUpDown_String5.BackColor = System.Drawing.Color.MediumPurple;
-            this.nUpDown_String5.Location = new System.Drawing.Point(739, 9);
-            this.nUpDown_String5.Maximum = new decimal(new int[] {
-            24,
-            0,
-            0,
-            0});
-            this.nUpDown_String5.Minimum = new decimal(new int[] {
-            24,
-            0,
-            0,
-            -2147483648});
+            this.nUpDown_String5.Location = new System.Drawing.Point(1478, 17);
+            this.nUpDown_String5.Margin = new System.Windows.Forms.Padding(6);
+            this.nUpDown_String5.Maximum = new decimal(new int[] {24, 0, 0, 0});
+            this.nUpDown_String5.Minimum = new decimal(new int[] {24, 0, 0, -2147483648});
             this.nUpDown_String5.Name = "nUpDown_String5";
-            this.nUpDown_String5.Size = new System.Drawing.Size(39, 20);
+            this.nUpDown_String5.Size = new System.Drawing.Size(78, 31);
             this.nUpDown_String5.TabIndex = 80;
             this.nUpDown_String5.ValueChanged += new System.EventHandler(this.SetForget_TuningOffsets);
             this.nUpDown_String5.MouseLeave += new System.EventHandler(this.ToolTips_Hide);
@@ -2184,20 +2267,13 @@
             // 
             // nUpDown_String1
             // 
-            this.nUpDown_String1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.nUpDown_String1.Location = new System.Drawing.Point(559, 9);
-            this.nUpDown_String1.Maximum = new decimal(new int[] {
-            24,
-            0,
-            0,
-            0});
-            this.nUpDown_String1.Minimum = new decimal(new int[] {
-            24,
-            0,
-            0,
-            -2147483648});
+            this.nUpDown_String1.BackColor = System.Drawing.Color.FromArgb(((int) (((byte) (255)))), ((int) (((byte) (255)))), ((int) (((byte) (128)))));
+            this.nUpDown_String1.Location = new System.Drawing.Point(1118, 17);
+            this.nUpDown_String1.Margin = new System.Windows.Forms.Padding(6);
+            this.nUpDown_String1.Maximum = new decimal(new int[] {24, 0, 0, 0});
+            this.nUpDown_String1.Minimum = new decimal(new int[] {24, 0, 0, -2147483648});
             this.nUpDown_String1.Name = "nUpDown_String1";
-            this.nUpDown_String1.Size = new System.Drawing.Size(39, 20);
+            this.nUpDown_String1.Size = new System.Drawing.Size(78, 31);
             this.nUpDown_String1.TabIndex = 81;
             this.nUpDown_String1.ValueChanged += new System.EventHandler(this.SetForget_TuningOffsets);
             this.nUpDown_String1.MouseLeave += new System.EventHandler(this.ToolTips_Hide);
@@ -2206,9 +2282,10 @@
             // label_CustomStringTunings
             // 
             this.label_CustomStringTunings.AutoSize = true;
-            this.label_CustomStringTunings.Location = new System.Drawing.Point(456, 11);
+            this.label_CustomStringTunings.Location = new System.Drawing.Point(912, 21);
+            this.label_CustomStringTunings.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label_CustomStringTunings.Name = "label_CustomStringTunings";
-            this.label_CustomStringTunings.Size = new System.Drawing.Size(42, 13);
+            this.label_CustomStringTunings.Size = new System.Drawing.Size(85, 25);
             this.label_CustomStringTunings.TabIndex = 87;
             this.label_CustomStringTunings.Text = "Strings:";
             // 
@@ -2219,19 +2296,22 @@
             this.tabPage_SetAndForget_CustomTones.Controls.Add(this.groupBox_CustomGuitarcadeTones);
             this.tabPage_SetAndForget_CustomTones.Controls.Add(this.button_LoadTones);
             this.tabPage_SetAndForget_CustomTones.Controls.Add(this.groupBox_CustomProfileTones);
-            this.tabPage_SetAndForget_CustomTones.Location = new System.Drawing.Point(4, 22);
+            this.tabPage_SetAndForget_CustomTones.Location = new System.Drawing.Point(4, 34);
+            this.tabPage_SetAndForget_CustomTones.Margin = new System.Windows.Forms.Padding(6);
             this.tabPage_SetAndForget_CustomTones.Name = "tabPage_SetAndForget_CustomTones";
-            this.tabPage_SetAndForget_CustomTones.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage_SetAndForget_CustomTones.Size = new System.Drawing.Size(1080, 422);
+            this.tabPage_SetAndForget_CustomTones.Padding = new System.Windows.Forms.Padding(6);
+            this.tabPage_SetAndForget_CustomTones.Size = new System.Drawing.Size(2168, 824);
             this.tabPage_SetAndForget_CustomTones.TabIndex = 1;
             this.tabPage_SetAndForget_CustomTones.Text = "Custom Tones";
             // 
             // listBox_ProfileTones
             // 
             this.listBox_ProfileTones.FormattingEnabled = true;
-            this.listBox_ProfileTones.Location = new System.Drawing.Point(9, 84);
+            this.listBox_ProfileTones.ItemHeight = 25;
+            this.listBox_ProfileTones.Location = new System.Drawing.Point(18, 162);
+            this.listBox_ProfileTones.Margin = new System.Windows.Forms.Padding(6);
             this.listBox_ProfileTones.Name = "listBox_ProfileTones";
-            this.listBox_ProfileTones.Size = new System.Drawing.Size(184, 134);
+            this.listBox_ProfileTones.Size = new System.Drawing.Size(364, 254);
             this.listBox_ProfileTones.TabIndex = 98;
             this.listBox_ProfileTones.MouseLeave += new System.EventHandler(this.ToolTips_Hide);
             this.listBox_ProfileTones.MouseHover += new System.EventHandler(this.ToolTips_Show);
@@ -2249,9 +2329,11 @@
             this.groupBox_CustomGuitarcadeTones.Controls.Add(this.radio_HarmonicHeistTone);
             this.groupBox_CustomGuitarcadeTones.Controls.Add(this.button_AssignNewGuitarArcadeTone);
             this.groupBox_CustomGuitarcadeTones.Controls.Add(this.radio_HurtlinHurdlesTone);
-            this.groupBox_CustomGuitarcadeTones.Location = new System.Drawing.Point(217, 120);
+            this.groupBox_CustomGuitarcadeTones.Location = new System.Drawing.Point(434, 231);
+            this.groupBox_CustomGuitarcadeTones.Margin = new System.Windows.Forms.Padding(6);
             this.groupBox_CustomGuitarcadeTones.Name = "groupBox_CustomGuitarcadeTones";
-            this.groupBox_CustomGuitarcadeTones.Size = new System.Drawing.Size(617, 188);
+            this.groupBox_CustomGuitarcadeTones.Padding = new System.Windows.Forms.Padding(6);
+            this.groupBox_CustomGuitarcadeTones.Size = new System.Drawing.Size(1234, 362);
             this.groupBox_CustomGuitarcadeTones.TabIndex = 126;
             this.groupBox_CustomGuitarcadeTones.TabStop = false;
             this.groupBox_CustomGuitarcadeTones.Text = "Custom Guitarcade Tones";
@@ -2260,9 +2342,10 @@
             // 
             this.radio_TempleOfBendsTone.AutoSize = true;
             this.radio_TempleOfBendsTone.Checked = true;
-            this.radio_TempleOfBendsTone.Location = new System.Drawing.Point(6, 19);
+            this.radio_TempleOfBendsTone.Location = new System.Drawing.Point(12, 37);
+            this.radio_TempleOfBendsTone.Margin = new System.Windows.Forms.Padding(6);
             this.radio_TempleOfBendsTone.Name = "radio_TempleOfBendsTone";
-            this.radio_TempleOfBendsTone.Size = new System.Drawing.Size(276, 17);
+            this.radio_TempleOfBendsTone.Size = new System.Drawing.Size(533, 29);
             this.radio_TempleOfBendsTone.TabIndex = 115;
             this.radio_TempleOfBendsTone.TabStop = true;
             this.radio_TempleOfBendsTone.Text = "Set Highlighted Tone As New Temple of Bends Tone";
@@ -2271,9 +2354,10 @@
             // radio_ScaleWarriorsTone
             // 
             this.radio_ScaleWarriorsTone.AutoSize = true;
-            this.radio_ScaleWarriorsTone.Location = new System.Drawing.Point(6, 42);
+            this.radio_ScaleWarriorsTone.Location = new System.Drawing.Point(12, 81);
+            this.radio_ScaleWarriorsTone.Margin = new System.Windows.Forms.Padding(6);
             this.radio_ScaleWarriorsTone.Name = "radio_ScaleWarriorsTone";
-            this.radio_ScaleWarriorsTone.Size = new System.Drawing.Size(265, 17);
+            this.radio_ScaleWarriorsTone.Size = new System.Drawing.Size(512, 29);
             this.radio_ScaleWarriorsTone.TabIndex = 116;
             this.radio_ScaleWarriorsTone.Text = "Set Highlighted Tone As New Scale Warriors Tone";
             this.radio_ScaleWarriorsTone.UseVisualStyleBackColor = true;
@@ -2281,9 +2365,10 @@
             // radio_GoneWailinTone
             // 
             this.radio_GoneWailinTone.AutoSize = true;
-            this.radio_GoneWailinTone.Location = new System.Drawing.Point(344, 111);
+            this.radio_GoneWailinTone.Location = new System.Drawing.Point(688, 213);
+            this.radio_GoneWailinTone.Margin = new System.Windows.Forms.Padding(6);
             this.radio_GoneWailinTone.Name = "radio_GoneWailinTone";
-            this.radio_GoneWailinTone.Size = new System.Drawing.Size(256, 17);
+            this.radio_GoneWailinTone.Size = new System.Drawing.Size(492, 29);
             this.radio_GoneWailinTone.TabIndex = 124;
             this.radio_GoneWailinTone.Text = "Set Highlighted Tone As New Gone Wailin\' Tone";
             this.radio_GoneWailinTone.UseVisualStyleBackColor = true;
@@ -2291,9 +2376,10 @@
             // radio_StringsSkipSaloonTone
             // 
             this.radio_StringsSkipSaloonTone.AutoSize = true;
-            this.radio_StringsSkipSaloonTone.Location = new System.Drawing.Point(6, 65);
+            this.radio_StringsSkipSaloonTone.Location = new System.Drawing.Point(12, 125);
+            this.radio_StringsSkipSaloonTone.Margin = new System.Windows.Forms.Padding(6);
             this.radio_StringsSkipSaloonTone.Name = "radio_StringsSkipSaloonTone";
-            this.radio_StringsSkipSaloonTone.Size = new System.Drawing.Size(283, 17);
+            this.radio_StringsSkipSaloonTone.Size = new System.Drawing.Size(548, 29);
             this.radio_StringsSkipSaloonTone.TabIndex = 117;
             this.radio_StringsSkipSaloonTone.Text = "Set Highlighted Tone As New String Skip Saloon Tone";
             this.radio_StringsSkipSaloonTone.UseVisualStyleBackColor = true;
@@ -2301,9 +2387,10 @@
             // radio_RainbowLaserTone
             // 
             this.radio_RainbowLaserTone.AutoSize = true;
-            this.radio_RainbowLaserTone.Location = new System.Drawing.Point(344, 88);
+            this.radio_RainbowLaserTone.Location = new System.Drawing.Point(688, 169);
+            this.radio_RainbowLaserTone.Margin = new System.Windows.Forms.Padding(6);
             this.radio_RainbowLaserTone.Name = "radio_RainbowLaserTone";
-            this.radio_RainbowLaserTone.Size = new System.Drawing.Size(267, 17);
+            this.radio_RainbowLaserTone.Size = new System.Drawing.Size(514, 29);
             this.radio_RainbowLaserTone.TabIndex = 123;
             this.radio_RainbowLaserTone.Text = "Set Highlighted Tone As New Rainbow Laser Tone";
             this.radio_RainbowLaserTone.UseVisualStyleBackColor = true;
@@ -2311,9 +2398,10 @@
             // radio_ScaleRacerTone
             // 
             this.radio_ScaleRacerTone.AutoSize = true;
-            this.radio_ScaleRacerTone.Location = new System.Drawing.Point(6, 88);
+            this.radio_ScaleRacerTone.Location = new System.Drawing.Point(12, 169);
+            this.radio_ScaleRacerTone.Margin = new System.Windows.Forms.Padding(6);
             this.radio_ScaleRacerTone.Name = "radio_ScaleRacerTone";
-            this.radio_ScaleRacerTone.Size = new System.Drawing.Size(255, 17);
+            this.radio_ScaleRacerTone.Size = new System.Drawing.Size(488, 29);
             this.radio_ScaleRacerTone.TabIndex = 118;
             this.radio_ScaleRacerTone.Text = "Set Highlighted Tone As New Scale Racer Tone";
             this.radio_ScaleRacerTone.UseVisualStyleBackColor = true;
@@ -2321,9 +2409,10 @@
             // radio_DucksReduxTone
             // 
             this.radio_DucksReduxTone.AutoSize = true;
-            this.radio_DucksReduxTone.Location = new System.Drawing.Point(344, 65);
+            this.radio_DucksReduxTone.Location = new System.Drawing.Point(688, 125);
+            this.radio_DucksReduxTone.Margin = new System.Windows.Forms.Padding(6);
             this.radio_DucksReduxTone.Name = "radio_DucksReduxTone";
-            this.radio_DucksReduxTone.Size = new System.Drawing.Size(261, 17);
+            this.radio_DucksReduxTone.Size = new System.Drawing.Size(499, 29);
             this.radio_DucksReduxTone.TabIndex = 122;
             this.radio_DucksReduxTone.Text = "Set Highlighted Tone As New Ducks Redux Tone";
             this.radio_DucksReduxTone.UseVisualStyleBackColor = true;
@@ -2331,9 +2420,10 @@
             // radio_NinjaSlideNTone
             // 
             this.radio_NinjaSlideNTone.AutoSize = true;
-            this.radio_NinjaSlideNTone.Location = new System.Drawing.Point(6, 111);
+            this.radio_NinjaSlideNTone.Location = new System.Drawing.Point(12, 213);
+            this.radio_NinjaSlideNTone.Margin = new System.Windows.Forms.Padding(6);
             this.radio_NinjaSlideNTone.Name = "radio_NinjaSlideNTone";
-            this.radio_NinjaSlideNTone.Size = new System.Drawing.Size(257, 17);
+            this.radio_NinjaSlideNTone.Size = new System.Drawing.Size(495, 29);
             this.radio_NinjaSlideNTone.TabIndex = 119;
             this.radio_NinjaSlideNTone.Text = "Set Highlighted Tone As New Ninja Slide N Tone";
             this.radio_NinjaSlideNTone.UseVisualStyleBackColor = true;
@@ -2341,18 +2431,20 @@
             // radio_HarmonicHeistTone
             // 
             this.radio_HarmonicHeistTone.AutoSize = true;
-            this.radio_HarmonicHeistTone.Location = new System.Drawing.Point(344, 43);
+            this.radio_HarmonicHeistTone.Location = new System.Drawing.Point(688, 83);
+            this.radio_HarmonicHeistTone.Margin = new System.Windows.Forms.Padding(6);
             this.radio_HarmonicHeistTone.Name = "radio_HarmonicHeistTone";
-            this.radio_HarmonicHeistTone.Size = new System.Drawing.Size(268, 17);
+            this.radio_HarmonicHeistTone.Size = new System.Drawing.Size(517, 29);
             this.radio_HarmonicHeistTone.TabIndex = 121;
             this.radio_HarmonicHeistTone.Text = "Set Highlighted Tone As New Harmonic Heist Tone";
             this.radio_HarmonicHeistTone.UseVisualStyleBackColor = true;
             // 
             // button_AssignNewGuitarArcadeTone
             // 
-            this.button_AssignNewGuitarArcadeTone.Location = new System.Drawing.Point(6, 147);
+            this.button_AssignNewGuitarArcadeTone.Location = new System.Drawing.Point(12, 283);
+            this.button_AssignNewGuitarArcadeTone.Margin = new System.Windows.Forms.Padding(6);
             this.button_AssignNewGuitarArcadeTone.Name = "button_AssignNewGuitarArcadeTone";
-            this.button_AssignNewGuitarArcadeTone.Size = new System.Drawing.Size(224, 35);
+            this.button_AssignNewGuitarArcadeTone.Size = new System.Drawing.Size(448, 67);
             this.button_AssignNewGuitarArcadeTone.TabIndex = 114;
             this.button_AssignNewGuitarArcadeTone.Text = "Assign Tone As New GuitarArcade Default";
             this.button_AssignNewGuitarArcadeTone.UseVisualStyleBackColor = true;
@@ -2361,18 +2453,20 @@
             // radio_HurtlinHurdlesTone
             // 
             this.radio_HurtlinHurdlesTone.AutoSize = true;
-            this.radio_HurtlinHurdlesTone.Location = new System.Drawing.Point(344, 20);
+            this.radio_HurtlinHurdlesTone.Location = new System.Drawing.Point(688, 38);
+            this.radio_HurtlinHurdlesTone.Margin = new System.Windows.Forms.Padding(6);
             this.radio_HurtlinHurdlesTone.Name = "radio_HurtlinHurdlesTone";
-            this.radio_HurtlinHurdlesTone.Size = new System.Drawing.Size(267, 17);
+            this.radio_HurtlinHurdlesTone.Size = new System.Drawing.Size(517, 29);
             this.radio_HurtlinHurdlesTone.TabIndex = 120;
             this.radio_HurtlinHurdlesTone.Text = "Set Highlighted Tone As New Hurtlin\' Hurdles Tone";
             this.radio_HurtlinHurdlesTone.UseVisualStyleBackColor = true;
             // 
             // button_LoadTones
             // 
-            this.button_LoadTones.Location = new System.Drawing.Point(6, 34);
+            this.button_LoadTones.Location = new System.Drawing.Point(12, 65);
+            this.button_LoadTones.Margin = new System.Windows.Forms.Padding(6);
             this.button_LoadTones.Name = "button_LoadTones";
-            this.button_LoadTones.Size = new System.Drawing.Size(187, 35);
+            this.button_LoadTones.Size = new System.Drawing.Size(374, 67);
             this.button_LoadTones.TabIndex = 99;
             this.button_LoadTones.Text = "Load Tones From Profile";
             this.button_LoadTones.UseVisualStyleBackColor = true;
@@ -2386,9 +2480,11 @@
             this.groupBox_CustomProfileTones.Controls.Add(this.radio_DefaultRhythmTone);
             this.groupBox_CustomProfileTones.Controls.Add(this.radio_DefaultBassTone);
             this.groupBox_CustomProfileTones.Controls.Add(this.button_AssignNewDefaultTone);
-            this.groupBox_CustomProfileTones.Location = new System.Drawing.Point(217, 8);
+            this.groupBox_CustomProfileTones.Location = new System.Drawing.Point(434, 15);
+            this.groupBox_CustomProfileTones.Margin = new System.Windows.Forms.Padding(6);
             this.groupBox_CustomProfileTones.Name = "groupBox_CustomProfileTones";
-            this.groupBox_CustomProfileTones.Size = new System.Drawing.Size(604, 95);
+            this.groupBox_CustomProfileTones.Padding = new System.Windows.Forms.Padding(6);
+            this.groupBox_CustomProfileTones.Size = new System.Drawing.Size(1208, 183);
             this.groupBox_CustomProfileTones.TabIndex = 128;
             this.groupBox_CustomProfileTones.TabStop = false;
             this.groupBox_CustomProfileTones.Text = "Custom Default Tones";
@@ -2397,9 +2493,10 @@
             // 
             this.radio_DefaultLeadTone.AutoSize = true;
             this.radio_DefaultLeadTone.Checked = true;
-            this.radio_DefaultLeadTone.Location = new System.Drawing.Point(18, 19);
+            this.radio_DefaultLeadTone.Location = new System.Drawing.Point(36, 37);
+            this.radio_DefaultLeadTone.Margin = new System.Windows.Forms.Padding(6);
             this.radio_DefaultLeadTone.Name = "radio_DefaultLeadTone";
-            this.radio_DefaultLeadTone.Size = new System.Drawing.Size(257, 17);
+            this.radio_DefaultLeadTone.Size = new System.Drawing.Size(493, 29);
             this.radio_DefaultLeadTone.TabIndex = 101;
             this.radio_DefaultLeadTone.TabStop = true;
             this.radio_DefaultLeadTone.Text = "Set Highlighted Tone As New Default Lead Tone";
@@ -2410,9 +2507,10 @@
             // radio_DefaultRhythmTone
             // 
             this.radio_DefaultRhythmTone.AutoSize = true;
-            this.radio_DefaultRhythmTone.Location = new System.Drawing.Point(18, 42);
+            this.radio_DefaultRhythmTone.Location = new System.Drawing.Point(36, 81);
+            this.radio_DefaultRhythmTone.Margin = new System.Windows.Forms.Padding(6);
             this.radio_DefaultRhythmTone.Name = "radio_DefaultRhythmTone";
-            this.radio_DefaultRhythmTone.Size = new System.Drawing.Size(269, 17);
+            this.radio_DefaultRhythmTone.Size = new System.Drawing.Size(518, 29);
             this.radio_DefaultRhythmTone.TabIndex = 100;
             this.radio_DefaultRhythmTone.Text = "Set Highlighted Tone As New Default Rhythm Tone";
             this.radio_DefaultRhythmTone.UseVisualStyleBackColor = true;
@@ -2422,9 +2520,10 @@
             // radio_DefaultBassTone
             // 
             this.radio_DefaultBassTone.AutoSize = true;
-            this.radio_DefaultBassTone.Location = new System.Drawing.Point(19, 65);
+            this.radio_DefaultBassTone.Location = new System.Drawing.Point(38, 125);
+            this.radio_DefaultBassTone.Margin = new System.Windows.Forms.Padding(6);
             this.radio_DefaultBassTone.Name = "radio_DefaultBassTone";
-            this.radio_DefaultBassTone.Size = new System.Drawing.Size(256, 17);
+            this.radio_DefaultBassTone.Size = new System.Drawing.Size(493, 29);
             this.radio_DefaultBassTone.TabIndex = 102;
             this.radio_DefaultBassTone.Text = "Set Highlighted Tone As New Default Bass Tone";
             this.radio_DefaultBassTone.UseVisualStyleBackColor = true;
@@ -2433,9 +2532,10 @@
             // 
             // button_AssignNewDefaultTone
             // 
-            this.button_AssignNewDefaultTone.Location = new System.Drawing.Point(408, 33);
+            this.button_AssignNewDefaultTone.Location = new System.Drawing.Point(816, 63);
+            this.button_AssignNewDefaultTone.Margin = new System.Windows.Forms.Padding(6);
             this.button_AssignNewDefaultTone.Name = "button_AssignNewDefaultTone";
-            this.button_AssignNewDefaultTone.Size = new System.Drawing.Size(187, 35);
+            this.button_AssignNewDefaultTone.Size = new System.Drawing.Size(374, 67);
             this.button_AssignNewDefaultTone.TabIndex = 96;
             this.button_AssignNewDefaultTone.Text = "Assign Tone As New Default";
             this.button_AssignNewDefaultTone.UseVisualStyleBackColor = true;
@@ -2454,17 +2554,19 @@
             this.tabPage_SetAndForget_Misc.Controls.Add(this.button_CleanUpUnpackedCache);
             this.tabPage_SetAndForget_Misc.Controls.Add(this.button_AddDCInput);
             this.tabPage_SetAndForget_Misc.Controls.Add(this.button_RestoreCacheBackup);
-            this.tabPage_SetAndForget_Misc.Location = new System.Drawing.Point(4, 22);
+            this.tabPage_SetAndForget_Misc.Location = new System.Drawing.Point(4, 34);
+            this.tabPage_SetAndForget_Misc.Margin = new System.Windows.Forms.Padding(6);
             this.tabPage_SetAndForget_Misc.Name = "tabPage_SetAndForget_Misc";
-            this.tabPage_SetAndForget_Misc.Size = new System.Drawing.Size(1080, 422);
+            this.tabPage_SetAndForget_Misc.Size = new System.Drawing.Size(2168, 824);
             this.tabPage_SetAndForget_Misc.TabIndex = 2;
             this.tabPage_SetAndForget_Misc.Text = "Misc";
             // 
             // button_TurnItUpToEleven
             // 
-            this.button_TurnItUpToEleven.Location = new System.Drawing.Point(17, 120);
+            this.button_TurnItUpToEleven.Location = new System.Drawing.Point(34, 231);
+            this.button_TurnItUpToEleven.Margin = new System.Windows.Forms.Padding(6);
             this.button_TurnItUpToEleven.Name = "button_TurnItUpToEleven";
-            this.button_TurnItUpToEleven.Size = new System.Drawing.Size(187, 24);
+            this.button_TurnItUpToEleven.Size = new System.Drawing.Size(374, 46);
             this.button_TurnItUpToEleven.TabIndex = 112;
             this.button_TurnItUpToEleven.Text = "Turn it up to 11";
             this.button_TurnItUpToEleven.UseVisualStyleBackColor = true;
@@ -2473,9 +2575,10 @@
             // 
             // button_AddFastLoad
             // 
-            this.button_AddFastLoad.Location = new System.Drawing.Point(17, 21);
+            this.button_AddFastLoad.Location = new System.Drawing.Point(34, 40);
+            this.button_AddFastLoad.Margin = new System.Windows.Forms.Padding(6);
             this.button_AddFastLoad.Name = "button_AddFastLoad";
-            this.button_AddFastLoad.Size = new System.Drawing.Size(187, 40);
+            this.button_AddFastLoad.Size = new System.Drawing.Size(374, 77);
             this.button_AddFastLoad.TabIndex = 92;
             this.button_AddFastLoad.Text = "Enable Fast Load";
             this.button_AddFastLoad.UseVisualStyleBackColor = true;
@@ -2485,9 +2588,10 @@
             // 
             // button_AddExitGame
             // 
-            this.button_AddExitGame.Location = new System.Drawing.Point(17, 67);
+            this.button_AddExitGame.Location = new System.Drawing.Point(34, 129);
+            this.button_AddExitGame.Margin = new System.Windows.Forms.Padding(6);
             this.button_AddExitGame.Name = "button_AddExitGame";
-            this.button_AddExitGame.Size = new System.Drawing.Size(187, 20);
+            this.button_AddExitGame.Size = new System.Drawing.Size(374, 38);
             this.button_AddExitGame.TabIndex = 93;
             this.button_AddExitGame.Text = "Add EXIT GAME to Main Menu";
             this.button_AddExitGame.UseVisualStyleBackColor = true;
@@ -2497,9 +2601,10 @@
             // 
             // button_RemoveTemp
             // 
-            this.button_RemoveTemp.Location = new System.Drawing.Point(406, 67);
+            this.button_RemoveTemp.Location = new System.Drawing.Point(812, 129);
+            this.button_RemoveTemp.Margin = new System.Windows.Forms.Padding(6);
             this.button_RemoveTemp.Name = "button_RemoveTemp";
-            this.button_RemoveTemp.Size = new System.Drawing.Size(190, 46);
+            this.button_RemoveTemp.Size = new System.Drawing.Size(380, 88);
             this.button_RemoveTemp.TabIndex = 95;
             this.button_RemoveTemp.Text = "Remove Temporary Folders";
             this.button_RemoveTemp.UseVisualStyleBackColor = true;
@@ -2509,9 +2614,10 @@
             // 
             // button_ImportExistingSettings
             // 
-            this.button_ImportExistingSettings.Location = new System.Drawing.Point(210, 21);
+            this.button_ImportExistingSettings.Location = new System.Drawing.Point(420, 40);
+            this.button_ImportExistingSettings.Margin = new System.Windows.Forms.Padding(6);
             this.button_ImportExistingSettings.Name = "button_ImportExistingSettings";
-            this.button_ImportExistingSettings.Size = new System.Drawing.Size(190, 40);
+            this.button_ImportExistingSettings.Size = new System.Drawing.Size(380, 77);
             this.button_ImportExistingSettings.TabIndex = 109;
             this.button_ImportExistingSettings.Text = "Import Existing Settings";
             this.button_ImportExistingSettings.UseVisualStyleBackColor = true;
@@ -2519,9 +2625,10 @@
             // 
             // button_CleanUpUnpackedCache
             // 
-            this.button_CleanUpUnpackedCache.Location = new System.Drawing.Point(406, 21);
+            this.button_CleanUpUnpackedCache.Location = new System.Drawing.Point(812, 40);
+            this.button_CleanUpUnpackedCache.Margin = new System.Windows.Forms.Padding(6);
             this.button_CleanUpUnpackedCache.Name = "button_CleanUpUnpackedCache";
-            this.button_CleanUpUnpackedCache.Size = new System.Drawing.Size(190, 40);
+            this.button_CleanUpUnpackedCache.Size = new System.Drawing.Size(380, 77);
             this.button_CleanUpUnpackedCache.TabIndex = 91;
             this.button_CleanUpUnpackedCache.Text = "Clean Up Unpacked Cache";
             this.button_CleanUpUnpackedCache.UseVisualStyleBackColor = true;
@@ -2531,9 +2638,10 @@
             // 
             // button_AddDCInput
             // 
-            this.button_AddDCInput.Location = new System.Drawing.Point(17, 93);
+            this.button_AddDCInput.Location = new System.Drawing.Point(34, 179);
+            this.button_AddDCInput.Margin = new System.Windows.Forms.Padding(6);
             this.button_AddDCInput.Name = "button_AddDCInput";
-            this.button_AddDCInput.Size = new System.Drawing.Size(187, 20);
+            this.button_AddDCInput.Size = new System.Drawing.Size(374, 38);
             this.button_AddDCInput.TabIndex = 111;
             this.button_AddDCInput.Text = "Add Direct Connect Mode";
             this.button_AddDCInput.UseVisualStyleBackColor = true;
@@ -2542,9 +2650,10 @@
             // 
             // button_RestoreCacheBackup
             // 
-            this.button_RestoreCacheBackup.Location = new System.Drawing.Point(210, 67);
+            this.button_RestoreCacheBackup.Location = new System.Drawing.Point(420, 129);
+            this.button_RestoreCacheBackup.Margin = new System.Windows.Forms.Padding(6);
             this.button_RestoreCacheBackup.Name = "button_RestoreCacheBackup";
-            this.button_RestoreCacheBackup.Size = new System.Drawing.Size(190, 46);
+            this.button_RestoreCacheBackup.Size = new System.Drawing.Size(380, 88);
             this.button_RestoreCacheBackup.TabIndex = 90;
             this.button_RestoreCacheBackup.Text = "Restore Cache Backup";
             this.button_RestoreCacheBackup.UseVisualStyleBackColor = true;
@@ -2554,9 +2663,10 @@
             // 
             // button_ResetToDefaultCachePsarc
             // 
-            this.button_ResetToDefaultCachePsarc.Location = new System.Drawing.Point(944, 473);
+            this.button_ResetToDefaultCachePsarc.Location = new System.Drawing.Point(1888, 910);
+            this.button_ResetToDefaultCachePsarc.Margin = new System.Windows.Forms.Padding(6);
             this.button_ResetToDefaultCachePsarc.Name = "button_ResetToDefaultCachePsarc";
-            this.button_ResetToDefaultCachePsarc.Size = new System.Drawing.Size(181, 23);
+            this.button_ResetToDefaultCachePsarc.Size = new System.Drawing.Size(362, 44);
             this.button_ResetToDefaultCachePsarc.TabIndex = 125;
             this.button_ResetToDefaultCachePsarc.Text = "My Game Doesn\'t Work Anymore";
             this.button_ResetToDefaultCachePsarc.UseVisualStyleBackColor = true;
@@ -2573,9 +2683,11 @@
             // 
             this.groupBox_ToggleSkylineWhen.Controls.Add(this.radio_SkylineOffInSong);
             this.groupBox_ToggleSkylineWhen.Controls.Add(this.radio_SkylineAlwaysOff);
-            this.groupBox_ToggleSkylineWhen.Location = new System.Drawing.Point(186, 16);
+            this.groupBox_ToggleSkylineWhen.Location = new System.Drawing.Point(372, 31);
+            this.groupBox_ToggleSkylineWhen.Margin = new System.Windows.Forms.Padding(6);
             this.groupBox_ToggleSkylineWhen.Name = "groupBox_ToggleSkylineWhen";
-            this.groupBox_ToggleSkylineWhen.Size = new System.Drawing.Size(145, 68);
+            this.groupBox_ToggleSkylineWhen.Padding = new System.Windows.Forms.Padding(6);
+            this.groupBox_ToggleSkylineWhen.Size = new System.Drawing.Size(290, 131);
             this.groupBox_ToggleSkylineWhen.TabIndex = 69;
             this.groupBox_ToggleSkylineWhen.TabStop = false;
             this.groupBox_ToggleSkylineWhen.Text = "Toggle Skyline Off When";
@@ -2586,9 +2698,10 @@
             // radio_SkylineOffInSong
             // 
             this.radio_SkylineOffInSong.AutoSize = true;
-            this.radio_SkylineOffInSong.Location = new System.Drawing.Point(11, 40);
+            this.radio_SkylineOffInSong.Location = new System.Drawing.Point(22, 77);
+            this.radio_SkylineOffInSong.Margin = new System.Windows.Forms.Padding(6);
             this.radio_SkylineOffInSong.Name = "radio_SkylineOffInSong";
-            this.radio_SkylineOffInSong.Size = new System.Drawing.Size(69, 17);
+            this.radio_SkylineOffInSong.Size = new System.Drawing.Size(118, 29);
             this.radio_SkylineOffInSong.TabIndex = 46;
             this.radio_SkylineOffInSong.TabStop = true;
             this.radio_SkylineOffInSong.Text = "In a song";
@@ -2598,9 +2711,10 @@
             // radio_SkylineAlwaysOff
             // 
             this.radio_SkylineAlwaysOff.AutoSize = true;
-            this.radio_SkylineAlwaysOff.Location = new System.Drawing.Point(11, 19);
+            this.radio_SkylineAlwaysOff.Location = new System.Drawing.Point(22, 37);
+            this.radio_SkylineAlwaysOff.Margin = new System.Windows.Forms.Padding(6);
             this.radio_SkylineAlwaysOff.Name = "radio_SkylineAlwaysOff";
-            this.radio_SkylineAlwaysOff.Size = new System.Drawing.Size(58, 17);
+            this.radio_SkylineAlwaysOff.Size = new System.Drawing.Size(98, 29);
             this.radio_SkylineAlwaysOff.TabIndex = 44;
             this.radio_SkylineAlwaysOff.TabStop = true;
             this.radio_SkylineAlwaysOff.Text = "Always";
@@ -2611,9 +2725,11 @@
             // 
             this.groupBox_ToggleLyricsOffWhen.Controls.Add(this.radio_LyricsOffHotkey);
             this.groupBox_ToggleLyricsOffWhen.Controls.Add(this.radio_LyricsAlwaysOff);
-            this.groupBox_ToggleLyricsOffWhen.Location = new System.Drawing.Point(8, 16);
+            this.groupBox_ToggleLyricsOffWhen.Location = new System.Drawing.Point(16, 31);
+            this.groupBox_ToggleLyricsOffWhen.Margin = new System.Windows.Forms.Padding(6);
             this.groupBox_ToggleLyricsOffWhen.Name = "groupBox_ToggleLyricsOffWhen";
-            this.groupBox_ToggleLyricsOffWhen.Size = new System.Drawing.Size(166, 68);
+            this.groupBox_ToggleLyricsOffWhen.Padding = new System.Windows.Forms.Padding(6);
+            this.groupBox_ToggleLyricsOffWhen.Size = new System.Drawing.Size(332, 131);
             this.groupBox_ToggleLyricsOffWhen.TabIndex = 70;
             this.groupBox_ToggleLyricsOffWhen.TabStop = false;
             this.groupBox_ToggleLyricsOffWhen.Text = "Toggle Lyrics Off When";
@@ -2622,9 +2738,10 @@
             // radio_LyricsOffHotkey
             // 
             this.radio_LyricsOffHotkey.AutoSize = true;
-            this.radio_LyricsOffHotkey.Location = new System.Drawing.Point(11, 42);
+            this.radio_LyricsOffHotkey.Location = new System.Drawing.Point(22, 81);
+            this.radio_LyricsOffHotkey.Margin = new System.Windows.Forms.Padding(6);
             this.radio_LyricsOffHotkey.Name = "radio_LyricsOffHotkey";
-            this.radio_LyricsOffHotkey.Size = new System.Drawing.Size(59, 17);
+            this.radio_LyricsOffHotkey.Size = new System.Drawing.Size(97, 29);
             this.radio_LyricsOffHotkey.TabIndex = 46;
             this.radio_LyricsOffHotkey.TabStop = true;
             this.radio_LyricsOffHotkey.Text = "Hotkey";
@@ -2636,9 +2753,10 @@
             // radio_LyricsAlwaysOff
             // 
             this.radio_LyricsAlwaysOff.AutoSize = true;
-            this.radio_LyricsAlwaysOff.Location = new System.Drawing.Point(11, 19);
+            this.radio_LyricsAlwaysOff.Location = new System.Drawing.Point(22, 37);
+            this.radio_LyricsAlwaysOff.Margin = new System.Windows.Forms.Padding(6);
             this.radio_LyricsAlwaysOff.Name = "radio_LyricsAlwaysOff";
-            this.radio_LyricsAlwaysOff.Size = new System.Drawing.Size(58, 17);
+            this.radio_LyricsAlwaysOff.Size = new System.Drawing.Size(98, 29);
             this.radio_LyricsAlwaysOff.TabIndex = 44;
             this.radio_LyricsAlwaysOff.TabStop = true;
             this.radio_LyricsAlwaysOff.Text = "Always";
@@ -2661,9 +2779,11 @@
             this.groupBox_GuitarSpeak.Controls.Add(this.listBox_GuitarSpeakKeypress);
             this.groupBox_GuitarSpeak.Controls.Add(this.listBox_GuitarSpeakOctave);
             this.groupBox_GuitarSpeak.Controls.Add(this.listBox_GuitarSpeakNote);
-            this.groupBox_GuitarSpeak.Location = new System.Drawing.Point(12, 18);
+            this.groupBox_GuitarSpeak.Location = new System.Drawing.Point(24, 35);
+            this.groupBox_GuitarSpeak.Margin = new System.Windows.Forms.Padding(6);
             this.groupBox_GuitarSpeak.Name = "groupBox_GuitarSpeak";
-            this.groupBox_GuitarSpeak.Size = new System.Drawing.Size(432, 206);
+            this.groupBox_GuitarSpeak.Padding = new System.Windows.Forms.Padding(6);
+            this.groupBox_GuitarSpeak.Size = new System.Drawing.Size(864, 396);
             this.groupBox_GuitarSpeak.TabIndex = 71;
             this.groupBox_GuitarSpeak.TabStop = false;
             this.groupBox_GuitarSpeak.Text = "Guitar Speak";
@@ -2671,9 +2791,10 @@
             // 
             // button_GuitarSpeak_DeleteSavedValue
             // 
-            this.button_GuitarSpeak_DeleteSavedValue.Location = new System.Drawing.Point(311, 147);
+            this.button_GuitarSpeak_DeleteSavedValue.Location = new System.Drawing.Point(622, 283);
+            this.button_GuitarSpeak_DeleteSavedValue.Margin = new System.Windows.Forms.Padding(6);
             this.button_GuitarSpeak_DeleteSavedValue.Name = "button_GuitarSpeak_DeleteSavedValue";
-            this.button_GuitarSpeak_DeleteSavedValue.Size = new System.Drawing.Size(115, 23);
+            this.button_GuitarSpeak_DeleteSavedValue.Size = new System.Drawing.Size(230, 44);
             this.button_GuitarSpeak_DeleteSavedValue.TabIndex = 13;
             this.button_GuitarSpeak_DeleteSavedValue.Text = "Delete Saved Value";
             this.button_GuitarSpeak_DeleteSavedValue.UseVisualStyleBackColor = true;
@@ -2682,10 +2803,11 @@
             // button_GuitarSpeakHelp
             // 
             this.button_GuitarSpeakHelp.BackColor = System.Drawing.Color.Azure;
-            this.button_GuitarSpeakHelp.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_GuitarSpeakHelp.Location = new System.Drawing.Point(402, 11);
+            this.button_GuitarSpeakHelp.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
+            this.button_GuitarSpeakHelp.Location = new System.Drawing.Point(804, 21);
+            this.button_GuitarSpeakHelp.Margin = new System.Windows.Forms.Padding(6);
             this.button_GuitarSpeakHelp.Name = "button_GuitarSpeakHelp";
-            this.button_GuitarSpeakHelp.Size = new System.Drawing.Size(24, 23);
+            this.button_GuitarSpeakHelp.Size = new System.Drawing.Size(48, 44);
             this.button_GuitarSpeakHelp.TabIndex = 12;
             this.button_GuitarSpeakHelp.Text = "?";
             this.button_GuitarSpeakHelp.UseVisualStyleBackColor = true;
@@ -2694,26 +2816,30 @@
             // label_GuitarSpeakSaved
             // 
             this.label_GuitarSpeakSaved.AutoSize = true;
-            this.label_GuitarSpeakSaved.Location = new System.Drawing.Point(314, 26);
+            this.label_GuitarSpeakSaved.Location = new System.Drawing.Point(628, 50);
+            this.label_GuitarSpeakSaved.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label_GuitarSpeakSaved.Name = "label_GuitarSpeakSaved";
-            this.label_GuitarSpeakSaved.Size = new System.Drawing.Size(73, 13);
+            this.label_GuitarSpeakSaved.Size = new System.Drawing.Size(145, 25);
             this.label_GuitarSpeakSaved.TabIndex = 11;
             this.label_GuitarSpeakSaved.Text = "Saved Values";
             // 
             // listBox_GuitarSpeakSaved
             // 
             this.listBox_GuitarSpeakSaved.FormattingEnabled = true;
-            this.listBox_GuitarSpeakSaved.Location = new System.Drawing.Point(282, 48);
+            this.listBox_GuitarSpeakSaved.ItemHeight = 25;
+            this.listBox_GuitarSpeakSaved.Location = new System.Drawing.Point(564, 92);
+            this.listBox_GuitarSpeakSaved.Margin = new System.Windows.Forms.Padding(6);
             this.listBox_GuitarSpeakSaved.Name = "listBox_GuitarSpeakSaved";
-            this.listBox_GuitarSpeakSaved.Size = new System.Drawing.Size(144, 82);
+            this.listBox_GuitarSpeakSaved.Size = new System.Drawing.Size(284, 154);
             this.listBox_GuitarSpeakSaved.TabIndex = 10;
             // 
             // checkBox_GuitarSpeakWhileTuning
             // 
             this.checkBox_GuitarSpeakWhileTuning.AutoSize = true;
-            this.checkBox_GuitarSpeakWhileTuning.Location = new System.Drawing.Point(111, 151);
+            this.checkBox_GuitarSpeakWhileTuning.Location = new System.Drawing.Point(222, 290);
+            this.checkBox_GuitarSpeakWhileTuning.Margin = new System.Windows.Forms.Padding(6);
             this.checkBox_GuitarSpeakWhileTuning.Name = "checkBox_GuitarSpeakWhileTuning";
-            this.checkBox_GuitarSpeakWhileTuning.Size = new System.Drawing.Size(111, 17);
+            this.checkBox_GuitarSpeakWhileTuning.Size = new System.Drawing.Size(201, 29);
             this.checkBox_GuitarSpeakWhileTuning.TabIndex = 9;
             this.checkBox_GuitarSpeakWhileTuning.Text = "Use While Tuning";
             this.checkBox_GuitarSpeakWhileTuning.UseVisualStyleBackColor = true;
@@ -2723,9 +2849,10 @@
             // 
             // button_GuitarSpeakSave
             // 
-            this.button_GuitarSpeakSave.Location = new System.Drawing.Point(6, 147);
+            this.button_GuitarSpeakSave.Location = new System.Drawing.Point(12, 283);
+            this.button_GuitarSpeakSave.Margin = new System.Windows.Forms.Padding(6);
             this.button_GuitarSpeakSave.Name = "button_GuitarSpeakSave";
-            this.button_GuitarSpeakSave.Size = new System.Drawing.Size(95, 23);
+            this.button_GuitarSpeakSave.Size = new System.Drawing.Size(190, 44);
             this.button_GuitarSpeakSave.TabIndex = 8;
             this.button_GuitarSpeakSave.Text = "Save Keybind";
             this.button_GuitarSpeakSave.UseVisualStyleBackColor = true;
@@ -2734,111 +2861,87 @@
             // label_GuitarSpeakKeypress
             // 
             this.label_GuitarSpeakKeypress.AutoSize = true;
-            this.label_GuitarSpeakKeypress.Location = new System.Drawing.Point(182, 21);
+            this.label_GuitarSpeakKeypress.Location = new System.Drawing.Point(364, 40);
+            this.label_GuitarSpeakKeypress.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label_GuitarSpeakKeypress.Name = "label_GuitarSpeakKeypress";
-            this.label_GuitarSpeakKeypress.Size = new System.Drawing.Size(50, 13);
+            this.label_GuitarSpeakKeypress.Size = new System.Drawing.Size(102, 25);
             this.label_GuitarSpeakKeypress.TabIndex = 5;
             this.label_GuitarSpeakKeypress.Text = "Keypress";
             // 
             // label_GuitarSpeakOctave
             // 
             this.label_GuitarSpeakOctave.AutoSize = true;
-            this.label_GuitarSpeakOctave.Location = new System.Drawing.Point(79, 21);
+            this.label_GuitarSpeakOctave.Location = new System.Drawing.Point(158, 40);
+            this.label_GuitarSpeakOctave.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label_GuitarSpeakOctave.Name = "label_GuitarSpeakOctave";
-            this.label_GuitarSpeakOctave.Size = new System.Drawing.Size(42, 13);
+            this.label_GuitarSpeakOctave.Size = new System.Drawing.Size(80, 25);
             this.label_GuitarSpeakOctave.TabIndex = 4;
             this.label_GuitarSpeakOctave.Text = "Octave";
             // 
             // label_GuitarSpeakNote
             // 
             this.label_GuitarSpeakNote.AutoSize = true;
-            this.label_GuitarSpeakNote.Location = new System.Drawing.Point(11, 22);
+            this.label_GuitarSpeakNote.Location = new System.Drawing.Point(22, 42);
+            this.label_GuitarSpeakNote.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label_GuitarSpeakNote.Name = "label_GuitarSpeakNote";
-            this.label_GuitarSpeakNote.Size = new System.Drawing.Size(30, 13);
+            this.label_GuitarSpeakNote.Size = new System.Drawing.Size(57, 25);
             this.label_GuitarSpeakNote.TabIndex = 3;
             this.label_GuitarSpeakNote.Text = "Note";
             // 
             // listBox_GuitarSpeakKeypress
             // 
             this.listBox_GuitarSpeakKeypress.FormattingEnabled = true;
-            this.listBox_GuitarSpeakKeypress.Items.AddRange(new object[] {
-            "Delete",
-            "Space",
-            "Enter",
-            "Tab",
-            "Page Up",
-            "Page Down",
-            "Up Arrow",
-            "Down Arrow",
-            "Escape",
-            "Open Bracket",
-            "Close Bracket",
-            "Tilde / Tilda",
-            "Forward Slash",
-            "Alt",
-            "Close Guitar Speak"});
-            this.listBox_GuitarSpeakKeypress.Location = new System.Drawing.Point(150, 48);
+            this.listBox_GuitarSpeakKeypress.ItemHeight = 25;
+            this.listBox_GuitarSpeakKeypress.Items.AddRange(new object[] {"Delete", "Space", "Enter", "Tab", "Page Up", "Page Down", "Up Arrow", "Down Arrow", "Escape", "Open Bracket", "Close Bracket", "Tilde / Tilda", "Forward Slash", "Alt", "Close Guitar Speak"});
+            this.listBox_GuitarSpeakKeypress.Location = new System.Drawing.Point(300, 92);
+            this.listBox_GuitarSpeakKeypress.Margin = new System.Windows.Forms.Padding(6);
             this.listBox_GuitarSpeakKeypress.Name = "listBox_GuitarSpeakKeypress";
-            this.listBox_GuitarSpeakKeypress.Size = new System.Drawing.Size(126, 82);
+            this.listBox_GuitarSpeakKeypress.Size = new System.Drawing.Size(248, 154);
             this.listBox_GuitarSpeakKeypress.TabIndex = 2;
             // 
             // listBox_GuitarSpeakOctave
             // 
             this.listBox_GuitarSpeakOctave.FormattingEnabled = true;
-            this.listBox_GuitarSpeakOctave.Items.AddRange(new object[] {
-            "-1",
-            "0",
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6"});
-            this.listBox_GuitarSpeakOctave.Location = new System.Drawing.Point(78, 47);
+            this.listBox_GuitarSpeakOctave.ItemHeight = 25;
+            this.listBox_GuitarSpeakOctave.Items.AddRange(new object[] {"-1", "0", "1", "2", "3", "4", "5", "6"});
+            this.listBox_GuitarSpeakOctave.Location = new System.Drawing.Point(156, 90);
+            this.listBox_GuitarSpeakOctave.Margin = new System.Windows.Forms.Padding(6);
             this.listBox_GuitarSpeakOctave.Name = "listBox_GuitarSpeakOctave";
-            this.listBox_GuitarSpeakOctave.Size = new System.Drawing.Size(46, 82);
+            this.listBox_GuitarSpeakOctave.Size = new System.Drawing.Size(88, 154);
             this.listBox_GuitarSpeakOctave.TabIndex = 1;
             // 
             // listBox_GuitarSpeakNote
             // 
             this.listBox_GuitarSpeakNote.FormattingEnabled = true;
-            this.listBox_GuitarSpeakNote.Items.AddRange(new object[] {
-            "C",
-            "C#",
-            "D",
-            "Eb",
-            "E",
-            "F",
-            "F#",
-            "G",
-            "Ab",
-            "A",
-            "Bb",
-            "B"});
-            this.listBox_GuitarSpeakNote.Location = new System.Drawing.Point(6, 48);
+            this.listBox_GuitarSpeakNote.ItemHeight = 25;
+            this.listBox_GuitarSpeakNote.Items.AddRange(new object[] {"C", "C#", "D", "Eb", "E", "F", "F#", "G", "Ab", "A", "Bb", "B"});
+            this.listBox_GuitarSpeakNote.Location = new System.Drawing.Point(12, 92);
+            this.listBox_GuitarSpeakNote.Margin = new System.Windows.Forms.Padding(6);
             this.listBox_GuitarSpeakNote.Name = "listBox_GuitarSpeakNote";
-            this.listBox_GuitarSpeakNote.Size = new System.Drawing.Size(46, 82);
+            this.listBox_GuitarSpeakNote.Size = new System.Drawing.Size(88, 154);
             this.listBox_GuitarSpeakNote.TabIndex = 0;
             // 
             // label_Credits
             // 
             this.label_Credits.AutoSize = true;
-            this.label_Credits.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_Credits.Location = new System.Drawing.Point(989, 455);
+            this.label_Credits.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
+            this.label_Credits.Location = new System.Drawing.Point(1978, 875);
+            this.label_Credits.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label_Credits.Name = "label_Credits";
             this.label_Credits.Size = new System.Drawing.Size(152, 52);
             this.label_Credits.TabIndex = 72;
-            this.label_Credits.Text = "Originally Created By:\r\nFfio - Main GUI Dev\r\nLovroM8 - Set-and-Forget\r\nZagatoZee " +
-    "- Co-GUI Dev";
+            this.label_Credits.Text = "Originally Created By:\r\nFfio - Main GUI Dev\r\nLovroM8 - Set-and-Forget\r\nZagatoZee " + "- Co-GUI Dev";
             this.label_Credits.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // groupBox_ToggleHeadstockOffWhen
             // 
             this.groupBox_ToggleHeadstockOffWhen.Controls.Add(this.radio_HeadstockOffInSong);
             this.groupBox_ToggleHeadstockOffWhen.Controls.Add(this.radio_HeadstockAlwaysOff);
-            this.groupBox_ToggleHeadstockOffWhen.Location = new System.Drawing.Point(186, 179);
+            this.groupBox_ToggleHeadstockOffWhen.Location = new System.Drawing.Point(372, 344);
+            this.groupBox_ToggleHeadstockOffWhen.Margin = new System.Windows.Forms.Padding(6);
             this.groupBox_ToggleHeadstockOffWhen.Name = "groupBox_ToggleHeadstockOffWhen";
-            this.groupBox_ToggleHeadstockOffWhen.Size = new System.Drawing.Size(166, 71);
+            this.groupBox_ToggleHeadstockOffWhen.Padding = new System.Windows.Forms.Padding(6);
+            this.groupBox_ToggleHeadstockOffWhen.Size = new System.Drawing.Size(332, 137);
             this.groupBox_ToggleHeadstockOffWhen.TabIndex = 73;
             this.groupBox_ToggleHeadstockOffWhen.TabStop = false;
             this.groupBox_ToggleHeadstockOffWhen.Text = "Toggle Headstock Off When";
@@ -2847,9 +2950,10 @@
             // radio_HeadstockOffInSong
             // 
             this.radio_HeadstockOffInSong.AutoSize = true;
-            this.radio_HeadstockOffInSong.Location = new System.Drawing.Point(11, 42);
+            this.radio_HeadstockOffInSong.Location = new System.Drawing.Point(22, 81);
+            this.radio_HeadstockOffInSong.Margin = new System.Windows.Forms.Padding(6);
             this.radio_HeadstockOffInSong.Name = "radio_HeadstockOffInSong";
-            this.radio_HeadstockOffInSong.Size = new System.Drawing.Size(69, 17);
+            this.radio_HeadstockOffInSong.Size = new System.Drawing.Size(118, 29);
             this.radio_HeadstockOffInSong.TabIndex = 1;
             this.radio_HeadstockOffInSong.TabStop = true;
             this.radio_HeadstockOffInSong.Text = "In a song";
@@ -2859,9 +2963,10 @@
             // radio_HeadstockAlwaysOff
             // 
             this.radio_HeadstockAlwaysOff.AutoSize = true;
-            this.radio_HeadstockAlwaysOff.Location = new System.Drawing.Point(11, 19);
+            this.radio_HeadstockAlwaysOff.Location = new System.Drawing.Point(22, 37);
+            this.radio_HeadstockAlwaysOff.Margin = new System.Windows.Forms.Padding(6);
             this.radio_HeadstockAlwaysOff.Name = "radio_HeadstockAlwaysOff";
-            this.radio_HeadstockAlwaysOff.Size = new System.Drawing.Size(58, 17);
+            this.radio_HeadstockAlwaysOff.Size = new System.Drawing.Size(98, 29);
             this.radio_HeadstockAlwaysOff.TabIndex = 0;
             this.radio_HeadstockAlwaysOff.TabStop = true;
             this.radio_HeadstockAlwaysOff.Text = "Always";
@@ -2870,9 +2975,7 @@
             // 
             // TabController
             // 
-            this.TabController.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.TabController.Anchor = ((System.Windows.Forms.AnchorStyles) ((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
             this.TabController.Controls.Add(this.tab_Songlists);
             this.TabController.Controls.Add(this.tab_Keybindings);
             this.TabController.Controls.Add(this.tab_ModToggles);
@@ -2883,22 +2986,23 @@
             this.TabController.Controls.Add(this.tab_SoundPacks);
             this.TabController.Controls.Add(this.tab_Profiles);
             this.TabController.Controls.Add(this.tab_GUISettings);
-            this.TabController.Location = new System.Drawing.Point(3, 16);
+            this.TabController.Location = new System.Drawing.Point(6, 31);
             this.TabController.Margin = new System.Windows.Forms.Padding(0);
             this.TabController.Name = "TabController";
             this.TabController.Padding = new System.Drawing.Point(0, 0);
             this.TabController.SelectedIndex = 0;
-            this.TabController.Size = new System.Drawing.Size(1158, 539);
+            this.TabController.Size = new System.Drawing.Size(2316, 1037);
             this.TabController.TabIndex = 100001;
             // 
             // tab_Songlists
             // 
             this.tab_Songlists.BackColor = System.Drawing.Color.Azure;
             this.tab_Songlists.Controls.Add(this.groupBox_Songlist);
-            this.tab_Songlists.Location = new System.Drawing.Point(4, 22);
+            this.tab_Songlists.Location = new System.Drawing.Point(4, 34);
+            this.tab_Songlists.Margin = new System.Windows.Forms.Padding(6);
             this.tab_Songlists.Name = "tab_Songlists";
-            this.tab_Songlists.Padding = new System.Windows.Forms.Padding(3);
-            this.tab_Songlists.Size = new System.Drawing.Size(1150, 513);
+            this.tab_Songlists.Padding = new System.Windows.Forms.Padding(6);
+            this.tab_Songlists.Size = new System.Drawing.Size(2308, 999);
             this.tab_Songlists.TabIndex = 0;
             this.tab_Songlists.Text = "Song Lists";
             // 
@@ -2907,10 +3011,11 @@
             this.tab_Keybindings.BackColor = System.Drawing.Color.Azure;
             this.tab_Keybindings.Controls.Add(this.groupBox_Keybindings_AUDIO);
             this.tab_Keybindings.Controls.Add(this.groupBox_Keybindings_MODS);
-            this.tab_Keybindings.Location = new System.Drawing.Point(4, 22);
+            this.tab_Keybindings.Location = new System.Drawing.Point(4, 34);
+            this.tab_Keybindings.Margin = new System.Windows.Forms.Padding(6);
             this.tab_Keybindings.Name = "tab_Keybindings";
-            this.tab_Keybindings.Padding = new System.Windows.Forms.Padding(3);
-            this.tab_Keybindings.Size = new System.Drawing.Size(1150, 513);
+            this.tab_Keybindings.Padding = new System.Windows.Forms.Padding(6);
+            this.tab_Keybindings.Size = new System.Drawing.Size(2308, 999);
             this.tab_Keybindings.TabIndex = 1;
             this.tab_Keybindings.Text = "Keybindings";
             // 
@@ -2930,9 +3035,11 @@
             this.groupBox_Keybindings_AUDIO.Controls.Add(this.label_NewAssignmentAUDIO);
             this.groupBox_Keybindings_AUDIO.Controls.Add(this.textBox_NewKeyAssignment_AUDIO);
             this.groupBox_Keybindings_AUDIO.Controls.Add(this.listBox_Modlist_AUDIO);
-            this.groupBox_Keybindings_AUDIO.Location = new System.Drawing.Point(15, 253);
+            this.groupBox_Keybindings_AUDIO.Location = new System.Drawing.Point(30, 487);
+            this.groupBox_Keybindings_AUDIO.Margin = new System.Windows.Forms.Padding(6);
             this.groupBox_Keybindings_AUDIO.Name = "groupBox_Keybindings_AUDIO";
-            this.groupBox_Keybindings_AUDIO.Size = new System.Drawing.Size(701, 182);
+            this.groupBox_Keybindings_AUDIO.Padding = new System.Windows.Forms.Padding(6);
+            this.groupBox_Keybindings_AUDIO.Size = new System.Drawing.Size(1402, 350);
             this.groupBox_Keybindings_AUDIO.TabIndex = 53;
             this.groupBox_Keybindings_AUDIO.TabStop = false;
             this.groupBox_Keybindings_AUDIO.Text = "Audio Key Bindings";
@@ -2942,98 +3049,109 @@
             // label_MutePlayer2Key
             // 
             this.label_MutePlayer2Key.AutoSize = true;
-            this.label_MutePlayer2Key.Location = new System.Drawing.Point(463, 163);
+            this.label_MutePlayer2Key.Location = new System.Drawing.Point(926, 313);
+            this.label_MutePlayer2Key.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label_MutePlayer2Key.Name = "label_MutePlayer2Key";
-            this.label_MutePlayer2Key.Size = new System.Drawing.Size(123, 13);
+            this.label_MutePlayer2Key.Size = new System.Drawing.Size(243, 25);
             this.label_MutePlayer2Key.TabIndex = 63;
             this.label_MutePlayer2Key.Text = "Mute / Unmute Player2: ";
             // 
             // label_MutePlayer1Key
             // 
             this.label_MutePlayer1Key.AutoSize = true;
-            this.label_MutePlayer1Key.Location = new System.Drawing.Point(463, 146);
+            this.label_MutePlayer1Key.Location = new System.Drawing.Point(926, 281);
+            this.label_MutePlayer1Key.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label_MutePlayer1Key.Name = "label_MutePlayer1Key";
-            this.label_MutePlayer1Key.Size = new System.Drawing.Size(123, 13);
+            this.label_MutePlayer1Key.Size = new System.Drawing.Size(243, 25);
             this.label_MutePlayer1Key.TabIndex = 62;
             this.label_MutePlayer1Key.Text = "Mute / Unmute Player1: ";
             // 
             // label_DisplayMixerKey
             // 
             this.label_DisplayMixerKey.AutoSize = true;
-            this.label_DisplayMixerKey.Location = new System.Drawing.Point(463, 129);
+            this.label_DisplayMixerKey.Location = new System.Drawing.Point(926, 248);
+            this.label_DisplayMixerKey.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label_DisplayMixerKey.Name = "label_DisplayMixerKey";
-            this.label_DisplayMixerKey.Size = new System.Drawing.Size(75, 13);
+            this.label_DisplayMixerKey.Size = new System.Drawing.Size(154, 25);
             this.label_DisplayMixerKey.TabIndex = 61;
             this.label_DisplayMixerKey.Text = "Display Mixer: ";
             // 
             // label_SFXVolumeKey
             // 
             this.label_SFXVolumeKey.AutoSize = true;
-            this.label_SFXVolumeKey.Location = new System.Drawing.Point(464, 112);
+            this.label_SFXVolumeKey.Location = new System.Drawing.Point(928, 215);
+            this.label_SFXVolumeKey.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label_SFXVolumeKey.Name = "label_SFXVolumeKey";
-            this.label_SFXVolumeKey.Size = new System.Drawing.Size(71, 13);
+            this.label_SFXVolumeKey.Size = new System.Drawing.Size(143, 25);
             this.label_SFXVolumeKey.TabIndex = 60;
             this.label_SFXVolumeKey.Text = "SFX Volume: ";
             // 
             // label_VoiceOverVolumeKey
             // 
             this.label_VoiceOverVolumeKey.AutoSize = true;
-            this.label_VoiceOverVolumeKey.Location = new System.Drawing.Point(464, 95);
+            this.label_VoiceOverVolumeKey.Location = new System.Drawing.Point(928, 183);
+            this.label_VoiceOverVolumeKey.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label_VoiceOverVolumeKey.Name = "label_VoiceOverVolumeKey";
-            this.label_VoiceOverVolumeKey.Size = new System.Drawing.Size(104, 13);
+            this.label_VoiceOverVolumeKey.Size = new System.Drawing.Size(209, 25);
             this.label_VoiceOverVolumeKey.TabIndex = 59;
             this.label_VoiceOverVolumeKey.Text = "Voice-Over Volume: ";
             // 
             // label_MicrophoneVolumeKey
             // 
             this.label_MicrophoneVolumeKey.AutoSize = true;
-            this.label_MicrophoneVolumeKey.Location = new System.Drawing.Point(464, 78);
+            this.label_MicrophoneVolumeKey.Location = new System.Drawing.Point(928, 150);
+            this.label_MicrophoneVolumeKey.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label_MicrophoneVolumeKey.Name = "label_MicrophoneVolumeKey";
-            this.label_MicrophoneVolumeKey.Size = new System.Drawing.Size(107, 13);
+            this.label_MicrophoneVolumeKey.Size = new System.Drawing.Size(215, 25);
             this.label_MicrophoneVolumeKey.TabIndex = 58;
             this.label_MicrophoneVolumeKey.Text = "Microphone Volume: ";
             // 
             // label_Player2VolumeKey
             // 
             this.label_Player2VolumeKey.AutoSize = true;
-            this.label_Player2VolumeKey.Location = new System.Drawing.Point(464, 61);
+            this.label_Player2VolumeKey.Location = new System.Drawing.Point(928, 117);
+            this.label_Player2VolumeKey.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label_Player2VolumeKey.Name = "label_Player2VolumeKey";
-            this.label_Player2VolumeKey.Size = new System.Drawing.Size(86, 13);
+            this.label_Player2VolumeKey.Size = new System.Drawing.Size(175, 25);
             this.label_Player2VolumeKey.TabIndex = 57;
             this.label_Player2VolumeKey.Text = "Player2 Volume: ";
             // 
             // label_Player1VolumeKey
             // 
             this.label_Player1VolumeKey.AutoSize = true;
-            this.label_Player1VolumeKey.Location = new System.Drawing.Point(464, 44);
+            this.label_Player1VolumeKey.Location = new System.Drawing.Point(928, 85);
+            this.label_Player1VolumeKey.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label_Player1VolumeKey.Name = "label_Player1VolumeKey";
-            this.label_Player1VolumeKey.Size = new System.Drawing.Size(86, 13);
+            this.label_Player1VolumeKey.Size = new System.Drawing.Size(175, 25);
             this.label_Player1VolumeKey.TabIndex = 56;
             this.label_Player1VolumeKey.Text = "Player1 Volume: ";
             // 
             // label_SongVolumeKey
             // 
             this.label_SongVolumeKey.AutoSize = true;
-            this.label_SongVolumeKey.Location = new System.Drawing.Point(464, 27);
+            this.label_SongVolumeKey.Location = new System.Drawing.Point(928, 52);
+            this.label_SongVolumeKey.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label_SongVolumeKey.Name = "label_SongVolumeKey";
-            this.label_SongVolumeKey.Size = new System.Drawing.Size(76, 13);
+            this.label_SongVolumeKey.Size = new System.Drawing.Size(152, 25);
             this.label_SongVolumeKey.TabIndex = 55;
             this.label_SongVolumeKey.Text = "Song Volume: ";
             // 
             // label_MasterVolumeKey
             // 
             this.label_MasterVolumeKey.AutoSize = true;
-            this.label_MasterVolumeKey.Location = new System.Drawing.Point(464, 10);
+            this.label_MasterVolumeKey.Location = new System.Drawing.Point(928, 19);
+            this.label_MasterVolumeKey.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label_MasterVolumeKey.Name = "label_MasterVolumeKey";
-            this.label_MasterVolumeKey.Size = new System.Drawing.Size(83, 13);
+            this.label_MasterVolumeKey.Size = new System.Drawing.Size(168, 25);
             this.label_MasterVolumeKey.TabIndex = 54;
             this.label_MasterVolumeKey.Text = "Master Volume: ";
             // 
             // button_ClearSelectedKeybind_AUDIO
             // 
-            this.button_ClearSelectedKeybind_AUDIO.Location = new System.Drawing.Point(222, 130);
+            this.button_ClearSelectedKeybind_AUDIO.Location = new System.Drawing.Point(444, 250);
+            this.button_ClearSelectedKeybind_AUDIO.Margin = new System.Windows.Forms.Padding(6);
             this.button_ClearSelectedKeybind_AUDIO.Name = "button_ClearSelectedKeybind_AUDIO";
-            this.button_ClearSelectedKeybind_AUDIO.Size = new System.Drawing.Size(188, 23);
+            this.button_ClearSelectedKeybind_AUDIO.Size = new System.Drawing.Size(376, 44);
             this.button_ClearSelectedKeybind_AUDIO.TabIndex = 29;
             this.button_ClearSelectedKeybind_AUDIO.Text = "Clear Selected Keybind";
             this.button_ClearSelectedKeybind_AUDIO.UseVisualStyleBackColor = true;
@@ -3042,18 +3160,20 @@
             // label_NewAssignmentAUDIO
             // 
             this.label_NewAssignmentAUDIO.AutoSize = true;
-            this.label_NewAssignmentAUDIO.Location = new System.Drawing.Point(219, 59);
+            this.label_NewAssignmentAUDIO.Location = new System.Drawing.Point(438, 113);
+            this.label_NewAssignmentAUDIO.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label_NewAssignmentAUDIO.Name = "label_NewAssignmentAUDIO";
-            this.label_NewAssignmentAUDIO.Size = new System.Drawing.Size(196, 13);
+            this.label_NewAssignmentAUDIO.Size = new System.Drawing.Size(396, 25);
             this.label_NewAssignmentAUDIO.TabIndex = 21;
             this.label_NewAssignmentAUDIO.Text = "New Assignment (Press Enter To Save):";
             // 
             // textBox_NewKeyAssignment_AUDIO
             // 
-            this.textBox_NewKeyAssignment_AUDIO.Location = new System.Drawing.Point(222, 93);
+            this.textBox_NewKeyAssignment_AUDIO.Location = new System.Drawing.Point(444, 179);
+            this.textBox_NewKeyAssignment_AUDIO.Margin = new System.Windows.Forms.Padding(6);
             this.textBox_NewKeyAssignment_AUDIO.MaxLength = 1;
             this.textBox_NewKeyAssignment_AUDIO.Name = "textBox_NewKeyAssignment_AUDIO";
-            this.textBox_NewKeyAssignment_AUDIO.Size = new System.Drawing.Size(188, 20);
+            this.textBox_NewKeyAssignment_AUDIO.Size = new System.Drawing.Size(372, 31);
             this.textBox_NewKeyAssignment_AUDIO.TabIndex = 20;
             this.textBox_NewKeyAssignment_AUDIO.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.textBox_NewKeyAssignment_AUDIO.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Keypress_CheckDown);
@@ -3063,9 +3183,11 @@
             // listBox_Modlist_AUDIO
             // 
             this.listBox_Modlist_AUDIO.FormattingEnabled = true;
-            this.listBox_Modlist_AUDIO.Location = new System.Drawing.Point(6, 19);
+            this.listBox_Modlist_AUDIO.ItemHeight = 25;
+            this.listBox_Modlist_AUDIO.Location = new System.Drawing.Point(12, 37);
+            this.listBox_Modlist_AUDIO.Margin = new System.Windows.Forms.Padding(6);
             this.listBox_Modlist_AUDIO.Name = "listBox_Modlist_AUDIO";
-            this.listBox_Modlist_AUDIO.Size = new System.Drawing.Size(185, 160);
+            this.listBox_Modlist_AUDIO.Size = new System.Drawing.Size(366, 304);
             this.listBox_Modlist_AUDIO.TabIndex = 5;
             this.listBox_Modlist_AUDIO.SelectedIndexChanged += new System.EventHandler(this.Keypress_LoadVolumes);
             // 
@@ -3074,10 +3196,11 @@
             this.tab_ModToggles.BackColor = System.Drawing.Color.Azure;
             this.tab_ModToggles.Controls.Add(this.TabController_ModSettings);
             this.tab_ModToggles.Controls.Add(this.groupBox_EnabledMods);
-            this.tab_ModToggles.Location = new System.Drawing.Point(4, 22);
+            this.tab_ModToggles.Location = new System.Drawing.Point(4, 34);
+            this.tab_ModToggles.Margin = new System.Windows.Forms.Padding(6);
             this.tab_ModToggles.Name = "tab_ModToggles";
-            this.tab_ModToggles.Padding = new System.Windows.Forms.Padding(3);
-            this.tab_ModToggles.Size = new System.Drawing.Size(1150, 513);
+            this.tab_ModToggles.Padding = new System.Windows.Forms.Padding(6);
+            this.tab_ModToggles.Size = new System.Drawing.Size(2308, 999);
             this.tab_ModToggles.TabIndex = 2;
             this.tab_ModToggles.Text = "Enable / Disable Mods";
             // 
@@ -3088,10 +3211,11 @@
             this.TabController_ModSettings.Controls.Add(this.tabPage_ModSettings_Automation);
             this.TabController_ModSettings.Controls.Add(this.tabPage_ModSettings_AutoTuning);
             this.TabController_ModSettings.Controls.Add(this.tabPage_ModSettings_Misc);
-            this.TabController_ModSettings.Location = new System.Drawing.Point(343, 23);
+            this.TabController_ModSettings.Location = new System.Drawing.Point(686, 44);
+            this.TabController_ModSettings.Margin = new System.Windows.Forms.Padding(6);
             this.TabController_ModSettings.Name = "TabController_ModSettings";
             this.TabController_ModSettings.SelectedIndex = 0;
-            this.TabController_ModSettings.Size = new System.Drawing.Size(785, 452);
+            this.TabController_ModSettings.Size = new System.Drawing.Size(1570, 869);
             this.TabController_ModSettings.TabIndex = 100007;
             // 
             // tabPage_ModSettings_ER
@@ -3100,10 +3224,11 @@
             this.tabPage_ModSettings_ER.Controls.Add(this.groupBox_NoteColors);
             this.tabPage_ModSettings_ER.Controls.Add(this.groupBox_ExtendedRangeWhen);
             this.tabPage_ModSettings_ER.Controls.Add(this.groupBox_StringColors);
-            this.tabPage_ModSettings_ER.Location = new System.Drawing.Point(4, 22);
+            this.tabPage_ModSettings_ER.Location = new System.Drawing.Point(4, 34);
+            this.tabPage_ModSettings_ER.Margin = new System.Windows.Forms.Padding(6);
             this.tabPage_ModSettings_ER.Name = "tabPage_ModSettings_ER";
-            this.tabPage_ModSettings_ER.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage_ModSettings_ER.Size = new System.Drawing.Size(777, 426);
+            this.tabPage_ModSettings_ER.Padding = new System.Windows.Forms.Padding(6);
+            this.tabPage_ModSettings_ER.Size = new System.Drawing.Size(1562, 831);
             this.tabPage_ModSettings_ER.TabIndex = 0;
             this.tabPage_ModSettings_ER.Text = "Extended Range";
             // 
@@ -3124,9 +3249,11 @@
             this.groupBox_NoteColors.Controls.Add(this.button_Note1ColorButton);
             this.groupBox_NoteColors.Controls.Add(this.textBox_Note0Color);
             this.groupBox_NoteColors.Controls.Add(this.button_Note0ColorButton);
-            this.groupBox_NoteColors.Location = new System.Drawing.Point(315, 16);
+            this.groupBox_NoteColors.Location = new System.Drawing.Point(630, 31);
+            this.groupBox_NoteColors.Margin = new System.Windows.Forms.Padding(6);
             this.groupBox_NoteColors.Name = "groupBox_NoteColors";
-            this.groupBox_NoteColors.Size = new System.Drawing.Size(289, 268);
+            this.groupBox_NoteColors.Padding = new System.Windows.Forms.Padding(6);
+            this.groupBox_NoteColors.Size = new System.Drawing.Size(578, 515);
             this.groupBox_NoteColors.TabIndex = 66;
             this.groupBox_NoteColors.TabStop = false;
             this.groupBox_NoteColors.Text = "Change Note Colors";
@@ -3135,9 +3262,10 @@
             // checkBox_NoteColors_UseRocksmithColors
             // 
             this.checkBox_NoteColors_UseRocksmithColors.AutoSize = true;
-            this.checkBox_NoteColors_UseRocksmithColors.Location = new System.Drawing.Point(76, 245);
+            this.checkBox_NoteColors_UseRocksmithColors.Location = new System.Drawing.Point(152, 471);
+            this.checkBox_NoteColors_UseRocksmithColors.Margin = new System.Windows.Forms.Padding(6);
             this.checkBox_NoteColors_UseRocksmithColors.Name = "checkBox_NoteColors_UseRocksmithColors";
-            this.checkBox_NoteColors_UseRocksmithColors.Size = new System.Drawing.Size(130, 17);
+            this.checkBox_NoteColors_UseRocksmithColors.Size = new System.Drawing.Size(243, 29);
             this.checkBox_NoteColors_UseRocksmithColors.TabIndex = 67;
             this.checkBox_NoteColors_UseRocksmithColors.Text = "Use Rocksmith Colors";
             this.checkBox_NoteColors_UseRocksmithColors.UseVisualStyleBackColor = true;
@@ -3147,9 +3275,10 @@
             // radio_colorBlindERNoteColors
             // 
             this.radio_colorBlindERNoteColors.AutoSize = true;
-            this.radio_colorBlindERNoteColors.Location = new System.Drawing.Point(138, 14);
+            this.radio_colorBlindERNoteColors.Location = new System.Drawing.Point(276, 27);
+            this.radio_colorBlindERNoteColors.Margin = new System.Windows.Forms.Padding(6);
             this.radio_colorBlindERNoteColors.Name = "radio_colorBlindERNoteColors";
-            this.radio_colorBlindERNoteColors.Size = new System.Drawing.Size(138, 43);
+            this.radio_colorBlindERNoteColors.Size = new System.Drawing.Size(256, 79);
             this.radio_colorBlindERNoteColors.TabIndex = 66;
             this.radio_colorBlindERNoteColors.TabStop = true;
             this.radio_colorBlindERNoteColors.Text = "Colorblind and \r\nExtended Range Mode \r\nColors";
@@ -3160,9 +3289,10 @@
             // 
             this.radio_DefaultNoteColors.AutoSize = true;
             this.radio_DefaultNoteColors.Checked = true;
-            this.radio_DefaultNoteColors.Location = new System.Drawing.Point(26, 27);
+            this.radio_DefaultNoteColors.Location = new System.Drawing.Point(52, 52);
+            this.radio_DefaultNoteColors.Margin = new System.Windows.Forms.Padding(6);
             this.radio_DefaultNoteColors.Name = "radio_DefaultNoteColors";
-            this.radio_DefaultNoteColors.Size = new System.Drawing.Size(91, 17);
+            this.radio_DefaultNoteColors.Size = new System.Drawing.Size(166, 29);
             this.radio_DefaultNoteColors.TabIndex = 65;
             this.radio_DefaultNoteColors.TabStop = true;
             this.radio_DefaultNoteColors.Text = "Default Colors";
@@ -3172,17 +3302,19 @@
             // textBox_Note5Color
             // 
             this.textBox_Note5Color.Enabled = false;
-            this.textBox_Note5Color.Location = new System.Drawing.Point(152, 215);
+            this.textBox_Note5Color.Location = new System.Drawing.Point(304, 413);
+            this.textBox_Note5Color.Margin = new System.Windows.Forms.Padding(6);
             this.textBox_Note5Color.Name = "textBox_Note5Color";
             this.textBox_Note5Color.ReadOnly = true;
-            this.textBox_Note5Color.Size = new System.Drawing.Size(108, 20);
+            this.textBox_Note5Color.Size = new System.Drawing.Size(212, 31);
             this.textBox_Note5Color.TabIndex = 64;
             // 
             // button_Note5ColorButton
             // 
-            this.button_Note5ColorButton.Location = new System.Drawing.Point(26, 215);
+            this.button_Note5ColorButton.Location = new System.Drawing.Point(52, 413);
+            this.button_Note5ColorButton.Margin = new System.Windows.Forms.Padding(6);
             this.button_Note5ColorButton.Name = "button_Note5ColorButton";
-            this.button_Note5ColorButton.Size = new System.Drawing.Size(120, 21);
+            this.button_Note5ColorButton.Size = new System.Drawing.Size(240, 40);
             this.button_Note5ColorButton.TabIndex = 63;
             this.button_Note5ColorButton.Text = "e String";
             this.button_Note5ColorButton.UseVisualStyleBackColor = true;
@@ -3191,17 +3323,19 @@
             // textBox_Note4Color
             // 
             this.textBox_Note4Color.Enabled = false;
-            this.textBox_Note4Color.Location = new System.Drawing.Point(152, 185);
+            this.textBox_Note4Color.Location = new System.Drawing.Point(304, 356);
+            this.textBox_Note4Color.Margin = new System.Windows.Forms.Padding(6);
             this.textBox_Note4Color.Name = "textBox_Note4Color";
             this.textBox_Note4Color.ReadOnly = true;
-            this.textBox_Note4Color.Size = new System.Drawing.Size(108, 20);
+            this.textBox_Note4Color.Size = new System.Drawing.Size(212, 31);
             this.textBox_Note4Color.TabIndex = 62;
             // 
             // button_Note4ColorButton
             // 
-            this.button_Note4ColorButton.Location = new System.Drawing.Point(26, 185);
+            this.button_Note4ColorButton.Location = new System.Drawing.Point(52, 356);
+            this.button_Note4ColorButton.Margin = new System.Windows.Forms.Padding(6);
             this.button_Note4ColorButton.Name = "button_Note4ColorButton";
-            this.button_Note4ColorButton.Size = new System.Drawing.Size(120, 21);
+            this.button_Note4ColorButton.Size = new System.Drawing.Size(240, 40);
             this.button_Note4ColorButton.TabIndex = 61;
             this.button_Note4ColorButton.Text = "B String";
             this.button_Note4ColorButton.UseVisualStyleBackColor = true;
@@ -3210,17 +3344,19 @@
             // textBox_Note3Color
             // 
             this.textBox_Note3Color.Enabled = false;
-            this.textBox_Note3Color.Location = new System.Drawing.Point(152, 153);
+            this.textBox_Note3Color.Location = new System.Drawing.Point(304, 294);
+            this.textBox_Note3Color.Margin = new System.Windows.Forms.Padding(6);
             this.textBox_Note3Color.Name = "textBox_Note3Color";
             this.textBox_Note3Color.ReadOnly = true;
-            this.textBox_Note3Color.Size = new System.Drawing.Size(108, 20);
+            this.textBox_Note3Color.Size = new System.Drawing.Size(212, 31);
             this.textBox_Note3Color.TabIndex = 60;
             // 
             // button_Note3ColorButton
             // 
-            this.button_Note3ColorButton.Location = new System.Drawing.Point(26, 153);
+            this.button_Note3ColorButton.Location = new System.Drawing.Point(52, 294);
+            this.button_Note3ColorButton.Margin = new System.Windows.Forms.Padding(6);
             this.button_Note3ColorButton.Name = "button_Note3ColorButton";
-            this.button_Note3ColorButton.Size = new System.Drawing.Size(120, 21);
+            this.button_Note3ColorButton.Size = new System.Drawing.Size(240, 40);
             this.button_Note3ColorButton.TabIndex = 59;
             this.button_Note3ColorButton.Text = "G String";
             this.button_Note3ColorButton.UseVisualStyleBackColor = true;
@@ -3229,17 +3365,19 @@
             // textBox_Note2Color
             // 
             this.textBox_Note2Color.Enabled = false;
-            this.textBox_Note2Color.Location = new System.Drawing.Point(152, 122);
+            this.textBox_Note2Color.Location = new System.Drawing.Point(304, 235);
+            this.textBox_Note2Color.Margin = new System.Windows.Forms.Padding(6);
             this.textBox_Note2Color.Name = "textBox_Note2Color";
             this.textBox_Note2Color.ReadOnly = true;
-            this.textBox_Note2Color.Size = new System.Drawing.Size(108, 20);
+            this.textBox_Note2Color.Size = new System.Drawing.Size(212, 31);
             this.textBox_Note2Color.TabIndex = 58;
             // 
             // button_Note2ColorButton
             // 
-            this.button_Note2ColorButton.Location = new System.Drawing.Point(26, 122);
+            this.button_Note2ColorButton.Location = new System.Drawing.Point(52, 235);
+            this.button_Note2ColorButton.Margin = new System.Windows.Forms.Padding(6);
             this.button_Note2ColorButton.Name = "button_Note2ColorButton";
-            this.button_Note2ColorButton.Size = new System.Drawing.Size(120, 21);
+            this.button_Note2ColorButton.Size = new System.Drawing.Size(240, 40);
             this.button_Note2ColorButton.TabIndex = 57;
             this.button_Note2ColorButton.Text = "D String";
             this.button_Note2ColorButton.UseVisualStyleBackColor = true;
@@ -3248,17 +3386,19 @@
             // textBox_Note1Color
             // 
             this.textBox_Note1Color.Enabled = false;
-            this.textBox_Note1Color.Location = new System.Drawing.Point(152, 93);
+            this.textBox_Note1Color.Location = new System.Drawing.Point(304, 179);
+            this.textBox_Note1Color.Margin = new System.Windows.Forms.Padding(6);
             this.textBox_Note1Color.Name = "textBox_Note1Color";
             this.textBox_Note1Color.ReadOnly = true;
-            this.textBox_Note1Color.Size = new System.Drawing.Size(108, 20);
+            this.textBox_Note1Color.Size = new System.Drawing.Size(212, 31);
             this.textBox_Note1Color.TabIndex = 56;
             // 
             // button_Note1ColorButton
             // 
-            this.button_Note1ColorButton.Location = new System.Drawing.Point(26, 93);
+            this.button_Note1ColorButton.Location = new System.Drawing.Point(52, 179);
+            this.button_Note1ColorButton.Margin = new System.Windows.Forms.Padding(6);
             this.button_Note1ColorButton.Name = "button_Note1ColorButton";
-            this.button_Note1ColorButton.Size = new System.Drawing.Size(120, 21);
+            this.button_Note1ColorButton.Size = new System.Drawing.Size(240, 40);
             this.button_Note1ColorButton.TabIndex = 55;
             this.button_Note1ColorButton.Text = "A String";
             this.button_Note1ColorButton.UseVisualStyleBackColor = true;
@@ -3267,17 +3407,19 @@
             // textBox_Note0Color
             // 
             this.textBox_Note0Color.Enabled = false;
-            this.textBox_Note0Color.Location = new System.Drawing.Point(152, 63);
+            this.textBox_Note0Color.Location = new System.Drawing.Point(304, 121);
+            this.textBox_Note0Color.Margin = new System.Windows.Forms.Padding(6);
             this.textBox_Note0Color.Name = "textBox_Note0Color";
             this.textBox_Note0Color.ReadOnly = true;
-            this.textBox_Note0Color.Size = new System.Drawing.Size(108, 20);
+            this.textBox_Note0Color.Size = new System.Drawing.Size(212, 31);
             this.textBox_Note0Color.TabIndex = 54;
             // 
             // button_Note0ColorButton
             // 
-            this.button_Note0ColorButton.Location = new System.Drawing.Point(26, 63);
+            this.button_Note0ColorButton.Location = new System.Drawing.Point(52, 121);
+            this.button_Note0ColorButton.Margin = new System.Windows.Forms.Padding(6);
             this.button_Note0ColorButton.Name = "button_Note0ColorButton";
-            this.button_Note0ColorButton.Size = new System.Drawing.Size(120, 21);
+            this.button_Note0ColorButton.Size = new System.Drawing.Size(240, 40);
             this.button_Note0ColorButton.TabIndex = 53;
             this.button_Note0ColorButton.Text = "E String";
             this.button_Note0ColorButton.UseVisualStyleBackColor = true;
@@ -3292,10 +3434,11 @@
             this.tabPage_ModSettings_DisableUI.Controls.Add(this.groupBox_LoftOffWhen);
             this.tabPage_ModSettings_DisableUI.Controls.Add(this.groupBox_ToggleSkylineWhen);
             this.tabPage_ModSettings_DisableUI.Controls.Add(this.groupBox_ToggleHeadstockOffWhen);
-            this.tabPage_ModSettings_DisableUI.Location = new System.Drawing.Point(4, 22);
+            this.tabPage_ModSettings_DisableUI.Location = new System.Drawing.Point(4, 34);
+            this.tabPage_ModSettings_DisableUI.Margin = new System.Windows.Forms.Padding(6);
             this.tabPage_ModSettings_DisableUI.Name = "tabPage_ModSettings_DisableUI";
-            this.tabPage_ModSettings_DisableUI.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage_ModSettings_DisableUI.Size = new System.Drawing.Size(777, 426);
+            this.tabPage_ModSettings_DisableUI.Padding = new System.Windows.Forms.Padding(6);
+            this.tabPage_ModSettings_DisableUI.Size = new System.Drawing.Size(1562, 831);
             this.tabPage_ModSettings_DisableUI.TabIndex = 3;
             this.tabPage_ModSettings_DisableUI.Text = "Disable UI Elements";
             // 
@@ -3305,9 +3448,11 @@
             this.groupBox_OnScreenFont.Controls.Add(this.label_FontTestlowercase);
             this.groupBox_OnScreenFont.Controls.Add(this.label_FontTestCAPITALS);
             this.groupBox_OnScreenFont.Controls.Add(this.listBox_AvailableFonts);
-            this.groupBox_OnScreenFont.Location = new System.Drawing.Point(420, 308);
+            this.groupBox_OnScreenFont.Location = new System.Drawing.Point(840, 592);
+            this.groupBox_OnScreenFont.Margin = new System.Windows.Forms.Padding(6);
             this.groupBox_OnScreenFont.Name = "groupBox_OnScreenFont";
-            this.groupBox_OnScreenFont.Size = new System.Drawing.Size(357, 115);
+            this.groupBox_OnScreenFont.Padding = new System.Windows.Forms.Padding(6);
+            this.groupBox_OnScreenFont.Size = new System.Drawing.Size(714, 221);
             this.groupBox_OnScreenFont.TabIndex = 100009;
             this.groupBox_OnScreenFont.TabStop = false;
             this.groupBox_OnScreenFont.Text = "On Screen Font";
@@ -3316,7 +3461,8 @@
             // 
             this.label_FontTestNumbers.AutoSize = true;
             this.label_FontTestNumbers.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label_FontTestNumbers.Location = new System.Drawing.Point(203, 92);
+            this.label_FontTestNumbers.Location = new System.Drawing.Point(406, 177);
+            this.label_FontTestNumbers.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label_FontTestNumbers.Name = "label_FontTestNumbers";
             this.label_FontTestNumbers.Size = new System.Drawing.Size(88, 17);
             this.label_FontTestNumbers.TabIndex = 3;
@@ -3326,7 +3472,8 @@
             // 
             this.label_FontTestlowercase.AutoSize = true;
             this.label_FontTestlowercase.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label_FontTestlowercase.Location = new System.Drawing.Point(268, 15);
+            this.label_FontTestlowercase.Location = new System.Drawing.Point(536, 29);
+            this.label_FontTestlowercase.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label_FontTestlowercase.Name = "label_FontTestlowercase";
             this.label_FontTestlowercase.Size = new System.Drawing.Size(59, 68);
             this.label_FontTestlowercase.TabIndex = 2;
@@ -3336,7 +3483,8 @@
             // 
             this.label_FontTestCAPITALS.AutoSize = true;
             this.label_FontTestCAPITALS.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label_FontTestCAPITALS.Location = new System.Drawing.Point(189, 15);
+            this.label_FontTestCAPITALS.Location = new System.Drawing.Point(378, 29);
+            this.label_FontTestCAPITALS.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label_FontTestCAPITALS.Name = "label_FontTestCAPITALS";
             this.label_FontTestCAPITALS.Size = new System.Drawing.Size(77, 68);
             this.label_FontTestCAPITALS.TabIndex = 1;
@@ -3345,9 +3493,11 @@
             // listBox_AvailableFonts
             // 
             this.listBox_AvailableFonts.FormattingEnabled = true;
-            this.listBox_AvailableFonts.Location = new System.Drawing.Point(9, 20);
+            this.listBox_AvailableFonts.ItemHeight = 25;
+            this.listBox_AvailableFonts.Location = new System.Drawing.Point(18, 38);
+            this.listBox_AvailableFonts.Margin = new System.Windows.Forms.Padding(6);
             this.listBox_AvailableFonts.Name = "listBox_AvailableFonts";
-            this.listBox_AvailableFonts.Size = new System.Drawing.Size(174, 82);
+            this.listBox_AvailableFonts.Size = new System.Drawing.Size(344, 154);
             this.listBox_AvailableFonts.TabIndex = 0;
             this.listBox_AvailableFonts.SelectedIndexChanged += new System.EventHandler(this.Fonts_Change);
             // 
@@ -3355,9 +3505,11 @@
             // 
             this.groupBox_SongTimer.Controls.Add(this.radio_SongTimerManual);
             this.groupBox_SongTimer.Controls.Add(this.radio_SongTimerAlways);
-            this.groupBox_SongTimer.Location = new System.Drawing.Point(8, 90);
+            this.groupBox_SongTimer.Location = new System.Drawing.Point(16, 173);
+            this.groupBox_SongTimer.Margin = new System.Windows.Forms.Padding(6);
             this.groupBox_SongTimer.Name = "groupBox_SongTimer";
-            this.groupBox_SongTimer.Size = new System.Drawing.Size(166, 68);
+            this.groupBox_SongTimer.Padding = new System.Windows.Forms.Padding(6);
+            this.groupBox_SongTimer.Size = new System.Drawing.Size(332, 131);
             this.groupBox_SongTimer.TabIndex = 100007;
             this.groupBox_SongTimer.TabStop = false;
             this.groupBox_SongTimer.Text = "Toggle Song Timer When";
@@ -3366,9 +3518,10 @@
             // radio_SongTimerManual
             // 
             this.radio_SongTimerManual.AutoSize = true;
-            this.radio_SongTimerManual.Location = new System.Drawing.Point(11, 42);
+            this.radio_SongTimerManual.Location = new System.Drawing.Point(22, 81);
+            this.radio_SongTimerManual.Margin = new System.Windows.Forms.Padding(6);
             this.radio_SongTimerManual.Name = "radio_SongTimerManual";
-            this.radio_SongTimerManual.Size = new System.Drawing.Size(59, 17);
+            this.radio_SongTimerManual.Size = new System.Drawing.Size(97, 29);
             this.radio_SongTimerManual.TabIndex = 1;
             this.radio_SongTimerManual.TabStop = true;
             this.radio_SongTimerManual.Text = "Hotkey";
@@ -3378,9 +3531,10 @@
             // radio_SongTimerAlways
             // 
             this.radio_SongTimerAlways.AutoSize = true;
-            this.radio_SongTimerAlways.Location = new System.Drawing.Point(11, 19);
+            this.radio_SongTimerAlways.Location = new System.Drawing.Point(22, 37);
+            this.radio_SongTimerAlways.Margin = new System.Windows.Forms.Padding(6);
             this.radio_SongTimerAlways.Name = "radio_SongTimerAlways";
-            this.radio_SongTimerAlways.Size = new System.Drawing.Size(69, 17);
+            this.radio_SongTimerAlways.Size = new System.Drawing.Size(118, 29);
             this.radio_SongTimerAlways.TabIndex = 0;
             this.radio_SongTimerAlways.TabStop = true;
             this.radio_SongTimerAlways.Text = "In a song";
@@ -3390,24 +3544,97 @@
             // tabPage_ModSettings_Automation
             // 
             this.tabPage_ModSettings_Automation.BackColor = System.Drawing.Color.Azure;
+            this.tabPage_ModSettings_Automation.Controls.Add(this.groupBox1);
             this.tabPage_ModSettings_Automation.Controls.Add(this.groupBox_NSPTimer);
             this.tabPage_ModSettings_Automation.Controls.Add(this.groupBox_SampleRateOutput);
             this.tabPage_ModSettings_Automation.Controls.Add(this.groupBox_GuitarSpeak);
             this.tabPage_ModSettings_Automation.Controls.Add(this.groupBox_HowToEnumerate);
             this.tabPage_ModSettings_Automation.Controls.Add(this.groupBox_AutoLoadProfiles);
-            this.tabPage_ModSettings_Automation.Location = new System.Drawing.Point(4, 22);
+            this.tabPage_ModSettings_Automation.Location = new System.Drawing.Point(4, 34);
+            this.tabPage_ModSettings_Automation.Margin = new System.Windows.Forms.Padding(6);
             this.tabPage_ModSettings_Automation.Name = "tabPage_ModSettings_Automation";
-            this.tabPage_ModSettings_Automation.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage_ModSettings_Automation.Size = new System.Drawing.Size(777, 426);
+            this.tabPage_ModSettings_Automation.Padding = new System.Windows.Forms.Padding(6);
+            this.tabPage_ModSettings_Automation.Size = new System.Drawing.Size(1562, 831);
             this.tabPage_ModSettings_Automation.TabIndex = 1;
             this.tabPage_ModSettings_Automation.Text = "Automation";
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.checkBox1);
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Controls.Add(this.numericUpDown1);
+            this.groupBox1.Controls.Add(this.radioButton1);
+            this.groupBox1.Controls.Add(this.radioButton2);
+            this.groupBox1.Location = new System.Drawing.Point(1085, 303);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(6);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(6);
+            this.groupBox1.Size = new System.Drawing.Size(425, 246);
+            this.groupBox1.TabIndex = 48;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Rocksync";
+            this.groupBox1.Visible = false;
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter_1);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(25, 152);
+            this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(101, 25);
+            this.label1.TabIndex = 27;
+            this.label1.Text = "Host Port";
+            this.label1.Visible = false;
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // numericUpDown1
+            // 
+            this.numericUpDown1.Location = new System.Drawing.Point(138, 152);
+            this.numericUpDown1.Margin = new System.Windows.Forms.Padding(6);
+            this.numericUpDown1.Maximum = new decimal(new int[] {65535, 0, 0, 0});
+            this.numericUpDown1.Minimum = new decimal(new int[] {1, 0, 0, 0});
+            this.numericUpDown1.Name = "numericUpDown1";
+            this.numericUpDown1.Size = new System.Drawing.Size(116, 31);
+            this.numericUpDown1.TabIndex = 26;
+            this.numericUpDown1.Value = new decimal(new int[] {5, 0, 0, 0});
+            this.numericUpDown1.Visible = false;
+            this.numericUpDown1.ValueChanged += new System.EventHandler(this.numericUpDown1_ValueChanged);
+            // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Location = new System.Drawing.Point(28, 92);
+            this.radioButton1.Margin = new System.Windows.Forms.Padding(6);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(89, 29);
+            this.radioButton1.TabIndex = 25;
+            this.radioButton1.Text = "Joiner";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioButton1.Visible = false;
+            // 
+            // radioButton2
+            // 
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Checked = true;
+            this.radioButton2.Location = new System.Drawing.Point(28, 44);
+            this.radioButton2.Margin = new System.Windows.Forms.Padding(6);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(74, 29);
+            this.radioButton2.TabIndex = 24;
+            this.radioButton2.TabStop = true;
+            this.radioButton2.Text = "Host";
+            this.radioButton2.UseVisualStyleBackColor = true;
+            this.radioButton2.Visible = false;
             // 
             // groupBox_NSPTimer
             // 
             this.groupBox_NSPTimer.Controls.Add(this.nUpDown_NSPTimer);
-            this.groupBox_NSPTimer.Location = new System.Drawing.Point(233, 312);
+            this.groupBox_NSPTimer.Location = new System.Drawing.Point(466, 600);
+            this.groupBox_NSPTimer.Margin = new System.Windows.Forms.Padding(6);
             this.groupBox_NSPTimer.Name = "groupBox_NSPTimer";
-            this.groupBox_NSPTimer.Size = new System.Drawing.Size(166, 70);
+            this.groupBox_NSPTimer.Padding = new System.Windows.Forms.Padding(6);
+            this.groupBox_NSPTimer.Size = new System.Drawing.Size(332, 135);
             this.groupBox_NSPTimer.TabIndex = 100007;
             this.groupBox_NSPTimer.TabStop = false;
             this.groupBox_NSPTimer.Text = "Non-stop Play Timer (seconds)";
@@ -3416,38 +3643,25 @@
             // nUpDown_NSPTimer
             // 
             this.nUpDown_NSPTimer.DecimalPlaces = 1;
-            this.nUpDown_NSPTimer.Increment = new decimal(new int[] {
-            1,
-            0,
-            0,
-            65536});
-            this.nUpDown_NSPTimer.Location = new System.Drawing.Point(14, 32);
-            this.nUpDown_NSPTimer.Maximum = new decimal(new int[] {
-            60,
-            0,
-            0,
-            0});
-            this.nUpDown_NSPTimer.Minimum = new decimal(new int[] {
-            2,
-            0,
-            0,
-            0});
+            this.nUpDown_NSPTimer.Increment = new decimal(new int[] {1, 0, 0, 65536});
+            this.nUpDown_NSPTimer.Location = new System.Drawing.Point(28, 62);
+            this.nUpDown_NSPTimer.Margin = new System.Windows.Forms.Padding(6);
+            this.nUpDown_NSPTimer.Maximum = new decimal(new int[] {60, 0, 0, 0});
+            this.nUpDown_NSPTimer.Minimum = new decimal(new int[] {2, 0, 0, 0});
             this.nUpDown_NSPTimer.Name = "nUpDown_NSPTimer";
-            this.nUpDown_NSPTimer.Size = new System.Drawing.Size(120, 20);
+            this.nUpDown_NSPTimer.Size = new System.Drawing.Size(240, 31);
             this.nUpDown_NSPTimer.TabIndex = 0;
-            this.nUpDown_NSPTimer.Value = new decimal(new int[] {
-            2,
-            0,
-            0,
-            0});
+            this.nUpDown_NSPTimer.Value = new decimal(new int[] {2, 0, 0, 0});
             this.nUpDown_NSPTimer.ValueChanged += new System.EventHandler(this.Save_NSPTimer);
             // 
             // groupBox_SampleRateOutput
             // 
             this.groupBox_SampleRateOutput.Controls.Add(this.listBox_AltSampleRatesOutput);
-            this.groupBox_SampleRateOutput.Location = new System.Drawing.Point(555, 18);
+            this.groupBox_SampleRateOutput.Location = new System.Drawing.Point(1110, 35);
+            this.groupBox_SampleRateOutput.Margin = new System.Windows.Forms.Padding(6);
             this.groupBox_SampleRateOutput.Name = "groupBox_SampleRateOutput";
-            this.groupBox_SampleRateOutput.Size = new System.Drawing.Size(200, 129);
+            this.groupBox_SampleRateOutput.Padding = new System.Windows.Forms.Padding(6);
+            this.groupBox_SampleRateOutput.Size = new System.Drawing.Size(400, 248);
             this.groupBox_SampleRateOutput.TabIndex = 100006;
             this.groupBox_SampleRateOutput.TabStop = false;
             this.groupBox_SampleRateOutput.Text = "Alt Sample Rate for Output";
@@ -3456,16 +3670,12 @@
             // listBox_AltSampleRatesOutput
             // 
             this.listBox_AltSampleRatesOutput.FormattingEnabled = true;
-            this.listBox_AltSampleRatesOutput.Items.AddRange(new object[] {
-            "44100 Hz",
-            "48000 Hz",
-            "88200 Hz",
-            "96000 Hz",
-            "176400 Hz",
-            "192000 Hz"});
-            this.listBox_AltSampleRatesOutput.Location = new System.Drawing.Point(7, 26);
+            this.listBox_AltSampleRatesOutput.ItemHeight = 25;
+            this.listBox_AltSampleRatesOutput.Items.AddRange(new object[] {"44100 Hz", "48000 Hz", "88200 Hz", "96000 Hz", "176400 Hz", "192000 Hz"});
+            this.listBox_AltSampleRatesOutput.Location = new System.Drawing.Point(14, 50);
+            this.listBox_AltSampleRatesOutput.Margin = new System.Windows.Forms.Padding(6);
             this.listBox_AltSampleRatesOutput.Name = "listBox_AltSampleRatesOutput";
-            this.listBox_AltSampleRatesOutput.Size = new System.Drawing.Size(187, 95);
+            this.listBox_AltSampleRatesOutput.Size = new System.Drawing.Size(370, 179);
             this.listBox_AltSampleRatesOutput.TabIndex = 0;
             this.listBox_AltSampleRatesOutput.SelectedIndexChanged += new System.EventHandler(this.Save_AltSampleRatesOutput);
             // 
@@ -3473,9 +3683,11 @@
             // 
             this.groupBox_AutoLoadProfiles.Controls.Add(this.button_AutoLoadProfile_ClearSelection);
             this.groupBox_AutoLoadProfiles.Controls.Add(this.listBox_AutoLoadProfiles);
-            this.groupBox_AutoLoadProfiles.Location = new System.Drawing.Point(18, 230);
+            this.groupBox_AutoLoadProfiles.Location = new System.Drawing.Point(36, 442);
+            this.groupBox_AutoLoadProfiles.Margin = new System.Windows.Forms.Padding(6);
             this.groupBox_AutoLoadProfiles.Name = "groupBox_AutoLoadProfiles";
-            this.groupBox_AutoLoadProfiles.Size = new System.Drawing.Size(200, 171);
+            this.groupBox_AutoLoadProfiles.Padding = new System.Windows.Forms.Padding(6);
+            this.groupBox_AutoLoadProfiles.Size = new System.Drawing.Size(400, 329);
             this.groupBox_AutoLoadProfiles.TabIndex = 100005;
             this.groupBox_AutoLoadProfiles.TabStop = false;
             this.groupBox_AutoLoadProfiles.Text = "Auto Load Profile";
@@ -3484,9 +3696,10 @@
             // 
             // button_AutoLoadProfile_ClearSelection
             // 
-            this.button_AutoLoadProfile_ClearSelection.Location = new System.Drawing.Point(15, 140);
+            this.button_AutoLoadProfile_ClearSelection.Location = new System.Drawing.Point(30, 269);
+            this.button_AutoLoadProfile_ClearSelection.Margin = new System.Windows.Forms.Padding(6);
             this.button_AutoLoadProfile_ClearSelection.Name = "button_AutoLoadProfile_ClearSelection";
-            this.button_AutoLoadProfile_ClearSelection.Size = new System.Drawing.Size(166, 23);
+            this.button_AutoLoadProfile_ClearSelection.Size = new System.Drawing.Size(332, 44);
             this.button_AutoLoadProfile_ClearSelection.TabIndex = 1;
             this.button_AutoLoadProfile_ClearSelection.Text = "Clear Selection";
             this.button_AutoLoadProfile_ClearSelection.UseVisualStyleBackColor = true;
@@ -3496,9 +3709,11 @@
             // listBox_AutoLoadProfiles
             // 
             this.listBox_AutoLoadProfiles.FormattingEnabled = true;
-            this.listBox_AutoLoadProfiles.Location = new System.Drawing.Point(15, 26);
+            this.listBox_AutoLoadProfiles.ItemHeight = 25;
+            this.listBox_AutoLoadProfiles.Location = new System.Drawing.Point(30, 50);
+            this.listBox_AutoLoadProfiles.Margin = new System.Windows.Forms.Padding(6);
             this.listBox_AutoLoadProfiles.Name = "listBox_AutoLoadProfiles";
-            this.listBox_AutoLoadProfiles.Size = new System.Drawing.Size(166, 108);
+            this.listBox_AutoLoadProfiles.Size = new System.Drawing.Size(328, 204);
             this.listBox_AutoLoadProfiles.TabIndex = 0;
             this.listBox_AutoLoadProfiles.SelectedIndexChanged += new System.EventHandler(this.Save_AutoLoadProfile);
             this.listBox_AutoLoadProfiles.MouseHover += new System.EventHandler(this.ToolTips_Show);
@@ -3510,9 +3725,10 @@
             this.tabPage_ModSettings_AutoTuning.Controls.Add(this.groupBox_MidiAutoTuningWhen);
             this.tabPage_ModSettings_AutoTuning.Controls.Add(this.groupBox_MidiAutoTuningOffset);
             this.tabPage_ModSettings_AutoTuning.Controls.Add(this.groupBox_MidiAutoTuneDevice);
-            this.tabPage_ModSettings_AutoTuning.Location = new System.Drawing.Point(4, 22);
+            this.tabPage_ModSettings_AutoTuning.Location = new System.Drawing.Point(4, 34);
+            this.tabPage_ModSettings_AutoTuning.Margin = new System.Windows.Forms.Padding(6);
             this.tabPage_ModSettings_AutoTuning.Name = "tabPage_ModSettings_AutoTuning";
-            this.tabPage_ModSettings_AutoTuning.Size = new System.Drawing.Size(777, 426);
+            this.tabPage_ModSettings_AutoTuning.Size = new System.Drawing.Size(1562, 831);
             this.tabPage_ModSettings_AutoTuning.TabIndex = 4;
             this.tabPage_ModSettings_AutoTuning.Text = "Auto Tuning";
             // 
@@ -3522,9 +3738,11 @@
             this.groupBox_MidiInDevice.Controls.Add(this.label_CurrentMidiIn);
             this.groupBox_MidiInDevice.Controls.Add(this.label_SelectedMidiInDevice);
             this.groupBox_MidiInDevice.Controls.Add(this.listBox_ListMidiInDevices);
-            this.groupBox_MidiInDevice.Location = new System.Drawing.Point(434, 276);
+            this.groupBox_MidiInDevice.Location = new System.Drawing.Point(868, 531);
+            this.groupBox_MidiInDevice.Margin = new System.Windows.Forms.Padding(6);
             this.groupBox_MidiInDevice.Name = "groupBox_MidiInDevice";
-            this.groupBox_MidiInDevice.Size = new System.Drawing.Size(343, 147);
+            this.groupBox_MidiInDevice.Padding = new System.Windows.Forms.Padding(6);
+            this.groupBox_MidiInDevice.Size = new System.Drawing.Size(686, 283);
             this.groupBox_MidiInDevice.TabIndex = 100005;
             this.groupBox_MidiInDevice.TabStop = false;
             this.groupBox_MidiInDevice.Text = "Midi In Device";
@@ -3533,9 +3751,10 @@
             // checkBox_EnabledMidiIn
             // 
             this.checkBox_EnabledMidiIn.AutoSize = true;
-            this.checkBox_EnabledMidiIn.Location = new System.Drawing.Point(254, 122);
+            this.checkBox_EnabledMidiIn.Location = new System.Drawing.Point(508, 235);
+            this.checkBox_EnabledMidiIn.Margin = new System.Windows.Forms.Padding(6);
             this.checkBox_EnabledMidiIn.Name = "checkBox_EnabledMidiIn";
-            this.checkBox_EnabledMidiIn.Size = new System.Drawing.Size(65, 17);
+            this.checkBox_EnabledMidiIn.Size = new System.Drawing.Size(110, 29);
             this.checkBox_EnabledMidiIn.TabIndex = 3;
             this.checkBox_EnabledMidiIn.Text = "Enabled";
             this.checkBox_EnabledMidiIn.UseVisualStyleBackColor = true;
@@ -3544,27 +3763,31 @@
             // label_CurrentMidiIn
             // 
             this.label_CurrentMidiIn.AutoSize = true;
-            this.label_CurrentMidiIn.Location = new System.Drawing.Point(6, 122);
+            this.label_CurrentMidiIn.Location = new System.Drawing.Point(12, 235);
+            this.label_CurrentMidiIn.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label_CurrentMidiIn.Name = "label_CurrentMidiIn";
-            this.label_CurrentMidiIn.Size = new System.Drawing.Size(32, 13);
+            this.label_CurrentMidiIn.Size = new System.Drawing.Size(64, 25);
             this.label_CurrentMidiIn.TabIndex = 2;
             this.label_CurrentMidiIn.Text = "Midi: ";
             // 
             // label_SelectedMidiInDevice
             // 
             this.label_SelectedMidiInDevice.AutoSize = true;
-            this.label_SelectedMidiInDevice.Location = new System.Drawing.Point(6, 93);
+            this.label_SelectedMidiInDevice.Location = new System.Drawing.Point(12, 179);
+            this.label_SelectedMidiInDevice.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label_SelectedMidiInDevice.Name = "label_SelectedMidiInDevice";
-            this.label_SelectedMidiInDevice.Size = new System.Drawing.Size(69, 13);
+            this.label_SelectedMidiInDevice.Size = new System.Drawing.Size(136, 25);
             this.label_SelectedMidiInDevice.TabIndex = 1;
             this.label_SelectedMidiInDevice.Text = "Midi Device: ";
             // 
             // listBox_ListMidiInDevices
             // 
             this.listBox_ListMidiInDevices.FormattingEnabled = true;
-            this.listBox_ListMidiInDevices.Location = new System.Drawing.Point(7, 20);
+            this.listBox_ListMidiInDevices.ItemHeight = 25;
+            this.listBox_ListMidiInDevices.Location = new System.Drawing.Point(14, 38);
+            this.listBox_ListMidiInDevices.Margin = new System.Windows.Forms.Padding(6);
             this.listBox_ListMidiInDevices.Name = "listBox_ListMidiInDevices";
-            this.listBox_ListMidiInDevices.Size = new System.Drawing.Size(330, 56);
+            this.listBox_ListMidiInDevices.Size = new System.Drawing.Size(656, 104);
             this.listBox_ListMidiInDevices.TabIndex = 0;
             this.listBox_ListMidiInDevices.SelectedIndexChanged += new System.EventHandler(this.Save_MidiInDevice);
             // 
@@ -3572,9 +3795,11 @@
             // 
             this.groupBox_MidiAutoTuningWhen.Controls.Add(this.radio_AutoTuningWhenTuner);
             this.groupBox_MidiAutoTuningWhen.Controls.Add(this.radio_AutoTuningWhenManual);
-            this.groupBox_MidiAutoTuningWhen.Location = new System.Drawing.Point(16, 244);
+            this.groupBox_MidiAutoTuningWhen.Location = new System.Drawing.Point(32, 469);
+            this.groupBox_MidiAutoTuningWhen.Margin = new System.Windows.Forms.Padding(6);
             this.groupBox_MidiAutoTuningWhen.Name = "groupBox_MidiAutoTuningWhen";
-            this.groupBox_MidiAutoTuningWhen.Size = new System.Drawing.Size(200, 79);
+            this.groupBox_MidiAutoTuningWhen.Padding = new System.Windows.Forms.Padding(6);
+            this.groupBox_MidiAutoTuningWhen.Size = new System.Drawing.Size(400, 152);
             this.groupBox_MidiAutoTuningWhen.TabIndex = 100004;
             this.groupBox_MidiAutoTuningWhen.TabStop = false;
             this.groupBox_MidiAutoTuningWhen.Text = "When to trigger?";
@@ -3583,9 +3808,10 @@
             // radio_AutoTuningWhenTuner
             // 
             this.radio_AutoTuningWhenTuner.AutoSize = true;
-            this.radio_AutoTuningWhenTuner.Location = new System.Drawing.Point(10, 50);
+            this.radio_AutoTuningWhenTuner.Location = new System.Drawing.Point(20, 96);
+            this.radio_AutoTuningWhenTuner.Margin = new System.Windows.Forms.Padding(6);
             this.radio_AutoTuningWhenTuner.Name = "radio_AutoTuningWhenTuner";
-            this.radio_AutoTuningWhenTuner.Size = new System.Drawing.Size(126, 17);
+            this.radio_AutoTuningWhenTuner.Size = new System.Drawing.Size(232, 29);
             this.radio_AutoTuningWhenTuner.TabIndex = 1;
             this.radio_AutoTuningWhenTuner.TabStop = true;
             this.radio_AutoTuningWhenTuner.Text = "When entering Tuner";
@@ -3596,9 +3822,10 @@
             // radio_AutoTuningWhenManual
             // 
             this.radio_AutoTuningWhenManual.AutoSize = true;
-            this.radio_AutoTuningWhenManual.Location = new System.Drawing.Point(10, 19);
+            this.radio_AutoTuningWhenManual.Location = new System.Drawing.Point(20, 37);
+            this.radio_AutoTuningWhenManual.Margin = new System.Windows.Forms.Padding(6);
             this.radio_AutoTuningWhenManual.Name = "radio_AutoTuningWhenManual";
-            this.radio_AutoTuningWhenManual.Size = new System.Drawing.Size(109, 17);
+            this.radio_AutoTuningWhenManual.Size = new System.Drawing.Size(192, 29);
             this.radio_AutoTuningWhenManual.TabIndex = 0;
             this.radio_AutoTuningWhenManual.TabStop = true;
             this.radio_AutoTuningWhenManual.Text = "On \"Skip Tuning\"";
@@ -3609,9 +3836,11 @@
             // groupBox_MidiAutoTuningOffset
             // 
             this.groupBox_MidiAutoTuningOffset.Controls.Add(this.listBox_MidiAutoTuningOffset);
-            this.groupBox_MidiAutoTuningOffset.Location = new System.Drawing.Point(337, 16);
+            this.groupBox_MidiAutoTuningOffset.Location = new System.Drawing.Point(674, 31);
+            this.groupBox_MidiAutoTuningOffset.Margin = new System.Windows.Forms.Padding(6);
             this.groupBox_MidiAutoTuningOffset.Name = "groupBox_MidiAutoTuningOffset";
-            this.groupBox_MidiAutoTuningOffset.Size = new System.Drawing.Size(193, 253);
+            this.groupBox_MidiAutoTuningOffset.Padding = new System.Windows.Forms.Padding(6);
+            this.groupBox_MidiAutoTuningOffset.Size = new System.Drawing.Size(386, 487);
             this.groupBox_MidiAutoTuningOffset.TabIndex = 100003;
             this.groupBox_MidiAutoTuningOffset.TabStop = false;
             this.groupBox_MidiAutoTuningOffset.Text = "What tuning do you want to stay in?";
@@ -3620,26 +3849,12 @@
             // listBox_MidiAutoTuningOffset
             // 
             this.listBox_MidiAutoTuningOffset.FormattingEnabled = true;
-            this.listBox_MidiAutoTuningOffset.Items.AddRange(new object[] {
-            "G Standard / Drop F",
-            "F# Standard / Drop E",
-            "F Standard / Drop Eb",
-            "E Standard / Drop D",
-            "Eb Standard / Drop C#",
-            "D Standard / Drop C",
-            "C# Standard / Drop B",
-            "C Standard / Drop A#",
-            "B Standard / Drop A",
-            "A# Standard / Drop G#",
-            "A Standard / Drop G",
-            "G# Standard / Drop F#",
-            "G Standard / Drop F (Octave)",
-            "F# Standard / Drop E (Octave)",
-            "F Standard / Drop Eb (Octave)",
-            "E Standard / Drop D (Octave)"});
-            this.listBox_MidiAutoTuningOffset.Location = new System.Drawing.Point(8, 23);
+            this.listBox_MidiAutoTuningOffset.ItemHeight = 25;
+            this.listBox_MidiAutoTuningOffset.Items.AddRange(new object[] {"G Standard / Drop F", "F# Standard / Drop E", "F Standard / Drop Eb", "E Standard / Drop D", "Eb Standard / Drop C#", "D Standard / Drop C", "C# Standard / Drop B", "C Standard / Drop A#", "B Standard / Drop A", "A# Standard / Drop G#", "A Standard / Drop G", "G# Standard / Drop F#", "G Standard / Drop F (Octave)", "F# Standard / Drop E (Octave)", "F Standard / Drop Eb (Octave)", "E Standard / Drop D (Octave)"});
+            this.listBox_MidiAutoTuningOffset.Location = new System.Drawing.Point(16, 44);
+            this.listBox_MidiAutoTuningOffset.Margin = new System.Windows.Forms.Padding(6);
             this.listBox_MidiAutoTuningOffset.Name = "listBox_MidiAutoTuningOffset";
-            this.listBox_MidiAutoTuningOffset.Size = new System.Drawing.Size(176, 212);
+            this.listBox_MidiAutoTuningOffset.Size = new System.Drawing.Size(348, 404);
             this.listBox_MidiAutoTuningOffset.TabIndex = 0;
             this.listBox_MidiAutoTuningOffset.SelectedIndexChanged += new System.EventHandler(this.Save_MidiAutoTuningOffset);
             this.listBox_MidiAutoTuningOffset.MouseHover += new System.EventHandler(this.ToolTips_Show);
@@ -3654,9 +3869,11 @@
             this.groupBox_MidiAutoTuneDevice.Controls.Add(this.label_MidiWhatTuningPedalDoYouUse);
             this.groupBox_MidiAutoTuneDevice.Controls.Add(this.label_SelectedMidiOutDevice);
             this.groupBox_MidiAutoTuneDevice.Controls.Add(this.listBox_ListMidiOutDevices);
-            this.groupBox_MidiAutoTuneDevice.Location = new System.Drawing.Point(16, 16);
+            this.groupBox_MidiAutoTuneDevice.Location = new System.Drawing.Point(32, 31);
+            this.groupBox_MidiAutoTuneDevice.Margin = new System.Windows.Forms.Padding(6);
             this.groupBox_MidiAutoTuneDevice.Name = "groupBox_MidiAutoTuneDevice";
-            this.groupBox_MidiAutoTuneDevice.Size = new System.Drawing.Size(315, 222);
+            this.groupBox_MidiAutoTuneDevice.Padding = new System.Windows.Forms.Padding(6);
+            this.groupBox_MidiAutoTuneDevice.Size = new System.Drawing.Size(630, 427);
             this.groupBox_MidiAutoTuneDevice.TabIndex = 100002;
             this.groupBox_MidiAutoTuneDevice.TabStop = false;
             this.groupBox_MidiAutoTuneDevice.Text = "Midi Device To Tune";
@@ -3666,9 +3883,10 @@
             // radio_SoftwarePedal
             // 
             this.radio_SoftwarePedal.AutoSize = true;
-            this.radio_SoftwarePedal.Location = new System.Drawing.Point(10, 200);
+            this.radio_SoftwarePedal.Location = new System.Drawing.Point(20, 385);
+            this.radio_SoftwarePedal.Margin = new System.Windows.Forms.Padding(6);
             this.radio_SoftwarePedal.Name = "radio_SoftwarePedal";
-            this.radio_SoftwarePedal.Size = new System.Drawing.Size(97, 17);
+            this.radio_SoftwarePedal.Size = new System.Drawing.Size(175, 29);
             this.radio_SoftwarePedal.TabIndex = 7;
             this.radio_SoftwarePedal.TabStop = true;
             this.radio_SoftwarePedal.Text = "Software Pedal";
@@ -3678,9 +3896,10 @@
             // radio_Whammy
             // 
             this.radio_Whammy.AutoSize = true;
-            this.radio_Whammy.Location = new System.Drawing.Point(10, 177);
+            this.radio_Whammy.Location = new System.Drawing.Point(20, 340);
+            this.radio_Whammy.Margin = new System.Windows.Forms.Padding(6);
             this.radio_Whammy.Name = "radio_Whammy";
-            this.radio_Whammy.Size = new System.Drawing.Size(111, 17);
+            this.radio_Whammy.Size = new System.Drawing.Size(203, 29);
             this.radio_Whammy.TabIndex = 6;
             this.radio_Whammy.TabStop = true;
             this.radio_Whammy.Text = "Digitech Whammy";
@@ -3690,9 +3909,10 @@
             // checkBox_WhammyChordsMode
             // 
             this.checkBox_WhammyChordsMode.AutoSize = true;
-            this.checkBox_WhammyChordsMode.Location = new System.Drawing.Point(208, 160);
+            this.checkBox_WhammyChordsMode.Location = new System.Drawing.Point(416, 308);
+            this.checkBox_WhammyChordsMode.Margin = new System.Windows.Forms.Padding(6);
             this.checkBox_WhammyChordsMode.Name = "checkBox_WhammyChordsMode";
-            this.checkBox_WhammyChordsMode.Size = new System.Drawing.Size(89, 17);
+            this.checkBox_WhammyChordsMode.Size = new System.Drawing.Size(160, 29);
             this.checkBox_WhammyChordsMode.TabIndex = 5;
             this.checkBox_WhammyChordsMode.Text = "Chords Mode";
             this.checkBox_WhammyChordsMode.UseVisualStyleBackColor = true;
@@ -3703,9 +3923,10 @@
             // radio_WhammyBass
             // 
             this.radio_WhammyBass.AutoSize = true;
-            this.radio_WhammyBass.Location = new System.Drawing.Point(10, 152);
+            this.radio_WhammyBass.Location = new System.Drawing.Point(20, 292);
+            this.radio_WhammyBass.Margin = new System.Windows.Forms.Padding(6);
             this.radio_WhammyBass.Name = "radio_WhammyBass";
-            this.radio_WhammyBass.Size = new System.Drawing.Size(137, 17);
+            this.radio_WhammyBass.Size = new System.Drawing.Size(257, 29);
             this.radio_WhammyBass.TabIndex = 4;
             this.radio_WhammyBass.TabStop = true;
             this.radio_WhammyBass.Text = "Digitech Whammy Bass";
@@ -3715,9 +3936,10 @@
             // radio_WhammyDT
             // 
             this.radio_WhammyDT.AutoSize = true;
-            this.radio_WhammyDT.Location = new System.Drawing.Point(10, 127);
+            this.radio_WhammyDT.Location = new System.Drawing.Point(20, 244);
+            this.radio_WhammyDT.Margin = new System.Windows.Forms.Padding(6);
             this.radio_WhammyDT.Name = "radio_WhammyDT";
-            this.radio_WhammyDT.Size = new System.Drawing.Size(129, 17);
+            this.radio_WhammyDT.Size = new System.Drawing.Size(237, 29);
             this.radio_WhammyDT.TabIndex = 3;
             this.radio_WhammyDT.TabStop = true;
             this.radio_WhammyDT.Text = "Digitech Whammy DT";
@@ -3727,27 +3949,31 @@
             // label_MidiWhatTuningPedalDoYouUse
             // 
             this.label_MidiWhatTuningPedalDoYouUse.AutoSize = true;
-            this.label_MidiWhatTuningPedalDoYouUse.Location = new System.Drawing.Point(7, 112);
+            this.label_MidiWhatTuningPedalDoYouUse.Location = new System.Drawing.Point(14, 215);
+            this.label_MidiWhatTuningPedalDoYouUse.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label_MidiWhatTuningPedalDoYouUse.Name = "label_MidiWhatTuningPedalDoYouUse";
-            this.label_MidiWhatTuningPedalDoYouUse.Size = new System.Drawing.Size(166, 13);
+            this.label_MidiWhatTuningPedalDoYouUse.Size = new System.Drawing.Size(329, 25);
             this.label_MidiWhatTuningPedalDoYouUse.TabIndex = 2;
             this.label_MidiWhatTuningPedalDoYouUse.Text = "What Tuning Pedal Do You Use?";
             // 
             // label_SelectedMidiOutDevice
             // 
             this.label_SelectedMidiOutDevice.AutoSize = true;
-            this.label_SelectedMidiOutDevice.Location = new System.Drawing.Point(7, 83);
+            this.label_SelectedMidiOutDevice.Location = new System.Drawing.Point(14, 160);
+            this.label_SelectedMidiOutDevice.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label_SelectedMidiOutDevice.Name = "label_SelectedMidiOutDevice";
-            this.label_SelectedMidiOutDevice.Size = new System.Drawing.Size(69, 13);
+            this.label_SelectedMidiOutDevice.Size = new System.Drawing.Size(136, 25);
             this.label_SelectedMidiOutDevice.TabIndex = 1;
             this.label_SelectedMidiOutDevice.Text = "Midi Device: ";
             // 
             // listBox_ListMidiOutDevices
             // 
             this.listBox_ListMidiOutDevices.FormattingEnabled = true;
-            this.listBox_ListMidiOutDevices.Location = new System.Drawing.Point(13, 27);
+            this.listBox_ListMidiOutDevices.ItemHeight = 25;
+            this.listBox_ListMidiOutDevices.Location = new System.Drawing.Point(26, 52);
+            this.listBox_ListMidiOutDevices.Margin = new System.Windows.Forms.Padding(6);
             this.listBox_ListMidiOutDevices.Name = "listBox_ListMidiOutDevices";
-            this.listBox_ListMidiOutDevices.Size = new System.Drawing.Size(288, 43);
+            this.listBox_ListMidiOutDevices.Size = new System.Drawing.Size(572, 79);
             this.listBox_ListMidiOutDevices.TabIndex = 0;
             this.listBox_ListMidiOutDevices.SelectedIndexChanged += new System.EventHandler(this.Save_AutoTuneDevice);
             // 
@@ -3766,17 +3992,19 @@
             this.tabPage_ModSettings_Misc.Controls.Add(this.groupBox_Backups);
             this.tabPage_ModSettings_Misc.Controls.Add(this.groupBox_RRSpeed);
             this.tabPage_ModSettings_Misc.Controls.Add(this.groupBox_ControlVolumeIncrement);
-            this.tabPage_ModSettings_Misc.Location = new System.Drawing.Point(4, 22);
+            this.tabPage_ModSettings_Misc.Location = new System.Drawing.Point(4, 34);
+            this.tabPage_ModSettings_Misc.Margin = new System.Windows.Forms.Padding(6);
             this.tabPage_ModSettings_Misc.Name = "tabPage_ModSettings_Misc";
-            this.tabPage_ModSettings_Misc.Size = new System.Drawing.Size(777, 426);
+            this.tabPage_ModSettings_Misc.Size = new System.Drawing.Size(1562, 831);
             this.tabPage_ModSettings_Misc.TabIndex = 2;
             this.tabPage_ModSettings_Misc.Text = "Misc";
             // 
             // button_SetSavePath
             // 
-            this.button_SetSavePath.Location = new System.Drawing.Point(651, 263);
+            this.button_SetSavePath.Location = new System.Drawing.Point(1302, 506);
+            this.button_SetSavePath.Margin = new System.Windows.Forms.Padding(6);
             this.button_SetSavePath.Name = "button_SetSavePath";
-            this.button_SetSavePath.Size = new System.Drawing.Size(108, 23);
+            this.button_SetSavePath.Size = new System.Drawing.Size(216, 44);
             this.button_SetSavePath.TabIndex = 100013;
             this.button_SetSavePath.Text = "Set Save Path";
             this.button_SetSavePath.UseVisualStyleBackColor = true;
@@ -3786,9 +4014,11 @@
             // groupBox_RewindBy
             // 
             this.groupBox_RewindBy.Controls.Add(this.nUpDown_RewindBy);
-            this.groupBox_RewindBy.Location = new System.Drawing.Point(358, 343);
+            this.groupBox_RewindBy.Location = new System.Drawing.Point(716, 660);
+            this.groupBox_RewindBy.Margin = new System.Windows.Forms.Padding(6);
             this.groupBox_RewindBy.Name = "groupBox_RewindBy";
-            this.groupBox_RewindBy.Size = new System.Drawing.Size(154, 62);
+            this.groupBox_RewindBy.Padding = new System.Windows.Forms.Padding(6);
+            this.groupBox_RewindBy.Size = new System.Drawing.Size(308, 119);
             this.groupBox_RewindBy.TabIndex = 100012;
             this.groupBox_RewindBy.TabStop = false;
             this.groupBox_RewindBy.Text = "Rewind By (seconds)";
@@ -3797,28 +4027,23 @@
             // nUpDown_RewindBy
             // 
             this.nUpDown_RewindBy.DecimalPlaces = 3;
-            this.nUpDown_RewindBy.Increment = new decimal(new int[] {
-            250,
-            0,
-            0,
-            196608});
-            this.nUpDown_RewindBy.Location = new System.Drawing.Point(16, 23);
-            this.nUpDown_RewindBy.Maximum = new decimal(new int[] {
-            90,
-            0,
-            0,
-            0});
+            this.nUpDown_RewindBy.Increment = new decimal(new int[] {250, 0, 0, 196608});
+            this.nUpDown_RewindBy.Location = new System.Drawing.Point(32, 44);
+            this.nUpDown_RewindBy.Margin = new System.Windows.Forms.Padding(6);
+            this.nUpDown_RewindBy.Maximum = new decimal(new int[] {90, 0, 0, 0});
             this.nUpDown_RewindBy.Name = "nUpDown_RewindBy";
-            this.nUpDown_RewindBy.Size = new System.Drawing.Size(120, 20);
+            this.nUpDown_RewindBy.Size = new System.Drawing.Size(240, 31);
             this.nUpDown_RewindBy.TabIndex = 0;
             this.nUpDown_RewindBy.ValueChanged += new System.EventHandler(this.Save_RewindBy);
             // 
             // groupBox_LoopingLeadUp
             // 
             this.groupBox_LoopingLeadUp.Controls.Add(this.nUpDown_LoopingLeadUp);
-            this.groupBox_LoopingLeadUp.Location = new System.Drawing.Point(358, 267);
+            this.groupBox_LoopingLeadUp.Location = new System.Drawing.Point(716, 513);
+            this.groupBox_LoopingLeadUp.Margin = new System.Windows.Forms.Padding(6);
             this.groupBox_LoopingLeadUp.Name = "groupBox_LoopingLeadUp";
-            this.groupBox_LoopingLeadUp.Size = new System.Drawing.Size(154, 62);
+            this.groupBox_LoopingLeadUp.Padding = new System.Windows.Forms.Padding(6);
+            this.groupBox_LoopingLeadUp.Size = new System.Drawing.Size(308, 119);
             this.groupBox_LoopingLeadUp.TabIndex = 100011;
             this.groupBox_LoopingLeadUp.TabStop = false;
             this.groupBox_LoopingLeadUp.Text = "Looping Lead Up (seconds)";
@@ -3827,19 +4052,12 @@
             // nUpDown_LoopingLeadUp
             // 
             this.nUpDown_LoopingLeadUp.DecimalPlaces = 3;
-            this.nUpDown_LoopingLeadUp.Increment = new decimal(new int[] {
-            50,
-            0,
-            0,
-            196608});
-            this.nUpDown_LoopingLeadUp.Location = new System.Drawing.Point(16, 23);
-            this.nUpDown_LoopingLeadUp.Maximum = new decimal(new int[] {
-            5,
-            0,
-            0,
-            0});
+            this.nUpDown_LoopingLeadUp.Increment = new decimal(new int[] {50, 0, 0, 196608});
+            this.nUpDown_LoopingLeadUp.Location = new System.Drawing.Point(32, 44);
+            this.nUpDown_LoopingLeadUp.Margin = new System.Windows.Forms.Padding(6);
+            this.nUpDown_LoopingLeadUp.Maximum = new decimal(new int[] {5, 0, 0, 0});
             this.nUpDown_LoopingLeadUp.Name = "nUpDown_LoopingLeadUp";
-            this.nUpDown_LoopingLeadUp.Size = new System.Drawing.Size(120, 20);
+            this.nUpDown_LoopingLeadUp.Size = new System.Drawing.Size(240, 31);
             this.nUpDown_LoopingLeadUp.TabIndex = 0;
             this.nUpDown_LoopingLeadUp.ValueChanged += new System.EventHandler(this.Save_LoopingLeadUp);
             // 
@@ -3847,18 +4065,21 @@
             // 
             this.groupBox_Profiles_RevertBackup.Controls.Add(this.button_Profiles_RevertBackup);
             this.groupBox_Profiles_RevertBackup.Controls.Add(this.listBox_Profiles_ListBackups);
-            this.groupBox_Profiles_RevertBackup.Location = new System.Drawing.Point(7, 290);
+            this.groupBox_Profiles_RevertBackup.Location = new System.Drawing.Point(14, 558);
+            this.groupBox_Profiles_RevertBackup.Margin = new System.Windows.Forms.Padding(6);
             this.groupBox_Profiles_RevertBackup.Name = "groupBox_Profiles_RevertBackup";
-            this.groupBox_Profiles_RevertBackup.Size = new System.Drawing.Size(327, 123);
+            this.groupBox_Profiles_RevertBackup.Padding = new System.Windows.Forms.Padding(6);
+            this.groupBox_Profiles_RevertBackup.Size = new System.Drawing.Size(654, 237);
             this.groupBox_Profiles_RevertBackup.TabIndex = 100010;
             this.groupBox_Profiles_RevertBackup.TabStop = false;
             this.groupBox_Profiles_RevertBackup.Text = "Revert Profile To Backup";
             // 
             // button_Profiles_RevertBackup
             // 
-            this.button_Profiles_RevertBackup.Location = new System.Drawing.Point(91, 94);
+            this.button_Profiles_RevertBackup.Location = new System.Drawing.Point(182, 181);
+            this.button_Profiles_RevertBackup.Margin = new System.Windows.Forms.Padding(6);
             this.button_Profiles_RevertBackup.Name = "button_Profiles_RevertBackup";
-            this.button_Profiles_RevertBackup.Size = new System.Drawing.Size(146, 23);
+            this.button_Profiles_RevertBackup.Size = new System.Drawing.Size(292, 44);
             this.button_Profiles_RevertBackup.TabIndex = 1;
             this.button_Profiles_RevertBackup.Text = "Revert To Backup";
             this.button_Profiles_RevertBackup.UseVisualStyleBackColor = true;
@@ -3867,9 +4088,11 @@
             // listBox_Profiles_ListBackups
             // 
             this.listBox_Profiles_ListBackups.FormattingEnabled = true;
-            this.listBox_Profiles_ListBackups.Location = new System.Drawing.Point(6, 19);
+            this.listBox_Profiles_ListBackups.ItemHeight = 25;
+            this.listBox_Profiles_ListBackups.Location = new System.Drawing.Point(12, 37);
+            this.listBox_Profiles_ListBackups.Margin = new System.Windows.Forms.Padding(6);
             this.listBox_Profiles_ListBackups.Name = "listBox_Profiles_ListBackups";
-            this.listBox_Profiles_ListBackups.Size = new System.Drawing.Size(314, 69);
+            this.listBox_Profiles_ListBackups.Size = new System.Drawing.Size(624, 129);
             this.listBox_Profiles_ListBackups.TabIndex = 0;
             // 
             // groupBox_OverrideInputVolume
@@ -3878,9 +4101,11 @@
             this.groupBox_OverrideInputVolume.Controls.Add(this.label_OverrideInputVolumeTo);
             this.groupBox_OverrideInputVolume.Controls.Add(this.label_AvailableInputDevices);
             this.groupBox_OverrideInputVolume.Controls.Add(this.listBox_AvailableInputDevices);
-            this.groupBox_OverrideInputVolume.Location = new System.Drawing.Point(199, 14);
+            this.groupBox_OverrideInputVolume.Location = new System.Drawing.Point(398, 27);
+            this.groupBox_OverrideInputVolume.Margin = new System.Windows.Forms.Padding(6);
             this.groupBox_OverrideInputVolume.Name = "groupBox_OverrideInputVolume";
-            this.groupBox_OverrideInputVolume.Size = new System.Drawing.Size(275, 235);
+            this.groupBox_OverrideInputVolume.Padding = new System.Windows.Forms.Padding(6);
+            this.groupBox_OverrideInputVolume.Size = new System.Drawing.Size(550, 452);
             this.groupBox_OverrideInputVolume.TabIndex = 100009;
             this.groupBox_OverrideInputVolume.TabStop = false;
             this.groupBox_OverrideInputVolume.Text = "Override Input Volume";
@@ -3888,42 +4113,43 @@
             // 
             // nUpDown_OverrideInputVolume
             // 
-            this.nUpDown_OverrideInputVolume.Location = new System.Drawing.Point(149, 201);
+            this.nUpDown_OverrideInputVolume.Location = new System.Drawing.Point(298, 387);
+            this.nUpDown_OverrideInputVolume.Margin = new System.Windows.Forms.Padding(6);
             this.nUpDown_OverrideInputVolume.Name = "nUpDown_OverrideInputVolume";
-            this.nUpDown_OverrideInputVolume.Size = new System.Drawing.Size(120, 20);
+            this.nUpDown_OverrideInputVolume.Size = new System.Drawing.Size(240, 31);
             this.nUpDown_OverrideInputVolume.TabIndex = 3;
-            this.nUpDown_OverrideInputVolume.Value = new decimal(new int[] {
-            17,
-            0,
-            0,
-            0});
+            this.nUpDown_OverrideInputVolume.Value = new decimal(new int[] {17, 0, 0, 0});
             this.nUpDown_OverrideInputVolume.ValueChanged += new System.EventHandler(this.Save_OverrideInputVolume);
             this.nUpDown_OverrideInputVolume.MouseHover += new System.EventHandler(this.ToolTips_Show);
             // 
             // label_OverrideInputVolumeTo
             // 
             this.label_OverrideInputVolumeTo.AutoSize = true;
-            this.label_OverrideInputVolumeTo.Location = new System.Drawing.Point(90, 203);
+            this.label_OverrideInputVolumeTo.Location = new System.Drawing.Point(180, 390);
+            this.label_OverrideInputVolumeTo.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label_OverrideInputVolumeTo.Name = "label_OverrideInputVolumeTo";
-            this.label_OverrideInputVolumeTo.Size = new System.Drawing.Size(45, 13);
+            this.label_OverrideInputVolumeTo.Size = new System.Drawing.Size(90, 25);
             this.label_OverrideInputVolumeTo.TabIndex = 2;
             this.label_OverrideInputVolumeTo.Text = "Volume:";
             // 
             // label_AvailableInputDevices
             // 
             this.label_AvailableInputDevices.AutoSize = true;
-            this.label_AvailableInputDevices.Location = new System.Drawing.Point(6, 24);
+            this.label_AvailableInputDevices.Location = new System.Drawing.Point(12, 46);
+            this.label_AvailableInputDevices.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label_AvailableInputDevices.Name = "label_AvailableInputDevices";
-            this.label_AvailableInputDevices.Size = new System.Drawing.Size(122, 13);
+            this.label_AvailableInputDevices.Size = new System.Drawing.Size(242, 25);
             this.label_AvailableInputDevices.TabIndex = 1;
             this.label_AvailableInputDevices.Text = "Available Input Devices:";
             // 
             // listBox_AvailableInputDevices
             // 
             this.listBox_AvailableInputDevices.FormattingEnabled = true;
-            this.listBox_AvailableInputDevices.Location = new System.Drawing.Point(6, 45);
+            this.listBox_AvailableInputDevices.ItemHeight = 25;
+            this.listBox_AvailableInputDevices.Location = new System.Drawing.Point(12, 87);
+            this.listBox_AvailableInputDevices.Margin = new System.Windows.Forms.Padding(6);
             this.listBox_AvailableInputDevices.Name = "listBox_AvailableInputDevices";
-            this.listBox_AvailableInputDevices.Size = new System.Drawing.Size(263, 134);
+            this.listBox_AvailableInputDevices.Size = new System.Drawing.Size(522, 254);
             this.listBox_AvailableInputDevices.TabIndex = 0;
             this.listBox_AvailableInputDevices.SelectedIndexChanged += new System.EventHandler(this.Save_OverrideInputVolumeDevice);
             this.listBox_AvailableInputDevices.MouseHover += new System.EventHandler(this.ToolTips_Show);
@@ -3931,9 +4157,10 @@
             // checkBox_TurnOffAllMods
             // 
             this.checkBox_TurnOffAllMods.AutoSize = true;
-            this.checkBox_TurnOffAllMods.Location = new System.Drawing.Point(651, 334);
+            this.checkBox_TurnOffAllMods.Location = new System.Drawing.Point(1302, 642);
+            this.checkBox_TurnOffAllMods.Margin = new System.Windows.Forms.Padding(6);
             this.checkBox_TurnOffAllMods.Name = "checkBox_TurnOffAllMods";
-            this.checkBox_TurnOffAllMods.Size = new System.Drawing.Size(108, 17);
+            this.checkBox_TurnOffAllMods.Size = new System.Drawing.Size(198, 29);
             this.checkBox_TurnOffAllMods.TabIndex = 100008;
             this.checkBox_TurnOffAllMods.Text = "Turn Off All Mods";
             this.checkBox_TurnOffAllMods.UseVisualStyleBackColor = true;
@@ -3942,9 +4169,10 @@
             // 
             // button_SecondaryMonitorStartPos
             // 
-            this.button_SecondaryMonitorStartPos.Location = new System.Drawing.Point(562, 215);
+            this.button_SecondaryMonitorStartPos.Location = new System.Drawing.Point(1124, 413);
+            this.button_SecondaryMonitorStartPos.Margin = new System.Windows.Forms.Padding(6);
             this.button_SecondaryMonitorStartPos.Name = "button_SecondaryMonitorStartPos";
-            this.button_SecondaryMonitorStartPos.Size = new System.Drawing.Size(197, 23);
+            this.button_SecondaryMonitorStartPos.Size = new System.Drawing.Size(394, 44);
             this.button_SecondaryMonitorStartPos.TabIndex = 52;
             this.button_SecondaryMonitorStartPos.Text = "Set Secondary Monitor Start Position";
             this.button_SecondaryMonitorStartPos.UseVisualStyleBackColor = true;
@@ -3963,9 +4191,11 @@
             this.groupBox_CustomHighway.Controls.Add(this.button_ChangeNotewayGutter);
             this.groupBox_CustomHighway.Controls.Add(this.button_ChangeUnNumberedFrets);
             this.groupBox_CustomHighway.Controls.Add(this.button_ChangeNumberedFrets);
-            this.groupBox_CustomHighway.Location = new System.Drawing.Point(480, 23);
+            this.groupBox_CustomHighway.Location = new System.Drawing.Point(960, 44);
+            this.groupBox_CustomHighway.Margin = new System.Windows.Forms.Padding(6);
             this.groupBox_CustomHighway.Name = "groupBox_CustomHighway";
-            this.groupBox_CustomHighway.Size = new System.Drawing.Size(294, 169);
+            this.groupBox_CustomHighway.Padding = new System.Windows.Forms.Padding(6);
+            this.groupBox_CustomHighway.Size = new System.Drawing.Size(588, 325);
             this.groupBox_CustomHighway.TabIndex = 100005;
             this.groupBox_CustomHighway.TabStop = false;
             this.groupBox_CustomHighway.Text = "Custom Highway Colors";
@@ -3974,9 +4204,10 @@
             // 
             // button_ResetNotewayColors
             // 
-            this.button_ResetNotewayColors.Location = new System.Drawing.Point(157, 140);
+            this.button_ResetNotewayColors.Location = new System.Drawing.Point(314, 269);
+            this.button_ResetNotewayColors.Margin = new System.Windows.Forms.Padding(6);
             this.button_ResetNotewayColors.Name = "button_ResetNotewayColors";
-            this.button_ResetNotewayColors.Size = new System.Drawing.Size(122, 23);
+            this.button_ResetNotewayColors.Size = new System.Drawing.Size(244, 44);
             this.button_ResetNotewayColors.TabIndex = 8;
             this.button_ResetNotewayColors.Text = "Reset Colors";
             this.button_ResetNotewayColors.UseVisualStyleBackColor = true;
@@ -3985,44 +4216,49 @@
             // textBox_ShowFretNumber
             // 
             this.textBox_ShowFretNumber.Enabled = false;
-            this.textBox_ShowFretNumber.Location = new System.Drawing.Point(157, 116);
+            this.textBox_ShowFretNumber.Location = new System.Drawing.Point(314, 223);
+            this.textBox_ShowFretNumber.Margin = new System.Windows.Forms.Padding(6);
             this.textBox_ShowFretNumber.Name = "textBox_ShowFretNumber";
             this.textBox_ShowFretNumber.ReadOnly = true;
-            this.textBox_ShowFretNumber.Size = new System.Drawing.Size(122, 20);
+            this.textBox_ShowFretNumber.Size = new System.Drawing.Size(240, 31);
             this.textBox_ShowFretNumber.TabIndex = 7;
             // 
             // textBox_ShowNotewayGutter
             // 
             this.textBox_ShowNotewayGutter.Enabled = false;
-            this.textBox_ShowNotewayGutter.Location = new System.Drawing.Point(157, 87);
+            this.textBox_ShowNotewayGutter.Location = new System.Drawing.Point(314, 167);
+            this.textBox_ShowNotewayGutter.Margin = new System.Windows.Forms.Padding(6);
             this.textBox_ShowNotewayGutter.Name = "textBox_ShowNotewayGutter";
             this.textBox_ShowNotewayGutter.ReadOnly = true;
-            this.textBox_ShowNotewayGutter.Size = new System.Drawing.Size(122, 20);
+            this.textBox_ShowNotewayGutter.Size = new System.Drawing.Size(240, 31);
             this.textBox_ShowNotewayGutter.TabIndex = 6;
             // 
             // textBox_ShowUnNumberedFrets
             // 
             this.textBox_ShowUnNumberedFrets.Enabled = false;
-            this.textBox_ShowUnNumberedFrets.Location = new System.Drawing.Point(157, 58);
+            this.textBox_ShowUnNumberedFrets.Location = new System.Drawing.Point(314, 112);
+            this.textBox_ShowUnNumberedFrets.Margin = new System.Windows.Forms.Padding(6);
             this.textBox_ShowUnNumberedFrets.Name = "textBox_ShowUnNumberedFrets";
             this.textBox_ShowUnNumberedFrets.ReadOnly = true;
-            this.textBox_ShowUnNumberedFrets.Size = new System.Drawing.Size(122, 20);
+            this.textBox_ShowUnNumberedFrets.Size = new System.Drawing.Size(240, 31);
             this.textBox_ShowUnNumberedFrets.TabIndex = 5;
             // 
             // textBox_ShowNumberedFrets
             // 
             this.textBox_ShowNumberedFrets.Enabled = false;
-            this.textBox_ShowNumberedFrets.Location = new System.Drawing.Point(157, 29);
+            this.textBox_ShowNumberedFrets.Location = new System.Drawing.Point(314, 56);
+            this.textBox_ShowNumberedFrets.Margin = new System.Windows.Forms.Padding(6);
             this.textBox_ShowNumberedFrets.Name = "textBox_ShowNumberedFrets";
             this.textBox_ShowNumberedFrets.ReadOnly = true;
-            this.textBox_ShowNumberedFrets.Size = new System.Drawing.Size(122, 20);
+            this.textBox_ShowNumberedFrets.Size = new System.Drawing.Size(240, 31);
             this.textBox_ShowNumberedFrets.TabIndex = 4;
             // 
             // button_ChangeFretNumber
             // 
-            this.button_ChangeFretNumber.Location = new System.Drawing.Point(7, 113);
+            this.button_ChangeFretNumber.Location = new System.Drawing.Point(14, 217);
+            this.button_ChangeFretNumber.Margin = new System.Windows.Forms.Padding(6);
             this.button_ChangeFretNumber.Name = "button_ChangeFretNumber";
-            this.button_ChangeFretNumber.Size = new System.Drawing.Size(144, 23);
+            this.button_ChangeFretNumber.Size = new System.Drawing.Size(288, 44);
             this.button_ChangeFretNumber.TabIndex = 3;
             this.button_ChangeFretNumber.Text = "Change Fret Number";
             this.button_ChangeFretNumber.UseVisualStyleBackColor = true;
@@ -4031,9 +4267,10 @@
             // 
             // button_ChangeNotewayGutter
             // 
-            this.button_ChangeNotewayGutter.Location = new System.Drawing.Point(6, 84);
+            this.button_ChangeNotewayGutter.Location = new System.Drawing.Point(12, 162);
+            this.button_ChangeNotewayGutter.Margin = new System.Windows.Forms.Padding(6);
             this.button_ChangeNotewayGutter.Name = "button_ChangeNotewayGutter";
-            this.button_ChangeNotewayGutter.Size = new System.Drawing.Size(144, 23);
+            this.button_ChangeNotewayGutter.Size = new System.Drawing.Size(288, 44);
             this.button_ChangeNotewayGutter.TabIndex = 2;
             this.button_ChangeNotewayGutter.Text = "Change Noteway Sides";
             this.button_ChangeNotewayGutter.UseVisualStyleBackColor = true;
@@ -4042,9 +4279,10 @@
             // 
             // button_ChangeUnNumberedFrets
             // 
-            this.button_ChangeUnNumberedFrets.Location = new System.Drawing.Point(6, 55);
+            this.button_ChangeUnNumberedFrets.Location = new System.Drawing.Point(12, 106);
+            this.button_ChangeUnNumberedFrets.Margin = new System.Windows.Forms.Padding(6);
             this.button_ChangeUnNumberedFrets.Name = "button_ChangeUnNumberedFrets";
-            this.button_ChangeUnNumberedFrets.Size = new System.Drawing.Size(144, 23);
+            this.button_ChangeUnNumberedFrets.Size = new System.Drawing.Size(288, 44);
             this.button_ChangeUnNumberedFrets.TabIndex = 1;
             this.button_ChangeUnNumberedFrets.Text = "Change UnNumbered Frets";
             this.button_ChangeUnNumberedFrets.UseVisualStyleBackColor = true;
@@ -4053,9 +4291,10 @@
             // 
             // button_ChangeNumberedFrets
             // 
-            this.button_ChangeNumberedFrets.Location = new System.Drawing.Point(6, 26);
+            this.button_ChangeNumberedFrets.Location = new System.Drawing.Point(12, 50);
+            this.button_ChangeNumberedFrets.Margin = new System.Windows.Forms.Padding(6);
             this.button_ChangeNumberedFrets.Name = "button_ChangeNumberedFrets";
-            this.button_ChangeNumberedFrets.Size = new System.Drawing.Size(145, 23);
+            this.button_ChangeNumberedFrets.Size = new System.Drawing.Size(290, 44);
             this.button_ChangeNumberedFrets.TabIndex = 0;
             this.button_ChangeNumberedFrets.Text = "Change Numbered Frets";
             this.button_ChangeNumberedFrets.UseVisualStyleBackColor = true;
@@ -4066,9 +4305,11 @@
             // 
             this.groupBox_Backups.Controls.Add(this.checkBox_UnlimitedBackups);
             this.groupBox_Backups.Controls.Add(this.nUpDown_NumberOfBackups);
-            this.groupBox_Backups.Location = new System.Drawing.Point(27, 144);
+            this.groupBox_Backups.Location = new System.Drawing.Point(54, 277);
+            this.groupBox_Backups.Margin = new System.Windows.Forms.Padding(6);
             this.groupBox_Backups.Name = "groupBox_Backups";
-            this.groupBox_Backups.Size = new System.Drawing.Size(128, 86);
+            this.groupBox_Backups.Padding = new System.Windows.Forms.Padding(6);
+            this.groupBox_Backups.Size = new System.Drawing.Size(256, 165);
             this.groupBox_Backups.TabIndex = 100006;
             this.groupBox_Backups.TabStop = false;
             this.groupBox_Backups.Text = "How Many Backups";
@@ -4078,9 +4319,10 @@
             // checkBox_UnlimitedBackups
             // 
             this.checkBox_UnlimitedBackups.AutoSize = true;
-            this.checkBox_UnlimitedBackups.Location = new System.Drawing.Point(8, 62);
+            this.checkBox_UnlimitedBackups.Location = new System.Drawing.Point(16, 119);
+            this.checkBox_UnlimitedBackups.Margin = new System.Windows.Forms.Padding(6);
             this.checkBox_UnlimitedBackups.Name = "checkBox_UnlimitedBackups";
-            this.checkBox_UnlimitedBackups.Size = new System.Drawing.Size(114, 17);
+            this.checkBox_UnlimitedBackups.Size = new System.Drawing.Size(209, 29);
             this.checkBox_UnlimitedBackups.TabIndex = 1;
             this.checkBox_UnlimitedBackups.Text = "Unlimited Backups";
             this.checkBox_UnlimitedBackups.UseVisualStyleBackColor = true;
@@ -4089,28 +4331,23 @@
             // 
             // nUpDown_NumberOfBackups
             // 
-            this.nUpDown_NumberOfBackups.Location = new System.Drawing.Point(11, 23);
-            this.nUpDown_NumberOfBackups.Maximum = new decimal(new int[] {
-            100000,
-            0,
-            0,
-            0});
+            this.nUpDown_NumberOfBackups.Location = new System.Drawing.Point(22, 44);
+            this.nUpDown_NumberOfBackups.Margin = new System.Windows.Forms.Padding(6);
+            this.nUpDown_NumberOfBackups.Maximum = new decimal(new int[] {100000, 0, 0, 0});
             this.nUpDown_NumberOfBackups.Name = "nUpDown_NumberOfBackups";
-            this.nUpDown_NumberOfBackups.Size = new System.Drawing.Size(104, 20);
+            this.nUpDown_NumberOfBackups.Size = new System.Drawing.Size(208, 31);
             this.nUpDown_NumberOfBackups.TabIndex = 0;
-            this.nUpDown_NumberOfBackups.Value = new decimal(new int[] {
-            50,
-            0,
-            0,
-            0});
+            this.nUpDown_NumberOfBackups.Value = new decimal(new int[] {50, 0, 0, 0});
             this.nUpDown_NumberOfBackups.ValueChanged += new System.EventHandler(this.Save_NumberOfBackups);
             // 
             // groupBox_RRSpeed
             // 
             this.groupBox_RRSpeed.Controls.Add(this.nUpDown_RiffRepeaterSpeed);
-            this.groupBox_RRSpeed.Location = new System.Drawing.Point(21, 81);
+            this.groupBox_RRSpeed.Location = new System.Drawing.Point(42, 156);
+            this.groupBox_RRSpeed.Margin = new System.Windows.Forms.Padding(6);
             this.groupBox_RRSpeed.Name = "groupBox_RRSpeed";
-            this.groupBox_RRSpeed.Size = new System.Drawing.Size(172, 50);
+            this.groupBox_RRSpeed.Padding = new System.Windows.Forms.Padding(6);
+            this.groupBox_RRSpeed.Size = new System.Drawing.Size(344, 96);
             this.groupBox_RRSpeed.TabIndex = 100001;
             this.groupBox_RRSpeed.TabStop = false;
             this.groupBox_RRSpeed.Text = "Riff Repeater Speed Increment";
@@ -4119,33 +4356,24 @@
             // 
             // nUpDown_RiffRepeaterSpeed
             // 
-            this.nUpDown_RiffRepeaterSpeed.Location = new System.Drawing.Point(7, 20);
-            this.nUpDown_RiffRepeaterSpeed.Maximum = new decimal(new int[] {
-            50,
-            0,
-            0,
-            0});
-            this.nUpDown_RiffRepeaterSpeed.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
+            this.nUpDown_RiffRepeaterSpeed.Location = new System.Drawing.Point(14, 38);
+            this.nUpDown_RiffRepeaterSpeed.Margin = new System.Windows.Forms.Padding(6);
+            this.nUpDown_RiffRepeaterSpeed.Maximum = new decimal(new int[] {50, 0, 0, 0});
+            this.nUpDown_RiffRepeaterSpeed.Minimum = new decimal(new int[] {1, 0, 0, 0});
             this.nUpDown_RiffRepeaterSpeed.Name = "nUpDown_RiffRepeaterSpeed";
-            this.nUpDown_RiffRepeaterSpeed.Size = new System.Drawing.Size(153, 20);
+            this.nUpDown_RiffRepeaterSpeed.Size = new System.Drawing.Size(306, 31);
             this.nUpDown_RiffRepeaterSpeed.TabIndex = 200;
-            this.nUpDown_RiffRepeaterSpeed.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
+            this.nUpDown_RiffRepeaterSpeed.Value = new decimal(new int[] {1, 0, 0, 0});
             this.nUpDown_RiffRepeaterSpeed.ValueChanged += new System.EventHandler(this.Save_RiffRepeaterSpeedInterval);
             // 
             // groupBox_ControlVolumeIncrement
             // 
             this.groupBox_ControlVolumeIncrement.Controls.Add(this.nUpDown_VolumeInterval);
-            this.groupBox_ControlVolumeIncrement.Location = new System.Drawing.Point(21, 16);
+            this.groupBox_ControlVolumeIncrement.Location = new System.Drawing.Point(42, 31);
+            this.groupBox_ControlVolumeIncrement.Margin = new System.Windows.Forms.Padding(6);
             this.groupBox_ControlVolumeIncrement.Name = "groupBox_ControlVolumeIncrement";
-            this.groupBox_ControlVolumeIncrement.Size = new System.Drawing.Size(172, 50);
+            this.groupBox_ControlVolumeIncrement.Padding = new System.Windows.Forms.Padding(6);
+            this.groupBox_ControlVolumeIncrement.Size = new System.Drawing.Size(344, 96);
             this.groupBox_ControlVolumeIncrement.TabIndex = 100004;
             this.groupBox_ControlVolumeIncrement.TabStop = false;
             this.groupBox_ControlVolumeIncrement.Text = "Control Volume Increment";
@@ -4153,29 +4381,23 @@
             // 
             // nUpDown_VolumeInterval
             // 
-            this.nUpDown_VolumeInterval.Location = new System.Drawing.Point(6, 20);
-            this.nUpDown_VolumeInterval.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
+            this.nUpDown_VolumeInterval.Location = new System.Drawing.Point(12, 38);
+            this.nUpDown_VolumeInterval.Margin = new System.Windows.Forms.Padding(6);
+            this.nUpDown_VolumeInterval.Minimum = new decimal(new int[] {1, 0, 0, 0});
             this.nUpDown_VolumeInterval.Name = "nUpDown_VolumeInterval";
-            this.nUpDown_VolumeInterval.Size = new System.Drawing.Size(154, 20);
+            this.nUpDown_VolumeInterval.Size = new System.Drawing.Size(308, 31);
             this.nUpDown_VolumeInterval.TabIndex = 0;
-            this.nUpDown_VolumeInterval.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
+            this.nUpDown_VolumeInterval.Value = new decimal(new int[] {1, 0, 0, 0});
             this.nUpDown_VolumeInterval.ValueChanged += new System.EventHandler(this.Save_VolumeInterval);
             // 
             // tab_SetAndForget
             // 
             this.tab_SetAndForget.Controls.Add(this.groupBox_SetAndForget);
-            this.tab_SetAndForget.Location = new System.Drawing.Point(4, 22);
+            this.tab_SetAndForget.Location = new System.Drawing.Point(4, 34);
+            this.tab_SetAndForget.Margin = new System.Windows.Forms.Padding(6);
             this.tab_SetAndForget.Name = "tab_SetAndForget";
-            this.tab_SetAndForget.Padding = new System.Windows.Forms.Padding(3);
-            this.tab_SetAndForget.Size = new System.Drawing.Size(1150, 513);
+            this.tab_SetAndForget.Padding = new System.Windows.Forms.Padding(6);
+            this.tab_SetAndForget.Size = new System.Drawing.Size(2308, 999);
             this.tab_SetAndForget.TabIndex = 3;
             this.tab_SetAndForget.Text = "Set And Forget Mods";
             this.tab_SetAndForget.UseVisualStyleBackColor = true;
@@ -4190,9 +4412,10 @@
             this.tab_RSASIO.Controls.Add(this.groupBox_ASIO_Input0);
             this.tab_RSASIO.Controls.Add(this.groupBox_ASIO_Config);
             this.tab_RSASIO.Controls.Add(this.groupBox_ASIO_BufferSize);
-            this.tab_RSASIO.Location = new System.Drawing.Point(4, 22);
+            this.tab_RSASIO.Location = new System.Drawing.Point(4, 34);
+            this.tab_RSASIO.Margin = new System.Windows.Forms.Padding(6);
             this.tab_RSASIO.Name = "tab_RSASIO";
-            this.tab_RSASIO.Size = new System.Drawing.Size(1150, 513);
+            this.tab_RSASIO.Size = new System.Drawing.Size(2308, 999);
             this.tab_RSASIO.TabIndex = 7;
             this.tab_RSASIO.Text = "RS_ASIO Settings";
             // 
@@ -4208,9 +4431,11 @@
             this.groupBox_ASIO_InputMic.Controls.Add(this.nUpDown_ASIO_InputMic_Channel);
             this.groupBox_ASIO_InputMic.Controls.Add(this.label_ASIO_InputMic_Channel);
             this.groupBox_ASIO_InputMic.Controls.Add(this.listBox_AvailableASIODevices_InputMic);
-            this.groupBox_ASIO_InputMic.Location = new System.Drawing.Point(490, 260);
+            this.groupBox_ASIO_InputMic.Location = new System.Drawing.Point(980, 500);
+            this.groupBox_ASIO_InputMic.Margin = new System.Windows.Forms.Padding(6);
             this.groupBox_ASIO_InputMic.Name = "groupBox_ASIO_InputMic";
-            this.groupBox_ASIO_InputMic.Size = new System.Drawing.Size(470, 230);
+            this.groupBox_ASIO_InputMic.Padding = new System.Windows.Forms.Padding(6);
+            this.groupBox_ASIO_InputMic.Size = new System.Drawing.Size(940, 442);
             this.groupBox_ASIO_InputMic.TabIndex = 12;
             this.groupBox_ASIO_InputMic.TabStop = false;
             this.groupBox_ASIO_InputMic.Text = "Input Microphone";
@@ -4219,19 +4444,20 @@
             // checkBox_ASIO_InputMic_EnableRefHack
             // 
             this.checkBox_ASIO_InputMic_EnableRefHack.AutoSize = true;
-            this.checkBox_ASIO_InputMic_EnableRefHack.Location = new System.Drawing.Point(253, 170);
+            this.checkBox_ASIO_InputMic_EnableRefHack.Location = new System.Drawing.Point(506, 327);
+            this.checkBox_ASIO_InputMic_EnableRefHack.Margin = new System.Windows.Forms.Padding(6);
             this.checkBox_ASIO_InputMic_EnableRefHack.Name = "checkBox_ASIO_InputMic_EnableRefHack";
-            this.checkBox_ASIO_InputMic_EnableRefHack.Size = new System.Drawing.Size(139, 17);
+            this.checkBox_ASIO_InputMic_EnableRefHack.Size = new System.Drawing.Size(255, 29);
             this.checkBox_ASIO_InputMic_EnableRefHack.TabIndex = 18;
             this.checkBox_ASIO_InputMic_EnableRefHack.Text = "Enable Ref Count Hack";
             this.checkBox_ASIO_InputMic_EnableRefHack.UseVisualStyleBackColor = true;
-            this.checkBox_ASIO_InputMic_EnableRefHack.CheckedChanged += ASIO_InputMic_EnableRefHack;
             // 
             // button_ASIO_InputMic_ClearSelection
             // 
-            this.button_ASIO_InputMic_ClearSelection.Location = new System.Drawing.Point(22, 192);
+            this.button_ASIO_InputMic_ClearSelection.Location = new System.Drawing.Point(44, 369);
+            this.button_ASIO_InputMic_ClearSelection.Margin = new System.Windows.Forms.Padding(6);
             this.button_ASIO_InputMic_ClearSelection.Name = "button_ASIO_InputMic_ClearSelection";
-            this.button_ASIO_InputMic_ClearSelection.Size = new System.Drawing.Size(194, 23);
+            this.button_ASIO_InputMic_ClearSelection.Size = new System.Drawing.Size(388, 44);
             this.button_ASIO_InputMic_ClearSelection.TabIndex = 14;
             this.button_ASIO_InputMic_ClearSelection.Text = "Clear Selection";
             this.button_ASIO_InputMic_ClearSelection.UseVisualStyleBackColor = true;
@@ -4240,9 +4466,10 @@
             // checkBox_ASIO_InputMic_Disabled
             // 
             this.checkBox_ASIO_InputMic_Disabled.AutoSize = true;
-            this.checkBox_ASIO_InputMic_Disabled.Location = new System.Drawing.Point(253, 207);
+            this.checkBox_ASIO_InputMic_Disabled.Location = new System.Drawing.Point(506, 398);
+            this.checkBox_ASIO_InputMic_Disabled.Margin = new System.Windows.Forms.Padding(6);
             this.checkBox_ASIO_InputMic_Disabled.Name = "checkBox_ASIO_InputMic_Disabled";
-            this.checkBox_ASIO_InputMic_Disabled.Size = new System.Drawing.Size(67, 17);
+            this.checkBox_ASIO_InputMic_Disabled.Size = new System.Drawing.Size(115, 29);
             this.checkBox_ASIO_InputMic_Disabled.TabIndex = 10;
             this.checkBox_ASIO_InputMic_Disabled.Text = "Disabled";
             this.checkBox_ASIO_InputMic_Disabled.UseVisualStyleBackColor = true;
@@ -4251,9 +4478,10 @@
             // checkBox_ASIO_InputMic_ControlEndpointVolume
             // 
             this.checkBox_ASIO_InputMic_ControlEndpointVolume.AutoSize = true;
-            this.checkBox_ASIO_InputMic_ControlEndpointVolume.Location = new System.Drawing.Point(253, 138);
+            this.checkBox_ASIO_InputMic_ControlEndpointVolume.Location = new System.Drawing.Point(506, 265);
+            this.checkBox_ASIO_InputMic_ControlEndpointVolume.Margin = new System.Windows.Forms.Padding(6);
             this.checkBox_ASIO_InputMic_ControlEndpointVolume.Name = "checkBox_ASIO_InputMic_ControlEndpointVolume";
-            this.checkBox_ASIO_InputMic_ControlEndpointVolume.Size = new System.Drawing.Size(142, 17);
+            this.checkBox_ASIO_InputMic_ControlEndpointVolume.Size = new System.Drawing.Size(269, 29);
             this.checkBox_ASIO_InputMic_ControlEndpointVolume.TabIndex = 9;
             this.checkBox_ASIO_InputMic_ControlEndpointVolume.Text = "Control Endpoint Volume";
             this.checkBox_ASIO_InputMic_ControlEndpointVolume.UseVisualStyleBackColor = true;
@@ -4263,9 +4491,10 @@
             // checkBox_ASIO_InputMic_ControlMasterVolume
             // 
             this.checkBox_ASIO_InputMic_ControlMasterVolume.AutoSize = true;
-            this.checkBox_ASIO_InputMic_ControlMasterVolume.Location = new System.Drawing.Point(253, 106);
+            this.checkBox_ASIO_InputMic_ControlMasterVolume.Location = new System.Drawing.Point(506, 204);
+            this.checkBox_ASIO_InputMic_ControlMasterVolume.Margin = new System.Windows.Forms.Padding(6);
             this.checkBox_ASIO_InputMic_ControlMasterVolume.Name = "checkBox_ASIO_InputMic_ControlMasterVolume";
-            this.checkBox_ASIO_InputMic_ControlMasterVolume.Size = new System.Drawing.Size(132, 17);
+            this.checkBox_ASIO_InputMic_ControlMasterVolume.Size = new System.Drawing.Size(250, 29);
             this.checkBox_ASIO_InputMic_ControlMasterVolume.TabIndex = 8;
             this.checkBox_ASIO_InputMic_ControlMasterVolume.Text = "Control Master Volume";
             this.checkBox_ASIO_InputMic_ControlMasterVolume.UseVisualStyleBackColor = true;
@@ -4274,46 +4503,42 @@
             // label_ASIO_InputMic_MaxVolume
             // 
             this.label_ASIO_InputMic_MaxVolume.AutoSize = true;
-            this.label_ASIO_InputMic_MaxVolume.Location = new System.Drawing.Point(250, 69);
+            this.label_ASIO_InputMic_MaxVolume.Location = new System.Drawing.Point(500, 133);
+            this.label_ASIO_InputMic_MaxVolume.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label_ASIO_InputMic_MaxVolume.Name = "label_ASIO_InputMic_MaxVolume";
-            this.label_ASIO_InputMic_MaxVolume.Size = new System.Drawing.Size(68, 13);
+            this.label_ASIO_InputMic_MaxVolume.Size = new System.Drawing.Size(137, 25);
             this.label_ASIO_InputMic_MaxVolume.TabIndex = 7;
             this.label_ASIO_InputMic_MaxVolume.Text = "Max Volume:";
             this.label_ASIO_InputMic_MaxVolume.Visible = false;
             // 
             // nUpDown_ASIO_InputMic_MaxVolume
             // 
-            this.nUpDown_ASIO_InputMic_MaxVolume.Location = new System.Drawing.Point(338, 67);
-            this.nUpDown_ASIO_InputMic_MaxVolume.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
+            this.nUpDown_ASIO_InputMic_MaxVolume.Location = new System.Drawing.Point(676, 129);
+            this.nUpDown_ASIO_InputMic_MaxVolume.Margin = new System.Windows.Forms.Padding(6);
+            this.nUpDown_ASIO_InputMic_MaxVolume.Maximum = new decimal(new int[] {1000, 0, 0, 0});
             this.nUpDown_ASIO_InputMic_MaxVolume.Name = "nUpDown_ASIO_InputMic_MaxVolume";
-            this.nUpDown_ASIO_InputMic_MaxVolume.Size = new System.Drawing.Size(120, 20);
+            this.nUpDown_ASIO_InputMic_MaxVolume.Size = new System.Drawing.Size(240, 31);
             this.nUpDown_ASIO_InputMic_MaxVolume.TabIndex = 4;
             this.nUpDown_ASIO_InputMic_MaxVolume.Visible = false;
             this.nUpDown_ASIO_InputMic_MaxVolume.ValueChanged += new System.EventHandler(this.ASIO_InputMic_MaxVolume);
             // 
             // nUpDown_ASIO_InputMic_Channel
             // 
-            this.nUpDown_ASIO_InputMic_Channel.Location = new System.Drawing.Point(338, 28);
-            this.nUpDown_ASIO_InputMic_Channel.Maximum = new decimal(new int[] {
-            64,
-            0,
-            0,
-            0});
+            this.nUpDown_ASIO_InputMic_Channel.Location = new System.Drawing.Point(676, 54);
+            this.nUpDown_ASIO_InputMic_Channel.Margin = new System.Windows.Forms.Padding(6);
+            this.nUpDown_ASIO_InputMic_Channel.Maximum = new decimal(new int[] {64, 0, 0, 0});
             this.nUpDown_ASIO_InputMic_Channel.Name = "nUpDown_ASIO_InputMic_Channel";
-            this.nUpDown_ASIO_InputMic_Channel.Size = new System.Drawing.Size(120, 20);
+            this.nUpDown_ASIO_InputMic_Channel.Size = new System.Drawing.Size(240, 31);
             this.nUpDown_ASIO_InputMic_Channel.TabIndex = 3;
             this.nUpDown_ASIO_InputMic_Channel.ValueChanged += new System.EventHandler(this.ASIO_InputMic_Channel);
             // 
             // label_ASIO_InputMic_Channel
             // 
             this.label_ASIO_InputMic_Channel.AutoSize = true;
-            this.label_ASIO_InputMic_Channel.Location = new System.Drawing.Point(250, 30);
+            this.label_ASIO_InputMic_Channel.Location = new System.Drawing.Point(500, 58);
+            this.label_ASIO_InputMic_Channel.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label_ASIO_InputMic_Channel.Name = "label_ASIO_InputMic_Channel";
-            this.label_ASIO_InputMic_Channel.Size = new System.Drawing.Size(49, 13);
+            this.label_ASIO_InputMic_Channel.Size = new System.Drawing.Size(98, 25);
             this.label_ASIO_InputMic_Channel.TabIndex = 2;
             this.label_ASIO_InputMic_Channel.Text = "Channel:";
             this.label_ASIO_InputMic_Channel.MouseHover += new System.EventHandler(this.ToolTips_Show);
@@ -4321,9 +4546,11 @@
             // listBox_AvailableASIODevices_InputMic
             // 
             this.listBox_AvailableASIODevices_InputMic.FormattingEnabled = true;
-            this.listBox_AvailableASIODevices_InputMic.Location = new System.Drawing.Point(23, 30);
+            this.listBox_AvailableASIODevices_InputMic.ItemHeight = 25;
+            this.listBox_AvailableASIODevices_InputMic.Location = new System.Drawing.Point(46, 58);
+            this.listBox_AvailableASIODevices_InputMic.Margin = new System.Windows.Forms.Padding(6);
             this.listBox_AvailableASIODevices_InputMic.Name = "listBox_AvailableASIODevices_InputMic";
-            this.listBox_AvailableASIODevices_InputMic.Size = new System.Drawing.Size(193, 147);
+            this.listBox_AvailableASIODevices_InputMic.Size = new System.Drawing.Size(382, 279);
             this.listBox_AvailableASIODevices_InputMic.TabIndex = 0;
             this.listBox_AvailableASIODevices_InputMic.SelectedIndexChanged += new System.EventHandler(this.ASIO_ListAvailableInputMic);
             this.listBox_AvailableASIODevices_InputMic.MouseHover += new System.EventHandler(this.ToolTips_Show);
@@ -4332,7 +4559,8 @@
             // 
             this.label_ASIO_Credits.AutoSize = true;
             this.label_ASIO_Credits.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label_ASIO_Credits.Location = new System.Drawing.Point(972, 466);
+            this.label_ASIO_Credits.Location = new System.Drawing.Point(1944, 896);
+            this.label_ASIO_Credits.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label_ASIO_Credits.Name = "label_ASIO_Credits";
             this.label_ASIO_Credits.Size = new System.Drawing.Size(163, 34);
             this.label_ASIO_Credits.TabIndex = 11;
@@ -4353,9 +4581,11 @@
             this.groupBox_ASIO_Output.Controls.Add(this.nUpDown_ASIO_Output_BaseChannel);
             this.groupBox_ASIO_Output.Controls.Add(this.label_ASIO_Output_BaseChannel);
             this.groupBox_ASIO_Output.Controls.Add(this.listBox_AvailableASIODevices_Output);
-            this.groupBox_ASIO_Output.Location = new System.Drawing.Point(490, 24);
+            this.groupBox_ASIO_Output.Location = new System.Drawing.Point(980, 46);
+            this.groupBox_ASIO_Output.Margin = new System.Windows.Forms.Padding(6);
             this.groupBox_ASIO_Output.Name = "groupBox_ASIO_Output";
-            this.groupBox_ASIO_Output.Size = new System.Drawing.Size(470, 224);
+            this.groupBox_ASIO_Output.Padding = new System.Windows.Forms.Padding(6);
+            this.groupBox_ASIO_Output.Size = new System.Drawing.Size(940, 431);
             this.groupBox_ASIO_Output.TabIndex = 10;
             this.groupBox_ASIO_Output.TabStop = false;
             this.groupBox_ASIO_Output.Text = "Output";
@@ -4364,42 +4594,41 @@
             // checkBox_ASIO_Output_EnableRefHack
             // 
             this.checkBox_ASIO_Output_EnableRefHack.AutoSize = true;
-            this.checkBox_ASIO_Output_EnableRefHack.Location = new System.Drawing.Point(253, 169);
+            this.checkBox_ASIO_Output_EnableRefHack.Location = new System.Drawing.Point(506, 325);
+            this.checkBox_ASIO_Output_EnableRefHack.Margin = new System.Windows.Forms.Padding(6);
             this.checkBox_ASIO_Output_EnableRefHack.Name = "checkBox_ASIO_Output_EnableRefHack";
-            this.checkBox_ASIO_Output_EnableRefHack.Size = new System.Drawing.Size(139, 17);
+            this.checkBox_ASIO_Output_EnableRefHack.Size = new System.Drawing.Size(255, 29);
             this.checkBox_ASIO_Output_EnableRefHack.TabIndex = 19;
             this.checkBox_ASIO_Output_EnableRefHack.Text = "Enable Ref Count Hack";
             this.checkBox_ASIO_Output_EnableRefHack.UseVisualStyleBackColor = true;
-            this.checkBox_ASIO_Output_EnableRefHack.CheckedChanged += ASIO_Output_EnableRefHack;
             // 
             // nUpDown_ASIO_Output_AltBaseChannel
             // 
-            this.nUpDown_ASIO_Output_AltBaseChannel.Location = new System.Drawing.Point(338, 52);
-            this.nUpDown_ASIO_Output_AltBaseChannel.Maximum = new decimal(new int[] {
-            64,
-            0,
-            0,
-            0});
+            this.nUpDown_ASIO_Output_AltBaseChannel.Location = new System.Drawing.Point(676, 100);
+            this.nUpDown_ASIO_Output_AltBaseChannel.Margin = new System.Windows.Forms.Padding(6);
+            this.nUpDown_ASIO_Output_AltBaseChannel.Maximum = new decimal(new int[] {64, 0, 0, 0});
             this.nUpDown_ASIO_Output_AltBaseChannel.Name = "nUpDown_ASIO_Output_AltBaseChannel";
-            this.nUpDown_ASIO_Output_AltBaseChannel.Size = new System.Drawing.Size(120, 20);
+            this.nUpDown_ASIO_Output_AltBaseChannel.Size = new System.Drawing.Size(240, 31);
             this.nUpDown_ASIO_Output_AltBaseChannel.TabIndex = 15;
             this.nUpDown_ASIO_Output_AltBaseChannel.ValueChanged += new System.EventHandler(this.ASIO_Output_AltBaseChannel);
             // 
             // label_ASIO_Output_AltBaseChannel
             // 
             this.label_ASIO_Output_AltBaseChannel.AutoSize = true;
-            this.label_ASIO_Output_AltBaseChannel.Location = new System.Drawing.Point(247, 55);
+            this.label_ASIO_Output_AltBaseChannel.Location = new System.Drawing.Point(494, 106);
+            this.label_ASIO_Output_AltBaseChannel.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label_ASIO_Output_AltBaseChannel.Name = "label_ASIO_Output_AltBaseChannel";
-            this.label_ASIO_Output_AltBaseChannel.Size = new System.Drawing.Size(91, 13);
+            this.label_ASIO_Output_AltBaseChannel.Size = new System.Drawing.Size(184, 25);
             this.label_ASIO_Output_AltBaseChannel.TabIndex = 14;
             this.label_ASIO_Output_AltBaseChannel.Text = "Alt Base Channel:";
             this.label_ASIO_Output_AltBaseChannel.MouseHover += new System.EventHandler(this.ToolTips_Show);
             // 
             // button_ASIO_Output_ClearSelection
             // 
-            this.button_ASIO_Output_ClearSelection.Location = new System.Drawing.Point(22, 192);
+            this.button_ASIO_Output_ClearSelection.Location = new System.Drawing.Point(44, 369);
+            this.button_ASIO_Output_ClearSelection.Margin = new System.Windows.Forms.Padding(6);
             this.button_ASIO_Output_ClearSelection.Name = "button_ASIO_Output_ClearSelection";
-            this.button_ASIO_Output_ClearSelection.Size = new System.Drawing.Size(194, 23);
+            this.button_ASIO_Output_ClearSelection.Size = new System.Drawing.Size(388, 44);
             this.button_ASIO_Output_ClearSelection.TabIndex = 13;
             this.button_ASIO_Output_ClearSelection.Text = "Clear Selection";
             this.button_ASIO_Output_ClearSelection.UseVisualStyleBackColor = true;
@@ -4408,9 +4637,10 @@
             // checkBox_ASIO_Output_Disabled
             // 
             this.checkBox_ASIO_Output_Disabled.AutoSize = true;
-            this.checkBox_ASIO_Output_Disabled.Location = new System.Drawing.Point(253, 198);
+            this.checkBox_ASIO_Output_Disabled.Location = new System.Drawing.Point(506, 381);
+            this.checkBox_ASIO_Output_Disabled.Margin = new System.Windows.Forms.Padding(6);
             this.checkBox_ASIO_Output_Disabled.Name = "checkBox_ASIO_Output_Disabled";
-            this.checkBox_ASIO_Output_Disabled.Size = new System.Drawing.Size(67, 17);
+            this.checkBox_ASIO_Output_Disabled.Size = new System.Drawing.Size(115, 29);
             this.checkBox_ASIO_Output_Disabled.TabIndex = 12;
             this.checkBox_ASIO_Output_Disabled.Text = "Disabled";
             this.checkBox_ASIO_Output_Disabled.UseVisualStyleBackColor = true;
@@ -4419,9 +4649,10 @@
             // checkBox_ASIO_Output_ControlEndpointVolume
             // 
             this.checkBox_ASIO_Output_ControlEndpointVolume.AutoSize = true;
-            this.checkBox_ASIO_Output_ControlEndpointVolume.Location = new System.Drawing.Point(252, 140);
+            this.checkBox_ASIO_Output_ControlEndpointVolume.Location = new System.Drawing.Point(504, 269);
+            this.checkBox_ASIO_Output_ControlEndpointVolume.Margin = new System.Windows.Forms.Padding(6);
             this.checkBox_ASIO_Output_ControlEndpointVolume.Name = "checkBox_ASIO_Output_ControlEndpointVolume";
-            this.checkBox_ASIO_Output_ControlEndpointVolume.Size = new System.Drawing.Size(142, 17);
+            this.checkBox_ASIO_Output_ControlEndpointVolume.Size = new System.Drawing.Size(269, 29);
             this.checkBox_ASIO_Output_ControlEndpointVolume.TabIndex = 9;
             this.checkBox_ASIO_Output_ControlEndpointVolume.Text = "Control Endpoint Volume";
             this.checkBox_ASIO_Output_ControlEndpointVolume.UseVisualStyleBackColor = true;
@@ -4431,9 +4662,10 @@
             // checkBox_ASIO_Output_ControlMasterVolume
             // 
             this.checkBox_ASIO_Output_ControlMasterVolume.AutoSize = true;
-            this.checkBox_ASIO_Output_ControlMasterVolume.Location = new System.Drawing.Point(253, 110);
+            this.checkBox_ASIO_Output_ControlMasterVolume.Location = new System.Drawing.Point(506, 212);
+            this.checkBox_ASIO_Output_ControlMasterVolume.Margin = new System.Windows.Forms.Padding(6);
             this.checkBox_ASIO_Output_ControlMasterVolume.Name = "checkBox_ASIO_Output_ControlMasterVolume";
-            this.checkBox_ASIO_Output_ControlMasterVolume.Size = new System.Drawing.Size(132, 17);
+            this.checkBox_ASIO_Output_ControlMasterVolume.Size = new System.Drawing.Size(250, 29);
             this.checkBox_ASIO_Output_ControlMasterVolume.TabIndex = 8;
             this.checkBox_ASIO_Output_ControlMasterVolume.Text = "Control Master Volume";
             this.checkBox_ASIO_Output_ControlMasterVolume.UseVisualStyleBackColor = true;
@@ -4442,46 +4674,42 @@
             // label_ASIO_Output_MaxVolume
             // 
             this.label_ASIO_Output_MaxVolume.AutoSize = true;
-            this.label_ASIO_Output_MaxVolume.Location = new System.Drawing.Point(247, 80);
+            this.label_ASIO_Output_MaxVolume.Location = new System.Drawing.Point(494, 154);
+            this.label_ASIO_Output_MaxVolume.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label_ASIO_Output_MaxVolume.Name = "label_ASIO_Output_MaxVolume";
-            this.label_ASIO_Output_MaxVolume.Size = new System.Drawing.Size(68, 13);
+            this.label_ASIO_Output_MaxVolume.Size = new System.Drawing.Size(137, 25);
             this.label_ASIO_Output_MaxVolume.TabIndex = 7;
             this.label_ASIO_Output_MaxVolume.Text = "Max Volume:";
             this.label_ASIO_Output_MaxVolume.Visible = false;
             // 
             // nUpDown_ASIO_Output_MaxVolume
             // 
-            this.nUpDown_ASIO_Output_MaxVolume.Location = new System.Drawing.Point(338, 78);
-            this.nUpDown_ASIO_Output_MaxVolume.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
+            this.nUpDown_ASIO_Output_MaxVolume.Location = new System.Drawing.Point(676, 150);
+            this.nUpDown_ASIO_Output_MaxVolume.Margin = new System.Windows.Forms.Padding(6);
+            this.nUpDown_ASIO_Output_MaxVolume.Maximum = new decimal(new int[] {1000, 0, 0, 0});
             this.nUpDown_ASIO_Output_MaxVolume.Name = "nUpDown_ASIO_Output_MaxVolume";
-            this.nUpDown_ASIO_Output_MaxVolume.Size = new System.Drawing.Size(120, 20);
+            this.nUpDown_ASIO_Output_MaxVolume.Size = new System.Drawing.Size(240, 31);
             this.nUpDown_ASIO_Output_MaxVolume.TabIndex = 4;
             this.nUpDown_ASIO_Output_MaxVolume.Visible = false;
             this.nUpDown_ASIO_Output_MaxVolume.ValueChanged += new System.EventHandler(this.ASIO_Output_MaxVolume);
             // 
             // nUpDown_ASIO_Output_BaseChannel
             // 
-            this.nUpDown_ASIO_Output_BaseChannel.Location = new System.Drawing.Point(338, 28);
-            this.nUpDown_ASIO_Output_BaseChannel.Maximum = new decimal(new int[] {
-            64,
-            0,
-            0,
-            0});
+            this.nUpDown_ASIO_Output_BaseChannel.Location = new System.Drawing.Point(676, 54);
+            this.nUpDown_ASIO_Output_BaseChannel.Margin = new System.Windows.Forms.Padding(6);
+            this.nUpDown_ASIO_Output_BaseChannel.Maximum = new decimal(new int[] {64, 0, 0, 0});
             this.nUpDown_ASIO_Output_BaseChannel.Name = "nUpDown_ASIO_Output_BaseChannel";
-            this.nUpDown_ASIO_Output_BaseChannel.Size = new System.Drawing.Size(120, 20);
+            this.nUpDown_ASIO_Output_BaseChannel.Size = new System.Drawing.Size(240, 31);
             this.nUpDown_ASIO_Output_BaseChannel.TabIndex = 3;
             this.nUpDown_ASIO_Output_BaseChannel.ValueChanged += new System.EventHandler(this.ASIO_Output_BaseChannel);
             // 
             // label_ASIO_Output_BaseChannel
             // 
             this.label_ASIO_Output_BaseChannel.AutoSize = true;
-            this.label_ASIO_Output_BaseChannel.Location = new System.Drawing.Point(247, 30);
+            this.label_ASIO_Output_BaseChannel.Location = new System.Drawing.Point(494, 58);
+            this.label_ASIO_Output_BaseChannel.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label_ASIO_Output_BaseChannel.Name = "label_ASIO_Output_BaseChannel";
-            this.label_ASIO_Output_BaseChannel.Size = new System.Drawing.Size(76, 13);
+            this.label_ASIO_Output_BaseChannel.Size = new System.Drawing.Size(153, 25);
             this.label_ASIO_Output_BaseChannel.TabIndex = 2;
             this.label_ASIO_Output_BaseChannel.Text = "Base Channel:";
             this.label_ASIO_Output_BaseChannel.MouseHover += new System.EventHandler(this.ToolTips_Show);
@@ -4489,9 +4717,11 @@
             // listBox_AvailableASIODevices_Output
             // 
             this.listBox_AvailableASIODevices_Output.FormattingEnabled = true;
-            this.listBox_AvailableASIODevices_Output.Location = new System.Drawing.Point(23, 30);
+            this.listBox_AvailableASIODevices_Output.ItemHeight = 25;
+            this.listBox_AvailableASIODevices_Output.Location = new System.Drawing.Point(46, 58);
+            this.listBox_AvailableASIODevices_Output.Margin = new System.Windows.Forms.Padding(6);
             this.listBox_AvailableASIODevices_Output.Name = "listBox_AvailableASIODevices_Output";
-            this.listBox_AvailableASIODevices_Output.Size = new System.Drawing.Size(193, 147);
+            this.listBox_AvailableASIODevices_Output.Size = new System.Drawing.Size(382, 279);
             this.listBox_AvailableASIODevices_Output.TabIndex = 0;
             this.listBox_AvailableASIODevices_Output.SelectedIndexChanged += new System.EventHandler(this.ASIO_ListAvailableOutput);
             this.listBox_AvailableASIODevices_Output.MouseHover += new System.EventHandler(this.ToolTips_Show);
@@ -4508,9 +4738,11 @@
             this.groupBox_ASIO_Input1.Controls.Add(this.nUpDown_ASIO_Input1_Channel);
             this.groupBox_ASIO_Input1.Controls.Add(this.label_ASIO_Input1_Channel);
             this.groupBox_ASIO_Input1.Controls.Add(this.listBox_AvailableASIODevices_Input1);
-            this.groupBox_ASIO_Input1.Location = new System.Drawing.Point(14, 260);
+            this.groupBox_ASIO_Input1.Location = new System.Drawing.Point(28, 500);
+            this.groupBox_ASIO_Input1.Margin = new System.Windows.Forms.Padding(6);
             this.groupBox_ASIO_Input1.Name = "groupBox_ASIO_Input1";
-            this.groupBox_ASIO_Input1.Size = new System.Drawing.Size(470, 230);
+            this.groupBox_ASIO_Input1.Padding = new System.Windows.Forms.Padding(6);
+            this.groupBox_ASIO_Input1.Size = new System.Drawing.Size(940, 442);
             this.groupBox_ASIO_Input1.TabIndex = 4;
             this.groupBox_ASIO_Input1.TabStop = false;
             this.groupBox_ASIO_Input1.Text = "Input 2";
@@ -4519,19 +4751,20 @@
             // checkBox_ASIO_Input1_EnableRefHack
             // 
             this.checkBox_ASIO_Input1_EnableRefHack.AutoSize = true;
-            this.checkBox_ASIO_Input1_EnableRefHack.Location = new System.Drawing.Point(253, 170);
+            this.checkBox_ASIO_Input1_EnableRefHack.Location = new System.Drawing.Point(506, 327);
+            this.checkBox_ASIO_Input1_EnableRefHack.Margin = new System.Windows.Forms.Padding(6);
             this.checkBox_ASIO_Input1_EnableRefHack.Name = "checkBox_ASIO_Input1_EnableRefHack";
-            this.checkBox_ASIO_Input1_EnableRefHack.Size = new System.Drawing.Size(139, 17);
+            this.checkBox_ASIO_Input1_EnableRefHack.Size = new System.Drawing.Size(255, 29);
             this.checkBox_ASIO_Input1_EnableRefHack.TabIndex = 17;
             this.checkBox_ASIO_Input1_EnableRefHack.Text = "Enable Ref Count Hack";
             this.checkBox_ASIO_Input1_EnableRefHack.UseVisualStyleBackColor = true;
-            this.checkBox_ASIO_Input1_EnableRefHack.CheckedChanged += ASIO_Input1_EnableRefHack;
             // 
             // button_ASIO_Input1_ClearSelection
             // 
-            this.button_ASIO_Input1_ClearSelection.Location = new System.Drawing.Point(22, 192);
+            this.button_ASIO_Input1_ClearSelection.Location = new System.Drawing.Point(44, 369);
+            this.button_ASIO_Input1_ClearSelection.Margin = new System.Windows.Forms.Padding(6);
             this.button_ASIO_Input1_ClearSelection.Name = "button_ASIO_Input1_ClearSelection";
-            this.button_ASIO_Input1_ClearSelection.Size = new System.Drawing.Size(194, 23);
+            this.button_ASIO_Input1_ClearSelection.Size = new System.Drawing.Size(388, 44);
             this.button_ASIO_Input1_ClearSelection.TabIndex = 14;
             this.button_ASIO_Input1_ClearSelection.Text = "Clear Selection";
             this.button_ASIO_Input1_ClearSelection.UseVisualStyleBackColor = true;
@@ -4540,9 +4773,10 @@
             // checkBox_ASIO_Input1_Disabled
             // 
             this.checkBox_ASIO_Input1_Disabled.AutoSize = true;
-            this.checkBox_ASIO_Input1_Disabled.Location = new System.Drawing.Point(253, 204);
+            this.checkBox_ASIO_Input1_Disabled.Location = new System.Drawing.Point(506, 392);
+            this.checkBox_ASIO_Input1_Disabled.Margin = new System.Windows.Forms.Padding(6);
             this.checkBox_ASIO_Input1_Disabled.Name = "checkBox_ASIO_Input1_Disabled";
-            this.checkBox_ASIO_Input1_Disabled.Size = new System.Drawing.Size(67, 17);
+            this.checkBox_ASIO_Input1_Disabled.Size = new System.Drawing.Size(115, 29);
             this.checkBox_ASIO_Input1_Disabled.TabIndex = 10;
             this.checkBox_ASIO_Input1_Disabled.Text = "Disabled";
             this.checkBox_ASIO_Input1_Disabled.UseVisualStyleBackColor = true;
@@ -4551,9 +4785,10 @@
             // checkBox_ASIO_Input1_ControlEndpointVolume
             // 
             this.checkBox_ASIO_Input1_ControlEndpointVolume.AutoSize = true;
-            this.checkBox_ASIO_Input1_ControlEndpointVolume.Location = new System.Drawing.Point(253, 138);
+            this.checkBox_ASIO_Input1_ControlEndpointVolume.Location = new System.Drawing.Point(506, 265);
+            this.checkBox_ASIO_Input1_ControlEndpointVolume.Margin = new System.Windows.Forms.Padding(6);
             this.checkBox_ASIO_Input1_ControlEndpointVolume.Name = "checkBox_ASIO_Input1_ControlEndpointVolume";
-            this.checkBox_ASIO_Input1_ControlEndpointVolume.Size = new System.Drawing.Size(142, 17);
+            this.checkBox_ASIO_Input1_ControlEndpointVolume.Size = new System.Drawing.Size(269, 29);
             this.checkBox_ASIO_Input1_ControlEndpointVolume.TabIndex = 9;
             this.checkBox_ASIO_Input1_ControlEndpointVolume.Text = "Control Endpoint Volume";
             this.checkBox_ASIO_Input1_ControlEndpointVolume.UseVisualStyleBackColor = true;
@@ -4563,9 +4798,10 @@
             // checkBox_ASIO_Input1_ControlMasterVolume
             // 
             this.checkBox_ASIO_Input1_ControlMasterVolume.AutoSize = true;
-            this.checkBox_ASIO_Input1_ControlMasterVolume.Location = new System.Drawing.Point(253, 106);
+            this.checkBox_ASIO_Input1_ControlMasterVolume.Location = new System.Drawing.Point(506, 204);
+            this.checkBox_ASIO_Input1_ControlMasterVolume.Margin = new System.Windows.Forms.Padding(6);
             this.checkBox_ASIO_Input1_ControlMasterVolume.Name = "checkBox_ASIO_Input1_ControlMasterVolume";
-            this.checkBox_ASIO_Input1_ControlMasterVolume.Size = new System.Drawing.Size(132, 17);
+            this.checkBox_ASIO_Input1_ControlMasterVolume.Size = new System.Drawing.Size(250, 29);
             this.checkBox_ASIO_Input1_ControlMasterVolume.TabIndex = 8;
             this.checkBox_ASIO_Input1_ControlMasterVolume.Text = "Control Master Volume";
             this.checkBox_ASIO_Input1_ControlMasterVolume.UseVisualStyleBackColor = true;
@@ -4574,46 +4810,42 @@
             // label_ASIO_Input1_MaxVolume
             // 
             this.label_ASIO_Input1_MaxVolume.AutoSize = true;
-            this.label_ASIO_Input1_MaxVolume.Location = new System.Drawing.Point(250, 69);
+            this.label_ASIO_Input1_MaxVolume.Location = new System.Drawing.Point(500, 133);
+            this.label_ASIO_Input1_MaxVolume.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label_ASIO_Input1_MaxVolume.Name = "label_ASIO_Input1_MaxVolume";
-            this.label_ASIO_Input1_MaxVolume.Size = new System.Drawing.Size(68, 13);
+            this.label_ASIO_Input1_MaxVolume.Size = new System.Drawing.Size(137, 25);
             this.label_ASIO_Input1_MaxVolume.TabIndex = 7;
             this.label_ASIO_Input1_MaxVolume.Text = "Max Volume:";
             this.label_ASIO_Input1_MaxVolume.Visible = false;
             // 
             // nUpDown_ASIO_Input1_MaxVolume
             // 
-            this.nUpDown_ASIO_Input1_MaxVolume.Location = new System.Drawing.Point(338, 67);
-            this.nUpDown_ASIO_Input1_MaxVolume.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
+            this.nUpDown_ASIO_Input1_MaxVolume.Location = new System.Drawing.Point(676, 129);
+            this.nUpDown_ASIO_Input1_MaxVolume.Margin = new System.Windows.Forms.Padding(6);
+            this.nUpDown_ASIO_Input1_MaxVolume.Maximum = new decimal(new int[] {1000, 0, 0, 0});
             this.nUpDown_ASIO_Input1_MaxVolume.Name = "nUpDown_ASIO_Input1_MaxVolume";
-            this.nUpDown_ASIO_Input1_MaxVolume.Size = new System.Drawing.Size(120, 20);
+            this.nUpDown_ASIO_Input1_MaxVolume.Size = new System.Drawing.Size(240, 31);
             this.nUpDown_ASIO_Input1_MaxVolume.TabIndex = 4;
             this.nUpDown_ASIO_Input1_MaxVolume.Visible = false;
             this.nUpDown_ASIO_Input1_MaxVolume.ValueChanged += new System.EventHandler(this.ASIO_Input1_MaxVolume);
             // 
             // nUpDown_ASIO_Input1_Channel
             // 
-            this.nUpDown_ASIO_Input1_Channel.Location = new System.Drawing.Point(338, 28);
-            this.nUpDown_ASIO_Input1_Channel.Maximum = new decimal(new int[] {
-            64,
-            0,
-            0,
-            0});
+            this.nUpDown_ASIO_Input1_Channel.Location = new System.Drawing.Point(676, 54);
+            this.nUpDown_ASIO_Input1_Channel.Margin = new System.Windows.Forms.Padding(6);
+            this.nUpDown_ASIO_Input1_Channel.Maximum = new decimal(new int[] {64, 0, 0, 0});
             this.nUpDown_ASIO_Input1_Channel.Name = "nUpDown_ASIO_Input1_Channel";
-            this.nUpDown_ASIO_Input1_Channel.Size = new System.Drawing.Size(120, 20);
+            this.nUpDown_ASIO_Input1_Channel.Size = new System.Drawing.Size(240, 31);
             this.nUpDown_ASIO_Input1_Channel.TabIndex = 3;
             this.nUpDown_ASIO_Input1_Channel.ValueChanged += new System.EventHandler(this.ASIO_Input1_Channel);
             // 
             // label_ASIO_Input1_Channel
             // 
             this.label_ASIO_Input1_Channel.AutoSize = true;
-            this.label_ASIO_Input1_Channel.Location = new System.Drawing.Point(250, 30);
+            this.label_ASIO_Input1_Channel.Location = new System.Drawing.Point(500, 58);
+            this.label_ASIO_Input1_Channel.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label_ASIO_Input1_Channel.Name = "label_ASIO_Input1_Channel";
-            this.label_ASIO_Input1_Channel.Size = new System.Drawing.Size(49, 13);
+            this.label_ASIO_Input1_Channel.Size = new System.Drawing.Size(98, 25);
             this.label_ASIO_Input1_Channel.TabIndex = 2;
             this.label_ASIO_Input1_Channel.Text = "Channel:";
             this.label_ASIO_Input1_Channel.MouseHover += new System.EventHandler(this.ToolTips_Show);
@@ -4621,9 +4853,11 @@
             // listBox_AvailableASIODevices_Input1
             // 
             this.listBox_AvailableASIODevices_Input1.FormattingEnabled = true;
-            this.listBox_AvailableASIODevices_Input1.Location = new System.Drawing.Point(23, 30);
+            this.listBox_AvailableASIODevices_Input1.ItemHeight = 25;
+            this.listBox_AvailableASIODevices_Input1.Location = new System.Drawing.Point(46, 58);
+            this.listBox_AvailableASIODevices_Input1.Margin = new System.Windows.Forms.Padding(6);
             this.listBox_AvailableASIODevices_Input1.Name = "listBox_AvailableASIODevices_Input1";
-            this.listBox_AvailableASIODevices_Input1.Size = new System.Drawing.Size(193, 147);
+            this.listBox_AvailableASIODevices_Input1.Size = new System.Drawing.Size(382, 279);
             this.listBox_AvailableASIODevices_Input1.TabIndex = 0;
             this.listBox_AvailableASIODevices_Input1.SelectedIndexChanged += new System.EventHandler(this.ASIO_ListAvailableInput1);
             this.listBox_AvailableASIODevices_Input1.MouseHover += new System.EventHandler(this.ToolTips_Show);
@@ -4640,9 +4874,11 @@
             this.groupBox_ASIO_Input0.Controls.Add(this.nUpDown_ASIO_Input0_Channel);
             this.groupBox_ASIO_Input0.Controls.Add(this.label_ASIO_Input0_Channel);
             this.groupBox_ASIO_Input0.Controls.Add(this.listBox_AvailableASIODevices_Input0);
-            this.groupBox_ASIO_Input0.Location = new System.Drawing.Point(14, 24);
+            this.groupBox_ASIO_Input0.Location = new System.Drawing.Point(28, 46);
+            this.groupBox_ASIO_Input0.Margin = new System.Windows.Forms.Padding(6);
             this.groupBox_ASIO_Input0.Name = "groupBox_ASIO_Input0";
-            this.groupBox_ASIO_Input0.Size = new System.Drawing.Size(470, 224);
+            this.groupBox_ASIO_Input0.Padding = new System.Windows.Forms.Padding(6);
+            this.groupBox_ASIO_Input0.Size = new System.Drawing.Size(940, 431);
             this.groupBox_ASIO_Input0.TabIndex = 3;
             this.groupBox_ASIO_Input0.TabStop = false;
             this.groupBox_ASIO_Input0.Text = "Input 1";
@@ -4651,19 +4887,20 @@
             // checkBox_ASIO_Input0_EnableRefHack
             // 
             this.checkBox_ASIO_Input0_EnableRefHack.AutoSize = true;
-            this.checkBox_ASIO_Input0_EnableRefHack.Location = new System.Drawing.Point(253, 160);
+            this.checkBox_ASIO_Input0_EnableRefHack.Location = new System.Drawing.Point(506, 308);
+            this.checkBox_ASIO_Input0_EnableRefHack.Margin = new System.Windows.Forms.Padding(6);
             this.checkBox_ASIO_Input0_EnableRefHack.Name = "checkBox_ASIO_Input0_EnableRefHack";
-            this.checkBox_ASIO_Input0_EnableRefHack.Size = new System.Drawing.Size(139, 17);
+            this.checkBox_ASIO_Input0_EnableRefHack.Size = new System.Drawing.Size(255, 29);
             this.checkBox_ASIO_Input0_EnableRefHack.TabIndex = 16;
             this.checkBox_ASIO_Input0_EnableRefHack.Text = "Enable Ref Count Hack";
             this.checkBox_ASIO_Input0_EnableRefHack.UseVisualStyleBackColor = true;
-            this.checkBox_ASIO_Input0_EnableRefHack.CheckedChanged += ASIO_Input0_EnableRefHack;
             // 
             // button_ASIO_Input0_ClearSelection
             // 
-            this.button_ASIO_Input0_ClearSelection.Location = new System.Drawing.Point(22, 192);
+            this.button_ASIO_Input0_ClearSelection.Location = new System.Drawing.Point(44, 369);
+            this.button_ASIO_Input0_ClearSelection.Margin = new System.Windows.Forms.Padding(6);
             this.button_ASIO_Input0_ClearSelection.Name = "button_ASIO_Input0_ClearSelection";
-            this.button_ASIO_Input0_ClearSelection.Size = new System.Drawing.Size(194, 23);
+            this.button_ASIO_Input0_ClearSelection.Size = new System.Drawing.Size(388, 44);
             this.button_ASIO_Input0_ClearSelection.TabIndex = 15;
             this.button_ASIO_Input0_ClearSelection.Text = "Clear Selection";
             this.button_ASIO_Input0_ClearSelection.UseVisualStyleBackColor = true;
@@ -4672,9 +4909,10 @@
             // checkBox_ASIO_Input0_Disabled
             // 
             this.checkBox_ASIO_Input0_Disabled.AutoSize = true;
-            this.checkBox_ASIO_Input0_Disabled.Location = new System.Drawing.Point(253, 192);
+            this.checkBox_ASIO_Input0_Disabled.Location = new System.Drawing.Point(506, 369);
+            this.checkBox_ASIO_Input0_Disabled.Margin = new System.Windows.Forms.Padding(6);
             this.checkBox_ASIO_Input0_Disabled.Name = "checkBox_ASIO_Input0_Disabled";
-            this.checkBox_ASIO_Input0_Disabled.Size = new System.Drawing.Size(67, 17);
+            this.checkBox_ASIO_Input0_Disabled.Size = new System.Drawing.Size(115, 29);
             this.checkBox_ASIO_Input0_Disabled.TabIndex = 11;
             this.checkBox_ASIO_Input0_Disabled.Text = "Disabled";
             this.checkBox_ASIO_Input0_Disabled.UseVisualStyleBackColor = true;
@@ -4683,9 +4921,10 @@
             // checkBox_ASIO_Input0_ControlEndpointVolume
             // 
             this.checkBox_ASIO_Input0_ControlEndpointVolume.AutoSize = true;
-            this.checkBox_ASIO_Input0_ControlEndpointVolume.Location = new System.Drawing.Point(253, 129);
+            this.checkBox_ASIO_Input0_ControlEndpointVolume.Location = new System.Drawing.Point(506, 248);
+            this.checkBox_ASIO_Input0_ControlEndpointVolume.Margin = new System.Windows.Forms.Padding(6);
             this.checkBox_ASIO_Input0_ControlEndpointVolume.Name = "checkBox_ASIO_Input0_ControlEndpointVolume";
-            this.checkBox_ASIO_Input0_ControlEndpointVolume.Size = new System.Drawing.Size(142, 17);
+            this.checkBox_ASIO_Input0_ControlEndpointVolume.Size = new System.Drawing.Size(269, 29);
             this.checkBox_ASIO_Input0_ControlEndpointVolume.TabIndex = 11;
             this.checkBox_ASIO_Input0_ControlEndpointVolume.Text = "Control Endpoint Volume";
             this.checkBox_ASIO_Input0_ControlEndpointVolume.UseVisualStyleBackColor = true;
@@ -4695,9 +4934,10 @@
             // checkBox_ASIO_Input0_ControlMasterVolume
             // 
             this.checkBox_ASIO_Input0_ControlMasterVolume.AutoSize = true;
-            this.checkBox_ASIO_Input0_ControlMasterVolume.Location = new System.Drawing.Point(253, 97);
+            this.checkBox_ASIO_Input0_ControlMasterVolume.Location = new System.Drawing.Point(506, 187);
+            this.checkBox_ASIO_Input0_ControlMasterVolume.Margin = new System.Windows.Forms.Padding(6);
             this.checkBox_ASIO_Input0_ControlMasterVolume.Name = "checkBox_ASIO_Input0_ControlMasterVolume";
-            this.checkBox_ASIO_Input0_ControlMasterVolume.Size = new System.Drawing.Size(132, 17);
+            this.checkBox_ASIO_Input0_ControlMasterVolume.Size = new System.Drawing.Size(250, 29);
             this.checkBox_ASIO_Input0_ControlMasterVolume.TabIndex = 10;
             this.checkBox_ASIO_Input0_ControlMasterVolume.Text = "Control Master Volume";
             this.checkBox_ASIO_Input0_ControlMasterVolume.UseVisualStyleBackColor = true;
@@ -4706,46 +4946,42 @@
             // label_ASIO_Input0_MaxVolume
             // 
             this.label_ASIO_Input0_MaxVolume.AutoSize = true;
-            this.label_ASIO_Input0_MaxVolume.Location = new System.Drawing.Point(250, 65);
+            this.label_ASIO_Input0_MaxVolume.Location = new System.Drawing.Point(500, 125);
+            this.label_ASIO_Input0_MaxVolume.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label_ASIO_Input0_MaxVolume.Name = "label_ASIO_Input0_MaxVolume";
-            this.label_ASIO_Input0_MaxVolume.Size = new System.Drawing.Size(68, 13);
+            this.label_ASIO_Input0_MaxVolume.Size = new System.Drawing.Size(137, 25);
             this.label_ASIO_Input0_MaxVolume.TabIndex = 6;
             this.label_ASIO_Input0_MaxVolume.Text = "Max Volume:";
             this.label_ASIO_Input0_MaxVolume.Visible = false;
             // 
             // nUpDown_ASIO_Input0_MaxVolume
             // 
-            this.nUpDown_ASIO_Input0_MaxVolume.Location = new System.Drawing.Point(338, 63);
-            this.nUpDown_ASIO_Input0_MaxVolume.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
+            this.nUpDown_ASIO_Input0_MaxVolume.Location = new System.Drawing.Point(676, 121);
+            this.nUpDown_ASIO_Input0_MaxVolume.Margin = new System.Windows.Forms.Padding(6);
+            this.nUpDown_ASIO_Input0_MaxVolume.Maximum = new decimal(new int[] {1000, 0, 0, 0});
             this.nUpDown_ASIO_Input0_MaxVolume.Name = "nUpDown_ASIO_Input0_MaxVolume";
-            this.nUpDown_ASIO_Input0_MaxVolume.Size = new System.Drawing.Size(120, 20);
+            this.nUpDown_ASIO_Input0_MaxVolume.Size = new System.Drawing.Size(240, 31);
             this.nUpDown_ASIO_Input0_MaxVolume.TabIndex = 5;
             this.nUpDown_ASIO_Input0_MaxVolume.Visible = false;
             this.nUpDown_ASIO_Input0_MaxVolume.ValueChanged += new System.EventHandler(this.ASIO_Input0_MaxVolume);
             // 
             // nUpDown_ASIO_Input0_Channel
             // 
-            this.nUpDown_ASIO_Input0_Channel.Location = new System.Drawing.Point(338, 28);
-            this.nUpDown_ASIO_Input0_Channel.Maximum = new decimal(new int[] {
-            64,
-            0,
-            0,
-            0});
+            this.nUpDown_ASIO_Input0_Channel.Location = new System.Drawing.Point(676, 54);
+            this.nUpDown_ASIO_Input0_Channel.Margin = new System.Windows.Forms.Padding(6);
+            this.nUpDown_ASIO_Input0_Channel.Maximum = new decimal(new int[] {64, 0, 0, 0});
             this.nUpDown_ASIO_Input0_Channel.Name = "nUpDown_ASIO_Input0_Channel";
-            this.nUpDown_ASIO_Input0_Channel.Size = new System.Drawing.Size(120, 20);
+            this.nUpDown_ASIO_Input0_Channel.Size = new System.Drawing.Size(240, 31);
             this.nUpDown_ASIO_Input0_Channel.TabIndex = 2;
             this.nUpDown_ASIO_Input0_Channel.ValueChanged += new System.EventHandler(this.ASIO_Input0_Channel);
             // 
             // label_ASIO_Input0_Channel
             // 
             this.label_ASIO_Input0_Channel.AutoSize = true;
-            this.label_ASIO_Input0_Channel.Location = new System.Drawing.Point(250, 30);
+            this.label_ASIO_Input0_Channel.Location = new System.Drawing.Point(500, 58);
+            this.label_ASIO_Input0_Channel.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label_ASIO_Input0_Channel.Name = "label_ASIO_Input0_Channel";
-            this.label_ASIO_Input0_Channel.Size = new System.Drawing.Size(49, 13);
+            this.label_ASIO_Input0_Channel.Size = new System.Drawing.Size(98, 25);
             this.label_ASIO_Input0_Channel.TabIndex = 1;
             this.label_ASIO_Input0_Channel.Text = "Channel:";
             this.label_ASIO_Input0_Channel.MouseHover += new System.EventHandler(this.ToolTips_Show);
@@ -4753,9 +4989,11 @@
             // listBox_AvailableASIODevices_Input0
             // 
             this.listBox_AvailableASIODevices_Input0.FormattingEnabled = true;
-            this.listBox_AvailableASIODevices_Input0.Location = new System.Drawing.Point(23, 30);
+            this.listBox_AvailableASIODevices_Input0.ItemHeight = 25;
+            this.listBox_AvailableASIODevices_Input0.Location = new System.Drawing.Point(46, 58);
+            this.listBox_AvailableASIODevices_Input0.Margin = new System.Windows.Forms.Padding(6);
             this.listBox_AvailableASIODevices_Input0.Name = "listBox_AvailableASIODevices_Input0";
-            this.listBox_AvailableASIODevices_Input0.Size = new System.Drawing.Size(193, 147);
+            this.listBox_AvailableASIODevices_Input0.Size = new System.Drawing.Size(382, 279);
             this.listBox_AvailableASIODevices_Input0.TabIndex = 0;
             this.listBox_AvailableASIODevices_Input0.SelectedIndexChanged += new System.EventHandler(this.ASIO_ListAvailableInput0);
             this.listBox_AvailableASIODevices_Input0.MouseHover += new System.EventHandler(this.ToolTips_Show);
@@ -4765,9 +5003,11 @@
             this.groupBox_ASIO_Config.Controls.Add(this.checkBox_ASIO_ASIO);
             this.groupBox_ASIO_Config.Controls.Add(this.checkBox_ASIO_WASAPI_Input);
             this.groupBox_ASIO_Config.Controls.Add(this.checkBox_ASIO_WASAPI_Output);
-            this.groupBox_ASIO_Config.Location = new System.Drawing.Point(966, 216);
+            this.groupBox_ASIO_Config.Location = new System.Drawing.Point(1932, 415);
+            this.groupBox_ASIO_Config.Margin = new System.Windows.Forms.Padding(6);
             this.groupBox_ASIO_Config.Name = "groupBox_ASIO_Config";
-            this.groupBox_ASIO_Config.Size = new System.Drawing.Size(161, 111);
+            this.groupBox_ASIO_Config.Padding = new System.Windows.Forms.Padding(6);
+            this.groupBox_ASIO_Config.Size = new System.Drawing.Size(322, 213);
             this.groupBox_ASIO_Config.TabIndex = 2;
             this.groupBox_ASIO_Config.TabStop = false;
             this.groupBox_ASIO_Config.Text = "Config";
@@ -4776,9 +5016,10 @@
             // checkBox_ASIO_ASIO
             // 
             this.checkBox_ASIO_ASIO.AutoSize = true;
-            this.checkBox_ASIO_ASIO.Location = new System.Drawing.Point(6, 80);
+            this.checkBox_ASIO_ASIO.Location = new System.Drawing.Point(12, 154);
+            this.checkBox_ASIO_ASIO.Margin = new System.Windows.Forms.Padding(6);
             this.checkBox_ASIO_ASIO.Name = "checkBox_ASIO_ASIO";
-            this.checkBox_ASIO_ASIO.Size = new System.Drawing.Size(73, 17);
+            this.checkBox_ASIO_ASIO.Size = new System.Drawing.Size(124, 29);
             this.checkBox_ASIO_ASIO.TabIndex = 2;
             this.checkBox_ASIO_ASIO.Text = "Use ASIO";
             this.checkBox_ASIO_ASIO.UseVisualStyleBackColor = true;
@@ -4788,9 +5029,10 @@
             // checkBox_ASIO_WASAPI_Input
             // 
             this.checkBox_ASIO_WASAPI_Input.AutoSize = true;
-            this.checkBox_ASIO_WASAPI_Input.Location = new System.Drawing.Point(6, 50);
+            this.checkBox_ASIO_WASAPI_Input.Location = new System.Drawing.Point(12, 96);
+            this.checkBox_ASIO_WASAPI_Input.Margin = new System.Windows.Forms.Padding(6);
             this.checkBox_ASIO_WASAPI_Input.Name = "checkBox_ASIO_WASAPI_Input";
-            this.checkBox_ASIO_WASAPI_Input.Size = new System.Drawing.Size(117, 17);
+            this.checkBox_ASIO_WASAPI_Input.Size = new System.Drawing.Size(209, 29);
             this.checkBox_ASIO_WASAPI_Input.TabIndex = 1;
             this.checkBox_ASIO_WASAPI_Input.Text = "Use WASAPI Input";
             this.checkBox_ASIO_WASAPI_Input.UseVisualStyleBackColor = true;
@@ -4800,9 +5042,10 @@
             // checkBox_ASIO_WASAPI_Output
             // 
             this.checkBox_ASIO_WASAPI_Output.AutoSize = true;
-            this.checkBox_ASIO_WASAPI_Output.Location = new System.Drawing.Point(6, 19);
+            this.checkBox_ASIO_WASAPI_Output.Location = new System.Drawing.Point(12, 37);
+            this.checkBox_ASIO_WASAPI_Output.Margin = new System.Windows.Forms.Padding(6);
             this.checkBox_ASIO_WASAPI_Output.Name = "checkBox_ASIO_WASAPI_Output";
-            this.checkBox_ASIO_WASAPI_Output.Size = new System.Drawing.Size(125, 17);
+            this.checkBox_ASIO_WASAPI_Output.Size = new System.Drawing.Size(226, 29);
             this.checkBox_ASIO_WASAPI_Output.TabIndex = 0;
             this.checkBox_ASIO_WASAPI_Output.Text = "Use WASAPI Output";
             this.checkBox_ASIO_WASAPI_Output.UseVisualStyleBackColor = true;
@@ -4816,9 +5059,11 @@
             this.groupBox_ASIO_BufferSize.Controls.Add(this.radio_ASIO_BufferSize_Custom);
             this.groupBox_ASIO_BufferSize.Controls.Add(this.radio_ASIO_BufferSize_Host);
             this.groupBox_ASIO_BufferSize.Controls.Add(this.radio_ASIO_BufferSize_Driver);
-            this.groupBox_ASIO_BufferSize.Location = new System.Drawing.Point(966, 24);
+            this.groupBox_ASIO_BufferSize.Location = new System.Drawing.Point(1932, 46);
+            this.groupBox_ASIO_BufferSize.Margin = new System.Windows.Forms.Padding(6);
             this.groupBox_ASIO_BufferSize.Name = "groupBox_ASIO_BufferSize";
-            this.groupBox_ASIO_BufferSize.Size = new System.Drawing.Size(161, 177);
+            this.groupBox_ASIO_BufferSize.Padding = new System.Windows.Forms.Padding(6);
+            this.groupBox_ASIO_BufferSize.Size = new System.Drawing.Size(322, 340);
             this.groupBox_ASIO_BufferSize.TabIndex = 1;
             this.groupBox_ASIO_BufferSize.TabStop = false;
             this.groupBox_ASIO_BufferSize.Text = "Buffer Size";
@@ -4827,9 +5072,10 @@
             // label_ASIO_CustomBufferSize
             // 
             this.label_ASIO_CustomBufferSize.AutoSize = true;
-            this.label_ASIO_CustomBufferSize.Location = new System.Drawing.Point(28, 110);
+            this.label_ASIO_CustomBufferSize.Location = new System.Drawing.Point(56, 212);
+            this.label_ASIO_CustomBufferSize.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label_ASIO_CustomBufferSize.Name = "label_ASIO_CustomBufferSize";
-            this.label_ASIO_CustomBufferSize.Size = new System.Drawing.Size(96, 13);
+            this.label_ASIO_CustomBufferSize.Size = new System.Drawing.Size(196, 25);
             this.label_ASIO_CustomBufferSize.TabIndex = 4;
             this.label_ASIO_CustomBufferSize.Text = "Custom Buffer Size";
             this.label_ASIO_CustomBufferSize.Visible = false;
@@ -4837,39 +5083,25 @@
             // 
             // nUpDown_ASIO_CustomBufferSize
             // 
-            this.nUpDown_ASIO_CustomBufferSize.Increment = new decimal(new int[] {
-            16,
-            0,
-            0,
-            0});
-            this.nUpDown_ASIO_CustomBufferSize.Location = new System.Drawing.Point(20, 129);
-            this.nUpDown_ASIO_CustomBufferSize.Maximum = new decimal(new int[] {
-            496,
-            0,
-            0,
-            0});
-            this.nUpDown_ASIO_CustomBufferSize.Minimum = new decimal(new int[] {
-            16,
-            0,
-            0,
-            0});
+            this.nUpDown_ASIO_CustomBufferSize.Increment = new decimal(new int[] {16, 0, 0, 0});
+            this.nUpDown_ASIO_CustomBufferSize.Location = new System.Drawing.Point(40, 248);
+            this.nUpDown_ASIO_CustomBufferSize.Margin = new System.Windows.Forms.Padding(6);
+            this.nUpDown_ASIO_CustomBufferSize.Maximum = new decimal(new int[] {496, 0, 0, 0});
+            this.nUpDown_ASIO_CustomBufferSize.Minimum = new decimal(new int[] {16, 0, 0, 0});
             this.nUpDown_ASIO_CustomBufferSize.Name = "nUpDown_ASIO_CustomBufferSize";
-            this.nUpDown_ASIO_CustomBufferSize.Size = new System.Drawing.Size(120, 20);
+            this.nUpDown_ASIO_CustomBufferSize.Size = new System.Drawing.Size(240, 31);
             this.nUpDown_ASIO_CustomBufferSize.TabIndex = 3;
-            this.nUpDown_ASIO_CustomBufferSize.Value = new decimal(new int[] {
-            16,
-            0,
-            0,
-            0});
+            this.nUpDown_ASIO_CustomBufferSize.Value = new decimal(new int[] {16, 0, 0, 0});
             this.nUpDown_ASIO_CustomBufferSize.Visible = false;
             this.nUpDown_ASIO_CustomBufferSize.ValueChanged += new System.EventHandler(this.ASIO_CustomBufferSize);
             // 
             // radio_ASIO_BufferSize_Custom
             // 
             this.radio_ASIO_BufferSize_Custom.AutoSize = true;
-            this.radio_ASIO_BufferSize_Custom.Location = new System.Drawing.Point(22, 80);
+            this.radio_ASIO_BufferSize_Custom.Location = new System.Drawing.Point(44, 154);
+            this.radio_ASIO_BufferSize_Custom.Margin = new System.Windows.Forms.Padding(6);
             this.radio_ASIO_BufferSize_Custom.Name = "radio_ASIO_BufferSize_Custom";
-            this.radio_ASIO_BufferSize_Custom.Size = new System.Drawing.Size(60, 17);
+            this.radio_ASIO_BufferSize_Custom.Size = new System.Drawing.Size(103, 29);
             this.radio_ASIO_BufferSize_Custom.TabIndex = 2;
             this.radio_ASIO_BufferSize_Custom.TabStop = true;
             this.radio_ASIO_BufferSize_Custom.Text = "Custom";
@@ -4880,9 +5112,10 @@
             // radio_ASIO_BufferSize_Host
             // 
             this.radio_ASIO_BufferSize_Host.AutoSize = true;
-            this.radio_ASIO_BufferSize_Host.Location = new System.Drawing.Point(22, 57);
+            this.radio_ASIO_BufferSize_Host.Location = new System.Drawing.Point(44, 110);
+            this.radio_ASIO_BufferSize_Host.Margin = new System.Windows.Forms.Padding(6);
             this.radio_ASIO_BufferSize_Host.Name = "radio_ASIO_BufferSize_Host";
-            this.radio_ASIO_BufferSize_Host.Size = new System.Drawing.Size(47, 17);
+            this.radio_ASIO_BufferSize_Host.Size = new System.Drawing.Size(74, 29);
             this.radio_ASIO_BufferSize_Host.TabIndex = 1;
             this.radio_ASIO_BufferSize_Host.TabStop = true;
             this.radio_ASIO_BufferSize_Host.Text = "Host";
@@ -4893,9 +5126,10 @@
             // radio_ASIO_BufferSize_Driver
             // 
             this.radio_ASIO_BufferSize_Driver.AutoSize = true;
-            this.radio_ASIO_BufferSize_Driver.Location = new System.Drawing.Point(22, 34);
+            this.radio_ASIO_BufferSize_Driver.Location = new System.Drawing.Point(44, 65);
+            this.radio_ASIO_BufferSize_Driver.Margin = new System.Windows.Forms.Padding(6);
             this.radio_ASIO_BufferSize_Driver.Name = "radio_ASIO_BufferSize_Driver";
-            this.radio_ASIO_BufferSize_Driver.Size = new System.Drawing.Size(53, 17);
+            this.radio_ASIO_BufferSize_Driver.Size = new System.Drawing.Size(87, 29);
             this.radio_ASIO_BufferSize_Driver.TabIndex = 0;
             this.radio_ASIO_BufferSize_Driver.TabStop = true;
             this.radio_ASIO_BufferSize_Driver.Text = "Driver";
@@ -4909,9 +5143,10 @@
             this.tab_Rocksmith.Controls.Add(this.label_Rocksmith_Thanks);
             this.tab_Rocksmith.Controls.Add(this.groupBox_Rocksmith_AudioSettings);
             this.tab_Rocksmith.Controls.Add(this.groupBox_Rocksmith_VisualSettings);
-            this.tab_Rocksmith.Location = new System.Drawing.Point(4, 22);
+            this.tab_Rocksmith.Location = new System.Drawing.Point(4, 34);
+            this.tab_Rocksmith.Margin = new System.Windows.Forms.Padding(6);
             this.tab_Rocksmith.Name = "tab_Rocksmith";
-            this.tab_Rocksmith.Size = new System.Drawing.Size(1150, 513);
+            this.tab_Rocksmith.Size = new System.Drawing.Size(2308, 999);
             this.tab_Rocksmith.TabIndex = 8;
             this.tab_Rocksmith.Text = "Rocksmith Settings";
             // 
@@ -4919,13 +5154,12 @@
             // 
             this.label_Rocksmith_Thanks.AutoSize = true;
             this.label_Rocksmith_Thanks.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label_Rocksmith_Thanks.Location = new System.Drawing.Point(564, 468);
+            this.label_Rocksmith_Thanks.Location = new System.Drawing.Point(1128, 900);
+            this.label_Rocksmith_Thanks.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label_Rocksmith_Thanks.Name = "label_Rocksmith_Thanks";
             this.label_Rocksmith_Thanks.Size = new System.Drawing.Size(574, 34);
             this.label_Rocksmith_Thanks.TabIndex = 4;
-            this.label_Rocksmith_Thanks.Text = "Thank you Ubisoft San Fransisco for creating Rocksmith 1, and Rocksmith 2014.\r\nMo" +
-    "st of the tooltips from this section are from their documentation provided with " +
-    "the game.";
+            this.label_Rocksmith_Thanks.Text = "Thank you Ubisoft San Fransisco for creating Rocksmith 1, and Rocksmith 2014.\r\nMo" + "st of the tooltips from this section are from their documentation provided with " + "the game.";
             // 
             // groupBox_Rocksmith_AudioSettings
             // 
@@ -4941,9 +5175,11 @@
             this.groupBox_Rocksmith_AudioSettings.Controls.Add(this.label_Rocksmith_LatencyBuffer);
             this.groupBox_Rocksmith_AudioSettings.Controls.Add(this.nUpDown_Rocksmith_MaxOutputBuffer);
             this.groupBox_Rocksmith_AudioSettings.Controls.Add(this.nUpDown_Rocksmith_LatencyBuffer);
-            this.groupBox_Rocksmith_AudioSettings.Location = new System.Drawing.Point(524, 26);
+            this.groupBox_Rocksmith_AudioSettings.Location = new System.Drawing.Point(1048, 50);
+            this.groupBox_Rocksmith_AudioSettings.Margin = new System.Windows.Forms.Padding(6);
             this.groupBox_Rocksmith_AudioSettings.Name = "groupBox_Rocksmith_AudioSettings";
-            this.groupBox_Rocksmith_AudioSettings.Size = new System.Drawing.Size(304, 224);
+            this.groupBox_Rocksmith_AudioSettings.Padding = new System.Windows.Forms.Padding(6);
+            this.groupBox_Rocksmith_AudioSettings.Size = new System.Drawing.Size(608, 431);
             this.groupBox_Rocksmith_AudioSettings.TabIndex = 3;
             this.groupBox_Rocksmith_AudioSettings.TabStop = false;
             this.groupBox_Rocksmith_AudioSettings.Text = "Audio Settings";
@@ -4951,9 +5187,10 @@
             // checkBox_Rocksmith_LowLatencyMode
             // 
             this.checkBox_Rocksmith_LowLatencyMode.AutoSize = true;
-            this.checkBox_Rocksmith_LowLatencyMode.Location = new System.Drawing.Point(156, 166);
+            this.checkBox_Rocksmith_LowLatencyMode.Location = new System.Drawing.Point(312, 319);
+            this.checkBox_Rocksmith_LowLatencyMode.Margin = new System.Windows.Forms.Padding(6);
             this.checkBox_Rocksmith_LowLatencyMode.Name = "checkBox_Rocksmith_LowLatencyMode";
-            this.checkBox_Rocksmith_LowLatencyMode.Size = new System.Drawing.Size(117, 17);
+            this.checkBox_Rocksmith_LowLatencyMode.Size = new System.Drawing.Size(212, 29);
             this.checkBox_Rocksmith_LowLatencyMode.TabIndex = 15;
             this.checkBox_Rocksmith_LowLatencyMode.Text = "Low Latency Mode";
             this.checkBox_Rocksmith_LowLatencyMode.UseVisualStyleBackColor = true;
@@ -4963,9 +5200,10 @@
             // checkBox_Rocksmith_RTCOnly
             // 
             this.checkBox_Rocksmith_RTCOnly.AutoSize = true;
-            this.checkBox_Rocksmith_RTCOnly.Location = new System.Drawing.Point(156, 143);
+            this.checkBox_Rocksmith_RTCOnly.Location = new System.Drawing.Point(312, 275);
+            this.checkBox_Rocksmith_RTCOnly.Margin = new System.Windows.Forms.Padding(6);
             this.checkBox_Rocksmith_RTCOnly.Name = "checkBox_Rocksmith_RTCOnly";
-            this.checkBox_Rocksmith_RTCOnly.Size = new System.Drawing.Size(130, 17);
+            this.checkBox_Rocksmith_RTCOnly.Size = new System.Drawing.Size(242, 29);
             this.checkBox_Rocksmith_RTCOnly.TabIndex = 14;
             this.checkBox_Rocksmith_RTCOnly.Text = "Real Tone Cable Only";
             this.checkBox_Rocksmith_RTCOnly.UseVisualStyleBackColor = true;
@@ -4975,9 +5213,10 @@
             // checkBox_Rocksmith_DumpAudioLog
             // 
             this.checkBox_Rocksmith_DumpAudioLog.AutoSize = true;
-            this.checkBox_Rocksmith_DumpAudioLog.Location = new System.Drawing.Point(156, 120);
+            this.checkBox_Rocksmith_DumpAudioLog.Location = new System.Drawing.Point(312, 231);
+            this.checkBox_Rocksmith_DumpAudioLog.Margin = new System.Windows.Forms.Padding(6);
             this.checkBox_Rocksmith_DumpAudioLog.Name = "checkBox_Rocksmith_DumpAudioLog";
-            this.checkBox_Rocksmith_DumpAudioLog.Size = new System.Drawing.Size(105, 17);
+            this.checkBox_Rocksmith_DumpAudioLog.Size = new System.Drawing.Size(190, 29);
             this.checkBox_Rocksmith_DumpAudioLog.TabIndex = 13;
             this.checkBox_Rocksmith_DumpAudioLog.Text = "Dump Audio Log";
             this.checkBox_Rocksmith_DumpAudioLog.UseVisualStyleBackColor = true;
@@ -4987,9 +5226,10 @@
             // checkBox_Rocksmith_ForceDirextXSink
             // 
             this.checkBox_Rocksmith_ForceDirextXSink.AutoSize = true;
-            this.checkBox_Rocksmith_ForceDirextXSink.Location = new System.Drawing.Point(10, 189);
+            this.checkBox_Rocksmith_ForceDirextXSink.Location = new System.Drawing.Point(20, 363);
+            this.checkBox_Rocksmith_ForceDirextXSink.Margin = new System.Windows.Forms.Padding(6);
             this.checkBox_Rocksmith_ForceDirextXSink.Name = "checkBox_Rocksmith_ForceDirextXSink";
-            this.checkBox_Rocksmith_ForceDirextXSink.Size = new System.Drawing.Size(112, 17);
+            this.checkBox_Rocksmith_ForceDirextXSink.Size = new System.Drawing.Size(204, 29);
             this.checkBox_Rocksmith_ForceDirextXSink.TabIndex = 12;
             this.checkBox_Rocksmith_ForceDirextXSink.Text = "Force DirectXSink";
             this.checkBox_Rocksmith_ForceDirextXSink.UseVisualStyleBackColor = true;
@@ -4999,9 +5239,10 @@
             // checkBox_Rocksmith_ForceWDM
             // 
             this.checkBox_Rocksmith_ForceWDM.AutoSize = true;
-            this.checkBox_Rocksmith_ForceWDM.Location = new System.Drawing.Point(10, 166);
+            this.checkBox_Rocksmith_ForceWDM.Location = new System.Drawing.Point(20, 319);
+            this.checkBox_Rocksmith_ForceWDM.Margin = new System.Windows.Forms.Padding(6);
             this.checkBox_Rocksmith_ForceWDM.Name = "checkBox_Rocksmith_ForceWDM";
-            this.checkBox_Rocksmith_ForceWDM.Size = new System.Drawing.Size(84, 17);
+            this.checkBox_Rocksmith_ForceWDM.Size = new System.Drawing.Size(145, 29);
             this.checkBox_Rocksmith_ForceWDM.TabIndex = 11;
             this.checkBox_Rocksmith_ForceWDM.Text = "Force WDM";
             this.checkBox_Rocksmith_ForceWDM.UseVisualStyleBackColor = true;
@@ -5011,9 +5252,10 @@
             // checkBox_Rocksmith_ExclusiveMode
             // 
             this.checkBox_Rocksmith_ExclusiveMode.AutoSize = true;
-            this.checkBox_Rocksmith_ExclusiveMode.Location = new System.Drawing.Point(10, 143);
+            this.checkBox_Rocksmith_ExclusiveMode.Location = new System.Drawing.Point(20, 275);
+            this.checkBox_Rocksmith_ExclusiveMode.Margin = new System.Windows.Forms.Padding(6);
             this.checkBox_Rocksmith_ExclusiveMode.Name = "checkBox_Rocksmith_ExclusiveMode";
-            this.checkBox_Rocksmith_ExclusiveMode.Size = new System.Drawing.Size(101, 17);
+            this.checkBox_Rocksmith_ExclusiveMode.Size = new System.Drawing.Size(183, 29);
             this.checkBox_Rocksmith_ExclusiveMode.TabIndex = 10;
             this.checkBox_Rocksmith_ExclusiveMode.Text = "Exclusive Mode";
             this.checkBox_Rocksmith_ExclusiveMode.UseVisualStyleBackColor = true;
@@ -5023,9 +5265,10 @@
             // checkBox_Rocksmith_EnableMicrophone
             // 
             this.checkBox_Rocksmith_EnableMicrophone.AutoSize = true;
-            this.checkBox_Rocksmith_EnableMicrophone.Location = new System.Drawing.Point(10, 120);
+            this.checkBox_Rocksmith_EnableMicrophone.Location = new System.Drawing.Point(20, 231);
+            this.checkBox_Rocksmith_EnableMicrophone.Margin = new System.Windows.Forms.Padding(6);
             this.checkBox_Rocksmith_EnableMicrophone.Name = "checkBox_Rocksmith_EnableMicrophone";
-            this.checkBox_Rocksmith_EnableMicrophone.Size = new System.Drawing.Size(118, 17);
+            this.checkBox_Rocksmith_EnableMicrophone.Size = new System.Drawing.Size(217, 29);
             this.checkBox_Rocksmith_EnableMicrophone.TabIndex = 9;
             this.checkBox_Rocksmith_EnableMicrophone.Text = "Enable Microphone";
             this.checkBox_Rocksmith_EnableMicrophone.UseVisualStyleBackColor = true;
@@ -5035,9 +5278,10 @@
             // checkBox_Rocksmith_Override_MaxOutputBufferSize
             // 
             this.checkBox_Rocksmith_Override_MaxOutputBufferSize.AutoSize = true;
-            this.checkBox_Rocksmith_Override_MaxOutputBufferSize.Location = new System.Drawing.Point(228, 56);
+            this.checkBox_Rocksmith_Override_MaxOutputBufferSize.Location = new System.Drawing.Point(456, 108);
+            this.checkBox_Rocksmith_Override_MaxOutputBufferSize.Margin = new System.Windows.Forms.Padding(6);
             this.checkBox_Rocksmith_Override_MaxOutputBufferSize.Name = "checkBox_Rocksmith_Override_MaxOutputBufferSize";
-            this.checkBox_Rocksmith_Override_MaxOutputBufferSize.Size = new System.Drawing.Size(71, 17);
+            this.checkBox_Rocksmith_Override_MaxOutputBufferSize.Size = new System.Drawing.Size(122, 29);
             this.checkBox_Rocksmith_Override_MaxOutputBufferSize.TabIndex = 8;
             this.checkBox_Rocksmith_Override_MaxOutputBufferSize.Text = "Automate";
             this.checkBox_Rocksmith_Override_MaxOutputBufferSize.UseVisualStyleBackColor = true;
@@ -5046,9 +5290,10 @@
             // label_Rocksmith_MaxOutputBuffer
             // 
             this.label_Rocksmith_MaxOutputBuffer.AutoSize = true;
-            this.label_Rocksmith_MaxOutputBuffer.Location = new System.Drawing.Point(2, 57);
+            this.label_Rocksmith_MaxOutputBuffer.Location = new System.Drawing.Point(4, 110);
+            this.label_Rocksmith_MaxOutputBuffer.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label_Rocksmith_MaxOutputBuffer.Name = "label_Rocksmith_MaxOutputBuffer";
-            this.label_Rocksmith_MaxOutputBuffer.Size = new System.Drawing.Size(99, 13);
+            this.label_Rocksmith_MaxOutputBuffer.Size = new System.Drawing.Size(198, 25);
             this.label_Rocksmith_MaxOutputBuffer.TabIndex = 7;
             this.label_Rocksmith_MaxOutputBuffer.Text = "Max Output Buffer: ";
             this.label_Rocksmith_MaxOutputBuffer.MouseHover += new System.EventHandler(this.ToolTips_Show);
@@ -5056,57 +5301,36 @@
             // label_Rocksmith_LatencyBuffer
             // 
             this.label_Rocksmith_LatencyBuffer.AutoSize = true;
-            this.label_Rocksmith_LatencyBuffer.Location = new System.Drawing.Point(2, 28);
+            this.label_Rocksmith_LatencyBuffer.Location = new System.Drawing.Point(4, 54);
+            this.label_Rocksmith_LatencyBuffer.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label_Rocksmith_LatencyBuffer.Name = "label_Rocksmith_LatencyBuffer";
-            this.label_Rocksmith_LatencyBuffer.Size = new System.Drawing.Size(79, 13);
+            this.label_Rocksmith_LatencyBuffer.Size = new System.Drawing.Size(157, 25);
             this.label_Rocksmith_LatencyBuffer.TabIndex = 6;
             this.label_Rocksmith_LatencyBuffer.Text = "Latency Buffer:";
             this.label_Rocksmith_LatencyBuffer.MouseHover += new System.EventHandler(this.ToolTips_Show);
             // 
             // nUpDown_Rocksmith_MaxOutputBuffer
             // 
-            this.nUpDown_Rocksmith_MaxOutputBuffer.Increment = new decimal(new int[] {
-            32,
-            0,
-            0,
-            0});
-            this.nUpDown_Rocksmith_MaxOutputBuffer.Location = new System.Drawing.Point(101, 55);
-            this.nUpDown_Rocksmith_MaxOutputBuffer.Maximum = new decimal(new int[] {
-            1000000,
-            0,
-            0,
-            0});
+            this.nUpDown_Rocksmith_MaxOutputBuffer.Increment = new decimal(new int[] {32, 0, 0, 0});
+            this.nUpDown_Rocksmith_MaxOutputBuffer.Location = new System.Drawing.Point(202, 106);
+            this.nUpDown_Rocksmith_MaxOutputBuffer.Margin = new System.Windows.Forms.Padding(6);
+            this.nUpDown_Rocksmith_MaxOutputBuffer.Maximum = new decimal(new int[] {1000000, 0, 0, 0});
             this.nUpDown_Rocksmith_MaxOutputBuffer.Name = "nUpDown_Rocksmith_MaxOutputBuffer";
-            this.nUpDown_Rocksmith_MaxOutputBuffer.Size = new System.Drawing.Size(120, 20);
+            this.nUpDown_Rocksmith_MaxOutputBuffer.Size = new System.Drawing.Size(240, 31);
             this.nUpDown_Rocksmith_MaxOutputBuffer.TabIndex = 5;
-            this.nUpDown_Rocksmith_MaxOutputBuffer.Value = new decimal(new int[] {
-            32,
-            0,
-            0,
-            0});
+            this.nUpDown_Rocksmith_MaxOutputBuffer.Value = new decimal(new int[] {32, 0, 0, 0});
             this.nUpDown_Rocksmith_MaxOutputBuffer.ValueChanged += new System.EventHandler(this.Rocksmith_MaxBufferSize);
             // 
             // nUpDown_Rocksmith_LatencyBuffer
             // 
-            this.nUpDown_Rocksmith_LatencyBuffer.Location = new System.Drawing.Point(101, 26);
-            this.nUpDown_Rocksmith_LatencyBuffer.Maximum = new decimal(new int[] {
-            16,
-            0,
-            0,
-            0});
-            this.nUpDown_Rocksmith_LatencyBuffer.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
+            this.nUpDown_Rocksmith_LatencyBuffer.Location = new System.Drawing.Point(202, 50);
+            this.nUpDown_Rocksmith_LatencyBuffer.Margin = new System.Windows.Forms.Padding(6);
+            this.nUpDown_Rocksmith_LatencyBuffer.Maximum = new decimal(new int[] {16, 0, 0, 0});
+            this.nUpDown_Rocksmith_LatencyBuffer.Minimum = new decimal(new int[] {1, 0, 0, 0});
             this.nUpDown_Rocksmith_LatencyBuffer.Name = "nUpDown_Rocksmith_LatencyBuffer";
-            this.nUpDown_Rocksmith_LatencyBuffer.Size = new System.Drawing.Size(120, 20);
+            this.nUpDown_Rocksmith_LatencyBuffer.Size = new System.Drawing.Size(240, 31);
             this.nUpDown_Rocksmith_LatencyBuffer.TabIndex = 4;
-            this.nUpDown_Rocksmith_LatencyBuffer.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
+            this.nUpDown_Rocksmith_LatencyBuffer.Value = new decimal(new int[] {1, 0, 0, 0});
             this.nUpDown_Rocksmith_LatencyBuffer.ValueChanged += new System.EventHandler(this.Rocksmith_LatencyBuffer);
             // 
             // groupBox_Rocksmith_VisualSettings
@@ -5124,9 +5348,11 @@
             this.groupBox_Rocksmith_VisualSettings.Controls.Add(this.groupBox_Rocksmith_Fullscreen);
             this.groupBox_Rocksmith_VisualSettings.Controls.Add(this.groupBox_Rocksmith_VisualQuality);
             this.groupBox_Rocksmith_VisualSettings.Controls.Add(this.groupBox_Rocksmith_Resolutions);
-            this.groupBox_Rocksmith_VisualSettings.Location = new System.Drawing.Point(35, 26);
+            this.groupBox_Rocksmith_VisualSettings.Location = new System.Drawing.Point(70, 50);
+            this.groupBox_Rocksmith_VisualSettings.Margin = new System.Windows.Forms.Padding(6);
             this.groupBox_Rocksmith_VisualSettings.Name = "groupBox_Rocksmith_VisualSettings";
-            this.groupBox_Rocksmith_VisualSettings.Size = new System.Drawing.Size(483, 294);
+            this.groupBox_Rocksmith_VisualSettings.Padding = new System.Windows.Forms.Padding(6);
+            this.groupBox_Rocksmith_VisualSettings.Size = new System.Drawing.Size(966, 565);
             this.groupBox_Rocksmith_VisualSettings.TabIndex = 2;
             this.groupBox_Rocksmith_VisualSettings.TabStop = false;
             this.groupBox_Rocksmith_VisualSettings.Text = "Visual Settings";
@@ -5134,9 +5360,10 @@
             // checkBox_Rocksmith_EnableRenderRes
             // 
             this.checkBox_Rocksmith_EnableRenderRes.AutoSize = true;
-            this.checkBox_Rocksmith_EnableRenderRes.Location = new System.Drawing.Point(304, 204);
+            this.checkBox_Rocksmith_EnableRenderRes.Location = new System.Drawing.Point(608, 392);
+            this.checkBox_Rocksmith_EnableRenderRes.Margin = new System.Windows.Forms.Padding(6);
             this.checkBox_Rocksmith_EnableRenderRes.Name = "checkBox_Rocksmith_EnableRenderRes";
-            this.checkBox_Rocksmith_EnableRenderRes.Size = new System.Drawing.Size(160, 17);
+            this.checkBox_Rocksmith_EnableRenderRes.Size = new System.Drawing.Size(302, 29);
             this.checkBox_Rocksmith_EnableRenderRes.TabIndex = 11;
             this.checkBox_Rocksmith_EnableRenderRes.Text = "Seperate Render Resolution";
             this.checkBox_Rocksmith_EnableRenderRes.UseVisualStyleBackColor = true;
@@ -5145,9 +5372,11 @@
             // groupBox_Rocksmith_Network
             // 
             this.groupBox_Rocksmith_Network.Controls.Add(this.checkBox_Rocksmith_UseProxy);
-            this.groupBox_Rocksmith_Network.Location = new System.Drawing.Point(304, 229);
+            this.groupBox_Rocksmith_Network.Location = new System.Drawing.Point(608, 440);
+            this.groupBox_Rocksmith_Network.Margin = new System.Windows.Forms.Padding(6);
             this.groupBox_Rocksmith_Network.Name = "groupBox_Rocksmith_Network";
-            this.groupBox_Rocksmith_Network.Size = new System.Drawing.Size(105, 59);
+            this.groupBox_Rocksmith_Network.Padding = new System.Windows.Forms.Padding(6);
+            this.groupBox_Rocksmith_Network.Size = new System.Drawing.Size(210, 113);
             this.groupBox_Rocksmith_Network.TabIndex = 4;
             this.groupBox_Rocksmith_Network.TabStop = false;
             this.groupBox_Rocksmith_Network.Text = "Network Settings";
@@ -5155,9 +5384,10 @@
             // checkBox_Rocksmith_UseProxy
             // 
             this.checkBox_Rocksmith_UseProxy.AutoSize = true;
-            this.checkBox_Rocksmith_UseProxy.Location = new System.Drawing.Point(16, 32);
+            this.checkBox_Rocksmith_UseProxy.Location = new System.Drawing.Point(32, 62);
+            this.checkBox_Rocksmith_UseProxy.Margin = new System.Windows.Forms.Padding(6);
             this.checkBox_Rocksmith_UseProxy.Name = "checkBox_Rocksmith_UseProxy";
-            this.checkBox_Rocksmith_UseProxy.Size = new System.Drawing.Size(74, 17);
+            this.checkBox_Rocksmith_UseProxy.Size = new System.Drawing.Size(130, 29);
             this.checkBox_Rocksmith_UseProxy.TabIndex = 0;
             this.checkBox_Rocksmith_UseProxy.Text = "Use Proxy";
             this.checkBox_Rocksmith_UseProxy.UseVisualStyleBackColor = true;
@@ -5167,9 +5397,10 @@
             // checkBox_Rocksmith_MSAASamples
             // 
             this.checkBox_Rocksmith_MSAASamples.AutoSize = true;
-            this.checkBox_Rocksmith_MSAASamples.Location = new System.Drawing.Point(304, 157);
+            this.checkBox_Rocksmith_MSAASamples.Location = new System.Drawing.Point(608, 302);
+            this.checkBox_Rocksmith_MSAASamples.Margin = new System.Windows.Forms.Padding(6);
             this.checkBox_Rocksmith_MSAASamples.Name = "checkBox_Rocksmith_MSAASamples";
-            this.checkBox_Rocksmith_MSAASamples.Size = new System.Drawing.Size(83, 17);
+            this.checkBox_Rocksmith_MSAASamples.Size = new System.Drawing.Size(151, 29);
             this.checkBox_Rocksmith_MSAASamples.TabIndex = 10;
             this.checkBox_Rocksmith_MSAASamples.Text = "Anti-Aliasing";
             this.checkBox_Rocksmith_MSAASamples.UseVisualStyleBackColor = true;
@@ -5179,9 +5410,10 @@
             // checkBox_Rocksmith_PostEffects
             // 
             this.checkBox_Rocksmith_PostEffects.AutoSize = true;
-            this.checkBox_Rocksmith_PostEffects.Location = new System.Drawing.Point(304, 42);
+            this.checkBox_Rocksmith_PostEffects.Location = new System.Drawing.Point(608, 81);
+            this.checkBox_Rocksmith_PostEffects.Margin = new System.Windows.Forms.Padding(6);
             this.checkBox_Rocksmith_PostEffects.Name = "checkBox_Rocksmith_PostEffects";
-            this.checkBox_Rocksmith_PostEffects.Size = new System.Drawing.Size(138, 17);
+            this.checkBox_Rocksmith_PostEffects.Size = new System.Drawing.Size(259, 29);
             this.checkBox_Rocksmith_PostEffects.TabIndex = 5;
             this.checkBox_Rocksmith_PostEffects.Text = "Post Processing Effects";
             this.checkBox_Rocksmith_PostEffects.UseVisualStyleBackColor = true;
@@ -5191,9 +5423,10 @@
             // checkBox_Rocksmith_PerPixelLighting
             // 
             this.checkBox_Rocksmith_PerPixelLighting.AutoSize = true;
-            this.checkBox_Rocksmith_PerPixelLighting.Location = new System.Drawing.Point(304, 134);
+            this.checkBox_Rocksmith_PerPixelLighting.Location = new System.Drawing.Point(608, 258);
+            this.checkBox_Rocksmith_PerPixelLighting.Margin = new System.Windows.Forms.Padding(6);
             this.checkBox_Rocksmith_PerPixelLighting.Name = "checkBox_Rocksmith_PerPixelLighting";
-            this.checkBox_Rocksmith_PerPixelLighting.Size = new System.Drawing.Size(107, 17);
+            this.checkBox_Rocksmith_PerPixelLighting.Size = new System.Drawing.Size(200, 29);
             this.checkBox_Rocksmith_PerPixelLighting.TabIndex = 9;
             this.checkBox_Rocksmith_PerPixelLighting.Text = "Per-Pixel Lighting";
             this.checkBox_Rocksmith_PerPixelLighting.UseVisualStyleBackColor = true;
@@ -5203,9 +5436,10 @@
             // checkBox_Rocksmith_DepthOfField
             // 
             this.checkBox_Rocksmith_DepthOfField.AutoSize = true;
-            this.checkBox_Rocksmith_DepthOfField.Location = new System.Drawing.Point(304, 111);
+            this.checkBox_Rocksmith_DepthOfField.Location = new System.Drawing.Point(608, 213);
+            this.checkBox_Rocksmith_DepthOfField.Margin = new System.Windows.Forms.Padding(6);
             this.checkBox_Rocksmith_DepthOfField.Name = "checkBox_Rocksmith_DepthOfField";
-            this.checkBox_Rocksmith_DepthOfField.Size = new System.Drawing.Size(92, 17);
+            this.checkBox_Rocksmith_DepthOfField.Size = new System.Drawing.Size(165, 29);
             this.checkBox_Rocksmith_DepthOfField.TabIndex = 8;
             this.checkBox_Rocksmith_DepthOfField.Text = "Depth of Field";
             this.checkBox_Rocksmith_DepthOfField.UseVisualStyleBackColor = true;
@@ -5215,9 +5449,10 @@
             // checkBox_Rocksmith_HighResScope
             // 
             this.checkBox_Rocksmith_HighResScope.AutoSize = true;
-            this.checkBox_Rocksmith_HighResScope.Location = new System.Drawing.Point(304, 88);
+            this.checkBox_Rocksmith_HighResScope.Location = new System.Drawing.Point(608, 169);
+            this.checkBox_Rocksmith_HighResScope.Margin = new System.Windows.Forms.Padding(6);
             this.checkBox_Rocksmith_HighResScope.Name = "checkBox_Rocksmith_HighResScope";
-            this.checkBox_Rocksmith_HighResScope.Size = new System.Drawing.Size(178, 17);
+            this.checkBox_Rocksmith_HighResScope.Size = new System.Drawing.Size(344, 29);
             this.checkBox_Rocksmith_HighResScope.TabIndex = 7;
             this.checkBox_Rocksmith_HighResScope.Text = "High Resolution Audio Visualizer";
             this.checkBox_Rocksmith_HighResScope.UseVisualStyleBackColor = true;
@@ -5227,9 +5462,10 @@
             // checkBox_Rocksmith_Shadows
             // 
             this.checkBox_Rocksmith_Shadows.AutoSize = true;
-            this.checkBox_Rocksmith_Shadows.Location = new System.Drawing.Point(304, 65);
+            this.checkBox_Rocksmith_Shadows.Location = new System.Drawing.Point(608, 125);
+            this.checkBox_Rocksmith_Shadows.Margin = new System.Windows.Forms.Padding(6);
             this.checkBox_Rocksmith_Shadows.Name = "checkBox_Rocksmith_Shadows";
-            this.checkBox_Rocksmith_Shadows.Size = new System.Drawing.Size(114, 17);
+            this.checkBox_Rocksmith_Shadows.Size = new System.Drawing.Size(209, 29);
             this.checkBox_Rocksmith_Shadows.TabIndex = 6;
             this.checkBox_Rocksmith_Shadows.Text = "Realtime Shadows";
             this.checkBox_Rocksmith_Shadows.UseVisualStyleBackColor = true;
@@ -5239,9 +5475,10 @@
             // checkBox_Rocksmith_GamepadUI
             // 
             this.checkBox_Rocksmith_GamepadUI.AutoSize = true;
-            this.checkBox_Rocksmith_GamepadUI.Location = new System.Drawing.Point(304, 19);
+            this.checkBox_Rocksmith_GamepadUI.Location = new System.Drawing.Point(608, 37);
+            this.checkBox_Rocksmith_GamepadUI.Margin = new System.Windows.Forms.Padding(6);
             this.checkBox_Rocksmith_GamepadUI.Name = "checkBox_Rocksmith_GamepadUI";
-            this.checkBox_Rocksmith_GamepadUI.Size = new System.Drawing.Size(116, 17);
+            this.checkBox_Rocksmith_GamepadUI.Size = new System.Drawing.Size(209, 29);
             this.checkBox_Rocksmith_GamepadUI.TabIndex = 4;
             this.checkBox_Rocksmith_GamepadUI.Text = "Show Gamepad UI";
             this.checkBox_Rocksmith_GamepadUI.UseVisualStyleBackColor = true;
@@ -5251,9 +5488,10 @@
             // checkBox_Rocksmith_DisableBrowser
             // 
             this.checkBox_Rocksmith_DisableBrowser.AutoSize = true;
-            this.checkBox_Rocksmith_DisableBrowser.Location = new System.Drawing.Point(304, 180);
+            this.checkBox_Rocksmith_DisableBrowser.Location = new System.Drawing.Point(608, 346);
+            this.checkBox_Rocksmith_DisableBrowser.Margin = new System.Windows.Forms.Padding(6);
             this.checkBox_Rocksmith_DisableBrowser.Name = "checkBox_Rocksmith_DisableBrowser";
-            this.checkBox_Rocksmith_DisableBrowser.Size = new System.Drawing.Size(102, 17);
+            this.checkBox_Rocksmith_DisableBrowser.Size = new System.Drawing.Size(187, 29);
             this.checkBox_Rocksmith_DisableBrowser.TabIndex = 0;
             this.checkBox_Rocksmith_DisableBrowser.Text = "Disable Browser";
             this.checkBox_Rocksmith_DisableBrowser.UseVisualStyleBackColor = true;
@@ -5265,9 +5503,11 @@
             this.groupBox_Rocksmith_Fullscreen.Controls.Add(this.radio_Rocksmith_ExclusiveFullScreen);
             this.groupBox_Rocksmith_Fullscreen.Controls.Add(this.radio_Rocksmith_NonExclusiveFullScreen);
             this.groupBox_Rocksmith_Fullscreen.Controls.Add(this.radio_Rocksmith_Windowed);
-            this.groupBox_Rocksmith_Fullscreen.Location = new System.Drawing.Point(128, 180);
+            this.groupBox_Rocksmith_Fullscreen.Location = new System.Drawing.Point(256, 346);
+            this.groupBox_Rocksmith_Fullscreen.Margin = new System.Windows.Forms.Padding(6);
             this.groupBox_Rocksmith_Fullscreen.Name = "groupBox_Rocksmith_Fullscreen";
-            this.groupBox_Rocksmith_Fullscreen.Size = new System.Drawing.Size(161, 100);
+            this.groupBox_Rocksmith_Fullscreen.Padding = new System.Windows.Forms.Padding(6);
+            this.groupBox_Rocksmith_Fullscreen.Size = new System.Drawing.Size(322, 192);
             this.groupBox_Rocksmith_Fullscreen.TabIndex = 3;
             this.groupBox_Rocksmith_Fullscreen.TabStop = false;
             this.groupBox_Rocksmith_Fullscreen.Text = "Fullscreen";
@@ -5276,9 +5516,10 @@
             // radio_Rocksmith_ExclusiveFullScreen
             // 
             this.radio_Rocksmith_ExclusiveFullScreen.AutoSize = true;
-            this.radio_Rocksmith_ExclusiveFullScreen.Location = new System.Drawing.Point(6, 73);
+            this.radio_Rocksmith_ExclusiveFullScreen.Location = new System.Drawing.Point(12, 140);
+            this.radio_Rocksmith_ExclusiveFullScreen.Margin = new System.Windows.Forms.Padding(6);
             this.radio_Rocksmith_ExclusiveFullScreen.Name = "radio_Rocksmith_ExclusiveFullScreen";
-            this.radio_Rocksmith_ExclusiveFullScreen.Size = new System.Drawing.Size(121, 17);
+            this.radio_Rocksmith_ExclusiveFullScreen.Size = new System.Drawing.Size(228, 29);
             this.radio_Rocksmith_ExclusiveFullScreen.TabIndex = 2;
             this.radio_Rocksmith_ExclusiveFullScreen.TabStop = true;
             this.radio_Rocksmith_ExclusiveFullScreen.Text = "Exclusive Fullscreen";
@@ -5288,9 +5529,10 @@
             // radio_Rocksmith_NonExclusiveFullScreen
             // 
             this.radio_Rocksmith_NonExclusiveFullScreen.AutoSize = true;
-            this.radio_Rocksmith_NonExclusiveFullScreen.Location = new System.Drawing.Point(6, 47);
+            this.radio_Rocksmith_NonExclusiveFullScreen.Location = new System.Drawing.Point(12, 90);
+            this.radio_Rocksmith_NonExclusiveFullScreen.Margin = new System.Windows.Forms.Padding(6);
             this.radio_Rocksmith_NonExclusiveFullScreen.Name = "radio_Rocksmith_NonExclusiveFullScreen";
-            this.radio_Rocksmith_NonExclusiveFullScreen.Size = new System.Drawing.Size(144, 17);
+            this.radio_Rocksmith_NonExclusiveFullScreen.Size = new System.Drawing.Size(274, 29);
             this.radio_Rocksmith_NonExclusiveFullScreen.TabIndex = 1;
             this.radio_Rocksmith_NonExclusiveFullScreen.TabStop = true;
             this.radio_Rocksmith_NonExclusiveFullScreen.Text = "Non-Exclusive Fullscreen";
@@ -5301,9 +5543,10 @@
             // radio_Rocksmith_Windowed
             // 
             this.radio_Rocksmith_Windowed.AutoSize = true;
-            this.radio_Rocksmith_Windowed.Location = new System.Drawing.Point(6, 21);
+            this.radio_Rocksmith_Windowed.Location = new System.Drawing.Point(12, 40);
+            this.radio_Rocksmith_Windowed.Margin = new System.Windows.Forms.Padding(6);
             this.radio_Rocksmith_Windowed.Name = "radio_Rocksmith_Windowed";
-            this.radio_Rocksmith_Windowed.Size = new System.Drawing.Size(76, 17);
+            this.radio_Rocksmith_Windowed.Size = new System.Drawing.Size(130, 29);
             this.radio_Rocksmith_Windowed.TabIndex = 0;
             this.radio_Rocksmith_Windowed.TabStop = true;
             this.radio_Rocksmith_Windowed.Text = "Windowed";
@@ -5316,9 +5559,11 @@
             this.groupBox_Rocksmith_VisualQuality.Controls.Add(this.radio_Rocksmith_HighQuality);
             this.groupBox_Rocksmith_VisualQuality.Controls.Add(this.radio_Rocksmith_MediumQuality);
             this.groupBox_Rocksmith_VisualQuality.Controls.Add(this.radio_Rocksmith_LowQuality);
-            this.groupBox_Rocksmith_VisualQuality.Location = new System.Drawing.Point(6, 180);
+            this.groupBox_Rocksmith_VisualQuality.Location = new System.Drawing.Point(12, 346);
+            this.groupBox_Rocksmith_VisualQuality.Margin = new System.Windows.Forms.Padding(6);
             this.groupBox_Rocksmith_VisualQuality.Name = "groupBox_Rocksmith_VisualQuality";
-            this.groupBox_Rocksmith_VisualQuality.Size = new System.Drawing.Size(116, 108);
+            this.groupBox_Rocksmith_VisualQuality.Padding = new System.Windows.Forms.Padding(6);
+            this.groupBox_Rocksmith_VisualQuality.Size = new System.Drawing.Size(232, 208);
             this.groupBox_Rocksmith_VisualQuality.TabIndex = 3;
             this.groupBox_Rocksmith_VisualQuality.TabStop = false;
             this.groupBox_Rocksmith_VisualQuality.Text = "Visual Quality";
@@ -5327,9 +5572,10 @@
             // radio_Rocksmith_CustomQuality
             // 
             this.radio_Rocksmith_CustomQuality.AutoSize = true;
-            this.radio_Rocksmith_CustomQuality.Location = new System.Drawing.Point(6, 88);
+            this.radio_Rocksmith_CustomQuality.Location = new System.Drawing.Point(12, 169);
+            this.radio_Rocksmith_CustomQuality.Margin = new System.Windows.Forms.Padding(6);
             this.radio_Rocksmith_CustomQuality.Name = "radio_Rocksmith_CustomQuality";
-            this.radio_Rocksmith_CustomQuality.Size = new System.Drawing.Size(60, 17);
+            this.radio_Rocksmith_CustomQuality.Size = new System.Drawing.Size(103, 29);
             this.radio_Rocksmith_CustomQuality.TabIndex = 3;
             this.radio_Rocksmith_CustomQuality.TabStop = true;
             this.radio_Rocksmith_CustomQuality.Text = "Custom";
@@ -5339,9 +5585,10 @@
             // radio_Rocksmith_HighQuality
             // 
             this.radio_Rocksmith_HighQuality.AutoSize = true;
-            this.radio_Rocksmith_HighQuality.Location = new System.Drawing.Point(6, 65);
+            this.radio_Rocksmith_HighQuality.Location = new System.Drawing.Point(12, 125);
+            this.radio_Rocksmith_HighQuality.Margin = new System.Windows.Forms.Padding(6);
             this.radio_Rocksmith_HighQuality.Name = "radio_Rocksmith_HighQuality";
-            this.radio_Rocksmith_HighQuality.Size = new System.Drawing.Size(82, 17);
+            this.radio_Rocksmith_HighQuality.Size = new System.Drawing.Size(147, 29);
             this.radio_Rocksmith_HighQuality.TabIndex = 2;
             this.radio_Rocksmith_HighQuality.TabStop = true;
             this.radio_Rocksmith_HighQuality.Text = "High Quality";
@@ -5351,9 +5598,10 @@
             // radio_Rocksmith_MediumQuality
             // 
             this.radio_Rocksmith_MediumQuality.AutoSize = true;
-            this.radio_Rocksmith_MediumQuality.Location = new System.Drawing.Point(6, 42);
+            this.radio_Rocksmith_MediumQuality.Location = new System.Drawing.Point(12, 81);
+            this.radio_Rocksmith_MediumQuality.Margin = new System.Windows.Forms.Padding(6);
             this.radio_Rocksmith_MediumQuality.Name = "radio_Rocksmith_MediumQuality";
-            this.radio_Rocksmith_MediumQuality.Size = new System.Drawing.Size(97, 17);
+            this.radio_Rocksmith_MediumQuality.Size = new System.Drawing.Size(179, 29);
             this.radio_Rocksmith_MediumQuality.TabIndex = 1;
             this.radio_Rocksmith_MediumQuality.TabStop = true;
             this.radio_Rocksmith_MediumQuality.Text = "Medium Quality";
@@ -5363,9 +5611,10 @@
             // radio_Rocksmith_LowQuality
             // 
             this.radio_Rocksmith_LowQuality.AutoSize = true;
-            this.radio_Rocksmith_LowQuality.Location = new System.Drawing.Point(6, 19);
+            this.radio_Rocksmith_LowQuality.Location = new System.Drawing.Point(12, 37);
+            this.radio_Rocksmith_LowQuality.Margin = new System.Windows.Forms.Padding(6);
             this.radio_Rocksmith_LowQuality.Name = "radio_Rocksmith_LowQuality";
-            this.radio_Rocksmith_LowQuality.Size = new System.Drawing.Size(80, 17);
+            this.radio_Rocksmith_LowQuality.Size = new System.Drawing.Size(142, 29);
             this.radio_Rocksmith_LowQuality.TabIndex = 0;
             this.radio_Rocksmith_LowQuality.TabStop = true;
             this.radio_Rocksmith_LowQuality.Text = "Low Quality";
@@ -5382,9 +5631,11 @@
             this.groupBox_Rocksmith_Resolutions.Controls.Add(this.nUpDown_Rocksmith_RenderWidth);
             this.groupBox_Rocksmith_Resolutions.Controls.Add(this.nUpDown_Rocksmith_ScreenHeight);
             this.groupBox_Rocksmith_Resolutions.Controls.Add(this.nUpDown_Rocksmith_ScreenWidth);
-            this.groupBox_Rocksmith_Resolutions.Location = new System.Drawing.Point(6, 19);
+            this.groupBox_Rocksmith_Resolutions.Location = new System.Drawing.Point(12, 37);
+            this.groupBox_Rocksmith_Resolutions.Margin = new System.Windows.Forms.Padding(6);
             this.groupBox_Rocksmith_Resolutions.Name = "groupBox_Rocksmith_Resolutions";
-            this.groupBox_Rocksmith_Resolutions.Size = new System.Drawing.Size(236, 161);
+            this.groupBox_Rocksmith_Resolutions.Padding = new System.Windows.Forms.Padding(6);
+            this.groupBox_Rocksmith_Resolutions.Size = new System.Drawing.Size(472, 310);
             this.groupBox_Rocksmith_Resolutions.TabIndex = 1;
             this.groupBox_Rocksmith_Resolutions.TabStop = false;
             this.groupBox_Rocksmith_Resolutions.Text = "Resolutions";
@@ -5392,9 +5643,10 @@
             // label_Rocksmith_RenderHeight
             // 
             this.label_Rocksmith_RenderHeight.AutoSize = true;
-            this.label_Rocksmith_RenderHeight.Location = new System.Drawing.Point(6, 132);
+            this.label_Rocksmith_RenderHeight.Location = new System.Drawing.Point(12, 254);
+            this.label_Rocksmith_RenderHeight.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label_Rocksmith_RenderHeight.Name = "label_Rocksmith_RenderHeight";
-            this.label_Rocksmith_RenderHeight.Size = new System.Drawing.Size(79, 13);
+            this.label_Rocksmith_RenderHeight.Size = new System.Drawing.Size(156, 25);
             this.label_Rocksmith_RenderHeight.TabIndex = 7;
             this.label_Rocksmith_RenderHeight.Text = "Render Height:";
             this.label_Rocksmith_RenderHeight.Visible = false;
@@ -5403,9 +5655,10 @@
             // label_Rocksmith_RenderWidth
             // 
             this.label_Rocksmith_RenderWidth.AutoSize = true;
-            this.label_Rocksmith_RenderWidth.Location = new System.Drawing.Point(6, 106);
+            this.label_Rocksmith_RenderWidth.Location = new System.Drawing.Point(12, 204);
+            this.label_Rocksmith_RenderWidth.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label_Rocksmith_RenderWidth.Name = "label_Rocksmith_RenderWidth";
-            this.label_Rocksmith_RenderWidth.Size = new System.Drawing.Size(76, 13);
+            this.label_Rocksmith_RenderWidth.Size = new System.Drawing.Size(149, 25);
             this.label_Rocksmith_RenderWidth.TabIndex = 6;
             this.label_Rocksmith_RenderWidth.Text = "Render Width:";
             this.label_Rocksmith_RenderWidth.Visible = false;
@@ -5414,9 +5667,10 @@
             // label_Rocksmith_ScreenHeight
             // 
             this.label_Rocksmith_ScreenHeight.AutoSize = true;
-            this.label_Rocksmith_ScreenHeight.Location = new System.Drawing.Point(6, 59);
+            this.label_Rocksmith_ScreenHeight.Location = new System.Drawing.Point(12, 113);
+            this.label_Rocksmith_ScreenHeight.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label_Rocksmith_ScreenHeight.Name = "label_Rocksmith_ScreenHeight";
-            this.label_Rocksmith_ScreenHeight.Size = new System.Drawing.Size(78, 13);
+            this.label_Rocksmith_ScreenHeight.Size = new System.Drawing.Size(154, 25);
             this.label_Rocksmith_ScreenHeight.TabIndex = 5;
             this.label_Rocksmith_ScreenHeight.Text = "Screen Height:";
             this.label_Rocksmith_ScreenHeight.MouseHover += new System.EventHandler(this.ToolTips_Show);
@@ -5424,64 +5678,53 @@
             // label_Rocksmith_ScreenWidth
             // 
             this.label_Rocksmith_ScreenWidth.AutoSize = true;
-            this.label_Rocksmith_ScreenWidth.Location = new System.Drawing.Point(6, 33);
+            this.label_Rocksmith_ScreenWidth.Location = new System.Drawing.Point(12, 63);
+            this.label_Rocksmith_ScreenWidth.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label_Rocksmith_ScreenWidth.Name = "label_Rocksmith_ScreenWidth";
-            this.label_Rocksmith_ScreenWidth.Size = new System.Drawing.Size(75, 13);
+            this.label_Rocksmith_ScreenWidth.Size = new System.Drawing.Size(147, 25);
             this.label_Rocksmith_ScreenWidth.TabIndex = 4;
             this.label_Rocksmith_ScreenWidth.Text = "Screen Width:";
             this.label_Rocksmith_ScreenWidth.MouseHover += new System.EventHandler(this.ToolTips_Show);
             // 
             // nUpDown_Rocksmith_RenderHeight
             // 
-            this.nUpDown_Rocksmith_RenderHeight.Location = new System.Drawing.Point(103, 130);
-            this.nUpDown_Rocksmith_RenderHeight.Maximum = new decimal(new int[] {
-            10000,
-            0,
-            0,
-            0});
+            this.nUpDown_Rocksmith_RenderHeight.Location = new System.Drawing.Point(206, 250);
+            this.nUpDown_Rocksmith_RenderHeight.Margin = new System.Windows.Forms.Padding(6);
+            this.nUpDown_Rocksmith_RenderHeight.Maximum = new decimal(new int[] {10000, 0, 0, 0});
             this.nUpDown_Rocksmith_RenderHeight.Name = "nUpDown_Rocksmith_RenderHeight";
-            this.nUpDown_Rocksmith_RenderHeight.Size = new System.Drawing.Size(120, 20);
+            this.nUpDown_Rocksmith_RenderHeight.Size = new System.Drawing.Size(240, 31);
             this.nUpDown_Rocksmith_RenderHeight.TabIndex = 3;
             this.nUpDown_Rocksmith_RenderHeight.Visible = false;
             this.nUpDown_Rocksmith_RenderHeight.ValueChanged += new System.EventHandler(this.Rocksmith_RenderHeight);
             // 
             // nUpDown_Rocksmith_RenderWidth
             // 
-            this.nUpDown_Rocksmith_RenderWidth.Location = new System.Drawing.Point(103, 104);
-            this.nUpDown_Rocksmith_RenderWidth.Maximum = new decimal(new int[] {
-            10000,
-            0,
-            0,
-            0});
+            this.nUpDown_Rocksmith_RenderWidth.Location = new System.Drawing.Point(206, 200);
+            this.nUpDown_Rocksmith_RenderWidth.Margin = new System.Windows.Forms.Padding(6);
+            this.nUpDown_Rocksmith_RenderWidth.Maximum = new decimal(new int[] {10000, 0, 0, 0});
             this.nUpDown_Rocksmith_RenderWidth.Name = "nUpDown_Rocksmith_RenderWidth";
-            this.nUpDown_Rocksmith_RenderWidth.Size = new System.Drawing.Size(120, 20);
+            this.nUpDown_Rocksmith_RenderWidth.Size = new System.Drawing.Size(240, 31);
             this.nUpDown_Rocksmith_RenderWidth.TabIndex = 2;
             this.nUpDown_Rocksmith_RenderWidth.Visible = false;
             this.nUpDown_Rocksmith_RenderWidth.ValueChanged += new System.EventHandler(this.Rocksmith_RenderWidth);
             // 
             // nUpDown_Rocksmith_ScreenHeight
             // 
-            this.nUpDown_Rocksmith_ScreenHeight.Location = new System.Drawing.Point(103, 57);
-            this.nUpDown_Rocksmith_ScreenHeight.Maximum = new decimal(new int[] {
-            10000,
-            0,
-            0,
-            0});
+            this.nUpDown_Rocksmith_ScreenHeight.Location = new System.Drawing.Point(206, 110);
+            this.nUpDown_Rocksmith_ScreenHeight.Margin = new System.Windows.Forms.Padding(6);
+            this.nUpDown_Rocksmith_ScreenHeight.Maximum = new decimal(new int[] {10000, 0, 0, 0});
             this.nUpDown_Rocksmith_ScreenHeight.Name = "nUpDown_Rocksmith_ScreenHeight";
-            this.nUpDown_Rocksmith_ScreenHeight.Size = new System.Drawing.Size(120, 20);
+            this.nUpDown_Rocksmith_ScreenHeight.Size = new System.Drawing.Size(240, 31);
             this.nUpDown_Rocksmith_ScreenHeight.TabIndex = 1;
             this.nUpDown_Rocksmith_ScreenHeight.ValueChanged += new System.EventHandler(this.Rocksmith_ScreenHeight);
             // 
             // nUpDown_Rocksmith_ScreenWidth
             // 
-            this.nUpDown_Rocksmith_ScreenWidth.Location = new System.Drawing.Point(103, 31);
-            this.nUpDown_Rocksmith_ScreenWidth.Maximum = new decimal(new int[] {
-            10000,
-            0,
-            0,
-            0});
+            this.nUpDown_Rocksmith_ScreenWidth.Location = new System.Drawing.Point(206, 60);
+            this.nUpDown_Rocksmith_ScreenWidth.Margin = new System.Windows.Forms.Padding(6);
+            this.nUpDown_Rocksmith_ScreenWidth.Maximum = new decimal(new int[] {10000, 0, 0, 0});
             this.nUpDown_Rocksmith_ScreenWidth.Name = "nUpDown_Rocksmith_ScreenWidth";
-            this.nUpDown_Rocksmith_ScreenWidth.Size = new System.Drawing.Size(120, 20);
+            this.nUpDown_Rocksmith_ScreenWidth.Size = new System.Drawing.Size(240, 31);
             this.nUpDown_Rocksmith_ScreenWidth.TabIndex = 0;
             this.nUpDown_Rocksmith_ScreenWidth.ValueChanged += new System.EventHandler(this.Rocksmith_ScreenWidth);
             // 
@@ -5512,19 +5755,21 @@
             this.tab_Twitch.Controls.Add(this.label_AuthorizedAs);
             this.tab_Twitch.Controls.Add(this.label_TwitchAuthorized);
             this.tab_Twitch.Controls.Add(this.button_TwitchReAuthorize);
-            this.tab_Twitch.Location = new System.Drawing.Point(4, 22);
+            this.tab_Twitch.Location = new System.Drawing.Point(4, 34);
+            this.tab_Twitch.Margin = new System.Windows.Forms.Padding(6);
             this.tab_Twitch.Name = "tab_Twitch";
-            this.tab_Twitch.Padding = new System.Windows.Forms.Padding(3);
-            this.tab_Twitch.Size = new System.Drawing.Size(1150, 513);
+            this.tab_Twitch.Padding = new System.Windows.Forms.Padding(6);
+            this.tab_Twitch.Size = new System.Drawing.Size(2308, 999);
             this.tab_Twitch.TabIndex = 6;
             this.tab_Twitch.Text = "Twitch Bot (Beta)";
             // 
             // checkBox_RevealTwitchAuthToken
             // 
             this.checkBox_RevealTwitchAuthToken.AutoSize = true;
-            this.checkBox_RevealTwitchAuthToken.Location = new System.Drawing.Point(548, 87);
+            this.checkBox_RevealTwitchAuthToken.Location = new System.Drawing.Point(1096, 167);
+            this.checkBox_RevealTwitchAuthToken.Margin = new System.Windows.Forms.Padding(6);
             this.checkBox_RevealTwitchAuthToken.Name = "checkBox_RevealTwitchAuthToken";
-            this.checkBox_RevealTwitchAuthToken.Size = new System.Drawing.Size(60, 17);
+            this.checkBox_RevealTwitchAuthToken.Size = new System.Drawing.Size(98, 29);
             this.checkBox_RevealTwitchAuthToken.TabIndex = 126;
             this.checkBox_RevealTwitchAuthToken.Text = "Reveal";
             this.checkBox_RevealTwitchAuthToken.UseVisualStyleBackColor = true;
@@ -5532,9 +5777,10 @@
             // 
             // button_SaveLogToFile
             // 
-            this.button_SaveLogToFile.Location = new System.Drawing.Point(950, 361);
+            this.button_SaveLogToFile.Location = new System.Drawing.Point(1900, 694);
+            this.button_SaveLogToFile.Margin = new System.Windows.Forms.Padding(6);
             this.button_SaveLogToFile.Name = "button_SaveLogToFile";
-            this.button_SaveLogToFile.Size = new System.Drawing.Size(95, 23);
+            this.button_SaveLogToFile.Size = new System.Drawing.Size(190, 44);
             this.button_SaveLogToFile.TabIndex = 125;
             this.button_SaveLogToFile.Text = "Save log to file";
             this.button_SaveLogToFile.UseVisualStyleBackColor = true;
@@ -5544,9 +5790,10 @@
             // checkBox_TwitchForceReauth
             // 
             this.checkBox_TwitchForceReauth.AutoSize = true;
-            this.checkBox_TwitchForceReauth.Location = new System.Drawing.Point(820, 12);
+            this.checkBox_TwitchForceReauth.Location = new System.Drawing.Point(1640, 23);
+            this.checkBox_TwitchForceReauth.Margin = new System.Windows.Forms.Padding(6);
             this.checkBox_TwitchForceReauth.Name = "checkBox_TwitchForceReauth";
-            this.checkBox_TwitchForceReauth.Size = new System.Drawing.Size(86, 17);
+            this.checkBox_TwitchForceReauth.Size = new System.Drawing.Size(153, 29);
             this.checkBox_TwitchForceReauth.TabIndex = 124;
             this.checkBox_TwitchForceReauth.Text = "Force reauth";
             this.checkBox_TwitchForceReauth.UseVisualStyleBackColor = true;
@@ -5554,9 +5801,10 @@
             // 
             // button_TestTwitchReward
             // 
-            this.button_TestTwitchReward.Location = new System.Drawing.Point(781, 288);
+            this.button_TestTwitchReward.Location = new System.Drawing.Point(1562, 554);
+            this.button_TestTwitchReward.Margin = new System.Windows.Forms.Padding(6);
             this.button_TestTwitchReward.Name = "button_TestTwitchReward";
-            this.button_TestTwitchReward.Size = new System.Drawing.Size(83, 47);
+            this.button_TestTwitchReward.Size = new System.Drawing.Size(166, 90);
             this.button_TestTwitchReward.TabIndex = 123;
             this.button_TestTwitchReward.Text = "Test reward";
             this.button_TestTwitchReward.UseVisualStyleBackColor = true;
@@ -5565,9 +5813,10 @@
             // 
             // button_SolidNoteColorRandom
             // 
-            this.button_SolidNoteColorRandom.Location = new System.Drawing.Point(926, 87);
+            this.button_SolidNoteColorRandom.Location = new System.Drawing.Point(1852, 167);
+            this.button_SolidNoteColorRandom.Margin = new System.Windows.Forms.Padding(6);
             this.button_SolidNoteColorRandom.Name = "button_SolidNoteColorRandom";
-            this.button_SolidNoteColorRandom.Size = new System.Drawing.Size(84, 23);
+            this.button_SolidNoteColorRandom.Size = new System.Drawing.Size(168, 44);
             this.button_SolidNoteColorRandom.TabIndex = 122;
             this.button_SolidNoteColorRandom.Text = "Random Color";
             this.button_SolidNoteColorRandom.UseVisualStyleBackColor = true;
@@ -5577,17 +5826,19 @@
             // textBox_SolidNoteColorPicker
             // 
             this.textBox_SolidNoteColorPicker.Enabled = false;
-            this.textBox_SolidNoteColorPicker.Location = new System.Drawing.Point(820, 89);
+            this.textBox_SolidNoteColorPicker.Location = new System.Drawing.Point(1640, 171);
+            this.textBox_SolidNoteColorPicker.Margin = new System.Windows.Forms.Padding(6);
             this.textBox_SolidNoteColorPicker.Name = "textBox_SolidNoteColorPicker";
-            this.textBox_SolidNoteColorPicker.Size = new System.Drawing.Size(100, 20);
+            this.textBox_SolidNoteColorPicker.Size = new System.Drawing.Size(196, 31);
             this.textBox_SolidNoteColorPicker.TabIndex = 121;
             this.textBox_SolidNoteColorPicker.Visible = false;
             // 
             // button_SolidNoteColorPicker
             // 
-            this.button_SolidNoteColorPicker.Location = new System.Drawing.Point(676, 87);
+            this.button_SolidNoteColorPicker.Location = new System.Drawing.Point(1352, 167);
+            this.button_SolidNoteColorPicker.Margin = new System.Windows.Forms.Padding(6);
             this.button_SolidNoteColorPicker.Name = "button_SolidNoteColorPicker";
-            this.button_SolidNoteColorPicker.Size = new System.Drawing.Size(137, 23);
+            this.button_SolidNoteColorPicker.Size = new System.Drawing.Size(274, 44);
             this.button_SolidNoteColorPicker.TabIndex = 120;
             this.button_SolidNoteColorPicker.Text = "Change Solid Note Color";
             this.button_SolidNoteColorPicker.UseVisualStyleBackColor = true;
@@ -5596,9 +5847,10 @@
             // 
             // button_RemoveReward
             // 
-            this.button_RemoveReward.Location = new System.Drawing.Point(781, 236);
+            this.button_RemoveReward.Location = new System.Drawing.Point(1562, 454);
+            this.button_RemoveReward.Margin = new System.Windows.Forms.Padding(6);
             this.button_RemoveReward.Name = "button_RemoveReward";
-            this.button_RemoveReward.Size = new System.Drawing.Size(83, 46);
+            this.button_RemoveReward.Size = new System.Drawing.Size(166, 88);
             this.button_RemoveReward.TabIndex = 119;
             this.button_RemoveReward.Text = "Remove reward";
             this.button_RemoveReward.UseVisualStyleBackColor = true;
@@ -5607,9 +5859,10 @@
             // 
             // button_AddSelectedReward
             // 
-            this.button_AddSelectedReward.Location = new System.Drawing.Point(781, 184);
+            this.button_AddSelectedReward.Location = new System.Drawing.Point(1562, 354);
+            this.button_AddSelectedReward.Margin = new System.Windows.Forms.Padding(6);
             this.button_AddSelectedReward.Name = "button_AddSelectedReward";
-            this.button_AddSelectedReward.Size = new System.Drawing.Size(83, 46);
+            this.button_AddSelectedReward.Size = new System.Drawing.Size(166, 88);
             this.button_AddSelectedReward.TabIndex = 118;
             this.button_AddSelectedReward.Text = "Add reward";
             this.button_AddSelectedReward.UseVisualStyleBackColor = true;
@@ -5622,20 +5875,15 @@
             this.dgv_EnabledRewards.AllowUserToDeleteRows = false;
             this.dgv_EnabledRewards.AllowUserToResizeRows = false;
             this.dgv_EnabledRewards.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_EnabledRewards.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.colEnabledRewardsEnabled,
-            this.colEnabledRewardsName,
-            this.colEnabledRewardsLength,
-            this.colEnabledRewardsAmount,
-            this.colEnabledRewardsType,
-            this.colEnabledRewardsID});
+            this.dgv_EnabledRewards.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {this.colEnabledRewardsEnabled, this.colEnabledRewardsName, this.colEnabledRewardsLength, this.colEnabledRewardsAmount, this.colEnabledRewardsType, this.colEnabledRewardsID});
             this.dgv_EnabledRewards.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnKeystroke;
-            this.dgv_EnabledRewards.Location = new System.Drawing.Point(384, 134);
+            this.dgv_EnabledRewards.Location = new System.Drawing.Point(768, 258);
+            this.dgv_EnabledRewards.Margin = new System.Windows.Forms.Padding(6);
             this.dgv_EnabledRewards.MultiSelect = false;
             this.dgv_EnabledRewards.Name = "dgv_EnabledRewards";
             this.dgv_EnabledRewards.RowHeadersVisible = false;
             this.dgv_EnabledRewards.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_EnabledRewards.Size = new System.Drawing.Size(390, 246);
+            this.dgv_EnabledRewards.Size = new System.Drawing.Size(780, 473);
             this.dgv_EnabledRewards.TabIndex = 116;
             this.dgv_EnabledRewards.Visible = false;
             this.dgv_EnabledRewards.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.Twitch_EnabledRewards_CellEndEdit);
@@ -5694,19 +5942,21 @@
             // label_TwitchLog
             // 
             this.label_TwitchLog.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label_TwitchLog.Location = new System.Drawing.Point(870, 116);
+            this.label_TwitchLog.Location = new System.Drawing.Point(1740, 223);
+            this.label_TwitchLog.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label_TwitchLog.Name = "label_TwitchLog";
-            this.label_TwitchLog.Size = new System.Drawing.Size(256, 15);
+            this.label_TwitchLog.Size = new System.Drawing.Size(512, 29);
             this.label_TwitchLog.TabIndex = 115;
             this.label_TwitchLog.Text = "Log";
             this.label_TwitchLog.Visible = false;
             // 
             // textBox_TwitchLog
             // 
-            this.textBox_TwitchLog.Location = new System.Drawing.Point(869, 134);
+            this.textBox_TwitchLog.Location = new System.Drawing.Point(1738, 258);
+            this.textBox_TwitchLog.Margin = new System.Windows.Forms.Padding(6);
             this.textBox_TwitchLog.Multiline = true;
             this.textBox_TwitchLog.Name = "textBox_TwitchLog";
-            this.textBox_TwitchLog.Size = new System.Drawing.Size(256, 221);
+            this.textBox_TwitchLog.Size = new System.Drawing.Size(508, 421);
             this.textBox_TwitchLog.TabIndex = 114;
             this.textBox_TwitchLog.Visible = false;
             this.textBox_TwitchLog.TextChanged += new System.EventHandler(this.Twitch_AutoScrollLog);
@@ -5714,8 +5964,9 @@
             // label_IsListeningToEvents
             // 
             this.label_IsListeningToEvents.AutoSize = true;
-            this.label_IsListeningToEvents.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label_IsListeningToEvents.Location = new System.Drawing.Point(735, 46);
+            this.label_IsListeningToEvents.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (238)));
+            this.label_IsListeningToEvents.Location = new System.Drawing.Point(1470, 88);
+            this.label_IsListeningToEvents.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label_IsListeningToEvents.Name = "label_IsListeningToEvents";
             this.label_IsListeningToEvents.Size = new System.Drawing.Size(205, 18);
             this.label_IsListeningToEvents.TabIndex = 113;
@@ -5727,17 +5978,16 @@
             this.dgv_DefaultRewards.AllowUserToDeleteRows = false;
             this.dgv_DefaultRewards.AllowUserToResizeRows = false;
             this.dgv_DefaultRewards.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_DefaultRewards.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.colDefaultRewardsName,
-            this.colDefaultRewardsDescription});
+            this.dgv_DefaultRewards.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {this.colDefaultRewardsName, this.colDefaultRewardsDescription});
             this.dgv_DefaultRewards.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
-            this.dgv_DefaultRewards.Location = new System.Drawing.Point(6, 134);
+            this.dgv_DefaultRewards.Location = new System.Drawing.Point(12, 258);
+            this.dgv_DefaultRewards.Margin = new System.Windows.Forms.Padding(6);
             this.dgv_DefaultRewards.MultiSelect = false;
             this.dgv_DefaultRewards.Name = "dgv_DefaultRewards";
             this.dgv_DefaultRewards.ReadOnly = true;
             this.dgv_DefaultRewards.RowHeadersVisible = false;
             this.dgv_DefaultRewards.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_DefaultRewards.Size = new System.Drawing.Size(372, 246);
+            this.dgv_DefaultRewards.Size = new System.Drawing.Size(744, 473);
             this.dgv_DefaultRewards.TabIndex = 112;
             this.dgv_DefaultRewards.Visible = false;
             // 
@@ -5760,9 +6010,10 @@
             // label_HorizontalLineTwitch
             // 
             this.label_HorizontalLineTwitch.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label_HorizontalLineTwitch.Location = new System.Drawing.Point(6, 116);
+            this.label_HorizontalLineTwitch.Location = new System.Drawing.Point(12, 223);
+            this.label_HorizontalLineTwitch.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label_HorizontalLineTwitch.Name = "label_HorizontalLineTwitch";
-            this.label_HorizontalLineTwitch.Size = new System.Drawing.Size(858, 15);
+            this.label_HorizontalLineTwitch.Size = new System.Drawing.Size(1716, 29);
             this.label_HorizontalLineTwitch.TabIndex = 111;
             this.label_HorizontalLineTwitch.Text = "Rewards                ";
             this.label_HorizontalLineTwitch.Visible = false;
@@ -5770,9 +6021,10 @@
             // label_TwitchAccessTokenVal
             // 
             this.label_TwitchAccessTokenVal.AutoSize = true;
-            this.label_TwitchAccessTokenVal.Location = new System.Drawing.Point(362, 87);
+            this.label_TwitchAccessTokenVal.Location = new System.Drawing.Point(724, 167);
+            this.label_TwitchAccessTokenVal.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label_TwitchAccessTokenVal.Name = "label_TwitchAccessTokenVal";
-            this.label_TwitchAccessTokenVal.Size = new System.Drawing.Size(0, 13);
+            this.label_TwitchAccessTokenVal.Size = new System.Drawing.Size(0, 25);
             this.label_TwitchAccessTokenVal.TabIndex = 8;
             this.label_TwitchAccessTokenVal.TextChanged += new System.EventHandler(this.Twitch_NewAccessToken);
             this.label_TwitchAccessTokenVal.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Twitch_CopyCredentialsForDevs);
@@ -5781,9 +6033,10 @@
             // label_TwitchChannelIDVal
             // 
             this.label_TwitchChannelIDVal.AutoSize = true;
-            this.label_TwitchChannelIDVal.Location = new System.Drawing.Point(362, 62);
+            this.label_TwitchChannelIDVal.Location = new System.Drawing.Point(724, 119);
+            this.label_TwitchChannelIDVal.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label_TwitchChannelIDVal.Name = "label_TwitchChannelIDVal";
-            this.label_TwitchChannelIDVal.Size = new System.Drawing.Size(0, 13);
+            this.label_TwitchChannelIDVal.Size = new System.Drawing.Size(0, 25);
             this.label_TwitchChannelIDVal.TabIndex = 7;
             this.label_TwitchChannelIDVal.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Twitch_CopyCredentialsForDevs);
             this.label_TwitchChannelIDVal.MouseHover += new System.EventHandler(this.ToolTips_Show);
@@ -5791,9 +6044,10 @@
             // label_TwitchUsernameVal
             // 
             this.label_TwitchUsernameVal.AutoSize = true;
-            this.label_TwitchUsernameVal.Location = new System.Drawing.Point(362, 37);
+            this.label_TwitchUsernameVal.Location = new System.Drawing.Point(724, 71);
+            this.label_TwitchUsernameVal.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label_TwitchUsernameVal.Name = "label_TwitchUsernameVal";
-            this.label_TwitchUsernameVal.Size = new System.Drawing.Size(0, 13);
+            this.label_TwitchUsernameVal.Size = new System.Drawing.Size(0, 25);
             this.label_TwitchUsernameVal.TabIndex = 6;
             this.label_TwitchUsernameVal.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Twitch_CopyCredentialsForDevs);
             this.label_TwitchUsernameVal.MouseHover += new System.EventHandler(this.ToolTips_Show);
@@ -5801,52 +6055,58 @@
             // label_TwitchAccessToken
             // 
             this.label_TwitchAccessToken.AutoSize = true;
-            this.label_TwitchAccessToken.Location = new System.Drawing.Point(281, 87);
+            this.label_TwitchAccessToken.Location = new System.Drawing.Point(562, 167);
+            this.label_TwitchAccessToken.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label_TwitchAccessToken.Name = "label_TwitchAccessToken";
-            this.label_TwitchAccessToken.Size = new System.Drawing.Size(62, 13);
+            this.label_TwitchAccessToken.Size = new System.Drawing.Size(121, 25);
             this.label_TwitchAccessToken.TabIndex = 5;
             this.label_TwitchAccessToken.Text = "Auth token:";
             // 
             // label_TwitchChannelID
             // 
             this.label_TwitchChannelID.AutoSize = true;
-            this.label_TwitchChannelID.Location = new System.Drawing.Point(281, 62);
+            this.label_TwitchChannelID.Location = new System.Drawing.Point(562, 119);
+            this.label_TwitchChannelID.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label_TwitchChannelID.Name = "label_TwitchChannelID";
-            this.label_TwitchChannelID.Size = new System.Drawing.Size(63, 13);
+            this.label_TwitchChannelID.Size = new System.Drawing.Size(124, 25);
             this.label_TwitchChannelID.TabIndex = 4;
             this.label_TwitchChannelID.Text = "Channel ID:";
             // 
             // label_TwitchUsername
             // 
             this.label_TwitchUsername.AutoSize = true;
-            this.label_TwitchUsername.Location = new System.Drawing.Point(281, 37);
+            this.label_TwitchUsername.Location = new System.Drawing.Point(562, 71);
+            this.label_TwitchUsername.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label_TwitchUsername.Name = "label_TwitchUsername";
-            this.label_TwitchUsername.Size = new System.Drawing.Size(58, 13);
+            this.label_TwitchUsername.Size = new System.Drawing.Size(116, 25);
             this.label_TwitchUsername.TabIndex = 3;
             this.label_TwitchUsername.Text = "Username:";
             // 
             // label_AuthorizedAs
             // 
             this.label_AuthorizedAs.AutoSize = true;
-            this.label_AuthorizedAs.Location = new System.Drawing.Point(426, 25);
+            this.label_AuthorizedAs.Location = new System.Drawing.Point(852, 48);
+            this.label_AuthorizedAs.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label_AuthorizedAs.Name = "label_AuthorizedAs";
-            this.label_AuthorizedAs.Size = new System.Drawing.Size(0, 13);
+            this.label_AuthorizedAs.Size = new System.Drawing.Size(0, 25);
             this.label_AuthorizedAs.TabIndex = 2;
             // 
             // label_TwitchAuthorized
             // 
             this.label_TwitchAuthorized.AutoSize = true;
-            this.label_TwitchAuthorized.Location = new System.Drawing.Point(270, 12);
+            this.label_TwitchAuthorized.Location = new System.Drawing.Point(540, 23);
+            this.label_TwitchAuthorized.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label_TwitchAuthorized.Name = "label_TwitchAuthorized";
-            this.label_TwitchAuthorized.Size = new System.Drawing.Size(156, 13);
+            this.label_TwitchAuthorized.Size = new System.Drawing.Size(319, 25);
             this.label_TwitchAuthorized.TabIndex = 1;
             this.label_TwitchAuthorized.Text = "You are currently authorized as:";
             // 
             // button_TwitchReAuthorize
             // 
-            this.button_TwitchReAuthorize.Location = new System.Drawing.Point(33, 12);
+            this.button_TwitchReAuthorize.Location = new System.Drawing.Point(66, 23);
+            this.button_TwitchReAuthorize.Margin = new System.Windows.Forms.Padding(6);
             this.button_TwitchReAuthorize.Name = "button_TwitchReAuthorize";
-            this.button_TwitchReAuthorize.Size = new System.Drawing.Size(219, 88);
+            this.button_TwitchReAuthorize.Size = new System.Drawing.Size(438, 169);
             this.button_TwitchReAuthorize.TabIndex = 0;
             this.button_TwitchReAuthorize.Text = "(Re)authorize\r\n\r\nFor streamers only!";
             this.button_TwitchReAuthorize.UseVisualStyleBackColor = true;
@@ -5863,18 +6123,20 @@
             this.tab_SoundPacks.Controls.Add(this.label_DownloadWwise);
             this.tab_SoundPacks.Controls.Add(this.label_AudioPsarcPleaseWait);
             this.tab_SoundPacks.Controls.Add(this.button_UnpackAudioPsarc);
-            this.tab_SoundPacks.Location = new System.Drawing.Point(4, 22);
+            this.tab_SoundPacks.Location = new System.Drawing.Point(4, 34);
+            this.tab_SoundPacks.Margin = new System.Windows.Forms.Padding(6);
             this.tab_SoundPacks.Name = "tab_SoundPacks";
-            this.tab_SoundPacks.Padding = new System.Windows.Forms.Padding(3);
-            this.tab_SoundPacks.Size = new System.Drawing.Size(1150, 513);
+            this.tab_SoundPacks.Padding = new System.Windows.Forms.Padding(6);
+            this.tab_SoundPacks.Size = new System.Drawing.Size(2308, 999);
             this.tab_SoundPacks.TabIndex = 10;
             this.tab_SoundPacks.Text = "Sound Packs";
             // 
             // button_PlayResultVoiceOver
             // 
-            this.button_PlayResultVoiceOver.Location = new System.Drawing.Point(478, 211);
+            this.button_PlayResultVoiceOver.Location = new System.Drawing.Point(956, 406);
+            this.button_PlayResultVoiceOver.Margin = new System.Windows.Forms.Padding(6);
             this.button_PlayResultVoiceOver.Name = "button_PlayResultVoiceOver";
-            this.button_PlayResultVoiceOver.Size = new System.Drawing.Size(127, 23);
+            this.button_PlayResultVoiceOver.Size = new System.Drawing.Size(254, 44);
             this.button_PlayResultVoiceOver.TabIndex = 13;
             this.button_PlayResultVoiceOver.Text = "Play Result VO";
             this.button_PlayResultVoiceOver.UseVisualStyleBackColor = true;
@@ -5883,16 +6145,19 @@
             // listBox_Result_VOs
             // 
             this.listBox_Result_VOs.FormattingEnabled = true;
-            this.listBox_Result_VOs.Location = new System.Drawing.Point(246, 87);
+            this.listBox_Result_VOs.ItemHeight = 25;
+            this.listBox_Result_VOs.Location = new System.Drawing.Point(492, 167);
+            this.listBox_Result_VOs.Margin = new System.Windows.Forms.Padding(6);
             this.listBox_Result_VOs.Name = "listBox_Result_VOs";
-            this.listBox_Result_VOs.Size = new System.Drawing.Size(226, 147);
+            this.listBox_Result_VOs.Size = new System.Drawing.Size(448, 279);
             this.listBox_Result_VOs.TabIndex = 12;
             // 
             // progressBar_RepackAudioPsarc
             // 
-            this.progressBar_RepackAudioPsarc.Location = new System.Drawing.Point(497, 112);
+            this.progressBar_RepackAudioPsarc.Location = new System.Drawing.Point(994, 215);
+            this.progressBar_RepackAudioPsarc.Margin = new System.Windows.Forms.Padding(6);
             this.progressBar_RepackAudioPsarc.Name = "progressBar_RepackAudioPsarc";
-            this.progressBar_RepackAudioPsarc.Size = new System.Drawing.Size(263, 23);
+            this.progressBar_RepackAudioPsarc.Size = new System.Drawing.Size(526, 44);
             this.progressBar_RepackAudioPsarc.TabIndex = 11;
             this.progressBar_RepackAudioPsarc.Visible = false;
             // 
@@ -5900,13 +6165,12 @@
             // 
             this.label_SoundPacksBETA.AutoSize = true;
             this.label_SoundPacksBETA.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label_SoundPacksBETA.Location = new System.Drawing.Point(840, 35);
+            this.label_SoundPacksBETA.Location = new System.Drawing.Point(1680, 67);
+            this.label_SoundPacksBETA.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label_SoundPacksBETA.Name = "label_SoundPacksBETA";
             this.label_SoundPacksBETA.Size = new System.Drawing.Size(292, 100);
             this.label_SoundPacksBETA.TabIndex = 10;
-            this.label_SoundPacksBETA.Text = "- The options in this tab are still in BETA.\r\n- The voice lines will only work wh" +
-    "en\r\nset to the English version of Rocksmith.\r\n\r\n- Please click here to report an" +
-    " issue.";
+            this.label_SoundPacksBETA.Text = "- The options in this tab are still in BETA.\r\n- The voice lines will only work wh" + "en\r\nset to the English version of Rocksmith.\r\n\r\n- Please click here to report an" + " issue.";
             this.label_SoundPacksBETA.Click += new System.EventHandler(this.SoundPacks_Beta);
             // 
             // groupBox_SoundPacks
@@ -5934,9 +6198,11 @@
             this.groupBox_SoundPacks.Controls.Add(this.button_ImportSoundPack);
             this.groupBox_SoundPacks.Controls.Add(this.button_RepackAudioPsarc);
             this.groupBox_SoundPacks.Controls.Add(this.button_ReplaceWonderfulPerformance);
-            this.groupBox_SoundPacks.Location = new System.Drawing.Point(8, 240);
+            this.groupBox_SoundPacks.Location = new System.Drawing.Point(16, 462);
+            this.groupBox_SoundPacks.Margin = new System.Windows.Forms.Padding(6);
             this.groupBox_SoundPacks.Name = "groupBox_SoundPacks";
-            this.groupBox_SoundPacks.Size = new System.Drawing.Size(1125, 270);
+            this.groupBox_SoundPacks.Padding = new System.Windows.Forms.Padding(6);
+            this.groupBox_SoundPacks.Size = new System.Drawing.Size(2250, 519);
             this.groupBox_SoundPacks.TabIndex = 9;
             this.groupBox_SoundPacks.TabStop = false;
             this.groupBox_SoundPacks.Text = "Sound Packs";
@@ -5944,9 +6210,10 @@
             // 
             // button_ReplaceMasterfulPerformance_99
             // 
-            this.button_ReplaceMasterfulPerformance_99.Location = new System.Drawing.Point(529, 135);
+            this.button_ReplaceMasterfulPerformance_99.Location = new System.Drawing.Point(1058, 260);
+            this.button_ReplaceMasterfulPerformance_99.Margin = new System.Windows.Forms.Padding(6);
             this.button_ReplaceMasterfulPerformance_99.Name = "button_ReplaceMasterfulPerformance_99";
-            this.button_ReplaceMasterfulPerformance_99.Size = new System.Drawing.Size(251, 23);
+            this.button_ReplaceMasterfulPerformance_99.Size = new System.Drawing.Size(502, 44);
             this.button_ReplaceMasterfulPerformance_99.TabIndex = 25;
             this.button_ReplaceMasterfulPerformance_99.Text = "Replace 99% \"Masterful Performance\"";
             this.button_ReplaceMasterfulPerformance_99.UseVisualStyleBackColor = true;
@@ -5954,9 +6221,10 @@
             // 
             // button_ReplaceFlawlessPerformance
             // 
-            this.button_ReplaceFlawlessPerformance.Location = new System.Drawing.Point(529, 165);
+            this.button_ReplaceFlawlessPerformance.Location = new System.Drawing.Point(1058, 317);
+            this.button_ReplaceFlawlessPerformance.Margin = new System.Windows.Forms.Padding(6);
             this.button_ReplaceFlawlessPerformance.Name = "button_ReplaceFlawlessPerformance";
-            this.button_ReplaceFlawlessPerformance.Size = new System.Drawing.Size(251, 23);
+            this.button_ReplaceFlawlessPerformance.Size = new System.Drawing.Size(502, 44);
             this.button_ReplaceFlawlessPerformance.TabIndex = 24;
             this.button_ReplaceFlawlessPerformance.Text = "Replace 100% \"Flawless Performance\"";
             this.button_ReplaceFlawlessPerformance.UseVisualStyleBackColor = true;
@@ -5964,9 +6232,10 @@
             // 
             // button_ReplaceMasterfulPerformance_98
             // 
-            this.button_ReplaceMasterfulPerformance_98.Location = new System.Drawing.Point(529, 106);
+            this.button_ReplaceMasterfulPerformance_98.Location = new System.Drawing.Point(1058, 204);
+            this.button_ReplaceMasterfulPerformance_98.Margin = new System.Windows.Forms.Padding(6);
             this.button_ReplaceMasterfulPerformance_98.Name = "button_ReplaceMasterfulPerformance_98";
-            this.button_ReplaceMasterfulPerformance_98.Size = new System.Drawing.Size(251, 23);
+            this.button_ReplaceMasterfulPerformance_98.Size = new System.Drawing.Size(502, 44);
             this.button_ReplaceMasterfulPerformance_98.TabIndex = 23;
             this.button_ReplaceMasterfulPerformance_98.Text = "Replace 98% \"Masterful Performance\"";
             this.button_ReplaceMasterfulPerformance_98.UseVisualStyleBackColor = true;
@@ -5974,9 +6243,10 @@
             // 
             // button_ReplaceExemplaryPerformance
             // 
-            this.button_ReplaceExemplaryPerformance.Location = new System.Drawing.Point(529, 77);
+            this.button_ReplaceExemplaryPerformance.Location = new System.Drawing.Point(1058, 148);
+            this.button_ReplaceExemplaryPerformance.Margin = new System.Windows.Forms.Padding(6);
             this.button_ReplaceExemplaryPerformance.Name = "button_ReplaceExemplaryPerformance";
-            this.button_ReplaceExemplaryPerformance.Size = new System.Drawing.Size(251, 23);
+            this.button_ReplaceExemplaryPerformance.Size = new System.Drawing.Size(502, 44);
             this.button_ReplaceExemplaryPerformance.TabIndex = 22;
             this.button_ReplaceExemplaryPerformance.Text = "Replace 97% \"Exemplary Performance\"";
             this.button_ReplaceExemplaryPerformance.UseVisualStyleBackColor = true;
@@ -5984,9 +6254,10 @@
             // 
             // button_ReplaceAmazingPerformance
             // 
-            this.button_ReplaceAmazingPerformance.Location = new System.Drawing.Point(529, 48);
+            this.button_ReplaceAmazingPerformance.Location = new System.Drawing.Point(1058, 92);
+            this.button_ReplaceAmazingPerformance.Margin = new System.Windows.Forms.Padding(6);
             this.button_ReplaceAmazingPerformance.Name = "button_ReplaceAmazingPerformance";
-            this.button_ReplaceAmazingPerformance.Size = new System.Drawing.Size(251, 23);
+            this.button_ReplaceAmazingPerformance.Size = new System.Drawing.Size(502, 44);
             this.button_ReplaceAmazingPerformance.TabIndex = 21;
             this.button_ReplaceAmazingPerformance.Text = "Replace 96% \"Amazing Performance\"";
             this.button_ReplaceAmazingPerformance.UseVisualStyleBackColor = true;
@@ -5994,9 +6265,10 @@
             // 
             // button_ReplaceExceptionalPerformance
             // 
-            this.button_ReplaceExceptionalPerformance.Location = new System.Drawing.Point(529, 19);
+            this.button_ReplaceExceptionalPerformance.Location = new System.Drawing.Point(1058, 37);
+            this.button_ReplaceExceptionalPerformance.Margin = new System.Windows.Forms.Padding(6);
             this.button_ReplaceExceptionalPerformance.Name = "button_ReplaceExceptionalPerformance";
-            this.button_ReplaceExceptionalPerformance.Size = new System.Drawing.Size(251, 23);
+            this.button_ReplaceExceptionalPerformance.Size = new System.Drawing.Size(502, 44);
             this.button_ReplaceExceptionalPerformance.TabIndex = 20;
             this.button_ReplaceExceptionalPerformance.Text = "Replace 95% \"Exceptional Performance\"";
             this.button_ReplaceExceptionalPerformance.UseVisualStyleBackColor = true;
@@ -6004,9 +6276,10 @@
             // 
             // button_ReplaceSuperstar
             // 
-            this.button_ReplaceSuperstar.Location = new System.Drawing.Point(272, 136);
+            this.button_ReplaceSuperstar.Location = new System.Drawing.Point(544, 262);
+            this.button_ReplaceSuperstar.Margin = new System.Windows.Forms.Padding(6);
             this.button_ReplaceSuperstar.Name = "button_ReplaceSuperstar";
-            this.button_ReplaceSuperstar.Size = new System.Drawing.Size(251, 23);
+            this.button_ReplaceSuperstar.Size = new System.Drawing.Size(502, 44);
             this.button_ReplaceSuperstar.TabIndex = 19;
             this.button_ReplaceSuperstar.Text = "Replace 93% \"You\'re Gonna Be A Superstar\"";
             this.button_ReplaceSuperstar.UseVisualStyleBackColor = true;
@@ -6014,9 +6287,10 @@
             // 
             // button_ReplaceDazzlingPerformance
             // 
-            this.button_ReplaceDazzlingPerformance.Location = new System.Drawing.Point(272, 106);
+            this.button_ReplaceDazzlingPerformance.Location = new System.Drawing.Point(544, 204);
+            this.button_ReplaceDazzlingPerformance.Margin = new System.Windows.Forms.Padding(6);
             this.button_ReplaceDazzlingPerformance.Name = "button_ReplaceDazzlingPerformance";
-            this.button_ReplaceDazzlingPerformance.Size = new System.Drawing.Size(251, 23);
+            this.button_ReplaceDazzlingPerformance.Size = new System.Drawing.Size(502, 44);
             this.button_ReplaceDazzlingPerformance.TabIndex = 18;
             this.button_ReplaceDazzlingPerformance.Text = "Replace 92% \"Dazzling Performance\"";
             this.button_ReplaceDazzlingPerformance.UseVisualStyleBackColor = true;
@@ -6024,9 +6298,10 @@
             // 
             // button_ReplaceSuperbPerformance
             // 
-            this.button_ReplaceSuperbPerformance.Location = new System.Drawing.Point(272, 77);
+            this.button_ReplaceSuperbPerformance.Location = new System.Drawing.Point(544, 148);
+            this.button_ReplaceSuperbPerformance.Margin = new System.Windows.Forms.Padding(6);
             this.button_ReplaceSuperbPerformance.Name = "button_ReplaceSuperbPerformance";
-            this.button_ReplaceSuperbPerformance.Size = new System.Drawing.Size(251, 23);
+            this.button_ReplaceSuperbPerformance.Size = new System.Drawing.Size(502, 44);
             this.button_ReplaceSuperbPerformance.TabIndex = 17;
             this.button_ReplaceSuperbPerformance.Text = "Replace 90-91% \"Superb Performance\"";
             this.button_ReplaceSuperbPerformance.UseVisualStyleBackColor = true;
@@ -6034,9 +6309,10 @@
             // 
             // button_ReplaceTopNotchPerformance
             // 
-            this.button_ReplaceTopNotchPerformance.Location = new System.Drawing.Point(272, 48);
+            this.button_ReplaceTopNotchPerformance.Location = new System.Drawing.Point(544, 92);
+            this.button_ReplaceTopNotchPerformance.Margin = new System.Windows.Forms.Padding(6);
             this.button_ReplaceTopNotchPerformance.Name = "button_ReplaceTopNotchPerformance";
-            this.button_ReplaceTopNotchPerformance.Size = new System.Drawing.Size(251, 23);
+            this.button_ReplaceTopNotchPerformance.Size = new System.Drawing.Size(502, 44);
             this.button_ReplaceTopNotchPerformance.TabIndex = 16;
             this.button_ReplaceTopNotchPerformance.Text = "Replace 86-89% \"Top Notch Performance\"";
             this.button_ReplaceTopNotchPerformance.UseVisualStyleBackColor = true;
@@ -6044,9 +6320,10 @@
             // 
             // button_ReplaceExcellentPerformance
             // 
-            this.button_ReplaceExcellentPerformance.Location = new System.Drawing.Point(272, 19);
+            this.button_ReplaceExcellentPerformance.Location = new System.Drawing.Point(544, 37);
+            this.button_ReplaceExcellentPerformance.Margin = new System.Windows.Forms.Padding(6);
             this.button_ReplaceExcellentPerformance.Name = "button_ReplaceExcellentPerformance";
-            this.button_ReplaceExcellentPerformance.Size = new System.Drawing.Size(251, 23);
+            this.button_ReplaceExcellentPerformance.Size = new System.Drawing.Size(502, 44);
             this.button_ReplaceExcellentPerformance.TabIndex = 15;
             this.button_ReplaceExcellentPerformance.Text = "Replace 82-85% \"Excellent Performance\"";
             this.button_ReplaceExcellentPerformance.UseVisualStyleBackColor = true;
@@ -6054,9 +6331,10 @@
             // 
             // button_ReplaceAlrightPerformance
             // 
-            this.button_ReplaceAlrightPerformance.Location = new System.Drawing.Point(15, 165);
+            this.button_ReplaceAlrightPerformance.Location = new System.Drawing.Point(30, 317);
+            this.button_ReplaceAlrightPerformance.Margin = new System.Windows.Forms.Padding(6);
             this.button_ReplaceAlrightPerformance.Name = "button_ReplaceAlrightPerformance";
-            this.button_ReplaceAlrightPerformance.Size = new System.Drawing.Size(251, 23);
+            this.button_ReplaceAlrightPerformance.Size = new System.Drawing.Size(502, 44);
             this.button_ReplaceAlrightPerformance.TabIndex = 14;
             this.button_ReplaceAlrightPerformance.Text = "Replace 81% \"Alright Performance\"";
             this.button_ReplaceAlrightPerformance.UseVisualStyleBackColor = true;
@@ -6064,9 +6342,10 @@
             // 
             // button_ReplaceDecentPerformance
             // 
-            this.button_ReplaceDecentPerformance.Location = new System.Drawing.Point(15, 135);
+            this.button_ReplaceDecentPerformance.Location = new System.Drawing.Point(30, 260);
+            this.button_ReplaceDecentPerformance.Margin = new System.Windows.Forms.Padding(6);
             this.button_ReplaceDecentPerformance.Name = "button_ReplaceDecentPerformance";
-            this.button_ReplaceDecentPerformance.Size = new System.Drawing.Size(251, 23);
+            this.button_ReplaceDecentPerformance.Size = new System.Drawing.Size(502, 44);
             this.button_ReplaceDecentPerformance.TabIndex = 13;
             this.button_ReplaceDecentPerformance.Text = "Replace 73-80% \"Decent Performance\"";
             this.button_ReplaceDecentPerformance.UseVisualStyleBackColor = true;
@@ -6074,9 +6353,10 @@
             // 
             // button_ReplaceCouldBeBetter
             // 
-            this.button_ReplaceCouldBeBetter.Location = new System.Drawing.Point(15, 106);
+            this.button_ReplaceCouldBeBetter.Location = new System.Drawing.Point(30, 204);
+            this.button_ReplaceCouldBeBetter.Margin = new System.Windows.Forms.Padding(6);
             this.button_ReplaceCouldBeBetter.Name = "button_ReplaceCouldBeBetter";
-            this.button_ReplaceCouldBeBetter.Size = new System.Drawing.Size(251, 23);
+            this.button_ReplaceCouldBeBetter.Size = new System.Drawing.Size(502, 44);
             this.button_ReplaceCouldBeBetter.TabIndex = 12;
             this.button_ReplaceCouldBeBetter.Text = "Replace 66-72% \"Could Be Better\"";
             this.button_ReplaceCouldBeBetter.UseVisualStyleBackColor = true;
@@ -6084,9 +6364,10 @@
             // 
             // button_ReplaceSubparPerformance
             // 
-            this.button_ReplaceSubparPerformance.Location = new System.Drawing.Point(15, 77);
+            this.button_ReplaceSubparPerformance.Location = new System.Drawing.Point(30, 148);
+            this.button_ReplaceSubparPerformance.Margin = new System.Windows.Forms.Padding(6);
             this.button_ReplaceSubparPerformance.Name = "button_ReplaceSubparPerformance";
-            this.button_ReplaceSubparPerformance.Size = new System.Drawing.Size(251, 23);
+            this.button_ReplaceSubparPerformance.Size = new System.Drawing.Size(502, 44);
             this.button_ReplaceSubparPerformance.TabIndex = 11;
             this.button_ReplaceSubparPerformance.Text = "Replace 60-65% \"Subpar Performance\"";
             this.button_ReplaceSubparPerformance.UseVisualStyleBackColor = true;
@@ -6094,9 +6375,10 @@
             // 
             // button_ReplaceDisappointingPerformance
             // 
-            this.button_ReplaceDisappointingPerformance.Location = new System.Drawing.Point(15, 48);
+            this.button_ReplaceDisappointingPerformance.Location = new System.Drawing.Point(30, 92);
+            this.button_ReplaceDisappointingPerformance.Margin = new System.Windows.Forms.Padding(6);
             this.button_ReplaceDisappointingPerformance.Name = "button_ReplaceDisappointingPerformance";
-            this.button_ReplaceDisappointingPerformance.Size = new System.Drawing.Size(251, 23);
+            this.button_ReplaceDisappointingPerformance.Size = new System.Drawing.Size(502, 44);
             this.button_ReplaceDisappointingPerformance.TabIndex = 10;
             this.button_ReplaceDisappointingPerformance.Text = "Replace 50-59% \"Disappointing Performance\"";
             this.button_ReplaceDisappointingPerformance.UseVisualStyleBackColor = true;
@@ -6104,9 +6386,10 @@
             // 
             // button_ResetSoundpack
             // 
-            this.button_ResetSoundpack.Location = new System.Drawing.Point(15, 241);
+            this.button_ResetSoundpack.Location = new System.Drawing.Point(30, 463);
+            this.button_ResetSoundpack.Margin = new System.Windows.Forms.Padding(6);
             this.button_ResetSoundpack.Name = "button_ResetSoundpack";
-            this.button_ResetSoundpack.Size = new System.Drawing.Size(116, 23);
+            this.button_ResetSoundpack.Size = new System.Drawing.Size(232, 44);
             this.button_ResetSoundpack.TabIndex = 9;
             this.button_ResetSoundpack.Text = "Reset To Default";
             this.button_ResetSoundpack.UseVisualStyleBackColor = true;
@@ -6115,9 +6398,10 @@
             // 
             // button_ReplaceBadPerformance
             // 
-            this.button_ReplaceBadPerformance.Location = new System.Drawing.Point(15, 19);
+            this.button_ReplaceBadPerformance.Location = new System.Drawing.Point(30, 37);
+            this.button_ReplaceBadPerformance.Margin = new System.Windows.Forms.Padding(6);
             this.button_ReplaceBadPerformance.Name = "button_ReplaceBadPerformance";
-            this.button_ReplaceBadPerformance.Size = new System.Drawing.Size(251, 23);
+            this.button_ReplaceBadPerformance.Size = new System.Drawing.Size(502, 44);
             this.button_ReplaceBadPerformance.TabIndex = 2;
             this.button_ReplaceBadPerformance.Text = "Replace 0-49% \"Bad Performance\"";
             this.button_ReplaceBadPerformance.UseVisualStyleBackColor = true;
@@ -6125,9 +6409,10 @@
             // 
             // button_ExportSoundPack
             // 
-            this.button_ExportSoundPack.Location = new System.Drawing.Point(603, 241);
+            this.button_ExportSoundPack.Location = new System.Drawing.Point(1206, 463);
+            this.button_ExportSoundPack.Margin = new System.Windows.Forms.Padding(6);
             this.button_ExportSoundPack.Name = "button_ExportSoundPack";
-            this.button_ExportSoundPack.Size = new System.Drawing.Size(109, 23);
+            this.button_ExportSoundPack.Size = new System.Drawing.Size(218, 44);
             this.button_ExportSoundPack.TabIndex = 7;
             this.button_ExportSoundPack.Text = "Export Soundpack";
             this.button_ExportSoundPack.UseVisualStyleBackColor = true;
@@ -6136,9 +6421,10 @@
             // 
             // button_RemoveUnpackedAudioPsarc
             // 
-            this.button_RemoveUnpackedAudioPsarc.Location = new System.Drawing.Point(946, 19);
+            this.button_RemoveUnpackedAudioPsarc.Location = new System.Drawing.Point(1892, 37);
+            this.button_RemoveUnpackedAudioPsarc.Margin = new System.Windows.Forms.Padding(6);
             this.button_RemoveUnpackedAudioPsarc.Name = "button_RemoveUnpackedAudioPsarc";
-            this.button_RemoveUnpackedAudioPsarc.Size = new System.Drawing.Size(173, 23);
+            this.button_RemoveUnpackedAudioPsarc.Size = new System.Drawing.Size(346, 44);
             this.button_RemoveUnpackedAudioPsarc.TabIndex = 4;
             this.button_RemoveUnpackedAudioPsarc.Text = "Remove Unpacked Files";
             this.button_RemoveUnpackedAudioPsarc.UseVisualStyleBackColor = true;
@@ -6147,9 +6433,10 @@
             // 
             // button_ImportSoundPack
             // 
-            this.button_ImportSoundPack.Location = new System.Drawing.Point(489, 241);
+            this.button_ImportSoundPack.Location = new System.Drawing.Point(978, 463);
+            this.button_ImportSoundPack.Margin = new System.Windows.Forms.Padding(6);
             this.button_ImportSoundPack.Name = "button_ImportSoundPack";
-            this.button_ImportSoundPack.Size = new System.Drawing.Size(108, 23);
+            this.button_ImportSoundPack.Size = new System.Drawing.Size(216, 44);
             this.button_ImportSoundPack.TabIndex = 8;
             this.button_ImportSoundPack.Text = "Import Soundpack";
             this.button_ImportSoundPack.UseVisualStyleBackColor = true;
@@ -6158,9 +6445,10 @@
             // 
             // button_RepackAudioPsarc
             // 
-            this.button_RepackAudioPsarc.Location = new System.Drawing.Point(946, 241);
+            this.button_RepackAudioPsarc.Location = new System.Drawing.Point(1892, 463);
+            this.button_RepackAudioPsarc.Margin = new System.Windows.Forms.Padding(6);
             this.button_RepackAudioPsarc.Name = "button_RepackAudioPsarc";
-            this.button_RepackAudioPsarc.Size = new System.Drawing.Size(170, 23);
+            this.button_RepackAudioPsarc.Size = new System.Drawing.Size(340, 44);
             this.button_RepackAudioPsarc.TabIndex = 3;
             this.button_RepackAudioPsarc.Text = "Repack Audio Psarc";
             this.button_RepackAudioPsarc.UseVisualStyleBackColor = true;
@@ -6169,9 +6457,10 @@
             // 
             // button_ReplaceWonderfulPerformance
             // 
-            this.button_ReplaceWonderfulPerformance.Location = new System.Drawing.Point(272, 165);
+            this.button_ReplaceWonderfulPerformance.Location = new System.Drawing.Point(544, 317);
+            this.button_ReplaceWonderfulPerformance.Margin = new System.Windows.Forms.Padding(6);
             this.button_ReplaceWonderfulPerformance.Name = "button_ReplaceWonderfulPerformance";
-            this.button_ReplaceWonderfulPerformance.Size = new System.Drawing.Size(251, 23);
+            this.button_ReplaceWonderfulPerformance.Size = new System.Drawing.Size(502, 44);
             this.button_ReplaceWonderfulPerformance.TabIndex = 6;
             this.button_ReplaceWonderfulPerformance.Text = "Replace 94% \"Wonderful Performance\"";
             this.button_ReplaceWonderfulPerformance.UseVisualStyleBackColor = true;
@@ -6181,7 +6470,8 @@
             // 
             this.label_DownloadWwise.AutoSize = true;
             this.label_DownloadWwise.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label_DownloadWwise.Location = new System.Drawing.Point(31, 35);
+            this.label_DownloadWwise.Location = new System.Drawing.Point(62, 67);
+            this.label_DownloadWwise.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label_DownloadWwise.Name = "label_DownloadWwise";
             this.label_DownloadWwise.Size = new System.Drawing.Size(260, 40);
             this.label_DownloadWwise.TabIndex = 5;
@@ -6192,7 +6482,8 @@
             // 
             this.label_AudioPsarcPleaseWait.AutoSize = true;
             this.label_AudioPsarcPleaseWait.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label_AudioPsarcPleaseWait.Location = new System.Drawing.Point(493, 35);
+            this.label_AudioPsarcPleaseWait.Location = new System.Drawing.Point(986, 67);
+            this.label_AudioPsarcPleaseWait.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label_AudioPsarcPleaseWait.Name = "label_AudioPsarcPleaseWait";
             this.label_AudioPsarcPleaseWait.Size = new System.Drawing.Size(267, 40);
             this.label_AudioPsarcPleaseWait.TabIndex = 1;
@@ -6201,9 +6492,10 @@
             // 
             // button_UnpackAudioPsarc
             // 
-            this.button_UnpackAudioPsarc.Location = new System.Drawing.Point(35, 189);
+            this.button_UnpackAudioPsarc.Location = new System.Drawing.Point(70, 363);
+            this.button_UnpackAudioPsarc.Margin = new System.Windows.Forms.Padding(6);
             this.button_UnpackAudioPsarc.Name = "button_UnpackAudioPsarc";
-            this.button_UnpackAudioPsarc.Size = new System.Drawing.Size(142, 23);
+            this.button_UnpackAudioPsarc.Size = new System.Drawing.Size(284, 44);
             this.button_UnpackAudioPsarc.TabIndex = 0;
             this.button_UnpackAudioPsarc.Text = "Unpack Audio Psarc";
             this.button_UnpackAudioPsarc.UseVisualStyleBackColor = true;
@@ -6223,9 +6515,10 @@
             this.tab_Profiles.Controls.Add(this.progressBar_Profiles_LoadPsarcs);
             this.tab_Profiles.Controls.Add(this.listBox_Profiles_AvailableProfiles);
             this.tab_Profiles.Controls.Add(this.label_Profiles_AvailableProfiles);
-            this.tab_Profiles.Location = new System.Drawing.Point(4, 22);
+            this.tab_Profiles.Location = new System.Drawing.Point(4, 34);
+            this.tab_Profiles.Margin = new System.Windows.Forms.Padding(6);
             this.tab_Profiles.Name = "tab_Profiles";
-            this.tab_Profiles.Size = new System.Drawing.Size(1150, 513);
+            this.tab_Profiles.Size = new System.Drawing.Size(2308, 999);
             this.tab_Profiles.TabIndex = 9;
             this.tab_Profiles.Text = "Profile Edits";
             // 
@@ -6234,9 +6527,11 @@
             this.groupBox_ImportJsonTones.Controls.Add(this.checkBox_ImportTonesBulk);
             this.groupBox_ImportJsonTones.Controls.Add(this.button_ImportTone2014);
             this.groupBox_ImportJsonTones.Controls.Add(this.button_ImportToneManifest);
-            this.groupBox_ImportJsonTones.Location = new System.Drawing.Point(11, 456);
+            this.groupBox_ImportJsonTones.Location = new System.Drawing.Point(22, 877);
+            this.groupBox_ImportJsonTones.Margin = new System.Windows.Forms.Padding(6);
             this.groupBox_ImportJsonTones.Name = "groupBox_ImportJsonTones";
-            this.groupBox_ImportJsonTones.Size = new System.Drawing.Size(332, 54);
+            this.groupBox_ImportJsonTones.Padding = new System.Windows.Forms.Padding(6);
+            this.groupBox_ImportJsonTones.Size = new System.Drawing.Size(664, 104);
             this.groupBox_ImportJsonTones.TabIndex = 13;
             this.groupBox_ImportJsonTones.TabStop = false;
             this.groupBox_ImportJsonTones.Text = "Import Tones";
@@ -6245,18 +6540,20 @@
             // checkBox_ImportTonesBulk
             // 
             this.checkBox_ImportTonesBulk.AutoSize = true;
-            this.checkBox_ImportTonesBulk.Location = new System.Drawing.Point(239, 24);
+            this.checkBox_ImportTonesBulk.Location = new System.Drawing.Point(478, 46);
+            this.checkBox_ImportTonesBulk.Margin = new System.Windows.Forms.Padding(6);
             this.checkBox_ImportTonesBulk.Name = "checkBox_ImportTonesBulk";
-            this.checkBox_ImportTonesBulk.Size = new System.Drawing.Size(89, 17);
+            this.checkBox_ImportTonesBulk.Size = new System.Drawing.Size(159, 29);
             this.checkBox_ImportTonesBulk.TabIndex = 2;
             this.checkBox_ImportTonesBulk.Text = "Import in bulk";
             this.checkBox_ImportTonesBulk.UseVisualStyleBackColor = true;
             // 
             // button_ImportTone2014
             // 
-            this.button_ImportTone2014.Location = new System.Drawing.Point(134, 19);
+            this.button_ImportTone2014.Location = new System.Drawing.Point(268, 37);
+            this.button_ImportTone2014.Margin = new System.Windows.Forms.Padding(6);
             this.button_ImportTone2014.Name = "button_ImportTone2014";
-            this.button_ImportTone2014.Size = new System.Drawing.Size(98, 23);
+            this.button_ImportTone2014.Size = new System.Drawing.Size(196, 44);
             this.button_ImportTone2014.TabIndex = 1;
             this.button_ImportTone2014.Text = "Import XML";
             this.button_ImportTone2014.UseVisualStyleBackColor = true;
@@ -6264,9 +6561,10 @@
             // 
             // button_ImportToneManifest
             // 
-            this.button_ImportToneManifest.Location = new System.Drawing.Point(5, 19);
+            this.button_ImportToneManifest.Location = new System.Drawing.Point(10, 37);
+            this.button_ImportToneManifest.Margin = new System.Windows.Forms.Padding(6);
             this.button_ImportToneManifest.Name = "button_ImportToneManifest";
-            this.button_ImportToneManifest.Size = new System.Drawing.Size(103, 23);
+            this.button_ImportToneManifest.Size = new System.Drawing.Size(206, 44);
             this.button_ImportToneManifest.TabIndex = 0;
             this.button_ImportToneManifest.Text = "Import JSON";
             this.button_ImportToneManifest.UseVisualStyleBackColor = true;
@@ -6277,40 +6575,16 @@
             this.dgv_Profiles_Songlists.AllowUserToAddRows = false;
             this.dgv_Profiles_Songlists.AllowUserToDeleteRows = false;
             this.dgv_Profiles_Songlists.AllowUserToOrderColumns = true;
-            this.dgv_Profiles_Songlists.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgv_Profiles_Songlists.Anchor = ((System.Windows.Forms.AnchorStyles) ((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
             this.dgv_Profiles_Songlists.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_Profiles_Songlists.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Artist,
-            this.Song,
-            this.Favorites,
-            this.SongList1,
-            this.SongList2,
-            this.SongList3,
-            this.SongList4,
-            this.SongList5,
-            this.SongList6,
-            this.SongList7,
-            this.SongList8,
-            this.SongList9,
-            this.SongList10,
-            this.SongList11,
-            this.SongList12,
-            this.SongList13,
-            this.SongList14,
-            this.SongList15,
-            this.SongList16,
-            this.SongList17,
-            this.SongList18,
-            this.SongList19,
-            this.SongList20});
+            this.dgv_Profiles_Songlists.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {this.Artist, this.Song, this.Favorites, this.SongList1, this.SongList2, this.SongList3, this.SongList4, this.SongList5, this.SongList6, this.SongList7, this.SongList8, this.SongList9, this.SongList10, this.SongList11, this.SongList12, this.SongList13, this.SongList14, this.SongList15, this.SongList16, this.SongList17, this.SongList18, this.SongList19, this.SongList20});
             this.dgv_Profiles_Songlists.ImeMode = System.Windows.Forms.ImeMode.Off;
-            this.dgv_Profiles_Songlists.Location = new System.Drawing.Point(349, 10);
+            this.dgv_Profiles_Songlists.Location = new System.Drawing.Point(698, 19);
+            this.dgv_Profiles_Songlists.Margin = new System.Windows.Forms.Padding(6);
             this.dgv_Profiles_Songlists.Name = "dgv_Profiles_Songlists";
             this.dgv_Profiles_Songlists.RowHeadersVisible = false;
             this.dgv_Profiles_Songlists.RowHeadersWidth = 20;
-            this.dgv_Profiles_Songlists.Size = new System.Drawing.Size(788, 500);
+            this.dgv_Profiles_Songlists.Size = new System.Drawing.Size(1576, 938);
             this.dgv_Profiles_Songlists.TabIndex = 12;
             this.dgv_Profiles_Songlists.Visible = false;
             this.dgv_Profiles_Songlists.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.Profiles_Songlists_ChangedValue);
@@ -6461,9 +6735,11 @@
             this.groupBox_Profile_MoreSongLists.Controls.Add(this.label_TotalSonglists);
             this.groupBox_Profile_MoreSongLists.Controls.Add(this.button_RemoveNewestSongList);
             this.groupBox_Profile_MoreSongLists.Controls.Add(this.button_AddNewSongList);
-            this.groupBox_Profile_MoreSongLists.Location = new System.Drawing.Point(8, 387);
+            this.groupBox_Profile_MoreSongLists.Location = new System.Drawing.Point(16, 744);
+            this.groupBox_Profile_MoreSongLists.Margin = new System.Windows.Forms.Padding(6);
             this.groupBox_Profile_MoreSongLists.Name = "groupBox_Profile_MoreSongLists";
-            this.groupBox_Profile_MoreSongLists.Size = new System.Drawing.Size(245, 63);
+            this.groupBox_Profile_MoreSongLists.Padding = new System.Windows.Forms.Padding(6);
+            this.groupBox_Profile_MoreSongLists.Size = new System.Drawing.Size(490, 121);
             this.groupBox_Profile_MoreSongLists.TabIndex = 12;
             this.groupBox_Profile_MoreSongLists.TabStop = false;
             this.groupBox_Profile_MoreSongLists.Text = "More Song Lists";
@@ -6472,17 +6748,19 @@
             // label_TotalSonglists
             // 
             this.label_TotalSonglists.AutoSize = true;
-            this.label_TotalSonglists.Location = new System.Drawing.Point(118, 47);
+            this.label_TotalSonglists.Location = new System.Drawing.Point(236, 90);
+            this.label_TotalSonglists.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label_TotalSonglists.Name = "label_TotalSonglists";
-            this.label_TotalSonglists.Size = new System.Drawing.Size(13, 13);
+            this.label_TotalSonglists.Size = new System.Drawing.Size(24, 25);
             this.label_TotalSonglists.TabIndex = 11;
             this.label_TotalSonglists.Text = "6";
             // 
             // button_RemoveNewestSongList
             // 
-            this.button_RemoveNewestSongList.Location = new System.Drawing.Point(137, 13);
+            this.button_RemoveNewestSongList.Location = new System.Drawing.Point(274, 25);
+            this.button_RemoveNewestSongList.Margin = new System.Windows.Forms.Padding(6);
             this.button_RemoveNewestSongList.Name = "button_RemoveNewestSongList";
-            this.button_RemoveNewestSongList.Size = new System.Drawing.Size(98, 34);
+            this.button_RemoveNewestSongList.Size = new System.Drawing.Size(196, 65);
             this.button_RemoveNewestSongList.TabIndex = 1;
             this.button_RemoveNewestSongList.Text = "Remove Newest SongList";
             this.button_RemoveNewestSongList.UseVisualStyleBackColor = true;
@@ -6490,9 +6768,10 @@
             // 
             // button_AddNewSongList
             // 
-            this.button_AddNewSongList.Location = new System.Drawing.Point(6, 13);
+            this.button_AddNewSongList.Location = new System.Drawing.Point(12, 25);
+            this.button_AddNewSongList.Margin = new System.Windows.Forms.Padding(6);
             this.button_AddNewSongList.Name = "button_AddNewSongList";
-            this.button_AddNewSongList.Size = new System.Drawing.Size(110, 34);
+            this.button_AddNewSongList.Size = new System.Drawing.Size(220, 65);
             this.button_AddNewSongList.TabIndex = 0;
             this.button_AddNewSongList.Text = "Add New SongList";
             this.button_AddNewSongList.UseVisualStyleBackColor = true;
@@ -6502,9 +6781,11 @@
             // 
             this.groupBox_Profiles_Rewards.Controls.Add(this.button_Profiles_UnlockAllRewards);
             this.groupBox_Profiles_Rewards.Controls.Add(this.button_Profiles_LockAllRewards);
-            this.groupBox_Profiles_Rewards.Location = new System.Drawing.Point(5, 313);
+            this.groupBox_Profiles_Rewards.Location = new System.Drawing.Point(10, 602);
+            this.groupBox_Profiles_Rewards.Margin = new System.Windows.Forms.Padding(6);
             this.groupBox_Profiles_Rewards.Name = "groupBox_Profiles_Rewards";
-            this.groupBox_Profiles_Rewards.Size = new System.Drawing.Size(248, 57);
+            this.groupBox_Profiles_Rewards.Padding = new System.Windows.Forms.Padding(6);
+            this.groupBox_Profiles_Rewards.Size = new System.Drawing.Size(496, 110);
             this.groupBox_Profiles_Rewards.TabIndex = 11;
             this.groupBox_Profiles_Rewards.TabStop = false;
             this.groupBox_Profiles_Rewards.Text = "Rewards";
@@ -6512,9 +6793,10 @@
             // 
             // button_Profiles_UnlockAllRewards
             // 
-            this.button_Profiles_UnlockAllRewards.Location = new System.Drawing.Point(6, 19);
+            this.button_Profiles_UnlockAllRewards.Location = new System.Drawing.Point(12, 37);
+            this.button_Profiles_UnlockAllRewards.Margin = new System.Windows.Forms.Padding(6);
             this.button_Profiles_UnlockAllRewards.Name = "button_Profiles_UnlockAllRewards";
-            this.button_Profiles_UnlockAllRewards.Size = new System.Drawing.Size(110, 23);
+            this.button_Profiles_UnlockAllRewards.Size = new System.Drawing.Size(220, 44);
             this.button_Profiles_UnlockAllRewards.TabIndex = 9;
             this.button_Profiles_UnlockAllRewards.Text = "Unlock All Rewards";
             this.button_Profiles_UnlockAllRewards.UseVisualStyleBackColor = true;
@@ -6522,9 +6804,10 @@
             // 
             // button_Profiles_LockAllRewards
             // 
-            this.button_Profiles_LockAllRewards.Location = new System.Drawing.Point(140, 19);
+            this.button_Profiles_LockAllRewards.Location = new System.Drawing.Point(280, 37);
+            this.button_Profiles_LockAllRewards.Margin = new System.Windows.Forms.Padding(6);
             this.button_Profiles_LockAllRewards.Name = "button_Profiles_LockAllRewards";
-            this.button_Profiles_LockAllRewards.Size = new System.Drawing.Size(98, 23);
+            this.button_Profiles_LockAllRewards.Size = new System.Drawing.Size(196, 44);
             this.button_Profiles_LockAllRewards.TabIndex = 10;
             this.button_Profiles_LockAllRewards.Text = "Lock All Rewards";
             this.button_Profiles_LockAllRewards.UseVisualStyleBackColor = true;
@@ -6532,9 +6815,10 @@
             // 
             // button_Profiles_SaveSonglist
             // 
-            this.button_Profiles_SaveSonglist.Location = new System.Drawing.Point(120, 245);
+            this.button_Profiles_SaveSonglist.Location = new System.Drawing.Point(240, 471);
+            this.button_Profiles_SaveSonglist.Margin = new System.Windows.Forms.Padding(6);
             this.button_Profiles_SaveSonglist.Name = "button_Profiles_SaveSonglist";
-            this.button_Profiles_SaveSonglist.Size = new System.Drawing.Size(98, 23);
+            this.button_Profiles_SaveSonglist.Size = new System.Drawing.Size(196, 44);
             this.button_Profiles_SaveSonglist.TabIndex = 11;
             this.button_Profiles_SaveSonglist.Text = "Save Songlists";
             this.button_Profiles_SaveSonglist.UseVisualStyleBackColor = true;
@@ -6543,9 +6827,10 @@
             // 
             // button_Profiles_LoadSongs
             // 
-            this.button_Profiles_LoadSongs.Location = new System.Drawing.Point(14, 245);
+            this.button_Profiles_LoadSongs.Location = new System.Drawing.Point(28, 471);
+            this.button_Profiles_LoadSongs.Margin = new System.Windows.Forms.Padding(6);
             this.button_Profiles_LoadSongs.Name = "button_Profiles_LoadSongs";
-            this.button_Profiles_LoadSongs.Size = new System.Drawing.Size(75, 23);
+            this.button_Profiles_LoadSongs.Size = new System.Drawing.Size(150, 44);
             this.button_Profiles_LoadSongs.TabIndex = 1;
             this.button_Profiles_LoadSongs.Text = "Load Songs";
             this.button_Profiles_LoadSongs.UseVisualStyleBackColor = true;
@@ -6555,8 +6840,9 @@
             // label_Profiles_WIP
             // 
             this.label_Profiles_WIP.AutoSize = true;
-            this.label_Profiles_WIP.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_Profiles_WIP.Location = new System.Drawing.Point(11, 10);
+            this.label_Profiles_WIP.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
+            this.label_Profiles_WIP.Location = new System.Drawing.Point(22, 19);
+            this.label_Profiles_WIP.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label_Profiles_WIP.Name = "label_Profiles_WIP";
             this.label_Profiles_WIP.Size = new System.Drawing.Size(180, 36);
             this.label_Profiles_WIP.TabIndex = 10;
@@ -6564,27 +6850,31 @@
             // 
             // progressBar_Profiles_LoadPsarcs
             // 
-            this.progressBar_Profiles_LoadPsarcs.Location = new System.Drawing.Point(14, 274);
+            this.progressBar_Profiles_LoadPsarcs.Location = new System.Drawing.Point(28, 527);
+            this.progressBar_Profiles_LoadPsarcs.Margin = new System.Windows.Forms.Padding(6);
             this.progressBar_Profiles_LoadPsarcs.Name = "progressBar_Profiles_LoadPsarcs";
-            this.progressBar_Profiles_LoadPsarcs.Size = new System.Drawing.Size(204, 23);
+            this.progressBar_Profiles_LoadPsarcs.Size = new System.Drawing.Size(408, 44);
             this.progressBar_Profiles_LoadPsarcs.TabIndex = 0;
             this.progressBar_Profiles_LoadPsarcs.Visible = false;
             // 
             // listBox_Profiles_AvailableProfiles
             // 
             this.listBox_Profiles_AvailableProfiles.FormattingEnabled = true;
-            this.listBox_Profiles_AvailableProfiles.Location = new System.Drawing.Point(14, 79);
+            this.listBox_Profiles_AvailableProfiles.ItemHeight = 25;
+            this.listBox_Profiles_AvailableProfiles.Location = new System.Drawing.Point(28, 152);
+            this.listBox_Profiles_AvailableProfiles.Margin = new System.Windows.Forms.Padding(6);
             this.listBox_Profiles_AvailableProfiles.Name = "listBox_Profiles_AvailableProfiles";
-            this.listBox_Profiles_AvailableProfiles.Size = new System.Drawing.Size(204, 160);
+            this.listBox_Profiles_AvailableProfiles.Size = new System.Drawing.Size(404, 304);
             this.listBox_Profiles_AvailableProfiles.TabIndex = 5;
             this.listBox_Profiles_AvailableProfiles.SelectedIndexChanged += new System.EventHandler(this.Profiles_ChangeSelectedProfile);
             // 
             // label_Profiles_AvailableProfiles
             // 
             this.label_Profiles_AvailableProfiles.AutoSize = true;
-            this.label_Profiles_AvailableProfiles.Location = new System.Drawing.Point(11, 63);
+            this.label_Profiles_AvailableProfiles.Location = new System.Drawing.Point(22, 121);
+            this.label_Profiles_AvailableProfiles.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label_Profiles_AvailableProfiles.Name = "label_Profiles_AvailableProfiles";
-            this.label_Profiles_AvailableProfiles.Size = new System.Drawing.Size(66, 13);
+            this.label_Profiles_AvailableProfiles.Size = new System.Drawing.Size(136, 25);
             this.label_Profiles_AvailableProfiles.TabIndex = 8;
             this.label_Profiles_AvailableProfiles.Text = "Your Profiles";
             // 
@@ -6594,10 +6884,10 @@
             this.tab_GUISettings.Controls.Add(this.groupBox_ChangeTheme);
             this.tab_GUISettings.Controls.Add(this.checkBox_ChangeTheme);
             this.tab_GUISettings.Controls.Add(this.label_Credits);
-            this.tab_GUISettings.Location = new System.Drawing.Point(4, 22);
+            this.tab_GUISettings.Location = new System.Drawing.Point(4, 34);
             this.tab_GUISettings.Margin = new System.Windows.Forms.Padding(0);
             this.tab_GUISettings.Name = "tab_GUISettings";
-            this.tab_GUISettings.Size = new System.Drawing.Size(1150, 513);
+            this.tab_GUISettings.Size = new System.Drawing.Size(2308, 999);
             this.tab_GUISettings.TabIndex = 5;
             this.tab_GUISettings.Text = "GUI Settings";
             // 
@@ -6611,9 +6901,11 @@
             this.groupBox_ChangeTheme.Controls.Add(this.textBox_ChangeBackgroundColor);
             this.groupBox_ChangeTheme.Controls.Add(this.button_ChangeTextColor);
             this.groupBox_ChangeTheme.Controls.Add(this.button_ChangeBackgroundColor);
-            this.groupBox_ChangeTheme.Location = new System.Drawing.Point(284, 18);
+            this.groupBox_ChangeTheme.Location = new System.Drawing.Point(568, 35);
+            this.groupBox_ChangeTheme.Margin = new System.Windows.Forms.Padding(6);
             this.groupBox_ChangeTheme.Name = "groupBox_ChangeTheme";
-            this.groupBox_ChangeTheme.Size = new System.Drawing.Size(271, 185);
+            this.groupBox_ChangeTheme.Padding = new System.Windows.Forms.Padding(6);
+            this.groupBox_ChangeTheme.Size = new System.Drawing.Size(542, 356);
             this.groupBox_ChangeTheme.TabIndex = 74;
             this.groupBox_ChangeTheme.TabStop = false;
             this.groupBox_ChangeTheme.Text = "Change Theme Colors";
@@ -6621,9 +6913,10 @@
             // 
             // button_ResetCustomColors
             // 
-            this.button_ResetCustomColors.Location = new System.Drawing.Point(157, 156);
+            this.button_ResetCustomColors.Location = new System.Drawing.Point(314, 300);
+            this.button_ResetCustomColors.Margin = new System.Windows.Forms.Padding(6);
             this.button_ResetCustomColors.Name = "button_ResetCustomColors";
-            this.button_ResetCustomColors.Size = new System.Drawing.Size(108, 23);
+            this.button_ResetCustomColors.Size = new System.Drawing.Size(216, 44);
             this.button_ResetCustomColors.TabIndex = 7;
             this.button_ResetCustomColors.Text = "Discard Theme";
             this.button_ResetCustomColors.UseVisualStyleBackColor = true;
@@ -6632,17 +6925,19 @@
             // textBox_ChangeButtonColor
             // 
             this.textBox_ChangeButtonColor.Enabled = false;
-            this.textBox_ChangeButtonColor.Location = new System.Drawing.Point(172, 117);
+            this.textBox_ChangeButtonColor.Location = new System.Drawing.Point(344, 225);
+            this.textBox_ChangeButtonColor.Margin = new System.Windows.Forms.Padding(6);
             this.textBox_ChangeButtonColor.Name = "textBox_ChangeButtonColor";
             this.textBox_ChangeButtonColor.ReadOnly = true;
-            this.textBox_ChangeButtonColor.Size = new System.Drawing.Size(74, 20);
+            this.textBox_ChangeButtonColor.Size = new System.Drawing.Size(144, 31);
             this.textBox_ChangeButtonColor.TabIndex = 6;
             // 
             // button_ChangeButtonColor
             // 
-            this.button_ChangeButtonColor.Location = new System.Drawing.Point(6, 117);
+            this.button_ChangeButtonColor.Location = new System.Drawing.Point(12, 225);
+            this.button_ChangeButtonColor.Margin = new System.Windows.Forms.Padding(6);
             this.button_ChangeButtonColor.Name = "button_ChangeButtonColor";
-            this.button_ChangeButtonColor.Size = new System.Drawing.Size(145, 23);
+            this.button_ChangeButtonColor.Size = new System.Drawing.Size(290, 44);
             this.button_ChangeButtonColor.TabIndex = 5;
             this.button_ChangeButtonColor.Text = "Change Button Color";
             this.button_ChangeButtonColor.UseVisualStyleBackColor = true;
@@ -6650,9 +6945,10 @@
             // 
             // button_ApplyThemeColors
             // 
-            this.button_ApplyThemeColors.Location = new System.Drawing.Point(6, 156);
+            this.button_ApplyThemeColors.Location = new System.Drawing.Point(12, 300);
+            this.button_ApplyThemeColors.Margin = new System.Windows.Forms.Padding(6);
             this.button_ApplyThemeColors.Name = "button_ApplyThemeColors";
-            this.button_ApplyThemeColors.Size = new System.Drawing.Size(133, 23);
+            this.button_ApplyThemeColors.Size = new System.Drawing.Size(266, 44);
             this.button_ApplyThemeColors.TabIndex = 4;
             this.button_ApplyThemeColors.Text = "Apply Theme Colors";
             this.button_ApplyThemeColors.UseVisualStyleBackColor = true;
@@ -6661,26 +6957,29 @@
             // textBox_ChangeTextColor
             // 
             this.textBox_ChangeTextColor.Enabled = false;
-            this.textBox_ChangeTextColor.Location = new System.Drawing.Point(172, 79);
+            this.textBox_ChangeTextColor.Location = new System.Drawing.Point(344, 152);
+            this.textBox_ChangeTextColor.Margin = new System.Windows.Forms.Padding(6);
             this.textBox_ChangeTextColor.Name = "textBox_ChangeTextColor";
             this.textBox_ChangeTextColor.ReadOnly = true;
-            this.textBox_ChangeTextColor.Size = new System.Drawing.Size(74, 20);
+            this.textBox_ChangeTextColor.Size = new System.Drawing.Size(144, 31);
             this.textBox_ChangeTextColor.TabIndex = 3;
             // 
             // textBox_ChangeBackgroundColor
             // 
             this.textBox_ChangeBackgroundColor.Enabled = false;
-            this.textBox_ChangeBackgroundColor.Location = new System.Drawing.Point(172, 37);
+            this.textBox_ChangeBackgroundColor.Location = new System.Drawing.Point(344, 71);
+            this.textBox_ChangeBackgroundColor.Margin = new System.Windows.Forms.Padding(6);
             this.textBox_ChangeBackgroundColor.Name = "textBox_ChangeBackgroundColor";
             this.textBox_ChangeBackgroundColor.ReadOnly = true;
-            this.textBox_ChangeBackgroundColor.Size = new System.Drawing.Size(74, 20);
+            this.textBox_ChangeBackgroundColor.Size = new System.Drawing.Size(144, 31);
             this.textBox_ChangeBackgroundColor.TabIndex = 2;
             // 
             // button_ChangeTextColor
             // 
-            this.button_ChangeTextColor.Location = new System.Drawing.Point(6, 76);
+            this.button_ChangeTextColor.Location = new System.Drawing.Point(12, 146);
+            this.button_ChangeTextColor.Margin = new System.Windows.Forms.Padding(6);
             this.button_ChangeTextColor.Name = "button_ChangeTextColor";
-            this.button_ChangeTextColor.Size = new System.Drawing.Size(145, 23);
+            this.button_ChangeTextColor.Size = new System.Drawing.Size(290, 44);
             this.button_ChangeTextColor.TabIndex = 1;
             this.button_ChangeTextColor.Text = "Change Text Color";
             this.button_ChangeTextColor.UseVisualStyleBackColor = true;
@@ -6688,9 +6987,10 @@
             // 
             // button_ChangeBackgroundColor
             // 
-            this.button_ChangeBackgroundColor.Location = new System.Drawing.Point(6, 33);
+            this.button_ChangeBackgroundColor.Location = new System.Drawing.Point(12, 63);
+            this.button_ChangeBackgroundColor.Margin = new System.Windows.Forms.Padding(6);
             this.button_ChangeBackgroundColor.Name = "button_ChangeBackgroundColor";
-            this.button_ChangeBackgroundColor.Size = new System.Drawing.Size(145, 23);
+            this.button_ChangeBackgroundColor.Size = new System.Drawing.Size(290, 44);
             this.button_ChangeBackgroundColor.TabIndex = 0;
             this.button_ChangeBackgroundColor.Text = "Change Background Color";
             this.button_ChangeBackgroundColor.UseVisualStyleBackColor = true;
@@ -6699,9 +6999,10 @@
             // checkBox_ChangeTheme
             // 
             this.checkBox_ChangeTheme.AutoSize = true;
-            this.checkBox_ChangeTheme.Location = new System.Drawing.Point(16, 15);
+            this.checkBox_ChangeTheme.Location = new System.Drawing.Point(32, 29);
+            this.checkBox_ChangeTheme.Margin = new System.Windows.Forms.Padding(6);
             this.checkBox_ChangeTheme.Name = "checkBox_ChangeTheme";
-            this.checkBox_ChangeTheme.Size = new System.Drawing.Size(99, 17);
+            this.checkBox_ChangeTheme.Size = new System.Drawing.Size(178, 29);
             this.checkBox_ChangeTheme.TabIndex = 73;
             this.checkBox_ChangeTheme.Text = "Change Theme";
             this.checkBox_ChangeTheme.UseVisualStyleBackColor = true;
@@ -6716,8 +7017,9 @@
             // label_SettingsSaved
             // 
             this.label_SettingsSaved.AutoSize = true;
-            this.label_SettingsSaved.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_SettingsSaved.Location = new System.Drawing.Point(12, 560);
+            this.label_SettingsSaved.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
+            this.label_SettingsSaved.Location = new System.Drawing.Point(24, 1077);
+            this.label_SettingsSaved.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label_SettingsSaved.Name = "label_SettingsSaved";
             this.label_SettingsSaved.Size = new System.Drawing.Size(120, 18);
             this.label_SettingsSaved.TabIndex = 52;
@@ -6731,9 +7033,10 @@
             // 
             // button_UpdateRSMods
             // 
-            this.button_UpdateRSMods.Location = new System.Drawing.Point(991, 7);
+            this.button_UpdateRSMods.Location = new System.Drawing.Point(1982, 13);
+            this.button_UpdateRSMods.Margin = new System.Windows.Forms.Padding(6);
             this.button_UpdateRSMods.Name = "button_UpdateRSMods";
-            this.button_UpdateRSMods.Size = new System.Drawing.Size(137, 25);
+            this.button_UpdateRSMods.Size = new System.Drawing.Size(274, 48);
             this.button_UpdateRSMods.TabIndex = 100002;
             this.button_UpdateRSMods.Text = "Update RSMods";
             this.button_UpdateRSMods.UseVisualStyleBackColor = true;
@@ -6741,24 +7044,37 @@
             this.button_UpdateRSMods.Click += new System.EventHandler(this.CheckForUpdates_UpdateRSMods);
             this.button_UpdateRSMods.MouseHover += new System.EventHandler(this.ToolTips_Show);
             // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(28, 195);
+            this.checkBox1.Margin = new System.Windows.Forms.Padding(6);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(133, 29);
+            this.checkBox1.TabIndex = 28;
+            this.checkBox1.Text = "Local Only";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Azure;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(1170, 587);
+            this.ClientSize = new System.Drawing.Size(2340, 1129);
             this.Controls.Add(this.button_UpdateRSMods);
             this.Controls.Add(this.label_SettingsSaved);
             this.Controls.Add(this.TabController);
             this.ForeColor = System.Drawing.Color.Black;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MinimumSize = new System.Drawing.Size(1186, 626);
+            this.Icon = ((System.Drawing.Icon) (resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(6);
+            this.MinimumSize = new System.Drawing.Size(1918, 1038);
             this.Name = "MainForm";
             this.Text = "Rocksmith 2014 DLL Modifier";
             this.groupBox_HowToEnumerate.ResumeLayout(false);
             this.groupBox_HowToEnumerate.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nUpDown_ForceEnumerationXMS)).EndInit();
+            ((System.ComponentModel.ISupportInitialize) (this.nUpDown_ForceEnumerationXMS)).EndInit();
             this.groupBox_LoftOffWhen.ResumeLayout(false);
             this.groupBox_LoftOffWhen.PerformLayout();
             this.groupBox_ExtendedRangeWhen.ResumeLayout(false);
@@ -6775,13 +7091,13 @@
             this.tabControl_SetAndForget.ResumeLayout(false);
             this.tabPage_SetAndForget_CustomTunings.ResumeLayout(false);
             this.tabPage_SetAndForget_CustomTunings.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nUpDown_UIIndex)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nUpDown_String0)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nUpDown_String2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nUpDown_String3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nUpDown_String4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nUpDown_String5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nUpDown_String1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize) (this.nUpDown_UIIndex)).EndInit();
+            ((System.ComponentModel.ISupportInitialize) (this.nUpDown_String0)).EndInit();
+            ((System.ComponentModel.ISupportInitialize) (this.nUpDown_String2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize) (this.nUpDown_String3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize) (this.nUpDown_String4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize) (this.nUpDown_String5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize) (this.nUpDown_String1)).EndInit();
             this.tabPage_SetAndForget_CustomTones.ResumeLayout(false);
             this.groupBox_CustomGuitarcadeTones.ResumeLayout(false);
             this.groupBox_CustomGuitarcadeTones.PerformLayout();
@@ -6812,8 +7128,11 @@
             this.groupBox_SongTimer.ResumeLayout(false);
             this.groupBox_SongTimer.PerformLayout();
             this.tabPage_ModSettings_Automation.ResumeLayout(false);
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize) (this.numericUpDown1)).EndInit();
             this.groupBox_NSPTimer.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.nUpDown_NSPTimer)).EndInit();
+            ((System.ComponentModel.ISupportInitialize) (this.nUpDown_NSPTimer)).EndInit();
             this.groupBox_SampleRateOutput.ResumeLayout(false);
             this.groupBox_AutoLoadProfiles.ResumeLayout(false);
             this.tabPage_ModSettings_AutoTuning.ResumeLayout(false);
@@ -6827,53 +7146,53 @@
             this.tabPage_ModSettings_Misc.ResumeLayout(false);
             this.tabPage_ModSettings_Misc.PerformLayout();
             this.groupBox_RewindBy.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.nUpDown_RewindBy)).EndInit();
+            ((System.ComponentModel.ISupportInitialize) (this.nUpDown_RewindBy)).EndInit();
             this.groupBox_LoopingLeadUp.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.nUpDown_LoopingLeadUp)).EndInit();
+            ((System.ComponentModel.ISupportInitialize) (this.nUpDown_LoopingLeadUp)).EndInit();
             this.groupBox_Profiles_RevertBackup.ResumeLayout(false);
             this.groupBox_OverrideInputVolume.ResumeLayout(false);
             this.groupBox_OverrideInputVolume.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nUpDown_OverrideInputVolume)).EndInit();
+            ((System.ComponentModel.ISupportInitialize) (this.nUpDown_OverrideInputVolume)).EndInit();
             this.groupBox_CustomHighway.ResumeLayout(false);
             this.groupBox_CustomHighway.PerformLayout();
             this.groupBox_Backups.ResumeLayout(false);
             this.groupBox_Backups.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nUpDown_NumberOfBackups)).EndInit();
+            ((System.ComponentModel.ISupportInitialize) (this.nUpDown_NumberOfBackups)).EndInit();
             this.groupBox_RRSpeed.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.nUpDown_RiffRepeaterSpeed)).EndInit();
+            ((System.ComponentModel.ISupportInitialize) (this.nUpDown_RiffRepeaterSpeed)).EndInit();
             this.groupBox_ControlVolumeIncrement.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.nUpDown_VolumeInterval)).EndInit();
+            ((System.ComponentModel.ISupportInitialize) (this.nUpDown_VolumeInterval)).EndInit();
             this.tab_SetAndForget.ResumeLayout(false);
             this.tab_RSASIO.ResumeLayout(false);
             this.tab_RSASIO.PerformLayout();
             this.groupBox_ASIO_InputMic.ResumeLayout(false);
             this.groupBox_ASIO_InputMic.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nUpDown_ASIO_InputMic_MaxVolume)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nUpDown_ASIO_InputMic_Channel)).EndInit();
+            ((System.ComponentModel.ISupportInitialize) (this.nUpDown_ASIO_InputMic_MaxVolume)).EndInit();
+            ((System.ComponentModel.ISupportInitialize) (this.nUpDown_ASIO_InputMic_Channel)).EndInit();
             this.groupBox_ASIO_Output.ResumeLayout(false);
             this.groupBox_ASIO_Output.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nUpDown_ASIO_Output_AltBaseChannel)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nUpDown_ASIO_Output_MaxVolume)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nUpDown_ASIO_Output_BaseChannel)).EndInit();
+            ((System.ComponentModel.ISupportInitialize) (this.nUpDown_ASIO_Output_AltBaseChannel)).EndInit();
+            ((System.ComponentModel.ISupportInitialize) (this.nUpDown_ASIO_Output_MaxVolume)).EndInit();
+            ((System.ComponentModel.ISupportInitialize) (this.nUpDown_ASIO_Output_BaseChannel)).EndInit();
             this.groupBox_ASIO_Input1.ResumeLayout(false);
             this.groupBox_ASIO_Input1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nUpDown_ASIO_Input1_MaxVolume)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nUpDown_ASIO_Input1_Channel)).EndInit();
+            ((System.ComponentModel.ISupportInitialize) (this.nUpDown_ASIO_Input1_MaxVolume)).EndInit();
+            ((System.ComponentModel.ISupportInitialize) (this.nUpDown_ASIO_Input1_Channel)).EndInit();
             this.groupBox_ASIO_Input0.ResumeLayout(false);
             this.groupBox_ASIO_Input0.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nUpDown_ASIO_Input0_MaxVolume)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nUpDown_ASIO_Input0_Channel)).EndInit();
+            ((System.ComponentModel.ISupportInitialize) (this.nUpDown_ASIO_Input0_MaxVolume)).EndInit();
+            ((System.ComponentModel.ISupportInitialize) (this.nUpDown_ASIO_Input0_Channel)).EndInit();
             this.groupBox_ASIO_Config.ResumeLayout(false);
             this.groupBox_ASIO_Config.PerformLayout();
             this.groupBox_ASIO_BufferSize.ResumeLayout(false);
             this.groupBox_ASIO_BufferSize.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nUpDown_ASIO_CustomBufferSize)).EndInit();
+            ((System.ComponentModel.ISupportInitialize) (this.nUpDown_ASIO_CustomBufferSize)).EndInit();
             this.tab_Rocksmith.ResumeLayout(false);
             this.tab_Rocksmith.PerformLayout();
             this.groupBox_Rocksmith_AudioSettings.ResumeLayout(false);
             this.groupBox_Rocksmith_AudioSettings.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nUpDown_Rocksmith_MaxOutputBuffer)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nUpDown_Rocksmith_LatencyBuffer)).EndInit();
+            ((System.ComponentModel.ISupportInitialize) (this.nUpDown_Rocksmith_MaxOutputBuffer)).EndInit();
+            ((System.ComponentModel.ISupportInitialize) (this.nUpDown_Rocksmith_LatencyBuffer)).EndInit();
             this.groupBox_Rocksmith_VisualSettings.ResumeLayout(false);
             this.groupBox_Rocksmith_VisualSettings.PerformLayout();
             this.groupBox_Rocksmith_Network.ResumeLayout(false);
@@ -6884,14 +7203,14 @@
             this.groupBox_Rocksmith_VisualQuality.PerformLayout();
             this.groupBox_Rocksmith_Resolutions.ResumeLayout(false);
             this.groupBox_Rocksmith_Resolutions.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nUpDown_Rocksmith_RenderHeight)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nUpDown_Rocksmith_RenderWidth)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nUpDown_Rocksmith_ScreenHeight)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nUpDown_Rocksmith_ScreenWidth)).EndInit();
+            ((System.ComponentModel.ISupportInitialize) (this.nUpDown_Rocksmith_RenderHeight)).EndInit();
+            ((System.ComponentModel.ISupportInitialize) (this.nUpDown_Rocksmith_RenderWidth)).EndInit();
+            ((System.ComponentModel.ISupportInitialize) (this.nUpDown_Rocksmith_ScreenHeight)).EndInit();
+            ((System.ComponentModel.ISupportInitialize) (this.nUpDown_Rocksmith_ScreenWidth)).EndInit();
             this.tab_Twitch.ResumeLayout(false);
             this.tab_Twitch.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_EnabledRewards)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_DefaultRewards)).EndInit();
+            ((System.ComponentModel.ISupportInitialize) (this.dgv_EnabledRewards)).EndInit();
+            ((System.ComponentModel.ISupportInitialize) (this.dgv_DefaultRewards)).EndInit();
             this.tab_SoundPacks.ResumeLayout(false);
             this.tab_SoundPacks.PerformLayout();
             this.groupBox_SoundPacks.ResumeLayout(false);
@@ -6899,7 +7218,7 @@
             this.tab_Profiles.PerformLayout();
             this.groupBox_ImportJsonTones.ResumeLayout(false);
             this.groupBox_ImportJsonTones.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_Profiles_Songlists)).EndInit();
+            ((System.ComponentModel.ISupportInitialize) (this.dgv_Profiles_Songlists)).EndInit();
             this.groupBox_Profile_MoreSongLists.ResumeLayout(false);
             this.groupBox_Profile_MoreSongLists.PerformLayout();
             this.groupBox_Profiles_Rewards.ResumeLayout(false);
@@ -6907,11 +7226,21 @@
             this.tab_GUISettings.PerformLayout();
             this.groupBox_ChangeTheme.ResumeLayout(false);
             this.groupBox_ChangeTheme.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize) (this.fileSystemWatcher1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
-
         }
+
+        private System.Windows.Forms.CheckBox checkBox1;
+
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton radioButton2;
+
+        private System.Windows.Forms.GroupBox groupBox1;
+
+        private System.Windows.Forms.CheckBox checkBox_Rocksync;
 
         #endregion
 

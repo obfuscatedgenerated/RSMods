@@ -2496,6 +2496,12 @@ namespace RSMods
             SaveSettings_Save(ReadSettings.UseCustomNSPTimerIdentifier, checkBox_CustomNSPTimer.Checked.ToString().ToLower());
             groupBox_NSPTimer.Visible = checkBox_CustomNSPTimer.Checked;
         }
+        
+        private void Save_Rocksync(object sender, EventArgs e)
+        {
+            SaveSettings_Save(ReadSettings.RocksyncIdentifier, checkBox_Rocksync.Checked.ToString().ToLower());
+            groupBox_Rocksync.Visible = checkBox_Rocksync.Checked;
+        }
 
         private void Save_NSPTimer(object sender, EventArgs e) => SaveSettings_Save(ReadSettings.CustomNSPTimeLimitIdentifier, ((int)(nUpDown_NSPTimer.Value * 1000)).ToString());
 
@@ -4630,8 +4636,23 @@ namespace RSMods
                 Debug.WriteLine("Shutdown Midi In");
             }
         }
-    }
 
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+            throw new System.NotImplementedException();
+        }
+    private void numericUpDown1_ValueChanged(object sender, EventArgs e)
+{
+}private void label1_Click(object sender, EventArgs e)
+{
+}
+
+private void checkBox1_CheckedChanged(object sender, EventArgs e)
+{
+    throw new System.NotImplementedException();
+}
+    }
+// TODO implement rocksync groupbox settings
 
 
     public class Midi
