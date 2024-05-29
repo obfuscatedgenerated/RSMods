@@ -975,10 +975,14 @@ Wwise::SoundEngine::SetRTPCValue("P1_InputVol_Calibration_Return", NewInputVolum
 			D3DHooks::regenerateUserDefinedTexture = false;
 		}
 
-		// rocksync mod - if host, create server
-		if (Settings::ReturnSettingValue("RocksyncMode") == "host") {
-			Rocksync::startHostServer();
-			// don't really need to check success. maybe add a popup if it fails?
+		// rocksync mod
+		if (Settings::ReturnSettingValue("Rocksync") == "on")
+		{
+			// create server if host
+			if (Settings::ReturnSettingValue("RocksyncMode") == "host") {
+				Rocksync::startHostServer();
+				// don't really need to check success. maybe add a popup if it fails?
+			}
 		}
 	}
 	return hRet;

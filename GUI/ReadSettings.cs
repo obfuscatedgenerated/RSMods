@@ -31,7 +31,7 @@ namespace RSMods
                              ToggleSkylineWhen, RemoveLaneMarkersEnabled, RemoveLyricsEnabled, RemoveLyricsWhen, GuitarSpeakEnabled, RemoveHeadstockWhen, ScreenShotScores,
                              MidiAutoTuning, MidiAutoTuningDevice, MidiInDevice, MidiAutoTuningWhen, MidiSoftwareSemitoneTriggers, MidiSoftwareSemitoneSettings, MidiSoftwareTrueTuningTriggers, MidiSoftwareTrueTuningSettings, ChordsMode,
                              RiffRepeaterAboveHundred, ShowCurrentNoteOnScreen, OnScreenFont, ProfileToLoad, ShowSongTimerWhen, ShowSelectedVolumeWhen, SecondaryMonitor, RemoveSongPreviews, OverrideInputVolumeEnabled, OverrideInputVolumeDevice,
-                             AllowAudioInBackground, BypassTwoRTCMessageBox, LinearRiffRepeater, UseAlternativeOutputSampleRate, AllowLooping, AllowRewind, FixOculusCrash, FixBrokenTones, UseCustomNSPTimer,
+                             AllowAudioInBackground, BypassTwoRTCMessageBox, LinearRiffRepeater, UseAlternativeOutputSampleRate, AllowLooping, AllowRewind, FixOculusCrash, FixBrokenTones, UseCustomNSPTimer, Rocksync,
 
 
                              // String Colors
@@ -45,7 +45,7 @@ namespace RSMods
                              // Mod Settings
                              ExtendedRangeTuning, CheckForNewSongInterval, RiffRepeaterSpeedInterval, TuningPedal, MidiTuningOffset,
                              VolumeControlInterval, SecondaryMonitorXPosition, SecondaryMonitorYPosition, OverrideInputVolume, AlternativeOutputSampleRate, LoopingLeadUp,
-                             RewindBy, CustomNSPTimeLimit,
+                             RewindBy, CustomNSPTimeLimit, RocksyncMode, RocksyncHostPort, RocksyncLocalOnly,
 
                              // Guitar Speak
                              GuitarSpeakDelete, GuitarSpeakSpace, GuitarSpeakEnter, GuitarSpeakTab, GuitarSpeakPGUP, GuitarSpeakPGDN, GuitarSpeakUP, GuitarSpeakDN, GuitarSpeakESC,
@@ -163,6 +163,7 @@ namespace RSMods
             FixOculusCrashIdentifier                    = "FixOculusCrash = ",
             FixBrokenTonesIdentifier                    = "FixBrokenTones = ",
             UseCustomNSPTimerIdentifier                 = "UseCustomNSPTimer = ",
+            RocksyncIdentifier                          = "Rocksync = ",
 
 
                 // String Colors (Normal {N} & Colorblind {CB})
@@ -213,6 +214,9 @@ namespace RSMods
             LoopingLeadUpIdentifier                 = "LoopingLeadUp = ",
             RewindByIdentifier                      = "RewindBy = ",
             CustomNSPTimeLimitIdentifier            = "CustomNSPTimeLimit = ",
+            RocksyncIsHostIdentifier                  = "RocksyncIsHost = ",
+            RocksyncHostPortIdentifier               = "RocksyncHostPort = ",
+            RocksyncLocalOnlyIdentifier              = "RocksyncLocalOnly = ",
 
             // Guitar Speak
             GuitarSpeakDeleteIdentifier     = "GuitarSpeakDeleteWhen = ",
@@ -503,6 +507,8 @@ namespace RSMods
                     return FillSettingVariable(FixBrokenTonesIdentifier, SettingType.ON_OFF, currentLine, out FixBrokenTones);
                 if (IdentifierIsFound(currentLine, UseCustomNSPTimerIdentifier, identifierToGrab))
                     return FillSettingVariable(UseCustomNSPTimerIdentifier, SettingType.ON_OFF, currentLine, out UseCustomNSPTimer);
+                if (IdentifierIsFound(currentLine, RocksyncIdentifier, identifierToGrab))
+                    return FillSettingVariable(RocksyncIdentifier, SettingType.ON_OFF, currentLine, out Rocksync);
                 #endregion
                 #region String Colors
                 // String Colors (Normal {N} & Colorblind {CB})
@@ -597,6 +603,10 @@ namespace RSMods
                     return FillSettingVariable(RewindByIdentifier, SettingType.STRING, currentLine, out RewindBy);
                 if (IdentifierIsFound(currentLine, CustomNSPTimeLimitIdentifier, identifierToGrab))
                     return FillSettingVariable(CustomNSPTimeLimitIdentifier, SettingType.STRING, currentLine, out CustomNSPTimeLimit);
+                if (IdentifierIsFound(currentLine, RocksyncMode, identifierToGrab))
+                    return FillSettingVariable(RocksyncMode, SettingType.STRING, currentLine, out RocksyncMode);
+                if (IdentifierIsFound(currentLine, RocksyncHostPort, identifierToGrab))
+                    return FillSettingVariable(RocksyncHostPort, SettingType.STRING, currentLine, out RocksyncHostPort);
                 
                 #endregion
                 #region Guitar Speak
